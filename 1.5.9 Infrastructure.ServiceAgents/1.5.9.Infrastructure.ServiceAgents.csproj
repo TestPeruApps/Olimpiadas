@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D7C1BBAC-9E67-4B8C-818D-7B0BEC01C8E4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Olimpiadas.Infrastructure.ServiceAgents</RootNamespace>
+    <AssemblyName>Olimpiadas.Infrastructure.ServiceAgents</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=4.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.4.1.1\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainProfiler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\Proxy.MessagingEngine\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Services\MessagingEngineProxy.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\1.3.2 Application.Dto\1.3.2.Application.Dto.csproj">
+      <Project>{D657A5C5-4EAE-45DD-9F80-03A035F429B9}</Project>
+      <Name>1.3.2.Application.Dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\1.4.2 Domain.Entities\1.4.2.Domain.Entities.csproj">
+      <Project>{3656522C-D961-4DCE-96D9-9CB41E6C4C94}</Project>
+      <Name>1.4.2.Domain.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\1.4.3 Domain.PublicSiteModule\1.4.3.Domain.Modulos.csproj">
+      <Project>{41583196-20B8-4B34-B0C3-3D463DC8DBF6}</Project>
+      <Name>1.4.3.Domain.Modulos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\1.6.1 CrossCutting.Enumerations\1.6.1.CrossCutting.Enumerations.csproj">
+      <Project>{930943D2-C164-45E5-A3E7-E96B488AD9E8}</Project>
+      <Name>1.6.1.CrossCutting.Enumerations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\1.6.2.CrossCutting.Strings\1.6.2.CrossCutting.Strings.csproj">
+      <Project>{b862ea8c-d377-4b8f-9cdd-760dc09bd75a}</Project>
+      <Name>1.6.2.CrossCutting.Strings</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\1.6.3 CrossCutting.Helper\1.6.3.CrossCutting.Helper.csproj">
+      <Project>{42D68F6A-0A73-4861-99DC-5EA4C742DC00}</Project>
+      <Name>1.6.3.CrossCutting.Helper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Service References\Proxy.MessagingEngine\Essentta.Marketplace.Infrastructure.ServiceAgents.Proxy.MessagingEngine.MensajeRespuesta.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Proxy.MessagingEngine\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Proxy.MessagingEngine\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Proxy.MessagingEngine\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Proxy.MessagingEngine\item.wsdl" />
+    <None Include="Service References\Proxy.MessagingEngine\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Proxy.MessagingEngine\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Proxy.MessagingEngine\item2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Proxy.MessagingEngine\item5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Proxy.MessagingEngine\MessagingEngine2.wsdl" />
+    <None Include="Service References\Proxy.MessagingEngine\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Proxy.MessagingEngine\item.disco" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

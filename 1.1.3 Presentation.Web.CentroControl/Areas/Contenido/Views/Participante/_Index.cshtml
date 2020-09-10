@@ -1,0 +1,36 @@
+﻿@model Olimpiadas.Web.CMS.Areas.Contenido.ViewModels.Participantes.ParticipanteGridViewModel
+@{
+    //var ver = HelperFormat.PermisosExists(Model.Opciones, ResourcesOpciones.AdministrarAlertas_Ver);
+    //var add = HelperFormat.PermisosExists(Model.Opciones, ResourcesOpciones.AdministrarAlertas_Agregar);
+    var ver = true;
+    var add = true;
+    var nonce = Context.Items["csp-nonce"].ToString();
+}
+
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box box-primary">
+                <form id="participanteGridForm" action="/" autocomplete="off">
+                    @Html.AntiForgeryToken()
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Lista de Participantes</h3>
+                        <div class="box-tools pull-right">
+                            @if (ver) { <button type="submit" class="btn btn-info btn-sm"><i class="fa fa-search"></i></button> }
+                            @if (add) { <a class="btn btn-info btn-sm btn-agregar"><i class="fa fa-plus"></i></a> }
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        @if (ver) { await Html.RenderPartialAsync("_Index.Grid", Model); }
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script nonce="@nonce">
+    $(document).ready(function () {
+        formParticipante.grid.load();
+    });
+</script>

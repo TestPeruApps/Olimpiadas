@@ -1,0 +1,38 @@
+﻿@model Olimpiadas.Web.CMS.Models.HomeViewModel
+@using Olimpiadas.CrossCutting.Strings
+@{
+    var nonce = Context.Items["csp-nonce"].ToString();
+
+}
+<aside class="main-sidebar">
+    <section class="sidebar">
+        <div class="user-panel ml-10">
+            <table class="info text-gray">
+                <tr class="h-30">
+                    <td rowspan="2"><i class="fa fa-user"></i></td>
+                    <td class="text-uppercase pl-10 text-aqua">@Model.Usuario.NombreUsuario</td>
+                </tr>
+                @*<tr>
+                    <td title="@Model.Usuario.Usua_Roles" class="pl-10"><div class="text-ellipsis mw-180" data-toggle="tooltip" title="@Model.Usuario.Usua_Roles">@Model.Usuario.Usua_Roles</div></td>
+                </tr>*@
+            </table>
+        </div>
+        <ul class="sidebar-menu">
+            <li class="header">MENÚ DE NAVEGACIÓN</li>
+            <li class="treeview"><a href="/"><i class="fa fa-home"></i><span>Inicio</span></a></li>
+
+            <li class="treeview">
+                <a href="javascript:void(0);"><i class="fa fa-th"></i><span>Mantenimiento</span><i class="fa fa-angle-left pull-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a class="subMenuLateral" onclick="formParticipante.grid.call(this);"><i class="fa fa-circle-o"></i>Participantes</a></li>
+                    <li><a class="subMenuLateral" onclick="formPersonal.grid.call(this);"><i class="fa fa-circle-o"></i>Personal</a></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+</aside>
+<script nonce="@nonce">
+    $(document).ready(function () {
+        //formHome.loadMenuLateral();
+    });
+</script>

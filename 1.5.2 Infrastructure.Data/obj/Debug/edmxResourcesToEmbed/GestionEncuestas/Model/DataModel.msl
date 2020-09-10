@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GestionContenidoStoreContainer" CdmEntityContainer="DbContextGestionContenido">
+    <EntitySetMapping Name="Pregunta">
+      <EntityTypeMapping TypeName="GestionContenido.Pregunta">
+        <MappingFragment StoreEntitySet="Pregunta">
+          <ScalarProperty Name="Preg_IpEdicion" ColumnName="Preg_IpEdicion" />
+          <ScalarProperty Name="Preg_IpCreacion" ColumnName="Preg_IpCreacion" />
+          <ScalarProperty Name="Preg_FechaEdicion" ColumnName="Preg_FechaEdicion" />
+          <ScalarProperty Name="Preg_FechaCreacion" ColumnName="Preg_FechaCreacion" />
+          <ScalarProperty Name="Preg_UsuarioEdicion" ColumnName="Preg_UsuarioEdicion" />
+          <ScalarProperty Name="Preg_UsuarioCreacion" ColumnName="Preg_UsuarioCreacion" />
+          <ScalarProperty Name="Preg_Activo" ColumnName="Preg_Activo" />
+          <ScalarProperty Name="Preg_RespuestaTextos" ColumnName="Preg_RespuestaTextos" />
+          <ScalarProperty Name="Preg_TipoRespuestaId" ColumnName="Preg_TipoRespuestaId" />
+          <ScalarProperty Name="Preg_Texto" ColumnName="Preg_Texto" />
+          <ScalarProperty Name="Preg_Numeracion" ColumnName="Preg_Numeracion" />
+          <ScalarProperty Name="Preg_RutaId" ColumnName="Preg_RutaId" />
+          <ScalarProperty Name="Preg_EncuestaId" ColumnName="Preg_EncuestaId" />
+          <ScalarProperty Name="Preg_Id" ColumnName="Preg_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Respuesta">
+      <EntityTypeMapping TypeName="GestionContenido.Respuesta">
+        <MappingFragment StoreEntitySet="Respuesta">
+          <ScalarProperty Name="Resp_IpEdicion" ColumnName="Resp_IpEdicion" />
+          <ScalarProperty Name="Resp_IpCreacion" ColumnName="Resp_IpCreacion" />
+          <ScalarProperty Name="Resp_FechaEdicion" ColumnName="Resp_FechaEdicion" />
+          <ScalarProperty Name="Resp_FechaCreacion" ColumnName="Resp_FechaCreacion" />
+          <ScalarProperty Name="Resp_UsuarioEdicion" ColumnName="Resp_UsuarioEdicion" />
+          <ScalarProperty Name="Resp_UsuarioCreacion" ColumnName="Resp_UsuarioCreacion" />
+          <ScalarProperty Name="Resp_Activo" ColumnName="Resp_Activo" />
+          <ScalarProperty Name="Resp_Texto" ColumnName="Resp_Texto" />
+          <ScalarProperty Name="Resp_Numeracion" ColumnName="Resp_Numeracion" />
+          <ScalarProperty Name="Resp_PreguntaId" ColumnName="Resp_PreguntaId" />
+          <ScalarProperty Name="Resp_Id" ColumnName="Resp_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Encuesta">
+      <EntityTypeMapping TypeName="GestionContenido.Encuesta">
+        <MappingFragment StoreEntitySet="Encuesta">
+          <ScalarProperty Name="Encu_IpCreacion" ColumnName="Encu_IpCreacion" />
+          <ScalarProperty Name="Encu_FechaCreacion" ColumnName="Encu_FechaCreacion" />
+          <ScalarProperty Name="Encu_RutaId" ColumnName="Encu_RutaId" />
+          <ScalarProperty Name="Encu_TuristaId" ColumnName="Encu_TuristaId" />
+          <ScalarProperty Name="Encu_Id" ColumnName="Encu_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EncuestaPregunta">
+      <EntityTypeMapping TypeName="GestionContenido.EncuestaPregunta">
+        <MappingFragment StoreEntitySet="EncuestaPregunta">
+          <ScalarProperty Name="Epreg_IpCreacion" ColumnName="Epreg_IpCreacion" />
+          <ScalarProperty Name="Epreg_FechaCreacion" ColumnName="Epreg_FechaCreacion" />
+          <ScalarProperty Name="Epreg_TipoRespuestaId" ColumnName="Epreg_TipoRespuestaId" />
+          <ScalarProperty Name="Epreg_Texto" ColumnName="Epreg_Texto" />
+          <ScalarProperty Name="Epreg_Numeracion" ColumnName="Epreg_Numeracion" />
+          <ScalarProperty Name="Epreg_PreguntaId" ColumnName="Epreg_PreguntaId" />
+          <ScalarProperty Name="Epreg_EncuestaId" ColumnName="Epreg_EncuestaId" />
+          <ScalarProperty Name="Epreg_Id" ColumnName="Epreg_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EncuestaRespuesta">
+      <EntityTypeMapping TypeName="GestionContenido.EncuestaRespuesta">
+        <MappingFragment StoreEntitySet="EncuestaRespuesta">
+          <ScalarProperty Name="Eresp_IpCreacion" ColumnName="Eresp_IpCreacion" />
+          <ScalarProperty Name="Eresp_FechaCreacion" ColumnName="Eresp_FechaCreacion" />
+          <ScalarProperty Name="Eresp_Seleccionado" ColumnName="Eresp_Seleccionado" />
+          <ScalarProperty Name="Eresp_Texto" ColumnName="Eresp_Texto" />
+          <ScalarProperty Name="Eresp_Numeracion" ColumnName="Eresp_Numeracion" />
+          <ScalarProperty Name="Eresp_RespuestaId" ColumnName="Eresp_RespuestaId" />
+          <ScalarProperty Name="Eresp_PreguntaId" ColumnName="Eresp_PreguntaId" />
+          <ScalarProperty Name="Eresp_Id" ColumnName="Eresp_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,48 @@
+﻿@model Olimpiadas.Web.CMS.Areas.Seguridad.ViewModels.Autenticacion.LoginViewModel
+@{
+    var nonce = Context.Items["csp-nonce"].ToString();
+}
+<br />
+<br />
+<br />
+<div id="divRegistro" class="container">
+    <div class="row">
+        @*<div class="col-sm-6 col-sm-6 col-md-6 hidden-xs text-center mt-30">
+            <br />
+            <br />
+            <img class="img" src="~/img/logo.png?version=1" alt="logo" />
+            <br />
+            <br />
+        </div>*@
+        <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="form-box">
+                <div class="boxHeader header bg-blue">
+                    <p>Inicio de Sesión</p>
+                </div>
+                <form id="loginForm" accept-charset="UTF-8" method="post" autocomplete="off">
+                    @Html.AntiForgeryToken()
+                    <div class="body bg-gray">
+                        <div class="form-group divUsua_Email">
+                            <input asp-for="Usuario" class="form-control" autofocus="autofocus" placeholder="E-mail de usuario" type="text" maxlength="50" />
+                        </div>
+                        <div class="form-group divUsua_ContraseniaString">
+                            <input asp-for="Contrasenia" class="form-control" placeholder="contraseña" autocomplete="off" type="password" maxlength="15" />
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <input type="submit" id="btnLogOn" value="inicio de sesión" class="btn btn-large btn-primary btn-block" />
+                        <hr />
+                        @*<p>
+                            <a id="lnkRecuperarContrasenia" class="btn btn-default btn-block">¿Olvidó su contraseña?</a>
+                        </p>*@
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script nonce=@nonce>    
+    $(document).ready(function () {        
+        formLogin.login.load();
+    })
+</script>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="PROMPERU.GestionSeguridadService" elementFormDefault="qualified" targetNamespace="PROMPERU.GestionSeguridadService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:56904/GestionSeguridadService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionSeguridad.Usuarios" />
+  <xs:element name="UsuarioListarMenu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="usuarioId" type="xs:short" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UsuarioListarMenuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionSeguridad.Usuarios" minOccurs="0" name="UsuarioListarMenuResult" nillable="true" type="q1:ObtenerPermisosResponseDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UsuarioValidarLogin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionSeguridad.Usuarios" minOccurs="0" name="request" nillable="true" type="q2:ValidarLoginRequestDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UsuarioValidarLoginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionSeguridad.Usuarios" minOccurs="0" name="UsuarioValidarLoginResult" nillable="true" type="q3:UsuarioDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Prueba">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PruebaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PruebaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

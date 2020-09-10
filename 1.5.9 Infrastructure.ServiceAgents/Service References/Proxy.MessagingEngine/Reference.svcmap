@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c95266ff-0af3-4404-8d49-d40e90986160" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://190.41.94.92:8721/MessagingEngine/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PROMPERU.wsdl" MetadataType="Wsdl" ID="0c1e6994-7b72-4d6c-a6fe-0a978285fa4d" SourceId="1" SourceUrl="http://190.41.94.92:8721/MessagingEngine/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="9890dff2-8d0b-4a24-b3b7-687f40ccfa14" SourceId="1" SourceUrl="http://190.41.94.92:8721/MessagingEngine/mex" />
+    <MetadataFile FileName="PROMPERU.xsd" MetadataType="Schema" ID="2126d971-eef8-4e83-b936-290b162f33da" SourceId="1" SourceUrl="http://190.41.94.92:8721/MessagingEngine/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="9e9f0e03-a2a6-4259-8348-abd598ab9f91" SourceId="1" SourceUrl="http://190.41.94.92:8721/MessagingEngine/mex" />
+    <MetadataFile FileName="PROMPERU.MessagingEngine.BusinessLogic.DataType.xsd" MetadataType="Schema" ID="c1088258-c392-41cb-ab2d-2245d8a8838b" SourceId="1" SourceUrl="http://190.41.94.92:8721/MessagingEngine/mex" />
+    <MetadataFile FileName="PROMPERU.MessagingEngine.CrossCutting.Enumerations.xsd" MetadataType="Schema" ID="40ab185e-1b09-4c70-8362-6d2c96fd86cc" SourceId="1" SourceUrl="http://190.41.94.92:8721/MessagingEngine/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

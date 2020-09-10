@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PROMPERU.YTQPRutasCortas.Domain.Core</name>
+    </assembly>
+    <members>
+        <member name="T:PROMPERU.YTQPRutasCortas.Domain.Core.IRepositoryBase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Domain.Core.IRepository`1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Domain.Core.IRepository`1.Listar(PROMPERU.YTQPRutasCortas.Domain.Core.ParametroAccesosDatos)">
+            <summary>
+            
+            </summary>
+            <param name="parametroAccesosDatos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Domain.Core.IRepository`1.Paginar``1(PROMPERU.YTQPRutasCortas.Domain.Core.ParametroAccesosDatosTipado,``0,PROMPERU.YTQPRutasCortas.Application.Dto.Comun.CriteriosPaginacionDto)">
+            <summary>
+            
+            </summary>
+            <typeparam name="TResultado"></typeparam>
+            <param name="parametroAccesosDatos"></param>
+            <param name="filtro"></param>
+            <param name="criteriosPaginacion"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Domain.Core.IRepository`1.Obtener(PROMPERU.YTQPRutasCortas.Domain.Core.ParametroAccesosDatos)">
+            <summary>
+            
+            </summary>
+            <param name="parametroAccesosDatos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Domain.Core.IRepository`1.Ejecutar(PROMPERU.YTQPRutasCortas.Domain.Core.ParametroAccesosDatosTipado,`0)">
+            <summary>
+            
+            </summary>
+            <param name="parametroAccesosDatos"></param>
+            <param name="entidad"></param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Domain.Core.IRepository`1.IniciarTransaccion">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Domain.Core.IRepository`1.FinalizarTransaccion">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Domain.Core.Paginado`1">
+            <summary>
+            Clase con datos del resultado de la paginación.
+            </summary>
+            <typeparam name="T">Tipo de datos usado para almacenar las entidad paginadas.</typeparam>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Domain.Core.Paginado`1.#ctor">
+            <summary>
+            Inicializa una instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Domain.Core.Paginado`1.#ctor(System.Collections.Generic.List{`0},System.Int32)">
+            <summary>
+            Inicializa una instancia de la clase.
+            </summary>
+            <param name="items">Items devueltos por la paginación.</param>
+            <param name="totalItems">Cantidad total de items sobre el cual se realiza la paginación.</param>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.Domain.Core.Paginado`1.Items">
+            <summary>
+            Items devueltos por la paginación.
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.Domain.Core.Paginado`1.TotalItems">
+            <summary>
+            Cantidad total de items sobre el cual se realiza la paginación.
+            </summary>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Domain.Core.ParametroAccesosDatosTipado">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.Domain.Core.ParametroAccesosDatosTipado.ProcedimientoAlmacenado">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.Domain.Core.ParametroAccesosDatosTipado.ParametrosEntrada">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.Domain.Core.ParametroAccesosDatosTipado.ParametrosEntradaOtros">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.Domain.Core.ParametroAccesosDatosTipado.PropiedadesCalculadas">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.Domain.Core.ParametroAccesosDatosTipado.ParametrosSalida">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Domain.Core.ParametroSalida">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Domain.Core.ParametroSalida.#ctor(System.String,System.Data.SqlDbType,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="nombre"></param>
+            <param name="tipoDatoSql"></param>
+            <param name="sise"></param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Domain.Core.ParametroSalida.#ctor(System.String,System.Object,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="nombre"></param>
+            <param name="valor"></param>
+            <param name="size"></param>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.Domain.Core.ParametroSalida.Nombre">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.Domain.Core.ParametroSalida.Valor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.Domain.Core.ParametroSalida.Size">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.Domain.Core.ParametroSalida.TipoDatoSql">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Domain.Core.ParametroEntrada">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Domain.Core.ParametroEntrada.#ctor(System.String,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="nombre"></param>
+            <param name="valor"></param>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.Domain.Core.ParametroEntrada.Nombre">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.Domain.Core.ParametroEntrada.Valor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Domain.Core.ParametroAccesosDatos">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.Domain.Core.ParametroAccesosDatos.ProcedimientoAlmacenado">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.Domain.Core.ParametroAccesosDatos.ParametrosEntrada">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.Domain.Core.ParametroAccesosDatos.ParametrosSalida">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

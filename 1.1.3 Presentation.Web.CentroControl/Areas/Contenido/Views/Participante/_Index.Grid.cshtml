@@ -1,0 +1,59 @@
+﻿@using Olimpiadas.Web.CMS.Helper
+@model Olimpiadas.Web.CMS.Areas.Contenido.ViewModels.Participantes.ParticipanteGridViewModel
+@{
+    //var set = HelperFormat.PermisosExists(Model.Opciones, ResourcesOpciones.AdministrarAlertas_Modificar);
+    //var desactivar = HelperFormat.PermisosExists(Model.Opciones, ResourcesOpciones.AdministrarAlertas_Desactivar);
+    //var activar = HelperFormat.PermisosExists(Model.Opciones, ResourcesOpciones.AdministrarAlertas_Activar);
+    var set = true;
+    var desactivar = true;
+    var activar = true;
+    await Html.RenderPartialAsync("~/Views/Partial/_pagination.variable.cshtml", Model);
+}
+
+<div class="table-responsive">
+    <table class="table table-striped default-table">
+            <thead>
+                <tr class="row-filter">
+                    <th class="min-60">
+                        <input asp-for="Filtro.NombreParticipante" class="form-control filterText" maxlength="20" />
+                    </th>
+                    <th class="w-58">
+                        <select asp-for="Filtro.IdPais" asp-items="Model.Paises" class="form-control filterSelect"><option value="">Todos</option></select>
+                    </th>
+                    <th class="w-58">
+                        <select asp-for="Filtro.IdDeporte" asp-items="Model.Deportes" class="form-control filterSelect"><option value="">Todos</option></select>
+                    </th>
+                    <th class="w-58">
+                        <select asp-for="Filtro.Activo" asp-items="Model.EstadosSiNo" class="form-control filterSelect"><option value="">Todos</option></select>
+                    </th>
+                    <th class="column-clean" colspan="2">
+                        <a title="Limpiar">Limpiar</a>
+                    </th>
+                </tr>
+                <tr class="row-head">
+                    <th>Nombre Participante</th>
+                    <th>País</th>
+                    <th>Deporte</th>
+                    <th>Activo</th>
+                    <th colspan="2">Acciones</th>
+                </tr>
+            </thead>
+        <tbody>
+            @foreach (var item in Model.Lista)
+            {
+            <tr>
+                <td>@item.NombreParticipante</td>
+                <td>@item.NombrePais</td>
+                <td>@item.NombreDeporte</td>
+                <td class="column-center margin-right w-58">
+                    @HelperFormat.SiNoColors(item.Activo)
+                </td>
+                @HelperFormat.ColumnActivarDesactivar(item.Activo, item.IdParticipante, activar, desactivar)
+                @HelperFormat.ColumnSet(item.IdParticipante, set)
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@{await Html.RenderPartialAsync("~/Views/Partial/_pagination.navigation.cshtml", Model.Lista); }

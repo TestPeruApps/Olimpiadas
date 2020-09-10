@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Olimpiadas.DistributedServices.Implementations.GestionSeguridad.GestionSeguridadService" CodeBehind="GestionSeguridadService.svc.cs" %>

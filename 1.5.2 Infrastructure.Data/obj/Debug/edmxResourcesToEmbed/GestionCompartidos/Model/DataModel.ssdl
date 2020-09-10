@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GestionCompartidos.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Grupo">
+    <Key>
+      <PropertyRef Name="Grup_Id" />
+    </Key>
+    <Property Name="Grup_Id" Type="tinyint" Nullable="false" />
+    <Property Name="Grup_Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Grup_PadreId" Type="tinyint" />
+    <Property Name="Grup_UsadoEn" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Grup_EsEditable" Type="bit" Nullable="false" />
+    <Property Name="Grup_EsIconografia" Type="bit" Nullable="false" />
+    <Property Name="Grup_IconografiaAncho" Type="smallint" />
+    <Property Name="Grup_IconografiaAlto" Type="smallint" />
+    <Property Name="Grup_IconografiaExtencion" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Parametro">
+    <Key>
+      <PropertyRef Name="Para_Id" />
+    </Key>
+    <Property Name="Para_Id" Type="smallint" Nullable="false" />
+    <Property Name="Para_Nombre" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Para_ValorTexto" Type="varchar(max)" />
+    <Property Name="Para_ValorNumero" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Para_ValorBool" Type="bit" />
+  </EntityType>
+  <EntityType Name="Tipo">
+    <Key>
+      <PropertyRef Name="Tipo_Id" />
+    </Key>
+    <Property Name="Tipo_Id" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Tipo_GrupoId" Type="tinyint" Nullable="false" />
+    <Property Name="Tipo_Nombre" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Tipo_Abreviatura" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Tipo_Descripcion" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Tipo_Etiqueta" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="Tipo_ColorEnApp" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Tipo_Activo" Type="bit" Nullable="false" />
+    <Property Name="Tipo_UsuarioCreacion" Type="smallint" Nullable="false" />
+    <Property Name="Tipo_UsuarioEdicion" Type="smallint" />
+    <Property Name="Tipo_FechaCreacion" Type="datetime" Nullable="false" />
+    <Property Name="Tipo_FechaEdicion" Type="datetime" />
+    <Property Name="Tipo_IpCreacion" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Tipo_IpEdicion" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="Ubigeo">
+    <Key>
+      <PropertyRef Name="Ubig_Id" />
+    </Key>
+    <Property Name="Ubig_Id" Type="int" Nullable="false" />
+    <Property Name="Ubig_Codigo" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="Ubig_CodigoProvincia" Type="char" MaxLength="4" Nullable="false" />
+    <Property Name="Ubig_CodigoDepartamento" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="Ubig_Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Ubig_NombreDistrito" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Ubig_NombreProvincia" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="Ubig_NombreDepartamento" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="Ubig_TipoId" Type="smallint" Nullable="false" />
+    <Property Name="Ubig_IdPadre" Type="int" />
+    <Property Name="Ubig_Nombre2Niveles" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Ubig_Nombre3Niveles" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Ubig_UsuarioCreacion" Type="smallint" Nullable="false" />
+    <Property Name="Ubig_UsuarioEdicion" Type="smallint" />
+    <Property Name="Ubig_FechaCreacion" Type="datetime" Nullable="false" />
+    <Property Name="Ubig_FechaEdicion" Type="datetime" />
+    <Property Name="Ubig_IpCreacion" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Ubig_IpEdicion" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <Association Name="FK_Tipo_Grupo">
+    <End Role="Grupo" Type="Self.Grupo" Multiplicity="1" />
+    <End Role="Tipo" Type="Self.Tipo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grupo">
+        <PropertyRef Name="Grup_Id" />
+      </Principal>
+      <Dependent Role="Tipo">
+        <PropertyRef Name="Tipo_GrupoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ubigeo_Tipo">
+    <End Role="Tipo" Type="Self.Tipo" Multiplicity="1" />
+    <End Role="Ubigeo" Type="Self.Ubigeo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tipo">
+        <PropertyRef Name="Tipo_Id" />
+      </Principal>
+      <Dependent Role="Ubigeo">
+        <PropertyRef Name="Ubig_TipoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ubigeo_Ubigeo">
+    <End Role="Ubigeo" Type="Self.Ubigeo" Multiplicity="0..1" />
+    <End Role="Ubigeo1" Type="Self.Ubigeo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ubigeo">
+        <PropertyRef Name="Ubig_Id" />
+      </Principal>
+      <Dependent Role="Ubigeo1">
+        <PropertyRef Name="Ubig_IdPadre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="GestionCompartidosStoreContainer">
+    <EntitySet Name="Grupo" EntityType="Self.Grupo" Schema="COMPARTIDO" store:Type="Tables" />
+    <EntitySet Name="Parametro" EntityType="Self.Parametro" Schema="COMPARTIDO" store:Type="Tables" />
+    <EntitySet Name="Tipo" EntityType="Self.Tipo" Schema="COMPARTIDO" store:Type="Tables" />
+    <EntitySet Name="Ubigeo" EntityType="Self.Ubigeo" Schema="COMPARTIDO" store:Type="Tables" />
+    <AssociationSet Name="FK_Tipo_Grupo" Association="Self.FK_Tipo_Grupo">
+      <End Role="Grupo" EntitySet="Grupo" />
+      <End Role="Tipo" EntitySet="Tipo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ubigeo_Tipo" Association="Self.FK_Ubigeo_Tipo">
+      <End Role="Tipo" EntitySet="Tipo" />
+      <End Role="Ubigeo" EntitySet="Ubigeo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ubigeo_Ubigeo" Association="Self.FK_Ubigeo_Ubigeo">
+      <End Role="Ubigeo" EntitySet="Ubigeo" />
+      <End Role="Ubigeo1" EntitySet="Ubigeo" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

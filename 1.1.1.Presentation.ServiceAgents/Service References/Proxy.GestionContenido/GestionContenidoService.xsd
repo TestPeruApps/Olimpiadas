@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="PROMPERU.GestionContenidoService" elementFormDefault="qualified" targetNamespace="PROMPERU.GestionContenidoService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:56904/GestionContenidoService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" />
+  <xs:import schemaLocation="http://localhost:56904/GestionContenidoService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionContenido.Personal" />
+  <xs:import schemaLocation="http://localhost:56904/GestionContenidoService.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionContenido.Participante" />
+  <xs:element name="PersonalPaginar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" minOccurs="0" name="request" nillable="true" type="q1:PaginacionRequestDtoOfPersonalDtoq_SnvNoln" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PersonalPaginarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionContenido.Personal" minOccurs="0" name="PersonalPaginarResult" nillable="true" type="q2:PersonalPaginacionResponseDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PersonalObtenerEditor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idPersonal" nillable="true" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PersonalObtenerEditorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionContenido.Personal" minOccurs="0" name="PersonalObtenerEditorResult" nillable="true" type="q3:PersonalEditorResponseDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PersonalInsertar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" minOccurs="0" name="request" nillable="true" type="q4:RequestDtoOfPersonalDtoq_SnvNoln" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PersonalInsertarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PersonalInsertarResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PersonalActualizar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" minOccurs="0" name="request" nillable="true" type="q5:RequestDtoOfPersonalDtoq_SnvNoln" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PersonalActualizarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PersonalDesactivar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" minOccurs="0" name="request" nillable="true" type="q6:RequestDtoOfPersonalDtoq_SnvNoln" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PersonalDesactivarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PersonalActivar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" minOccurs="0" name="request" nillable="true" type="q7:RequestDtoOfPersonalDtoq_SnvNoln" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PersonalActivarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ParticipantePaginar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" minOccurs="0" name="request" nillable="true" type="q8:PaginacionRequestDtoOfParticipanteDtoUUk90aB6" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ParticipantePaginarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionContenido.Participante" minOccurs="0" name="ParticipantePaginarResult" nillable="true" type="q9:ParticipantePaginacionResponseDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ParticipanteObtenerEditor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idParticipante" nillable="true" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ParticipanteObtenerEditorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionContenido.Participante" minOccurs="0" name="ParticipanteObtenerEditorResult" nillable="true" type="q10:ParticipanteEditorResponseDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ParticipanteInsertar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" minOccurs="0" name="request" nillable="true" type="q11:RequestDtoOfParticipanteDtoUUk90aB6" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ParticipanteInsertarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ParticipanteInsertarResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ParticipanteActualizar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" minOccurs="0" name="request" nillable="true" type="q12:RequestDtoOfParticipanteDtoUUk90aB6" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ParticipanteActualizarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ParticipanteDesactivar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" minOccurs="0" name="request" nillable="true" type="q13:RequestDtoOfParticipanteDtoUUk90aB6" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ParticipanteDesactivarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ParticipanteActivar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" minOccurs="0" name="request" nillable="true" type="q14:RequestDtoOfParticipanteDtoUUk90aB6" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ParticipanteActivarResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Prueba">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PruebaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PruebaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

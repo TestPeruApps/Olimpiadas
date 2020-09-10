@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionContenido.Personal" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionContenido.Personal" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:56904/GestionContenidoService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" />
+  <xs:complexType name="PersonalDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdPersonal" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonalDto" nillable="true" type="tns:PersonalDto" />
+  <xs:complexType name="PersonalPaginacionResponseDto">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" base="q1:BasePaginacionResponseDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Personal" nillable="true" type="tns:ArrayOfPersonalDto" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PersonalPaginacionResponseDto" nillable="true" type="tns:PersonalPaginacionResponseDto" />
+  <xs:complexType name="ArrayOfPersonalDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PersonalDto" nillable="true" type="tns:PersonalDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPersonalDto" nillable="true" type="tns:ArrayOfPersonalDto" />
+  <xs:complexType name="PersonalEditorResponseDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Personal" nillable="true" type="tns:PersonalDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonalEditorResponseDto" nillable="true" type="tns:PersonalEditorResponseDto" />
+</xs:schema>

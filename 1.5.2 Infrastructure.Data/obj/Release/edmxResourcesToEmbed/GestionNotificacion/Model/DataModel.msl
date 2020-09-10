@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GestionNotificacionStoreContainer" CdmEntityContainer="DbContextGestionNotificacion">
+    <EntitySetMapping Name="Notificacion">
+      <EntityTypeMapping TypeName="GestionNotificacion.Notificacion">
+        <MappingFragment StoreEntitySet="Notificacion">
+          <ScalarProperty Name="Noti_Activo" ColumnName="Noti_Activo" />
+          <ScalarProperty Name="Noti_IpCreacion" ColumnName="Noti_IpCreacion" />
+          <ScalarProperty Name="Noti_UsuarioCreacion" ColumnName="Noti_UsuarioCreacion" />
+          <ScalarProperty Name="Noti_IpEdicion" ColumnName="Noti_IpEdicion" />
+          <ScalarProperty Name="Noti_FechaEdicion" ColumnName="Noti_FechaEdicion" />
+          <ScalarProperty Name="Noti_UsuarioEdicion" ColumnName="Noti_UsuarioEdicion" />
+          <ScalarProperty Name="Noti_FechaCreacion" ColumnName="Noti_FechaCreacion" />
+          <ScalarProperty Name="Noti_Cuerpo" ColumnName="Noti_Cuerpo" />
+          <ScalarProperty Name="Noti_Asunto" ColumnName="Noti_Asunto" />
+          <ScalarProperty Name="Noti_DisparadorId" ColumnName="Noti_DisparadorId" />
+          <ScalarProperty Name="Noti_TipoId" ColumnName="Noti_TipoId" />
+          <ScalarProperty Name="Noti_Id" ColumnName="Noti_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Destino">
+      <EntityTypeMapping TypeName="GestionNotificacion.Destino">
+        <MappingFragment StoreEntitySet="Destino">
+          <ScalarProperty Name="Dest_Email" ColumnName="Dest_Email" />
+          <ScalarProperty Name="Dest_MensajeId" ColumnName="Dest_MensajeId" />
+          <ScalarProperty Name="Dest_TipoDestinoId" ColumnName="Dest_TipoDestinoId" />
+          <ScalarProperty Name="Dest_Id" ColumnName="Dest_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mensaje">
+      <EntityTypeMapping TypeName="GestionNotificacion.Mensaje">
+        <MappingFragment StoreEntitySet="Mensaje">
+          <ScalarProperty Name="Mens_UsuarioCreacion" ColumnName="Mens_UsuarioCreacion" />
+          <ScalarProperty Name="Mens_Manual" ColumnName="Mens_Manual" />
+          <ScalarProperty Name="Mens_Error" ColumnName="Mens_Error" />
+          <ScalarProperty Name="Mens_TieneError" ColumnName="Mens_TieneError" />
+          <ScalarProperty Name="Mens_Enviado" ColumnName="Mens_Enviado" />
+          <ScalarProperty Name="Mens_EsPremio" ColumnName="Mens_EsPremio" />
+          <ScalarProperty Name="Mens_DestinatariosIds" ColumnName="Mens_DestinatariosIds" />
+          <ScalarProperty Name="Mens_Destinatarios" ColumnName="Mens_Destinatarios" />
+          <ScalarProperty Name="Mens_FechaFinEnvio" ColumnName="Mens_FechaFinEnvio" />
+          <ScalarProperty Name="Mens_FechaInicioEnvio" ColumnName="Mens_FechaInicioEnvio" />
+          <ScalarProperty Name="Mens_FechaRegistro" ColumnName="Mens_FechaRegistro" />
+          <ScalarProperty Name="Mens_CorreoOrigen" ColumnName="Mens_CorreoOrigen" />
+          <ScalarProperty Name="Mens_Cuerpo" ColumnName="Mens_Cuerpo" />
+          <ScalarProperty Name="Mens_Asunto" ColumnName="Mens_Asunto" />
+          <ScalarProperty Name="Mens_PrioridadId" ColumnName="Mens_PrioridadId" />
+          <ScalarProperty Name="Mens_Id" ColumnName="Mens_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Error">
+      <EntityTypeMapping TypeName="GestionNotificacion.Error">
+        <MappingFragment StoreEntitySet="Error">
+          <ScalarProperty Name="Erro_Fecha" ColumnName="Erro_Fecha" />
+          <ScalarProperty Name="Erro_Linea" ColumnName="Erro_Linea" />
+          <ScalarProperty Name="Erro_Estado" ColumnName="Erro_Estado" />
+          <ScalarProperty Name="Erro_Severidad" ColumnName="Erro_Severidad" />
+          <ScalarProperty Name="Erro_Numero" ColumnName="Erro_Numero" />
+          <ScalarProperty Name="Erro_Mensaje" ColumnName="Erro_Mensaje" />
+          <ScalarProperty Name="Erro_Procedimiento" ColumnName="Erro_Procedimiento" />
+          <ScalarProperty Name="Erro_Id" ColumnName="Erro_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Push">
+      <EntityTypeMapping TypeName="GestionNotificacion.Push">
+        <MappingFragment StoreEntitySet="Push">
+          <ScalarProperty Name="Push_IpEdicion" ColumnName="Push_IpEdicion" />
+          <ScalarProperty Name="Push_IpCreacion" ColumnName="Push_IpCreacion" />
+          <ScalarProperty Name="Push_FechaEdicion" ColumnName="Push_FechaEdicion" />
+          <ScalarProperty Name="Push_FechaCreacion" ColumnName="Push_FechaCreacion" />
+          <ScalarProperty Name="Push_UsuarioEdicion" ColumnName="Push_UsuarioEdicion" />
+          <ScalarProperty Name="Push_UsuarioCreacion" ColumnName="Push_UsuarioCreacion" />
+          <ScalarProperty Name="Push_FechaHoraFinEnvio" ColumnName="Push_FechaHoraFinEnvio" />
+          <ScalarProperty Name="Push_FechaHoraInicioEnvio" ColumnName="Push_FechaHoraInicioEnvio" />
+          <ScalarProperty Name="Push_FechaHoraProgramada" ColumnName="Push_FechaHoraProgramada" />
+          <ScalarProperty Name="Push_Activo" ColumnName="Push_Activo" />
+          <ScalarProperty Name="Push_EnvioConErrores" ColumnName="Push_EnvioConErrores" />
+          <ScalarProperty Name="Push_CantidadNotificaciones" ColumnName="Push_CantidadNotificaciones" />
+          <ScalarProperty Name="Push_CantidadUsuarios" ColumnName="Push_CantidadUsuarios" />
+          <ScalarProperty Name="Push_Cuerpo" ColumnName="Push_Cuerpo" />
+          <ScalarProperty Name="Push_Asunto" ColumnName="Push_Asunto" />
+          <ScalarProperty Name="Push_TargetDescripcion" ColumnName="Push_TargetDescripcion" />
+          <ScalarProperty Name="Push_TargetId" ColumnName="Push_TargetId" />
+          <ScalarProperty Name="Push_OrigenId" ColumnName="Push_OrigenId" />
+          <ScalarProperty Name="Push_DestinatarioId" ColumnName="Push_DestinatarioId" />
+          <ScalarProperty Name="Push_Automatico" ColumnName="Push_Automatico" />
+          <ScalarProperty Name="Push_Mes" ColumnName="Push_Mes" />
+          <ScalarProperty Name="Push_Anio" ColumnName="Push_Anio" />
+          <ScalarProperty Name="Push_Id" ColumnName="Push_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

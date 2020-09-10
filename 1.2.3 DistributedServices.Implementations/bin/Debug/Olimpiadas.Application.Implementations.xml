@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Olimpiadas.Application.Implementations</name>
+    </assembly>
+    <members>
+        <member name="T:Olimpiadas.Application.Implementations.GestionContenido.PersonalAppService">
+            <summary>
+            Implementa métodos para orquestar operaciones del Personal.
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.Application.Implementations.GestionContenido.PersonalAppService._personalRepository">
+            <summary>
+            Interface del repositorio de personal.
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.Application.Implementations.GestionContenido.PersonalAppService._cache">
+            <summary>
+            Interface para realizar operaciones con datos en cache.
+            </summary>
+        </member>
+        <member name="M:Olimpiadas.Application.Implementations.GestionContenido.PersonalAppService.#ctor(Olimpiadas.Domain.Modulos.GestionContenido.IPersonalRepository,Olimpiadas.CrossCutting.Helper.Caching.ICache)">
+            <summary>
+            Inicializa una nueva instancia de la clase con los repositorios que usa.
+            </summary>
+            <param name="personalRepository">Interface del repositorio de Personal.</param>
+            <param name="cache">Interface para acceder a la cache de objetos.</param>
+        </member>
+        <member name="M:Olimpiadas.Application.Implementations.GestionContenido.PersonalAppService.Paginar(Olimpiadas.Application.Dto.Comun.PaginacionRequestDto{Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalDto})">
+            <summary>
+            Implementa método orquestador para paginar el Personal.
+            </summary>
+            <param name="request">Datos para obtener Personal paginados.</param>
+            <returns>Datos con la paginación de Personals.</returns>
+        </member>
+        <member name="M:Olimpiadas.Application.Implementations.GestionContenido.PersonalAppService.ObtenerEditor(System.Nullable{System.Int32})">
+            <summary>
+            Implementa método orquestador para obtener los datos necesarios para el editor de personal.(Agregar o Modificar).
+            </summary>
+            <param name="idPersonal">Id del registro.</param>
+            <returns>Datos para mostrar el editor.</returns>
+        </member>
+        <member name="M:Olimpiadas.Application.Implementations.GestionContenido.PersonalAppService.Insertar(Olimpiadas.Application.Dto.Comun.RequestDto{Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalDto})">
+            <summary>
+            Implementa método orquestador para insertar un Personal.
+            </summary>
+            <param name="request">Datos que se insertan.</param>
+            <returns>Identificador del registro insertado.</returns>
+        </member>
+        <member name="M:Olimpiadas.Application.Implementations.GestionContenido.PersonalAppService.Actualizar(Olimpiadas.Application.Dto.Comun.RequestDto{Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalDto})">
+            <summary>
+            Implementa método orquestador para actualizar una Personal.
+            </summary>
+            <param name="request">Datos del registro que se actualiza.</param>        
+        </member>
+        <member name="M:Olimpiadas.Application.Implementations.GestionContenido.PersonalAppService.Desactivar(Olimpiadas.Application.Dto.Comun.RequestDto{Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalDto})">
+            <summary>
+            Implementa método orquestador para desactivar un registro.
+            </summary>
+            <param name="request">Datos del registro que se desactiva.</param>
+        </member>
+        <member name="M:Olimpiadas.Application.Implementations.GestionContenido.PersonalAppService.Activar(Olimpiadas.Application.Dto.Comun.RequestDto{Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalDto})">
+            <summary>
+            Implementa método orquestador para activar una Personal.
+            </summary>
+            <param name="request">Datos del registro que se activa.</param>
+        </member>
+        <member name="M:Olimpiadas.Application.Implementations.GestionContenido.PersonalAppService.Dispose">
+            <summary>
+            Implementa tareas definidas por la aplicación asociadas a la liberación o al restablecimiento de recursos no administrados.
+            </summary>
+        </member>
+        <member name="T:Olimpiadas.Application.Implementations.GestionContenido.ParticipanteAppService">
+            <summary>
+            Implementa métodos para orquestar operaciones de los participantes.
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.Application.Implementations.GestionContenido.ParticipanteAppService._participanteRepository">
+            <summary>
+            Interface del repositorio de participante.
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.Application.Implementations.GestionContenido.ParticipanteAppService._usuarioRepository">
+            <summary>
+            Interface del repositorio de Usuarios.
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.Application.Implementations.GestionContenido.ParticipanteAppService._tipoRepository">
+            <summary>
+            Interface del repositorio de Tipos.
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.Application.Implementations.GestionContenido.ParticipanteAppService._cache">
+            <summary>
+            Interface para realizar operaciones con datos en cache.
+            </summary>
+        </member>
+        <member name="M:Olimpiadas.Application.Implementations.GestionContenido.ParticipanteAppService.#ctor(Olimpiadas.Domain.Modulos.GestionSeguridad.IUsuarioRepository,Olimpiadas.Domain.Modulos.GestionContenido.ITipoRepository,Olimpiadas.Domain.Modulos.GestionContenido.IParticipanteRepository,Olimpiadas.CrossCutting.Helper.Caching.ICache)">
+            <summary>
+            Inicializa una nueva instancia de la clase con los repositorios que usa.
+            </summary>
+            <param name="usuarioRepository">Interface del repositorio de Usuarios.</param>
+            <param name="tipoRepository">Interface del repositorio de Tipos.</param>
+            <param name="participanteRepository">Interface del repositorio de participantes.</param>
+            <param name="cache">Interface para acceder a la cache de objetos.</param>
+        </member>
+        <member name="M:Olimpiadas.Application.Implementations.GestionContenido.ParticipanteAppService.Paginar(Olimpiadas.Application.Dto.Comun.PaginacionRequestDto{Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteDto})">
+            <summary>
+            Implementa método orquestador para paginar las Participantes.
+            </summary>
+            <param name="request">Datos para obtener las Participantes paginados.</param>
+            <returns>Datos con la paginación de Participantes.</returns>
+        </member>
+        <member name="M:Olimpiadas.Application.Implementations.GestionContenido.ParticipanteAppService.ObtenerEditor(System.Nullable{System.Int32})">
+            <summary>
+            Implementa método orquestador para obtener los datos necesarios para el editor de participantes.(Agregar o Modificar).
+            </summary>
+            <param name="idParticipante">Id del registro.</param>
+            <returns>Datos para mostrar el editor.</returns>
+        </member>
+        <member name="M:Olimpiadas.Application.Implementations.GestionContenido.ParticipanteAppService.Insertar(Olimpiadas.Application.Dto.Comun.RequestDto{Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteDto})">
+            <summary>
+            Implementa método orquestador para insertar una Participante.
+            </summary>
+            <param name="request">Datos que se insertan.</param>
+            <returns>Identificador del registro insertado.</returns>
+        </member>
+        <member name="M:Olimpiadas.Application.Implementations.GestionContenido.ParticipanteAppService.Actualizar(Olimpiadas.Application.Dto.Comun.RequestDto{Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteDto})">
+            <summary>
+            Implementa método orquestador para actualizar una Participante.
+            </summary>
+            <param name="request">Datos del registro que se actualiza.</param>        
+        </member>
+        <member name="M:Olimpiadas.Application.Implementations.GestionContenido.ParticipanteAppService.Desactivar(Olimpiadas.Application.Dto.Comun.RequestDto{Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteDto})">
+            <summary>
+            Implementa método orquestador para desactivar un registro.
+            </summary>
+            <param name="request">Datos del registro que se desactiva.</param>
+        </member>
+        <member name="M:Olimpiadas.Application.Implementations.GestionContenido.ParticipanteAppService.Activar(Olimpiadas.Application.Dto.Comun.RequestDto{Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteDto})">
+            <summary>
+            Implementa método orquestador para activar una Participante.
+            </summary>
+            <param name="request">Datos del registro que se activa.</param>
+        </member>
+        <member name="M:Olimpiadas.Application.Implementations.GestionContenido.ParticipanteAppService.Dispose">
+            <summary>
+            Implementa tareas definidas por la aplicación asociadas a la liberación o al restablecimiento de recursos no administrados.
+            </summary>
+        </member>
+        <member name="T:Olimpiadas.Application.Implementations.GestionSeguridad.UsuarioAppService">
+            <summary>
+            Implementa métodos para orquestar operaciones de Usuarios.
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.Application.Implementations.GestionSeguridad.UsuarioAppService._usuarioRepository">
+            <summary>
+            Interface del repositorio de Usuarios.
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.Application.Implementations.GestionSeguridad.UsuarioAppService._tipoRepository">
+            <summary>
+            Interface del repositorio de Tipos.
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.Application.Implementations.GestionSeguridad.UsuarioAppService._cache">
+            <summary>
+            Interface para realizar operaciones con datos en cache.
+            </summary>
+        </member>
+        <member name="M:Olimpiadas.Application.Implementations.GestionSeguridad.UsuarioAppService.#ctor(Olimpiadas.Domain.Modulos.GestionSeguridad.IUsuarioRepository,Olimpiadas.Domain.Modulos.GestionContenido.ITipoRepository,Olimpiadas.CrossCutting.Helper.Caching.ICache)">
+            <summary>
+            Inicializa una nueva instancia de la clase con los repositorios que usa.
+            </summary>
+            <param name="usuarioRepository">Interface del repositorio de Usuarios.</param>
+            <param name="tipoRepository">Interface del repositorio de Tipos.</param>
+            <param name="cache">Interface para acceder a la cache de objetos.</param>
+        </member>
+        <member name="M:Olimpiadas.Application.Implementations.GestionSeguridad.UsuarioAppService.ValidarLogin(Olimpiadas.Application.Dto.GestionSeguridad.Usuarios.ValidarLoginRequestDto)">
+            <summary>
+            Implementa método orquestador para validar la autenticación del Login
+            </summary>
+            <param name="request">Datos del login</param>
+            <returns>Datos resultantes del proceso</returns>
+        </member>
+        <member name="M:Olimpiadas.Application.Implementations.GestionSeguridad.UsuarioAppService.ListarMenuPorUsuario(System.Int16)">
+            <summary>
+            Implementa método orquestador para obtener el menú de un usuario.
+            </summary>
+            <param name="usuarioId">Id del usuario.</param>
+            <returns>Permisos de</returns>
+        </member>
+        <member name="M:Olimpiadas.Application.Implementations.GestionSeguridad.UsuarioAppService.Dispose">
+            <summary>
+            Implementa tareas definidas por la aplicación asociadas a la liberación o al restablecimiento de recursos no administrados.
+            </summary>
+        </member>
+        <member name="T:Olimpiadas.Application.Implementations.Helper.CachingHelper">
+            <summary>
+            Helper con métodos simplificados para obtener accesos a la cache de objetos.
+            </summary>
+            <summary>
+            Helper con métodos simplificados para obtener accesos a la cache de objetos.
+            </summary>
+        </member>
+        <member name="M:Olimpiadas.Application.Implementations.Helper.CachingHelper.EstadosBooleanos">
+            <summary>
+            Método para obtener la lista de los estados booleanos.
+            </summary>
+            <returns>Lista de Estados Booleanos en una colección de pares clave-valor.</returns>
+        </member>
+        <member name="M:Olimpiadas.Application.Implementations.Helper.CachingHelper.EstadosSiNo">
+            <summary>
+            Método para obtener la lista de los estados booleanos.
+            </summary>
+            <returns>Lista de Estados Booleanos en una colección de pares clave-valor.</returns>
+        </member>
+        <member name="M:Olimpiadas.Application.Implementations.Helper.CachingHelper.EstadosSiNoPendiente">
+            <summary>
+            Método para obtener la lista de los estados booleanos.
+            </summary>
+            <returns>Lista de Estados Booleanos en una colección de pares clave-valor.</returns>
+        </member>
+        <member name="M:Olimpiadas.Application.Implementations.Helper.CachingHelper.EstadosSiNoPendienteTodos">
+            <summary>
+            Método para obtener la lista de los estados booleanos.
+            </summary>
+            <returns>Lista de Estados Booleanos en una colección de pares clave-valor.</returns>
+        </member>
+        <member name="M:Olimpiadas.Application.Implementations.Helper.CachingHelper.Meses">
+            <summary>
+            Método para obtener la lista de meses.
+            </summary>
+            <returns>Lista de meses en una colección de pares clave-valor.</returns>
+        </member>
+        <member name="M:Olimpiadas.Application.Implementations.Helper.CachingHelper.ListarTiposActivosPorGrupo(Olimpiadas.CrossCutting.Helper.Caching.ICache,Olimpiadas.Domain.Modulos.GestionContenido.ITipoRepository,System.Byte)">
+            <summary>
+            Método para obtener de la cache de objetos la lista de Tipos activos.
+            </summary>
+            <param name="cache">Interface con métodos para realizar operaciones en la cache de objetos.</param>
+            <param name="tipoRepository">Interface con métodos del repositorio de Tipos.</param>
+            <param name="grupoId">Id del grupo.</param>
+            <returns>Lista de Tipos en una colección de pares clave-valor.</returns>
+        </member>
+        <member name="T:Olimpiadas.Application.Implementations.Helper.HelperFunciones">
+            <summary>
+            Helper con funciones compartidas generales
+            </summary>
+        </member>
+        <member name="M:Olimpiadas.Application.Implementations.Helper.HelperFunciones.ConcatenarLista``1(System.Collections.Generic.List{``0},System.String)">
+            <summary>
+            Método para concatenar los valores de una lista
+            </summary>
+            <param name="lista">Lista</param>
+            <param name="separador">Caracter separador</param>
+            <returns>Lista concatenada</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,2620 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PROMPERU.YTQPRutasCortas.Infrastructure.Data</name>
+    </assembly>
+    <members>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionCompartidos.Repositories.ParametroRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de parametros.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionCompartidos.Repositories.ParametroRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionCompartidos.Repositories.ParametroRepository.seleccionarPorId(System.Int16)">
+            <summary>
+            Implementa método que obtiene un parámetro por su id
+            </summary>
+            <param name="parametroId">Id. del parámetro</param>
+            <returns>Datos resultantes</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionCompartidos.Repositories.ParametroRepository.seleccionarParametroTexto(System.Int16)">
+            <summary>
+            Implementa método que obtiene el valor en texto de un parámetro
+            </summary>
+            <param name="parametroId">Id. del parámetro</param>
+            <returns>texto del parámetro</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionCompartidos.Repositories.ParametroRepository.seleccionarParametroNumero(System.Int16)">
+            <summary>
+            Implementa método que obtiene el valor numérico de un parámetro
+            </summary>
+            <param name="parametroId">Id. del parámetro</param>
+            <returns>valor numérico del parámetro</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionCompartidos.Repositories.ParametroRepository.seleccionarParametroBool(System.Int16)">
+            <summary>
+            Implementa método que obtiene el valor numérico de un parámetro
+            </summary>
+            <param name="parametroId">Id. del parámetro</param>
+            <returns>valor booleano del parámetro</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionCompartidos.Repositories.ParametroRepository.Actualizar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionCompartidos.Parametro)">
+            <summary>
+            Implementa método para actualizar un parámetro en el orígen de datos.
+            </summary>
+            <param name="parametro">Datos del parámetro que se actualiza.</param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionCompartidos.Repositories.GrupoRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de grupos.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionCompartidos.Repositories.GrupoRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionCompartidos.Repositories.GrupoRepository.ListarParaIconografia">
+            <summary>
+            Implementa método para listar los grupos para iconografia desde el orígen de datos.
+            </summary>
+            <returns>Lista de grupos.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionCompartidos.Repositories.GrupoRepository.ListarParaCombo">
+            <summary>
+            Implementa método para listar los grupos para combo desde el orígen de datos.
+            </summary>
+            <returns>Lista de grupos.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionCompartidos.Repositories.GrupoRepository.ListarEditablesParaCombo">
+            <summary>
+            Implementa método para listar los grupos editables para combo desde el orígen de datos.
+            </summary>
+            <returns>Lista de grupos.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionCompartidos.Repositories.GrupoRepository.SeleccionarPorId(System.Int16)">
+            <summary>
+            Implementa método para seleccionar un grupo por su Id, desde el orígen de datos.
+            </summary>
+            <param name="grupo_Id">Id de grupo.</param>
+            <returns>Grupo seleccionado.</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionCompartidos.Repositories.UbigeoRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de ubigeos.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionCompartidos.Repositories.UbigeoRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionCompartidos.Repositories.UbigeoRepository.ListarDistritosPorTexto(System.String)">
+            <summary>
+            Implementa método para buscar distritos por texto (automplete) desde el orígen de datos.
+            </summary>
+            <param name="filtro">Filtro para buscar los distritos.</param>
+            <returns>Lista de distritos.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionCompartidos.Repositories.UbigeoRepository.SeleccionarPorId(System.Int32)">
+            <summary>
+            Implementa método para seleccionar un ubigeo por su Id, desde el orígen de datos.
+            </summary>
+            <param name="ubigeo_Id">Id del ubigeo.</param>
+            <returns>Ubigeo seleccionado.</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionCompartidos.Repositories.TipoRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de tipos.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionCompartidos.Repositories.TipoRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionCompartidos.Repositories.TipoRepository.ListarActivosParaCachePorGrupo(System.Byte)">
+            <summary>
+            Implementa método para cargar la cache con el listado de los tipos activos de un grupo desde el orígen de datos.
+            </summary>
+            <param name="tipo_grupoId">Id del grupo.</param>
+            <returns>Lista de tipos.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionCompartidos.Repositories.TipoRepository.ListarActivosSistemaParaCachePorGrupo(System.Byte)">
+            <summary>
+            Implementa método para cargar la cache con el listado de los tipos activos y del sistema de un grupo desde el orígen de datos.
+            </summary>
+            <param name="tipo_grupoId">Id del grupo.</param>
+            <returns>Lista de tipos.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionCompartidos.Repositories.TipoRepository.ListarPorIdsConcatenadas(System.String)">
+            <summary>
+            Implementa método para listar los tipos de acuerdo a una lista concatenada de ids desde el origen de datos
+            </summary>
+            <param name="tipoIds">Ids. concatenados</param>
+            <returns>Lista de tipos</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionCompartidos.Repositories.TipoRepository.ListarOrigenesRutaParaVerMiPerfil">
+            <summary>
+            Implementa método para listar los orígenes de las rutas activas para mi perfil, desde el origen de datos
+            </summary>
+            <returns>Lista de tipos</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionCompartidos.Repositories.TipoRepository.Paginar(PROMPERU.YTQPRutasCortas.Application.Dto.GestionCompartido.Tipo.TipoDto,PROMPERU.YTQPRutasCortas.Application.Dto.Comun.CriteriosPaginacionDto)">
+            <summary>
+            Implementa método para paginar los tipos desde el orígen de datos.
+            </summary>
+            <param name="filtro">Filtro de la paginación.</param>
+            <param name="criteriosPaginacion">Criterios de paginación.</param>
+            <returns>Lista paginada de tipos.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionCompartidos.Repositories.TipoRepository.SeleccionarPorId(System.Int16)">
+            <summary>
+            Implementa método para seleccionar un tipo por su Id, desde el orígen de datos.
+            </summary>
+            <param name="tipo_Id">Id de tipo.</param>
+            <returns>Tipo seleccionado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionCompartidos.Repositories.TipoRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionCompartidos.Tipo)">
+            <summary>
+            Implementa método para insertar un tipo en el orígen de datos.
+            </summary>
+            <param name="tipo">Datos del tipo a insertar.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionCompartidos.Repositories.TipoRepository.Actualizar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionCompartidos.Tipo)">
+            <summary>
+            Implementa método para actualizar un tipo en el orígen de datos.
+            </summary>
+            <param name="tipo">Datos del tipo que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionCompartidos.Repositories.TipoRepository.ActualizarActivo(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionCompartidos.Tipo)">
+            <summary>
+            Implementa método para actualizar en campo Activo de un tipo en el orígen de datos.
+            </summary>
+            <param name="tipo">Datos del tipo que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionCompartidos.Repositories.TipoRepository.ListarActivosSinIconografiaPorGrupo(System.Byte,System.Int16)">
+            <summary>
+            Implementa método con el listado de los tipos activos sin iconografia de un grupo desde el orígen de datos.
+            </summary>
+            <param name="tipo_grupoId">Id del grupo.</param>
+            <param name="icon_DestinoId">Id. del destino</param>
+            <returns>Lista de tipos.</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.OfertaRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de ofertas.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.OfertaRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.OfertaRepository.ListarPorRutaParaApp(System.Int32)">
+            <summary>
+            Implementa método para listar las ofertas de acuerdo a un id. de ruta desde el origen de datos
+            </summary>
+            <param name="ofer_RutaId">Ids concatenados de rutas.</param>
+            <returns>Lista de ofertas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.OfertaRepository.ListarPorOrigenParaApp(System.Int16)">
+            <summary>
+            Implementa método para listar las ofertas de acuerdo a un id. de ruta desde el origen de datos
+            </summary>
+            <param name="ruta_OrigenId">Id del orígen.</param>
+            <returns>Lista de ofertas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.OfertaRepository.ListarPorRutasParaApp(System.String)">
+            <summary>
+            Implementa método para listar las ofertas de acuerdo a ids. de las rutas desde el origen de datos
+            </summary>
+            <param name="rutas_Ids">Id de las rutas.</param>
+            <returns>Lista de ofertas.</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.OfertaSincronizacionRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de ofertas sincronizadas.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.OfertaSincronizacionRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.OfertaSincronizacionRepository.SeleccionarUltimo">
+            <summary>
+            Implementa método para seleccionar los datos del último proceso de sincronización de ofertas.
+            </summary>
+            <returns>Datos del proceso de sincronización de ofertas.</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AtractivoVisitadoRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de atractivos visitados.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AtractivoVisitadoRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AtractivoVisitadoRepository.InsertarLista(System.Collections.Generic.ICollection{PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.AtractivoVisitado})">
+            <summary>
+            Implementa método para insertar una lista de atractivos visitados de una ruta en el orígen de datos.
+            </summary>
+            <param name="atractivosVisitados">Lista de Atractivos</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AtractivoVisitadoRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.AtractivoVisitado)">
+            <summary>
+            Implementa método para insertar un atractivo visitado en el orígen de datos.
+            </summary>
+            <param name="atractivoVisitado">Datos del atractivo visitado a insertar.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AtractivoVisitadoRepository.InsertarDesdeApp(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.AtractivoVisitado)">
+            <summary>
+            Implementa método para insertar un atractivo visitado desde la app en el orígen de datos.
+            </summary>
+            <param name="atractivoVisitado">Datos del atractivo visitado a insertar.</param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AtractivoValoradoRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de valoraciones.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AtractivoValoradoRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AtractivoValoradoRepository.PaginarParaApp(PROMPERU.YTQPRutasCortas.Application.Dto.GestionApp.Experiencias.ExperienciasListarPorPaginacion_AtractivoValoradoDto,PROMPERU.YTQPRutasCortas.Application.Dto.Comun.CriteriosPaginacionDto,System.String,System.String)">
+            <summary>
+            Implementa método para paginar los atractivos valorados para la pantalla Experiencias Compartidas del App desde el orígen de datos.
+            </summary>
+            <param name="filtro">Filtro de la paginación.</param>
+            <param name="criteriosPaginacion">Criterios de paginación.</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <param name="pathImagenesTurista">Url del repositorio de imagenes de turistas.</param>
+            <returns>Lista paginada de atractivos valorados.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AtractivoValoradoRepository.PaginarParaAtractivoDetalle(PROMPERU.YTQPRutasCortas.Application.Dto.GestionApp.Home.AtractivoVerResponse_ValoracionDto,PROMPERU.YTQPRutasCortas.Application.Dto.Comun.CriteriosPaginacionDto,System.String,System.String)">
+            <summary>
+            Implementa método para paginar las valoraciones para la pantalla "Detalle del Atractivo" desde el orígen de datos.
+            </summary>
+            <param name="filtro">Filtro de la paginación.</param>
+            <param name="criteriosPaginacion">Criterios de paginación.</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <param name="pathImagenesTurista">Url del repositorio de imagenes de turistas.</param>
+            <returns>Lista paginada de atractivos valorados.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AtractivoValoradoRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.AtractivoValorado)">
+            <summary>
+            Implementa método para insertar una valoracion de atractivo en el orígen de datos.
+            </summary>
+            <param name="atractivoValorado">Datos de la valoracion de atractivo a insertar.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AtractivoValoradoRepository.Paginar(PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.AtractivoValorado.AtractivoValoradoDto,PROMPERU.YTQPRutasCortas.Application.Dto.Comun.CriteriosPaginacionDto)">
+            <summary>
+            Implementa método para paginar las valoraciones desde el orígen de datos.
+            </summary>
+            <param name="filtro">Filtro de la paginación.</param>
+            <param name="criteriosPaginacion">Criterios de paginación.</param>
+            <returns>Lista paginada de atractivos valorados.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AtractivoValoradoRepository.SeleccionarPorId(System.Int32)">
+            <summary>
+            Implementa método para seleccionar una valoración por su Id, desde el orígen de datos.
+            </summary>
+            <param name="aval_Id">Id de valoración.</param>
+            <returns>Tipo seleccionado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AtractivoValoradoRepository.Actualizar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.AtractivoValorado)">
+            <summary>
+            Implementa método para actualizar un valoración en el orígen de datos.
+            </summary>
+            <param name="valoracion">Datos del valoración que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AtractivoValoradoRepository.ActualizarImagen(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.AtractivoValorado)">
+            <summary>
+            Implementa método para actualizar los datos de la imagen de un atractivo valorado en el orígen de datos.
+            </summary>
+            <param name="valoracion">Datos del atractivo valorado que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AtractivoValoradoRepository.ListarAnios">
+            <summary>
+            Implementa método para listar los años de los atractivos valorados desde el orígen de datos.
+            </summary>
+            <returns>Lista de años.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AtractivoValoradoRepository.SeleccionarCantidadPendientes">
+            <summary>
+            Implementa método para seleccionar la cantidad de atractivos valorados pendientes desde el origen de datos
+            </summary>
+            <returns>Datos resultantes de la operación</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.IconografiaRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de iconografias.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.IconografiaRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.IconografiaRepository.Paginar(PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Iconografia.IconografiaDto,PROMPERU.YTQPRutasCortas.Application.Dto.Comun.CriteriosPaginacionDto)">
+            <summary>
+            Implementa método para paginar las iconografias desde el orígen de datos.
+            </summary>
+            <param name="filtro">Filtro de la paginación.</param>
+            <param name="criteriosPaginacion">Criterios de paginación.</param>
+            <returns>Lista paginada de iconografias.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.IconografiaRepository.SelecccionarPorId(System.Int16)">
+            <summary>
+            Implementa método para seleccionar una iconografia por su Id, desde el orígen de datos.
+            </summary>
+            <param name="icon_Id">Id de iconografia.</param>
+            <returns>Iconografia seleccionado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.IconografiaRepository.SelecccionarPorIdCompuesto(System.Int16,System.Int16)">
+            <summary>
+            Implementa método para seleccionar una iconografia por su Id Compuesto, desde el orígen de datos.
+            </summary>
+            <param name="icon_TipoId">Id de tipo de iconografia.</param>
+            <param name="icon_DestinoId">Id del destino de la iconografia.</param>
+            <returns>Iconografia seleccionado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.IconografiaRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Iconografia)">
+            <summary>
+            Implementa método para insertar una iconografia en el orígen de datos.
+            </summary>
+            <param name="iconografia">Datos de la iconografia a insertar.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.IconografiaRepository.Actualizar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Iconografia)">
+            <summary>
+            Implementa método para actualizar una iconografia en el orígen de datos.
+            </summary>
+            <param name="iconografia">Datos de la iconografia que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.IconografiaRepository.ActualizarActivo(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Iconografia)">
+            <summary>
+            Implementa método para actualizar en campo Activo de una iconografia en el orígen de datos.
+            </summary>
+            <param name="iconografia">Datos de la iconografia que se actualiza.</param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.DirectorioRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de directorios.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.DirectorioRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.DirectorioRepository.ListarActivosParaMiPerfil">
+            <summary>
+            Implementa método para listar todos los directorios activos para pantalla "Mi Perfil" desde el orígen de datos.
+            </summary>
+            <returns>Lista de directorios.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.DirectorioRepository.Paginar(PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Directorios.DirectorioDto,PROMPERU.YTQPRutasCortas.Application.Dto.Comun.CriteriosPaginacionDto)">
+            <summary>
+            Implementa método para paginar las Directorios desde el orígen de datos.
+            </summary>
+            <param name="filtro">Filtro de la paginación.</param>
+            <param name="criteriosPaginacion">Criterios de paginación.</param>
+            <returns>Lista paginada de Directorios.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.DirectorioRepository.SeleccionarPorId(System.Int32)">
+            <summary>
+            Implementa método para seleccionar una Directorio por su Id, desde el orígen de datos.
+            </summary>
+            <param name="dire_Id">Id de Directorio.</param>
+            <returns>Directorio seleccionado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.DirectorioRepository.SeleccionarDtoPorId(System.Int32)">
+            <summary>
+            Implementa método para seleccionar una Directorio por su Id, desde el orígen de datos.
+            </summary>
+            <param name="dire_Id">Id de Directorio.</param>
+            <returns>Directorio seleccionado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.DirectorioRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Directorio)">
+            <summary>
+            Implementa método para insertar una Directorio en el orígen de datos.
+            </summary>
+            <param name="Directorio">Datos de la Directorio a insertar.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.DirectorioRepository.Actualizar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Directorio)">
+            <summary>
+            Implementa método para actualizar una Directorio en el orígen de datos.
+            </summary>
+            <param name="Directorio">Datos de la Directorio que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.DirectorioRepository.ActualizarActivo(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Directorio)">
+            <summary>
+            Implementa método para actualizar en campo Activo de una Directorio en el orígen de datos.
+            </summary>
+            <param name="Directorio">Datos de la Directorio que se actualiza.</param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.PremioRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de premios.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.PremioRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.PremioRepository.SeleccionarParaVerPremio(System.Int32)">
+            <summary>
+            Implementa método para seleccionar el premio por su Id para pantalla "Premio", desde el orígen de datos.
+            </summary>
+            <param name="prem_Id">Id del premio.</param>
+            <returns>Premio seleccioando.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.PremioRepository.ListarPorTuristaVerPremios(System.Int32,System.String)">
+            <summary>
+            Implementa método para listar todos los premios de un turista para pantalla "Beneficio", desde el orígen de datos.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <returns>Lista de premios.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.PremioRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Premio)">
+            <summary>
+            Implementa método para insertar un premio en el orígen de datos.
+            </summary>
+            <param name="premio">Datos del premio a insertar.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.PremioRepository.ActualizarEnvio(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Premio)">
+            <summary>
+            Implementa método para actualizar un premio en el orígen de datos.
+            </summary>
+            <param name="premio">Datos del premio que se actualizan.</param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TokenRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de tokens.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TokenRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TokenRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Token)">
+            <summary>
+            Implementa método que inserta un registro en la tabla token
+            </summary>
+            <param name="token">Entidad token</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TokenRepository.SeleccionarParaVaidarCodigo(System.Int32,System.String,System.Int32)">
+            <summary>
+            Implementa método para seleccionar el token para validar codigo, desde el orígen de datos.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <param name="toke_Codigo">Codigo de 4 digitos del turista.</param>
+            <param name="toke_TipoId">Tipo de usuario del turista.</param>
+            <returns>Token seleccioando.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TokenRepository.ActualizarFechaUso(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Token)">
+            <summary>
+            Implementa método para actualizar la fecha de uso en el orígen de datos.
+            </summary>
+            <param name="token">Datos del token que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TokenRepository.SeleccionarUltimoPorIdTurista(System.Int32)">
+            <summary>
+            Implementa método para seleccionar el último token por un id. de turista, desde el origen de datos
+            </summary>
+            <param name="turi_Id">Id. del turista</param>
+            <returns>Datos del token seleccionado</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.BeneficioRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de beneficios.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.BeneficioRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.BeneficioRepository.ListarActivosParaApp(System.String)">
+            <summary>
+            Implementa método para listar todos los beneficios activos desde el orígen de datos.
+            </summary>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <returns>Lista de beneficios.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.BeneficioRepository.Paginar(PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Beneficio.BeneficioDto,PROMPERU.YTQPRutasCortas.Application.Dto.Comun.CriteriosPaginacionDto)">
+            <summary>
+            Implementa método para paginar los beneficios desde el orígen de datos.
+            </summary>
+            <param name="filtro">Filtro de la paginación.</param>
+            <param name="criteriosPaginacion">Criterios de paginación.</param>
+            <returns>Lista paginada de beneficios.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.BeneficioRepository.SeleccionarPorId(System.Int32)">
+            <summary>
+            Implementa método para seleccionar un beneficio por su Id, desde el orígen de datos.
+            </summary>
+            <param name="bene_Id">Id de beneficio.</param>
+            <returns>Beneficio seleccionado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.BeneficioRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Beneficio)">
+            <summary>
+            Implementa método para insertar un beneficio en el orígen de datos.
+            </summary>
+            <param name="beneficio">Datos del beneficio a insertar.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.BeneficioRepository.Actualizar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Beneficio)">
+            <summary>
+            Implementa método para actualizar un beneficio en el orígen de datos.
+            </summary>
+            <param name="beneficio">Datos del beneficio que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.BeneficioRepository.ActualizarActivo(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Beneficio)">
+            <summary>
+            Implementa método para actualizar en campo Activo de un beneficio en el orígen de datos.
+            </summary>
+            <param name="beneficio">Datos del beneficio que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.BeneficioRepository.ActualizarImagen(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Beneficio)">
+            <summary>
+            Implementa método para actualizar los datos de la imagen de un beneficio en el orígen de datos.
+            </summary>
+            <param name="beneficio">Datos del beneficio que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.BeneficioRepository.ListarParaCombo">
+            <summary>
+            Implementa método para listar los beneficios activos para llenar un combo, desde el origen de datos
+            </summary>
+            <returns>Lista de usuarios</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AvatarRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de avatares.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AvatarRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AvatarRepository.SeleccionarPorTurista(System.Int32,System.Guid@,System.String,System.String)">
+            <summary>
+            Implementa método para seleccionar el avatar de un turista para pantalla "Avatar", desde el orígen de datos.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <param name="turi_UsuarioIdEnYTQP">Id del turista en la base de datos YTQP.</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <param name="pathImagenesAvatar">Url del repositorio de imagenes de avatares.</param>
+            <returns>Avatar Seleccionado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AvatarRepository.SeleccionarPorTuristaMiPerfil(System.Int32,System.Guid@,System.String,System.String)">
+            <summary>
+            Implementa método para seleccionar el avatar de un turista para pantalla "Mi Perfil", desde el orígen de datos.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <param name="turi_UsuarioIdEnYTQP">Id del turista en la base de datos YTQP.</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <param name="pathImagenesAvatar">Url del repositorio de imagenes de avatares.</param>
+            <returns>Avatar Seleccionado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AvatarRepository.ListarActivosVerAvatar(System.String)">
+            <summary>
+            Implementa método para listar todos los avatares activos para pantalla "Avatar" desde el orígen de datos.
+            </summary>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <returns>Lista de avatares.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AvatarRepository.ListarActivosVerEncuesta(System.String)">
+            <summary>
+            Implementa método para listar todos los avatares activos para pantalla "Encuesta" desde el orígen de datos.
+            </summary>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <returns>Lista de avatares.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AvatarRepository.Paginar(PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Avatar.AvatarDto,PROMPERU.YTQPRutasCortas.Application.Dto.Comun.CriteriosPaginacionDto)">
+            <summary>
+            Implementa método para paginar los avatars desde el orígen de datos.
+            </summary>
+            <param name="filtro">Filtro de la paginación.</param>
+            <param name="criteriosPaginacion">Criterios de paginación.</param>
+            <returns>Lista paginada de avatares.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AvatarRepository.SeleccionarPorId(System.Int16)">
+            <summary>
+            Implementa método para seleccionar un avatar por su Id, desde el orígen de datos.
+            </summary>
+            <param name="avat_Id">Id de avatar.</param>
+            <returns>Avatar seleccionado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AvatarRepository.SeleccionarPorNivel(System.Int16)">
+            <summary>
+            Implementa método para seleccionar un avatar por su nivel, desde el orígen de datos.
+            </summary>
+            <param name="avat_Nivel">Nivel de avatar.</param>
+            <returns>Avatar seleccionado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AvatarRepository.SeleccionarMayorInferiorPorNivel(System.Int16)">
+            <summary>
+            Implementa método para seleccionar un avatar por su nivel, desde el orígen de datos.
+            </summary>
+            <param name="avat_Nivel">Nivel de avatar.</param>
+            <returns>Avatar seleccionado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AvatarRepository.SeleccionarMenorSuperiorPorNivel(System.Int16)">
+            <summary>
+            Implementa método para seleccionar un avatar por su nivel, desde el orígen de datos.
+            </summary>
+            <param name="avat_Nivel">Nivel de avatar.</param>
+            <returns>Avatar seleccionado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AvatarRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Avatar)">
+            <summary>
+            Implementa método para insertar un avatar en el orígen de datos.
+            </summary>
+            <param name="avatar">Datos del avatar a insertar.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AvatarRepository.Actualizar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Avatar)">
+            <summary>
+            Implementa método para actualizar un avatar en el orígen de datos.
+            </summary>
+            <param name="avatar">Datos del avatar que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AvatarRepository.ActualizarActivo(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Avatar)">
+            <summary>
+            Implementa método para actualizar en campo Activo de un avatar en el orígen de datos.
+            </summary>
+            <param name="avatar">Datos del avatar que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AvatarRepository.ActualizarImagen(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Avatar)">
+            <summary>
+            Implementa método para actualizar los datos de la imagen de un avatar en el orígen de datos.
+            </summary>
+            <param name="avatar">Datos del avatar que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AvatarRepository.SeleccionarPorTuristaParaMenuNavegacion(System.Int32,System.String)">
+            <summary>
+            Implementa método para seleccionar el avatar de un turista para el menú de navegación, desde el orígen de datos.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <param name="pathImagenesAvatar">Url del repositorio de imagenes de avatares.</param>
+            <returns>Avatar Seleccionado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AvatarRepository.ListarActivosParaCombo">
+            <summary>
+            Implementa método para listar todos los avatares activos para listas de combobox desde el orígen de datos.
+            </summary>
+            <returns>Lista de avatares.</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.CampaniaRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de campañas.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.CampaniaRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.CampaniaRepository.ListarPorRutas(System.String)">
+            <summary>
+            Implementa método para listar las campañas de acuerdo a una lista concatenada de rutas desde el origen de datos
+            </summary>
+            <param name="rutasId">Ids concatenados de rutas.</param>
+            <returns>Lista de campañas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.CampaniaRepository.ListarPorOrigenParaHome(System.Int16,System.String)">
+            <summary>
+            Implementa método para listar las campañas de acuerdo a una lista concatenada de rutas desde el origen de datos
+            </summary>
+            <param name="camp_OrigenId">Id de origen.</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <returns>Lista de campañas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.CampaniaRepository.ListarPorRutaIdParaApp(System.Int32,System.String)">
+            <summary>
+            Implementa método para listar las campañas de una ruta para pantalla "Ofertas", desde el orígen de datos.
+            </summary>
+            <param name="ruta_Id">Id de la ruta.</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <returns>Lista de campañas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.CampaniaRepository.ListarPorRutasParaHome(System.String)">
+            <summary>
+            Implementa método para listar las campañas de acuerdo a una lista concatenada de rutas desde el origen de datos
+            </summary>
+            <param name="rutasId">Ids concatenados de rutas.</param>
+            <returns>Lista de campañas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.CampaniaRepository.SeleccionarPorId(System.Int32)">
+            <summary>
+            Implementa método para seleccionar una campaña por su Id, desde el orígen de datos.
+            </summary>
+            <param name="camp_Id">Id de la campaña.</param>
+            <returns>Campaña seleccionado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.CampaniaRepository.Paginar(PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Campanias.CampaniaDto,PROMPERU.YTQPRutasCortas.Application.Dto.Comun.CriteriosPaginacionDto)">
+            <summary>
+            Implementa método para paginar las campañas desde el orígen de datos.
+            </summary>
+            <param name="filtro">Filtro de la paginación.</param>
+            <param name="criteriosPaginacion">Criterios de paginación.</param>
+            <returns>Lista paginada de campañas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.CampaniaRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Campania)">
+            <summary>
+            Implementa método para insertar una campaña en el orígen de datos.
+            </summary>
+            <param name="campania">Datos de la campaña a insertar.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.CampaniaRepository.Actualizar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Campania)">
+            <summary>
+            Implementa método para actualizar una campaña en el orígen de datos.
+            </summary>
+            <param name="campania">Datos de la campaña que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.CampaniaRepository.ActualizarImagen(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Campania)">
+            <summary>
+            Implementa método para actualizar los datos de la imagen de una campaña en el orígen de datos.
+            </summary>
+            <param name="campania">Datos de la campaña que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.CampaniaRepository.ActualizarActivo(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Campania)">
+            <summary>
+            Implementa método para actualizar en campo Activo de una campaña en el orígen de datos.
+            </summary>
+            <param name="campania">Datos de la campaña que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.CampaniaRepository.ListarAnios">
+            <summary>
+            Implementa método para listar los años de las campañas desde el orígen de datos.
+            </summary>
+            <returns>Lista de años.</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AlertaRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de alertas.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AlertaRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AlertaRepository.PaginarParaApp(System.Int16,PROMPERU.YTQPRutasCortas.Application.Dto.Comun.CriteriosPaginacionDto,System.String)">
+            <summary>
+            Implementa método para paginar las alertas para la pantalla Alertas del App desde el orígen de datos.
+            </summary>
+            <param name="aler_OrigenId">Id. del origen</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <param name="criteriosPaginacion">Criterios de paginación.</param>
+            <returns>Lista paginada de alertas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AlertaRepository.Paginar(PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Alertas.AlertaDto,PROMPERU.YTQPRutasCortas.Application.Dto.Comun.CriteriosPaginacionDto)">
+            <summary>
+            Implementa método para paginar las alertas desde el orígen de datos.
+            </summary>
+            <param name="filtro">Filtro de la paginación.</param>
+            <param name="criteriosPaginacion">Criterios de paginación.</param>
+            <returns>Lista paginada de alertas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AlertaRepository.SeleccionarPorId(System.Int32)">
+            <summary>
+            Implementa método para seleccionar una alerta por su Id, desde el orígen de datos.
+            </summary>
+            <param name="aler_Id">Id de alerta.</param>
+            <returns>Alerta seleccionado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AlertaRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Alerta)">
+            <summary>
+            Implementa método para insertar una alerta en el orígen de datos.
+            </summary>
+            <param name="alerta">Datos de la alerta a insertar.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AlertaRepository.Actualizar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Alerta)">
+            <summary>
+            Implementa método para actualizar una alerta en el orígen de datos.
+            </summary>
+            <param name="alerta">Datos de la alerta que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AlertaRepository.ActualizarActivo(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Alerta)">
+            <summary>
+            Implementa método para actualizar en campo Activo de una alerta en el orígen de datos.
+            </summary>
+            <param name="alerta">Datos de la alerta que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AlertaRepository.ActualizarImagen(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Alerta)">
+            <summary>
+            Implementa método para actualizar los datos de la imagen de una alerta en el orígen de datos.
+            </summary>
+            <param name="alerta">Datos de la alerta que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AlertaRepository.ListarAnios">
+            <summary>
+            Implementa método para listar los años de las alertas desde el orígen de datos.
+            </summary>
+            <returns>Lista de años.</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.RutaVisitadaRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de rutas visitadas.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.RutaVisitadaRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.RutaVisitadaRepository.ListarPorTuristaIdParaApp(System.Int32,System.String,System.String)">
+            <summary>
+            Implementa método para listar rutas visitadas de acuerdo al id de un turista, desde el orígen de datos.
+            </summary>
+            <param name="turistaId">Id. del turista</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <param name="pathImagenesParaCompartir">Url del repositorio de imagenes para compartir.</param>
+            <returns>Lista de rutas visitadas</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.RutaVisitadaRepository.ListarAtractivosVisitadosParaApp(System.Int32,System.String,System.String)">
+            <summary>
+            Implementa método para listar atractivos de la ruta visitada de acuerdo al id. de la visita desde el origen de datos
+            </summary>
+            <param name="rvis_Id">Id. Ruta Visitada</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <param name="pathImagenesParaCompartir">Url del repositorio de imagenes para compartir.</param>
+            <returns>Lista de atractivos visitados</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.RutaVisitadaRepository.SeleccionarRutaVisitadaParaApp(System.Int32,System.String)">
+            <summary>
+            Implementa método para seleccionar una ruta visitada de acuerdo al Id. de la visita, desde el origen de datos
+            </summary>
+            <param name="rvis_Id">Id. Ruta Visitada</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <returns>Ruta visitada</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.RutaVisitadaRepository.SeleccionarPorFecha(System.Int32,System.Int16,System.DateTime)">
+            <summary>
+            Implementa método para seleccionar una ruta visitada de acuerdo a la fecha de la visita, desde el origen de datos
+            </summary>
+            <param name="rvis_RutaId">Id. Ruta</param>
+            <param name="rvis_TuristaId">Id. Turista</param>
+            <param name="fechaVisita">Fecha de visita del atractivo</param>
+            <returns>Ruta visitada</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.RutaVisitadaRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.RutaVisitada)">
+            <summary>
+            Implementa método para insertar una ruta visitada en el orígen de datos.
+            </summary>
+            <param name="rutaVisitada">Datos de la ruta visitada a insertar.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.RutaVisitadaRepository.Actualizar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.RutaVisitada)">
+            <summary>
+            Implementa método para actualizar una ruta visitada en el orígen de datos.
+            </summary>
+            <param name="rutaVisitada">Datos de la ruta visitada a insertar.</param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.RutaProgramadaRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de rutas programadas.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.RutaProgramadaRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.RutaProgramadaRepository.ListarPorTuristaIdParaApp(System.Int32,System.String,System.String)">
+            <summary>
+            Implementa método para seleccionar una ruta programada de acuerdo al id de un turista, desde el orígen de datos.
+            </summary>
+            <param name="TuristaId">Id. del turista</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <param name="pathImagenesCompartir">Url del repositorio de imagenes para compartir.</param>
+            <returns>Lista de rutas programadas</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.RutaProgramadaRepository.Eliminar(System.Int32,System.Int32,System.String)">
+            <summary>
+            Implementa método para eliminar una ruta programada, desde el orígen de datos.
+            </summary>
+            <param name="Rpro_Id">Id. de la ruta</param>
+            <param name="Turi_Id">Id. del turista</param>
+            <param name="Ip">Ip.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.RutaProgramadaRepository.SeleccionarPorTuristaRuta(System.Int32,System.Int32)">
+            <summary>
+            Implementa método para seleccionar una ruta programada de acuerdo al id de un turista y de la ruta, desde el orígen de datos.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <param name="ruta_Id">Id de la ruta.</param>
+            <returns>Rutas programada.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.RutaProgramadaRepository.SeleccionarPorTuristaRutaConElminada(System.Int32,System.Int32)">
+            <summary>
+            Implementa método para seleccionar una ruta programada de acuerdo al id de un turista y de la ruta, desde el orígen de datos.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <param name="ruta_Id">Id de la ruta.</param>
+            <returns>Rutas programada.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.RutaProgramadaRepository.SeleccionarRutaParaProgramarViaje(System.Int32,System.String)">
+            <summary>
+            Implementa método para seleccionar los datos de una ruta para programar el viaje desde el origen de datos
+            </summary>
+            <param name="rpro_Id">Id. de la ruta programada</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <returns>Datos resultantes del proceso</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.RutaProgramadaRepository.SeleccionarProgramacionParaProgramarViaje(System.Int32)">
+            <summary>
+            Implementa método para seleccionar los datos de una ruta para programar el viaje desde el origen de datos
+            </summary>
+            <param name="Rpro_Id">Id. de la ruta programada</param>
+            <returns>Datos resultantes del proceso</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.RutaProgramadaRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.RutaProgramada)">
+            <summary>
+            Implementa método que inserta un registro en la tabla Rutas Programadas
+            </summary>
+            <param name="rutaProgramada">Entidad Ruta Programada</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.RutaProgramadaRepository.Actualizar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.RutaProgramada)">
+            <summary>
+            Implementa método que actualiza un registro en la tabla Rutas Programadas
+            </summary>
+            <param name="rutaProgramada">Entidad Ruta Programada</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.RutaProgramadaRepository.SeleccionarPorId(System.Int32)">
+            <summary>
+            Implementa método para seleccionar una ruta programada de acuerdo a su id, desde el orígen de datos.
+            </summary>
+            <param name="Rpro_Id">Id. de ruta programada</param>
+            <returns>Lista de rutas programadas</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.RutaProgramadaRepository.ActualizarEliminado(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.RutaProgramada)">
+            <summary>
+            Implementa método que actualiza estado eliminado de un registro en la tabla Rutas Programadas
+            </summary>
+            <param name="rutaProgramada">Entidad Ruta Programada</param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TuristaRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de turistas.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TuristaRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TuristaRepository.SeleccionarPorEmailNotificacionTipoRegistro(System.String,System.Int16)">
+            <summary>
+            Implementa método para seleccionar un turista de acuerdo a su email y tipo de registro, desde el orígen de datos.
+            </summary>
+            <param name="turistaEmailNotificacion">Correo electrónico a consultar</param>
+            <param name="tipoRegistroId">Id. de tipo de registro</param>
+            <returns>Entidad tursita</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TuristaRepository.SeleccionarPorUsuarioYTQP(System.Guid)">
+            <summary>
+            Implementa método para seleccionar un turista de acuerdo a su email y tipo de registro, desde el orígen de datos.
+            </summary>
+            <param name="turi_UsuarioIdEnYTQP">Id. de YTQP</param>
+            <returns>Entidad tursita</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TuristaRepository.SeleccionarPorEmail(System.String)">
+            <summary>
+            Implementa método para seleccionar un turista de acuerdo a su email, desde el orígen de datos.
+            </summary>
+            <param name="turistaEmail">Correo electrónico a consultar</param>
+            <returns>Entidad tursita</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TuristaRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Turista)">
+            <summary>
+            Implementa método para insertar un turista en el origen de datos.
+            </summary>
+            <param name="turista">Entidad turista</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TuristaRepository.SeleccionarPorIdRedSocial(System.String,System.Int16)">
+            <summary>
+            Implementa método para seleccionar turista de acuerdo a su Id. de red Social desde el origen de datos
+            </summary>
+            <param name="Turi_IdEnRedSocial">Correo electrónico a consultar</param>
+            <param name="Turi_TipoRegistroId">Id. del tipo de registro</param>
+            <returns>Entidad turista</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TuristaRepository.SeleccionarParaMiPerfil(System.Int32,System.Guid@)">
+            <summary>
+            Implementa método para seleccionar el turista para la pantalla Mi Perfil, desde el orígen de datos.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <param name="turi_UsuarioIdEnYTQP">Id del turista en la base de datos YTQP.</param>
+            <returns>Turista seleccioando.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TuristaRepository.SeleccionarPorId(System.Int32)">
+            <summary>
+            Implementa método para seleccionar el turista por su Id, desde el orígen de datos.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <returns>Turista seleccioando.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TuristaRepository.SeleccionarPorIdConAvatar(System.Int32,System.String)">
+            <summary>
+            Implementa método para seleccionar el turista por su Id con datos de su avatar, desde el orígen de datos.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <param name="pathImagenesAvatar">Id del turista.</param>
+            <returns>Turista seleccioando.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TuristaRepository.SeleccionarPorIdParaHome(System.Int32,System.String)">
+            <summary>
+            Implementa método para seleccionar el turista por su Id con datos para el home del app, desde el orígen de datos.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <param name="pathImagenesAvatar">Id del turista.</param>
+            <returns>Turista seleccioando.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TuristaRepository.SeleccionarPorIdParaExperienciasCompartidas(System.Int32,System.String,System.String)">
+            <summary>
+            Implementa método para seleccionar el turista por su Id para experiencias compartidas, desde el orígen de datos.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <param name="pathImagenesRutasVisitadas">Url del repositorio de imagenes de rutas visitadas.</param>
+            <returns>Turista seleccioando.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TuristaRepository.Actualizar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Turista)">
+            <summary>
+            Implementa método para actualizar un turista en el orígen de datos.
+            </summary>
+            <param name="turista">Datos del turista que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TuristaRepository.EliminarPorEmail(System.String)">
+            <summary>
+            Implementa método para eliminar un turista de manera física, en el origen de datos.
+            </summary>
+            <param name="turi_EmailNotificacion">Email del turista</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TuristaRepository.ActualizarCantidadFotosComentarios(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Turista)">
+            <summary>
+            Implementa método para actualizar los campos de cantidad de fotos y comentarios desde el origen de datos
+            </summary>
+            <param name="turista">Datos del turista que se actualiza</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TuristaRepository.ActualizarAtractivosValorados(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Turista)">
+            <summary>
+            Implementa método para actualizar cantidad de atractivos valorados de un turista en el orígen de datos.
+            </summary>
+            <param name="turista">Datos del turista que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TuristaRepository.ListarPorOrigenId(System.Int16)">
+            <summary>
+            Implementa método para listar turistas de acuerdo a un id. de origen
+            </summary>
+            <param name="turi_FiltroOrigenId">Id. del origen</param>
+            <returns>Listado de Turistas</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TuristaRepository.ActualizarTokenApp(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Turista)">
+            <summary>
+            Implementa método para actualizar el token del app de un turista en el orígen de datos.
+            </summary>
+            <param name="turista">Datos del turista que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TuristaRepository.ActualizarImagen(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Turista)">
+            <summary>
+            Implementa método para actualizar los datos de la imagen de un turista en el orígen de datos.
+            </summary>
+            <param name="turista">Datos del turista que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TuristaRepository.ListarPorExperienciaId(System.Int16)">
+            <summary>
+            Implementa método para listar turistas de acuerdo a un id. de origen
+            </summary>
+            <param name="ExperienciaId">Id. del origen</param>
+            <returns>Listado de Turistas</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TuristaRepository.ListarPorDestinoId(System.Int16)">
+            <summary>
+            Implementa método para listar turistas de acuerdo a un id. de origen
+            </summary>
+            <param name="DestinoId">Id. del destino</param>
+            <returns>Listado de Turistas</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TuristaRepository.ListarPorActividadId(System.Int16)">
+            <summary>
+            Implementa método para listar turistas de acuerdo a un id. de origen
+            </summary>
+            <param name="ActividadId">Id. del destino</param>
+            <returns>Listado de Turistas</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TuristaRepository.ListarPorAvatar(System.Int16)">
+            <summary>
+            Implementa método para listar turistas de acuerdo a un id. de origen
+            </summary>
+            <param name="Turi_AvatarId">Id. del avatar</param>
+            <returns>Listado de Turistas</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TuristaRepository.ListarTodos">
+            <summary>
+            Implementa método para listar turistas de acuerdo a un id. de origen
+            </summary>
+            <returns>Listado de Turistas</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.TuristaRepository.ActualizarImagenRedSocial(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.Turista)">
+            <summary>
+            Implementa método para actualizar los datos de la imagen de red social de un turista en el orígen de datos.
+            </summary>
+            <param name="turista">Datos del turista que se actualiza.</param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AppParametroRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de parámetros de app.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AppParametroRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AppParametroRepository.SeleccionarPorId(System.Byte)">
+            <summary>
+            Implementa método para seleccionar los parámetros del app, desde el orígen de datos.
+            </summary>
+            <param name="appParametroId">Id del grupo de parametros.</param>
+            <returns>Parámetros seleccioandos</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AppParametroRepository.SeleccionarDtoPorId(System.Byte)">
+            <summary>
+            Implementa método para seleccionar los parámetros en el DTO del app, desde el orígen de datos.
+            </summary>
+            <param name="appParametroId">Id del grupo de parametros.</param>
+            <returns>Parámetros seleccioandos</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AppParametroRepository.SelecccionarParaApp(System.Byte)">
+            <summary>
+            Implementa método para seleccionar los parámetros para app, desde el orígen de datos.
+            </summary>
+            <param name="appParametroId">Id del grupo de parametros.</param>
+            <returns>Parámetros seleccioandos</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AppParametroRepository.Actualizar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.AppParametro)">
+            <summary>
+            Implementa método para actualizar los parametros del app en el orígen de datos.
+            </summary>
+            <param name="appParametro">Datos de los parámetro que se actualizan.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AppParametroRepository.ActualizarPuntuacionAvatar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.AppParametro)">
+            <summary>
+            Implementa método para actualizar los puntos avatar de parametros del app en el orígen de datos.
+            </summary>
+            <param name="appParametro">Datos de los parámetro que se actualizan.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AppParametroRepository.ActualizarBienvenida(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.AppParametro)">
+            <summary>
+            Implementa método para actualizar la pantalla de bienvenida de los parametros del app en el orígen de datos.
+            </summary>
+            <param name="appParametro">Datos de los parámetro que se actualizan.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AppParametroRepository.ActualizarFuncionalidades(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.AppParametro)">
+            <summary>
+            Implementa método para actualizar funcionalidades de los parametros del app en el orígen de datos.
+            </summary>
+            <param name="appParametro">Datos de los parámetro que se actualizan.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AppParametroRepository.ActualizarInicioSesion(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.AppParametro)">
+            <summary>
+            Implementa método para actualizar pantalla de inicio de sesion de los parametros del app en el orígen de datos.
+            </summary>
+            <param name="appParametro">Datos de los parámetro que se actualizan.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AppParametroRepository.ActualizarTerminosCondiciones(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.AppParametro)">
+            <summary>
+            Implementa método para actualizar terminos y condiciones de los parametros del app en el orígen de datos.
+            </summary>
+            <param name="appParametro">Datos de los parámetro que se actualizan.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AppParametroRepository.ActualizarPoliticasPrivacidad(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.AppParametro)">
+            <summary>
+            Implementa método para actualizar politicas de privacidad de los parametros del app en el orígen de datos.
+            </summary>
+            <param name="appParametro">Datos de los parámetro que se actualizan.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AppParametroRepository.ActualizarAventura(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.AppParametro)">
+            <summary>
+            Implementa método para actualizar pantalla que empiece la aventura de los parametros del app en el orígen de datos.
+            </summary>
+            <param name="appParametro">Datos de los parámetro que se actualizan.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AppParametroRepository.ActualizarPreguntasFrecuentesUrl(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.AppParametro)">
+            <summary>
+            Implementa método para actualizar url preguntas frecuentes de los parametros del app en el orígen de datos.
+            </summary>
+            <param name="appParametro">Datos de los parámetro que se actualizan.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionContenido.Repositories.AppParametroRepository.ActualizarPantallaAvatar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionContenido.AppParametro)">
+            <summary>
+            Implementa método para actualizar pantalla avatar de los parametros del app en el orígen de datos.
+            </summary>
+            <param name="appParametro">Datos de los parámetro que se actualizan.</param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.EncuestaRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de Encuestas.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.EncuestaRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.EncuestaRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionEncuestas.Encuesta)">
+            <summary>
+            Implementa método para insertar una Encuesta en el orígen de datos.
+            </summary>
+            <param name="Encuesta">Datos de la Encuesta a insertar.</param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.EncuestaPreguntaRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de preguntas.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.EncuestaPreguntaRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.EncuestaPreguntaRepository.InsertarLista(System.Collections.Generic.ICollection{PROMPERU.YTQPRutasCortas.Domain.Entities.GestionEncuestas.EncuestaPregunta})">
+            <summary>
+            Implementa método para insertar una lista de preguntas de ecuesta en el orígen de datos.
+            </summary>
+            <param name="encuestaPreguntas">Lista de Preguntas</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.EncuestaPreguntaRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionEncuestas.EncuestaPregunta)">
+            <summary>
+            Implementa método para insertar una Pregunta en el orígen de datos.
+            </summary>
+            <param name="encuestaPregunta">Datos de la Pregunta a insertar.</param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.PreguntaRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de preguntas.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.PreguntaRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.PreguntaRepository.Paginar(PROMPERU.YTQPRutasCortas.Application.Dto.GestionEncuestas.Pregunta.PreguntaDto,PROMPERU.YTQPRutasCortas.Application.Dto.Comun.CriteriosPaginacionDto)">
+            <summary>
+            Implementa método para paginar los preguntas desde el orígen de datos.
+            </summary>
+            <param name="filtro">Filtro de la paginación.</param>
+            <param name="criteriosPaginacion">Criterios de paginación.</param>
+            <returns>Lista paginada de preguntas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.PreguntaRepository.SeleccionarPorIdConParametrosSalida(System.Int32)">
+            <summary>
+            Implementa método para seleccionar una pregunta por su Id con parámetros de salida, desde el orígen de datos.
+            </summary>
+            <param name="preg_Id">Id de la pregunta.</param>
+            <returns>Pregunta seleccionado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.PreguntaRepository.SeleccionarPorNumeracion(System.Int16,System.Nullable{System.Int32},System.String)">
+            <summary>
+            Implementa método para seleccionar una pregunta por su Numeracion, desde el orígen de datos.
+            <param name="preg_EncuestaId">Tipo de Encuesta.</param>
+            <param name="preg_RutaId">Id de la Ruta.</param>
+            <param name="preg_Numeracion">Numeracion de la pregunta.</param>
+            </summary>
+            <returns>Lista de Preguntas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.PreguntaRepository.SeleccionarPorId(System.Int32)">
+            <summary>
+            Implementa método para seleccionar una pregunta por su Id, desde el orígen de datos.
+            </summary>
+            <param name="preg_Id">Id de la pregunta.</param>
+            <returns>Pregunta seleccionado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.PreguntaRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionEncuestas.Pregunta)">
+            <summary>
+            Implementa método para insertar una pregunta en el orígen de datos.
+            </summary>
+            <param name="pregunta">Datos de la pregunta a insertar.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.PreguntaRepository.Actualizar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionEncuestas.Pregunta)">
+            <summary>
+            Implementa método para actualizar una pregunta en el orígen de datos.
+            </summary>
+            <param name="pregunta">Datos de la pregunta que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.PreguntaRepository.ActualizarActivo(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionEncuestas.Pregunta)">
+            <summary>
+            Implementa método para actualizar en campo Activo de una pregunta en el orígen de datos.
+            </summary>
+            <param name="pregunta">Datos de la pregunta que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.PreguntaRepository.ListarPorRuta(System.Int32)">
+            <summary>
+            Implementa método para seleccionar las pregunta de una RUTA, desde el orígen de datos.
+            <param name="ruta_Id">Id de la Ruta.</param>
+            </summary>
+            <returns>Lista de Preguntas.</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.EncuestaRespuestaRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de respuestas.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.EncuestaRespuestaRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.EncuestaRespuestaRepository.InsertarLista(System.Collections.Generic.ICollection{PROMPERU.YTQPRutasCortas.Domain.Entities.GestionEncuestas.EncuestaRespuesta})">
+            <summary>
+            Implementa método para insertar una lista de respuestas de ecuesta en el orígen de datos.
+            </summary>
+            <param name="encuestaRespuestas">Lista de Respuestas</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.EncuestaRespuestaRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionEncuestas.EncuestaRespuesta)">
+            <summary>
+            Implementa método para insertar una Encuesta en el orígen de datos.
+            </summary>
+            <param name="encuestaRespuesta">Datos de la Encuesta a insertar.</param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.RespuestaRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de respuestas.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.RespuestaRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.RespuestaRepository.ListarPorPreguntaId(System.Int32)">
+            <summary>
+            Implementa método para listar las respuestas por pregunta, desde el orígen de datos.
+            </summary>
+            <param name="preg_Id">Id de la pregunta.</param>
+            <returns>Lista de respuestas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.RespuestaRepository.ListarActivosPorPreguntaId(System.Int32)">
+            <summary>
+            Implementa método para listar las respuestas activos por pregunta, desde el orígen de datos.
+            </summary>
+            <param name="preg_Id">Id de la pregunta.</param>
+            <returns>Lista de respuestas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.RespuestaRepository.ListarPorPreguntaIdParaMovil(System.Int32)">
+            <summary>
+            Implementa método para listar las respuestas por pregunta, desde el orígen de datos.
+            </summary>
+            <param name="preg_Id">Id de la pregunta.</param>
+            <returns>Lista de respuestas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.RespuestaRepository.SeleccionarPorId(System.Int32)">
+            <summary>
+            Implementa método para seleccionar una respuesta por su Id, desde el orígen de datos.
+            </summary>
+            <param name="resp_Id">Id de la respuesta.</param>
+            <returns>Respuesta seleccionado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.RespuestaRepository.SeleccionarPorNumeracion(System.Int32,System.String)">
+            <summary>
+            Implementa método para seleccionar una respuesta por su Numeracion, desde el orígen de datos.
+            </summary>
+            <param name="resp_PreguntaId">Id de la pregunta.</param>
+            <param name="resp_Numeracion">Numeracion de la respuesta.</param>
+            <returns>Respuesta seleccionado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.RespuestaRepository.Merge(System.Collections.Generic.ICollection{PROMPERU.YTQPRutasCortas.Domain.Entities.GestionEncuestas.Respuesta})">
+            <summary>
+            Implementa método para insertar las respuestas de la pregunta en el orígen de datos.
+            </summary>
+            <param name="respuestas">Datos de las respuestas a insertar.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.RespuestaRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionEncuestas.Respuesta)">
+            <summary>
+            Implementa método para insertar una respuesta en el orígen de datos.
+            </summary>
+            <param name="respuesta">Datos de la respuesta a insertar.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.RespuestaRepository.Actualizar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionEncuestas.Respuesta)">
+            <summary>
+            Implementa método para actualizar una respuesta en el orígen de datos.
+            </summary>
+            <param name="respuesta">Datos de la respuesta que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionEncuestas.Repositories.RespuestaRepository.ActualizarActivo(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionEncuestas.Respuesta)">
+            <summary>
+            Implementa método para actualizar en campo Activo de una respuesta en el orígen de datos.
+            </summary>
+            <param name="respuesta">Datos de la respuesta que se actualiza.</param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionNotificacion.Repositories.MensajeRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de mensajes.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionNotificacion.Repositories.MensajeRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionNotificacion.Repositories.MensajeRepository.Paginar(PROMPERU.YTQPRutasCortas.Application.Dto.GestionNotificacion.Mensaje.MensajeDto,PROMPERU.YTQPRutasCortas.Application.Dto.Comun.CriteriosPaginacionDto)">
+            <summary>
+            Implementa método para paginar los mensajes para la bandeja de notificaciones, desde el orígen de datos.
+            </summary>
+            <param name="filtro">Filtro de la paginación</param>
+            <param name="criteriosPaginacion">Criterios de paginación.</param>
+            <returns>Lista paginada de alertas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionNotificacion.Repositories.MensajeRepository.SeleccionarPorId(System.Int32)">
+            <summary>
+            Implementa método para seleccionar un mensaje por su Id, desde el origen de datos 
+            </summary>
+            <param name="mens_Id">Id. del mensaje</param>
+            <returns>Mensaje seleccionado</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionNotificacion.Repositories.NotificacionRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de notificaciones.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionNotificacion.Repositories.NotificacionRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionNotificacion.Repositories.NotificacionRepository.SeleccionarPorTipoDisparador(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionNotificacion.Notificacion)">
+            <summary>
+            Implementa método que selecciona una notificación de acuerdo a su id y su disparador desde el origen de datos
+            </summary>
+            <param name="notificacion">Entidad notificación</param>
+            <returns>Turista</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionNotificacion.Repositories.NotificacionRepository.ListarNotificacionesPush(System.Int16)">
+            <summary>
+            Implementa método que lista la notificaciones automáticas por tipo
+            </summary>
+            <param name="noti_TipoId">Tipo de notificación</param>
+            <returns>Lista enumerable de notificaciones</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionNotificacion.Repositories.NotificacionRepository.SeleccionarPorId(System.Int16)">
+            <summary>
+            Implementa método que lista la notificaciones automáticas por tipo
+            </summary>
+            <param name="noti_Id">id. de notificación</param>
+            <returns>Notificación seleccionada</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionNotificacion.Repositories.NotificacionRepository.Actualizar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionNotificacion.Notificacion)">
+            <summary>
+            Implementa método para actualizar un tipo en el orígen de datos.
+            </summary>
+            <param name="notificacion">Datos de la notificación que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionNotificacion.Repositories.NotificacionRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionNotificacion.Notificacion)">
+            <summary>
+            Implementa método para insertar un notificacion en el orígen de datos.
+            </summary>
+            <param name="notificacion">Datos del notificacion a insertar.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionNotificacion.Repositories.NotificacionRepository.ListarParaCombo">
+            <summary>
+            Implementa método para listar las notificaciones manuales para llenar un combo, desde el origen de datos
+            </summary>
+            <returns>Lista de notificaciones</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionNotificacion.Repositories.NotificacionRepository.ActualizarActivo(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionNotificacion.Notificacion)">
+            <summary>
+            Implementa método para actualizar el campo activo de una notificacion en el orígen de datos.
+            </summary>
+            <param name="notificacion">Datos de la notificación que se actualiza.</param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionNotificacion.Repositories.PushRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de push.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionNotificacion.Repositories.PushRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionNotificacion.Repositories.PushRepository.Paginar(PROMPERU.YTQPRutasCortas.Application.Dto.GestionNotificacion.Push.PushDto,PROMPERU.YTQPRutasCortas.Application.Dto.Comun.CriteriosPaginacionDto)">
+            <summary>
+            Implementa método para paginar los push desde el orígen de datos.
+            </summary>
+            <param name="filtro">Filtro de la paginación.</param>
+            <param name="criteriosPaginacion">Criterios de paginación.</param>
+            <returns>Lista paginada de push.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionNotificacion.Repositories.PushRepository.SelecccionarPorId(System.Int32)">
+            <summary>
+            Implementa método para seleccionar una Notificación Push por su Id, desde el orígen de datos.
+            </summary>
+            <param name="pushId">Id de la Notificación Push..</param>
+            <returns>Push seleccionado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionNotificacion.Repositories.PushRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionNotificacion.Push)">
+            <summary>
+            Implementa método para insertar una Notificación Push en el orígen de datos.
+            </summary>
+            <param name="push">Datos de la Notificación Push  a insertar.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionNotificacion.Repositories.PushRepository.Actualizar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionNotificacion.Push)">
+            <summary>
+            Implementa método para actualizar una Notificación Push en el orígen de datos.
+            </summary>
+            <param name="push">Datos de la Notificación Push.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionNotificacion.Repositories.PushRepository.ActualizarActivo(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionNotificacion.Push)">
+            <summary>
+            Implementa método para actualizar en campo Activo de una Notificación Push en el orígen de datos.
+            </summary>
+            <param name="push">Datos de la Notificación Push.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionNotificacion.Repositories.PushRepository.ListarAnios">
+            <summary>
+            Implementa método para listar los años de las notificaciones push desde el orígen de datos.
+            </summary>
+            <returns>Lista de años.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionNotificacion.Repositories.PushRepository.InsertarAutomaticaRuta(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionNotificacion.Push)">
+            <summary>
+            Implementa método para insertar una Notificación Push Automatica por activación de ruta en el orígen de datos.
+            </summary>
+            <param name="push">Datos de la Notificación Push a insertar.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionNotificacion.Repositories.PushRepository.InsertarAutomaticaAtractivo(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionNotificacion.Push)">
+            <summary>
+            Implementa método para insertar una Notificación Push Automatica por activación de atractivo en el orígen de datos.
+            </summary>
+            <param name="push">Datos de la Notificación Push a insertar.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionNotificacion.Repositories.PushRepository.InsertarAutomaticaCampania(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionNotificacion.Push)">
+            <summary>
+            Implementa método para insertar una Notificación Push Automatica por registro de campaña en el orígen de datos.
+            </summary>
+            <param name="push">Datos de la Notificación Push a insertar.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionNotificacion.Repositories.PushRepository.InsertarAutomaticaBeneficio(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionNotificacion.Push)">
+            <summary>
+            Implementa método para insertar una Notificación Push Automatica por registro de benficio en el orígen de datos.
+            </summary>
+            <param name="push">Datos de la Notificación Push a insertar.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionNotificacion.Repositories.PushRepository.InsertarAutomaticaAlerta(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionNotificacion.Push)">
+            <summary>
+            Implementa método para insertar una Notificación Push Automatica por activación de alerta en el orígen de datos.
+            </summary>
+            <param name="push">Datos de la Notificación Push a insertar.</param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.AtractivoServicioRepository">
+            <summary>   
+            Implementa los métodos de acceso a datos del repositorio de servicios de atractivos.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.AtractivoServicioRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.AtractivoServicioRepository.ListarParaAtractivo(System.Int32,System.String)">
+            <summary>
+            Implementa método para listar todas los servicios de un atractivo para pantalla "Detalle del Atractivo", desde el orígen de datos.
+            </summary>
+            <param name="atra_Id">Id del atractivo.</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <returns>Lista de servicios.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.AtractivoServicioRepository.ListarPorRutaParaAtractivo(System.Int32,System.String)">
+            <summary>
+            Implementa método para listar todas los servicios de un atractivo para pantalla "Detalle del Atractivo", desde el orígen de datos.
+            </summary>
+            <param name="ruta_Id">Id de la ruta.</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <returns>Lista de servicios.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.AtractivoServicioRepository.InsertarPorIdsConcatenadas(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionRutas.Atractivo_Servicio)">
+            <summary>
+            Implementa método para insertar una lista de servicios para una atractivo de acuerdo a sus ids concatenadas, en el origen de datos
+            </summary>
+            <param name="atractivo_Servicio">Datos de las servicios que se insertan</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.AtractivoServicioRepository.ActualizarPorIdsConcatenadas(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionRutas.Atractivo_Servicio)">
+            <summary>
+            Implementa método para actualizar una lista de servicios para una atractivo de acuerdo a sus ids concatenadas, en el origen de datos
+            </summary>
+            <param name="atractivo_Servicio">Datos de las servicios que se actualizan</param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.AtractivoActividadRepository">
+            <summary>   
+            Implementa los métodos de acceso a datos del repositorio de actividades de atractivos.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.AtractivoActividadRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.AtractivoActividadRepository.ListarParaAtractivos(System.Int32,System.String)">
+            <summary>
+            Implementa método para listar todas las actividades de un atractivo para pantalla "Atractivos", desde el orígen de datos.
+            </summary>
+            <param name="atra_Id">Id del atractivo.</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <returns>Lista de actividades.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.AtractivoActividadRepository.ListarParaAtractivosPorOrigen(System.Int32,System.String)">
+            <summary>
+            Implementa método para listar todas las actividades de los atractivos por un origen para pantalla "Atractivos", desde el orígen de datos.
+            </summary>
+            <param name="ruta_OrigenId">Id del origen.</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <returns>Lista de actividades.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.AtractivoActividadRepository.ListarActividadesPorRutaParaApp(System.Int32,System.String)">
+            <summary>
+            Implementa método para listar todas las actividades de la ruta, desde el orígen de datos.
+            </summary>
+            <param name="atra_RutaId">Id de la ruta.</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <returns>Lista de actividades.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.AtractivoActividadRepository.ListarParaLeyenda(System.Int32,System.String)">
+            <summary>
+            Implementa método para listar todas las actividades de un atractivo para pantalla "Leyendas", desde el orígen de datos.
+            </summary>
+            <param name="atra_Id">Id del atractivo.</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <returns>Lista de actividades.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.AtractivoActividadRepository.InsertarPorIdsConcatenadas(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionRutas.Atractivo_Actividad)">
+            <summary>
+            Implementa método para insertar una lista de actividades para una atractivo de acuerdo a sus ids concatenadas, en el origen de datos
+            </summary>
+            <param name="atractivo_Actividad">Datos de las actividades que se insertan</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.AtractivoActividadRepository.ActualizarPorIdsConcatenadas(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionRutas.Atractivo_Actividad)">
+            <summary>
+            Implementa método para actualizar una lista de actividades para una atractivo de acuerdo a sus ids concatenadas, en el origen de datos
+            </summary>
+            <param name="atractivo_Actividad">Datos de las actividades que se actualizan</param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaCoordenadaRepository">
+            <summary>   
+            Implementa los métodos de acceso a datos del repositorio de coordenadas.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaCoordenadaRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaCoordenadaRepository.ListarPorRutaParaEditor(System.Int32)">
+            <summary>
+            Implementa método para listar todos las recomendaciones de una ruta el editor de rutas, desde el orígen de datos.
+            </summary>
+            <param name="ruta_Id">Id de la ruta.</param>
+            <returns>Lista de coordenadas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaCoordenadaRepository.ActualizarActivo(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionRutas.RutaCoordenada)">
+            <summary>
+            Implementa método para actualizar en campo Activo de una coordenada en el orígen de datos.
+            </summary>
+            <param name="rutaCoordenada">Datos de la coordenada que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaCoordenadaRepository.SeleccionarPorId(System.Int32)">
+            <summary>
+            Implementa método para seleccionar una coordenada por su id, desde el orígen de datos.
+            </summary>
+            <param name="coor_Id">Id de la coordenada.</param>
+            <returns>Datos resultantes del proceso</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaCoordenadaRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionRutas.RutaCoordenada)">
+            <summary>
+            Implementa método para insertar una coordenada de ruta en el origen de datos
+            </summary>
+            <param name="rutaCoordenada">Datos de la recomendación a insertar</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaCoordenadaRepository.Actualizar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionRutas.RutaCoordenada)">
+            <summary>
+            Implementa método para actualizar una coordenada de ruta en el origen de datos
+            </summary>
+            <param name="rutaCoordenada">Datos de la coordenada a insertar</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaCoordenadaRepository.ListarTodasActivas">
+            <summary>
+            Implementa método para listar todas las coodenadas activas.
+            </summary>
+            <returns>Lista de coordenadas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaCoordenadaRepository.ListarTodasActivasParaMapa">
+            <summary>
+            Implementa método para listar todas las coodenadas activas para el mapa del app.
+            </summary>
+            <returns>Lista de coordenadas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaCoordenadaRepository.ListarTodasActivasParaMapaPorOrigen(System.Int16)">
+            <summary>
+            Implementa método para listar todas las coodenadas activas para el mapa del app.
+            </summary>
+            <param name="ruta_OrigenId">Id. del origen.</param>
+            <returns>Lista de coordenadas.</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRecomendacionRepository">
+            <summary>   
+            Implementa los métodos de acceso a datos del repositorio de recomendaciones.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRecomendacionRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRecomendacionRepository.ListarPorRutaParaMiDestino(System.Int32)">
+            <summary>
+            Implementa método para listar todos las recomendaciones de una ruta para pantalla "Mi Destino", desde el orígen de datos.
+            </summary>
+            <param name="ruta_Id">Id de la ruta.</param>
+            <returns>Lista de recomendaciones.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRecomendacionRepository.ListarPorRutaParaEditor(System.Int32)">
+            <summary>
+            Implementa método para listar todos las recomendaciones de una ruta el editor de rutas, desde el orígen de datos.
+            </summary>
+            <param name="ruta_Id">Id de la ruta.</param>
+            <returns>Lista de recomendaciones.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRecomendacionRepository.SeleccionarPorId(System.Int32)">
+            <summary>
+            Implementa método para seleccionar una recomendación por su id, desde el orígen de datos.
+            </summary>
+            <param name="rrec_Id">Id de la recomendacion.</param>
+            <returns>Datos resultantes del proceso</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRecomendacionRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionRutas.RutaRecomendacion)">
+            <summary>
+            Implementa método para insertar una recomendacion de ruta en el origen de datos
+            </summary>
+            <param name="rutaRecomendacion">Datos de la recomendación a insertar</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRecomendacionRepository.Actualizar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionRutas.RutaRecomendacion)">
+            <summary>
+            Implementa método para actualizar una recomendacion de ruta en el origen de datos
+            </summary>
+            <param name="rutaRecomendacion">Datos de la recomendación a insertar</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRecomendacionRepository.ActualizarActivo(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionRutas.RutaRecomendacion)">
+            <summary>
+            Implementa método para actualizar en campo Activo de una recomendacion en el orígen de datos.
+            </summary>
+            <param name="rutaRecomendacion">Datos de la recomendacion que se actualiza.</param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.AtractivoRepository">
+            <summary>   
+            Implementa los métodos de acceso a datos del repositorio de atractivos.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.AtractivoRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.AtractivoRepository.ListarPorRutaParaMiDestino(System.Int32)">
+            <summary>
+            Implementa método para listar todos los atractivos activos de una ruta para pantalla "Mi Destino", desde el orígen de datos.
+            </summary>
+            <param name="ruta_Id">Id de la ruta.</param>
+            <returns>Lista de atractivos.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.AtractivoRepository.ListarPorRutaParaApp(System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            Implementa método para listar todos los atractivos activos de una ruta para pantalla "Atractivos", desde el orígen de datos.
+            </summary>
+            <param name="ruta_Id">Id de la ruta.</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <param name="pathImagenesParaCompartir">Url del repositorio de imagenes para compartir.</param>
+            <param name="pathImagenesEnMapa">Url del repositorio de imagenes en mapa.</param>
+            <param name="pathImagenesDetalle">Url del repositorio de imagenes en el Detalle.</param>
+            <returns>Lista de atractivos.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.AtractivoRepository.SeleccionarPorRutaParaAtractivo(System.Int32,System.String)">
+            <summary>
+            Implementa método para seleccionar el atractivo por su id para pantalla "Detalle del Atractivo", desde el orígen de datos.
+            </summary>
+            <param name="atra_Id">Id del atractivo.</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <returns>Atractivo seleccionado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.AtractivoRepository.ListarActivosPaaraVerMapa(System.Int32,System.String,System.String)">
+            <summary>
+            Implementa método para listar todos los atractivos activos para pantalla "Ver Mapa", desde el orígen de datos.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <param name="pathImagenesEnMapa">Url del repositorio de imagenes para ver en Mapa.</param>
+            <returns>Lista de atractivos.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.AtractivoRepository.ListarActivosPaaraVerMapaPorOrigen(System.Int16,System.String,System.String)">
+            <summary>
+            Implementa método para listar todos los atractivos activos para pantalla "Ver Mapa", desde el orígen de datos.
+            </summary>
+            <param name="turi_FiltroOrigenId">Id del orígen del turista.</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <param name="pathImagenesEnMapa">Url del repositorio de imagenes para ver en Mapa.</param>
+            <returns>Lista de atractivos.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.AtractivoRepository.Paginar(PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Atractivos.AtractivoDto,PROMPERU.YTQPRutasCortas.Application.Dto.Comun.CriteriosPaginacionDto)">
+            <summary>
+            Implementa método para paginar los atractivos desde el orígen de datos.
+            </summary>
+            <param name="filtro">Filtro de la paginación.</param>
+            <param name="criteriosPaginacion">Criterios de paginación.</param>
+            <returns>Lista paginada de atractivos.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.AtractivoRepository.SeleccionarPorId(System.Int32)">
+            <summary>
+            Implementa método para seleccionar un atractivo mediante su Id desde el origen de datos
+            </summary>
+            <param name="atraId">Id. de atractivo</param>
+            <returns>Atractivo seleccionado</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.AtractivoRepository.SeleccionarPorIdConParametrosSalida(System.Int32)">
+            <summary>
+            Implementa método para seleccionar un Atractivo mediante su Id, con parametros de salida desde el origen de datos
+            </summary>
+            <param name="atraId">Id. del Atractivo</param>
+            <returns>Ruta seleccionada</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.AtractivoRepository.ActualizarActivo(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionRutas.Atractivo)">
+            <summary>
+            Implementa método para actualizar en campo Activo de un atractivo en el orígen de datos.
+            </summary>
+            <param name="atractivo">Datos del atractivo que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.AtractivoRepository.ActualizarImagen(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionRutas.Atractivo)">
+            <summary>
+            Implementa método para actualizar la imagen del atractivo en el orígen de datos.
+            </summary>
+            <param name="atractivo">Datos del atractivo que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.AtractivoRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionRutas.Atractivo)">
+            <summary>
+            Implementa método para insertar un atractivo en el orígen de datos.
+            </summary>
+            <param name="atractivo">Datos del atractivo a insertar.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.AtractivoRepository.Actualizar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionRutas.Atractivo)">
+            <summary>
+            Implementa método para actualizar un atractivo en el orígen de datos.
+            </summary>
+            <param name="atractivo">Datos del atractivo que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.AtractivoRepository.ActualizarNotificaciónEnviada(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionRutas.Atractivo)">
+            <summary>
+            Implementa método para actualizar en campo Notificación enviada de un atractivo en el orígen de datos.
+            </summary>
+            <param name="atractivo">Datos del atractivo que se actualiza.</param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaExperienciaRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de experiencias.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaExperienciaRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaExperienciaRepository.ListarPorRuta(System.Int32)">
+            <summary>
+            Implementa método para listar todos las experiencias de una ruta, desde el orígen de datos.
+            </summary>
+            <param name="ruta_Id">Id de la ruta.</param>
+            <returns>Lista de experiencias.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaExperienciaRepository.ListarPorRutaParaApp(System.Int32,System.String)">
+            <summary>
+            Implementa método para listar todos las experiencias de una ruta para pantalla "Mi Destino", desde el orígen de datos.
+            </summary>
+            <param name="ruta_Id">Id de la ruta.</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <returns>Lista de experiencias.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaExperienciaRepository.InsertarPorIdsConcatenadas(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionRutas.Ruta_Experiencia)">
+            <summary>
+            Implementa método para insertar una lista de experiencias para una ruta de acuerdo a sus ids concatenadas, desde el origen de datos
+            </summary>
+            <param name="rutaExperiencia">Datos de las experiencias que se insertan</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaExperienciaRepository.ActualizarPorIdsConcatenadas(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionRutas.Ruta_Experiencia)">
+            <summary>
+            Implementa método para actualizar una lista de experiencias para una ruta de acuerdo a sus ids concatenadas, desde el origen de datos
+            </summary>
+            <param name="rutaExperiencia">Datos de las experiencias que se actualizan</param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de rutas.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRepository.ListarActivosParaCombo">
+            <summary>
+            Implementa método para listar todos las rutas activas desde el orígen de datos.
+            </summary>
+            <returns>Lista de rutas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRepository.ListarTodoParaApp(System.Int32,System.String,System.String)">
+            <summary>
+            Implementa método para listar todos las rutas desde el orígen de datos.
+            </summary>
+            <param name="turi_Id">Id del turista</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <param name="pathImagenesCompartir">Url del repositorio de imagenes para compartir.</param>
+            <returns>Rol seleccioando.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRepository.ListarPorTuristaParaHome(System.Int32,System.String,System.String)">
+            <summary>
+            Implementa método para seleccionar una lista de rutas de acuerdo a un turista
+            </summary>
+            <param name="turi_Id">Id del turista</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <param name="pathImagenesCompartir">Url del repositorio de imagenes para compartir.</param>
+            <returns>Rol seleccioando.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRepository.ListarPorOrigenParaHome(System.Int16,System.String,System.String)">
+            <summary>
+            Implementa método para seleccionar las rutas para el home desde el orígen de datos.
+            </summary>
+            <param name="ruta_OrigenId">Id del orígen</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <param name="pathImagenesCompartir">Url del repositorio de imagenes para compartir.</param>
+            <returns>Rol seleccioando.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRepository.ListarPorTuristaParaDescargaOffline(System.Int32,System.String,System.String)">
+            <summary>
+            Implementa método para seleccionar una lista de rutas de acuerdo a un turista para la descarga offline
+            </summary>
+            <param name="turi_Id">Id del turista</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <param name="pathImagenesCompartir">Url del repositorio de imagenes para compartir.</param>
+            <returns>Datos para la pantalla de home</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRepository.ListarPorBusquedaTexto(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Implementa método para listar rutas mediante búsqueda por texto desde el orígen de datos.        
+            </summary>
+            <param name="filtro">Filtro para realizar la búsqueda por texto.</param>
+            <param name="turi_Id">Id del turista.</param>
+            <param name="pathImagenesRutas">Url del repositorio de imagenes Rutas.</param>
+            <param name="pathImagenesAtractivos">Url del repositorio de imagenes Atractivos.</param>
+            <returns>Lista de rutas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRepository.SeleccionarPorId(System.Int32)">
+            <summary>
+            Implementa método para seleccionar una ruta mediante su Id desde el origen de datos
+            </summary>
+            <param name="rutaId">Id. de ruta</param>
+            <returns>Ruta seleccionada</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRepository.SeleccionarDtoPorId(System.Int32)">
+            <summary>
+            Implementa método para seleccionar una ruta mediante su Id desde el origen de datos
+            </summary>
+            <param name="rutaId">Id. de ruta</param>
+            <returns>Ruta seleccionada</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRepository.ObtenerKML(System.Int32)">
+            <summary>
+            Implementa método para obtener el KML de la ruta desde el origen de datos
+            </summary>
+            <param name="rutaId">Id. de ruta</param>
+            <returns>Ruta seleccionada</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRepository.SeleccionarPorIdConParametrosSalida(System.Int32)">
+            <summary>
+            Implementa método para seleccionar una ruta mediante su Id, con parametros de salida desde el origen de datos
+            </summary>
+            <param name="rutaId">Id. de ruta</param>
+            <returns>Ruta seleccionada</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRepository.SeleccionarPorIdParaMiDestino(System.Int32,System.Int32)">
+            <summary>
+            Implementa método para seleccionar una ruta mediante su Id para la pantalla "Mi Destino desde el origen de datos
+            </summary>
+            <param name="ruta_Id">Id de la ruta.</param>
+            <param name="turi_Id">Id del turista</param>
+            <returns>Ruta seleccionada</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRepository.ListarNoProgramadosParaApp(System.Int32,System.String)">
+            <summary>
+            Implementa método para listar las rutas no programados de un turista desde el orígen de datos.
+            </summary>
+            <param name="turi_Id">Id del turista</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <returns>Lista de rutas</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRepository.ListarPorBusquedaAvanzadaParaApp(System.String,System.String,System.String,System.Int16,System.Int32,System.String)">
+            <summary>
+            Implementa método para listar rutas mediante búsqueda avanzada desde el orígen de datos.        
+            </summary>
+            <param name="experienciaTipo_Ids"></param>
+            <param name="actividadeTipo_Ids"></param>
+            <param name="destinoTipo_Ids"></param>
+            <param name="origenTipo_Id"></param>
+            <param name="turi_Id"></param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <returns>Lista de rutas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRepository.SeleccionarPorIdParaDescargaOffline(System.Int32,System.String,System.String)">
+            <summary>
+            Implementa método para seleccionar una ruta mediante su Id para la descarga offline desde el origen de datos
+            </summary>
+            <param name="rutaId">Id. de ruta</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <param name="pathImagenesCompartir">Url del repositorio de imagenes para compartir.</param>
+            <returns>Ruta seleccionada</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRepository.Paginar(PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Rutas.RutaDto,PROMPERU.YTQPRutasCortas.Application.Dto.Comun.CriteriosPaginacionDto)">
+            <summary>
+            Implementa método para paginar las rutas desde el orígen de datos.
+            </summary>
+            <param name="filtro">Filtro de la paginación.</param>
+            <param name="criteriosPaginacion">Criterios de paginación.</param>
+            <returns>Lista paginada de rutas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRepository.ActualizarActivo(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionRutas.Ruta)">
+            <summary>
+            Implementa método para actualizar en campo Activo de una ruta en el orígen de datos.
+            </summary>
+            <param name="ruta">Datos de la ruta que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRepository.InsertarDatos(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionRutas.Ruta)">
+            <summary>
+            Implementa método para insertar la pestaña datos de una ruta en el orígen de datos.
+            </summary>
+            <param name="ruta">Datos de la ruta a insertar.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRepository.ActualizarDatos(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionRutas.Ruta)">
+            <summary>
+            Implementa método para actualizar la pestaña datos de una ruta en el orígen de datos.
+            </summary>
+            <param name="ruta">Datos de la ruta que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRepository.ActualizarImagen(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionRutas.Ruta)">
+            <summary>
+            Implementa método para actualizar la imagen de la ruta en el orígen de datos.
+            </summary>
+            <param name="ruta">Datos de la ruta que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRepository.ListarPorOrigenParaCombo(System.Int16)">
+            <summary>
+            Implementa método para listar rutas de acuerdo a un id. de origen, desde el origen de datos
+            </summary>
+            <param name="origenId">Id. del origen</param>
+            <returns>Lista de items</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRepository.ListarParaCombo">
+            <summary>
+            Implementa método para listar rutas para listar en un combo, desde el origen de datos
+            </summary>
+            <returns>Lista de items</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRepository.ListarRutasPorTextoAutocomplete(System.String,System.Int32)">
+            <summary>
+            Implementa método para buscar rutas por texto (automplete) desde el orígen de datos.
+            </summary>
+            <param name="filtro">Filtro para buscar las rutas.</param>
+            <param name="maximoItems">Cantidad máxima de items para mostrar</param>
+            <returns>Lista de rutas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRepository.SeleccionarBusquedaPorId(System.Int32)">
+            <summary>
+            Implementa método para seleccionar una ruta mediante su Id desde el origen de datos
+            </summary>
+            <param name="rutaId">Id. de ruta</param>
+            <returns>Ruta seleccionada</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRepository.ListarUrlAtractivos(System.Int32,System.String)">
+            <summary>
+            Implementa método para listar las url de las imagenes de atractivos de una ruta, desde el origen de datos
+            </summary>
+            <param name="atra_RutaId">Id. de la ruta</param>
+            <param name="pathImagenes">Url del repositorio de imagenes.</param>
+            <returns>Lista de Urls</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionRutas.Repositories.RutaRepository.ActualizarNotificaciónEnviada(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionRutas.Ruta)">
+            <summary>
+            Implementa método para actualizar en campo Notificación enviada de una ruta en el orígen de datos.
+            </summary>
+            <param name="ruta">Datos de la ruta que se actualiza.</param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.RankingBuscadosRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de rankings buscados.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.RankingBuscadosRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.RankingBuscadosRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionSeguridad.RankingBuscados)">
+            <summary>
+            Implementa método para insertar un ranking buscados en el orígen de datos.
+            </summary>
+            <param name="ranking">Datos del ranking buscado a insertar.</param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.EstadoUsoRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de Estdo de Uso.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.EstadoUsoRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.EstadoUsoRepository.ActualizarEstadoUso(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionSeguridad.EstadoUso)">
+            <summary>
+            Implementa método para actualizar los datos del Estado de Uso en el orígen de datos.
+            </summary>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.Rol_OpcionRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de Opciones por Rol.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.Rol_OpcionRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.Rol_OpcionRepository.SelecccionarPorId(System.Int16,System.Int16)">
+            <summary>
+            Implementa método para seleccionar una opción del rol por su Id, desde el orígen de datos.
+            </summary>
+            <param name="ropc_RolId">Id del rol.</param>
+            <param name="ropc_OpcionId">Id de la opción.</param>
+            <returns>Opción del rol seleccionado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.Rol_OpcionRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionSeguridad.Rol_Opcion)">
+            <summary>
+            Implementa método para insertar una opcion de un rol desde el orígen de datos.
+            </summary>
+            <param name="rol_Opcion">Datos de la opción que se desasigna.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.Rol_OpcionRepository.DesasignarOpcion(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionSeguridad.Rol_Opcion)">
+            <summary>
+            Implementa método para desasignar una opcion de un rol desde el orígen de datos.
+            </summary>
+            <param name="rol_Opcion">Datos de la opción que se desasigna.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.Rol_OpcionRepository.AsignarOpcion(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionSeguridad.Rol_Opcion)">
+            <summary>
+            Implementa método para asignar una opción de un rol desde el orígen de datos.
+            </summary>
+            <param name="rol_Opcion">Datos de la opción que se desasigna.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.Rol_OpcionRepository.ListarOpcionesPorRol(System.Int16)">
+            <summary>
+            Implementa método para listar todos las opciones des del el orígen de datos.
+            </summary>
+            <param name="ropc_RolId">Id del rol.</param>
+            <returns>Lista de opciones.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.Rol_OpcionRepository.SeleccionarPorIdyUsuario(System.Int16,System.Int16)">
+            <summary>
+            Implementa método para seleccionar una opcion de acuerdo a su id y el id de un usuario desde el origen de datos
+            </summary>
+            <param name="Usua_Id">Id. del usuario</param>
+            <param name="Ropc_OpcionId">Id. de la opción</param>
+            <returns>Datos resultantes de la operación</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.RolRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de roles.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.RolRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.RolRepository.SelecccionarPorId(System.Int16)">
+            <summary>
+            Implementa método para seleccionar el Rol por su Id, desde el orígen de datos.
+            </summary>
+            <param name="rolId">Id del rol.</param>
+            <returns>Rol seleccioando.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.RolRepository.Paginar(PROMPERU.YTQPRutasCortas.Application.Dto.GestionSeguridad.Roles.RolDto,PROMPERU.YTQPRutasCortas.Application.Dto.Comun.CriteriosPaginacionDto)">
+            <summary>
+            Implementa método para paginar los tipos desde el orígen de datos.
+            </summary>
+            <param name="filtro">Filtro de la paginación.</param>
+            <param name="criteriosPaginacion">Criterios de paginación.</param>
+            <returns>Lista paginada de tipos.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.RolRepository.ListarTodosParaCache">
+            <summary>
+            Implementa método para listar todos los roles para CACHE desde el orígen de datos.
+            </summary>
+            <returns>Lista de roles.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.RolRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionSeguridad.Rol)">
+            <summary>
+            Implementa método para insertar un rol en el orígen de datos.
+            </summary>
+            <param name="rol">Datos del rol a insertar.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.RolRepository.Actualizar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionSeguridad.Rol)">
+            <summary>
+            Implementa método para actualizar un rol en el orígen de datos.
+            </summary>
+            <param name="rol">Datos del rol que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.RolRepository.ActualizarActivo(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionSeguridad.Rol)">
+            <summary>
+            Implementa método para actualizar en campo Activo de un rol en el orígen de datos.
+            </summary>
+            <param name="rol">Datos del rol que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.RolRepository.ListaPorIdsConcatenadas(System.String)">
+            <summary>
+            Implementa método para listar roles de acuerda a ids concatenadas desde el orígen de datos.
+            </summary>
+            <returns>Lista de roles.</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.RankingRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de rankings.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.RankingRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.RankingRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionSeguridad.Ranking)">
+            <summary>
+            Implementa método para insertar un ranking en el orígen de datos.
+            </summary>
+            <param name="ranking">Datos del ranking a insertar.</param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.Usuario_RolRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de roles del usuario.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.Usuario_RolRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.Usuario_RolRepository.ListarPorUsuario(System.Int16)">
+            <summary>
+            Implementa método para listar los roles asignados al usuario desde el orígen de datos.
+            </summary>
+            <param name="usuarioId">Id del usuario.</param>
+            <returns>Lista de roles.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.Usuario_RolRepository.ListarPorUsuarioTodolLosRoles(System.Int16)">
+            <summary>
+            Implementa método para listar todos los roles y marcar cuales fueron asignados al usuario desde el orígen de datos.
+            </summary>
+            <param name="usuarioId">Id del usuario.</param>
+            <returns>Lista de roles.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.Usuario_RolRepository.Merge(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionSeguridad.Usuario)">
+            <summary>
+            Implementa método para actualizar los roles asignadoa del usuario en el orígen de datos.
+            </summary>
+            <param name="usuario">Datos del usuario y los roles.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.Usuario_RolRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionSeguridad.Usuario_Rol)">
+            <summary>
+            Implementa método para insertar un rol a un usuario en el orígen de datos.
+            </summary>
+            <param name="usuario_Rol">Datos del rol del usuario a insertar.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.Usuario_RolRepository.Actualizar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionSeguridad.Usuario_Rol)">
+            <summary>
+            Implementa método para actualizar un rol del usuario en el orígen de datos.
+            </summary>
+            <param name="usuario_Rol">Datos del rol del usuario que se actualiza.</param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.UsuarioRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de usuarios.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.UsuarioRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.UsuarioRepository.Paginar(PROMPERU.YTQPRutasCortas.Application.Dto.GestionSeguridad.Usuarios.UsuarioDto,PROMPERU.YTQPRutasCortas.Application.Dto.Comun.CriteriosPaginacionDto)">
+            <summary>
+            Implementa método para paginar los usuarios desde el orígen de datos.
+            </summary>
+            <param name="filtro">Filtro de la paginación.</param>
+            <param name="criteriosPaginacion">Criterios de paginación.</param>
+            <returns>Lista paginada de usuarios.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.UsuarioRepository.SelecccionarPorId(System.Int16)">
+            <summary>
+            Implementa método para seleccionar un usuario por su Id, desde el orígen de datos.
+            </summary>
+            <param name="usuarioId">Id del usaurio.</param>
+            <returns>Usuario seleccionado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.UsuarioRepository.SelecccionarPorEmail(System.String)">
+            <summary>
+            Implementa método para seleccionar un usuario por su email, desde el orígen de datos.
+            </summary>
+            <param name="usuarioEmail">Email del usaurio.</param>
+            <returns>Usuario seleccionado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.UsuarioRepository.Insertar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionSeguridad.Usuario)">
+            <summary>
+            Implementa método para insertar un usuario en el orígen de datos.
+            </summary>
+            <param name="usuario">Datos del usuario a insertar.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.UsuarioRepository.Actualizar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionSeguridad.Usuario)">
+            <summary>
+            Implementa método para actualizar un usuario en el orígen de datos.
+            </summary>
+            <param name="usuario">Datos del usuario que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.UsuarioRepository.ActualizarDatosBloqueo(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionSeguridad.Usuario)">
+            <summary>
+            Implementa método para actualizar los datos del bloqueo de un usuario en el orígen de datos.
+            </summary>
+            <param name="usuario">Datos del usuario que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.UsuarioRepository.ActualizarActivo(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionSeguridad.Usuario)">
+            <summary>
+            Implementa método para actualizar en campo Activo de un usuario en el orígen de datos.
+            </summary>
+            <param name="usuario">Datos del usuario que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.UsuarioRepository.ActualizarContrasenia(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionSeguridad.Usuario)">
+            <summary>
+            Implementa método para actualizar la contraseña de un usuario en el orígen de datos.
+            </summary>
+            <param name="usuario">Datos del usuario que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.UsuarioRepository.ListarMenuPorUsuarioId(System.Int16)">
+            <summary>
+            Implementa método para listar el menú de un usuario desde el orígen de datos.
+            </summary>
+            <param name="usuarioId">Id del usuario.</param>
+            <returns>Menu del usuario.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.UsuarioRepository.ListarOpcionesPorUsuarioYSubMenu(System.Int16,System.Int16)">
+            <summary>
+            Implementa método para listar los ids de las opciones habilitadas para el usuario desde el orígen de datos.
+            </summary>
+            <param name="usuarioId">Id del usuario.</param>
+            <param name="subMenuId">Id del submenu.</param>
+            <returns>Lista de ids de las opciones.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.UsuarioRepository.ListarParaCombo">
+            <summary>
+            Implementa método para listar los usuarios activos para llenar un combo, desde el origen de datos
+            </summary>
+            <returns>Lista de usuarios</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionSeguridad.Repositories.UsuarioRepository.ListarPorIdsConcatenadas(System.String)">
+            <summary>
+            Implementa método para listar los usuarios de acuerdo a una lista concatenada de ids, desde el origen de datos
+            </summary>
+            <param name="Usua_Ids">Ids. concatenadas</param>
+            <returns>Lista de Usuarios</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionYTQP.Repositories.YTQPMiniViaje">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de Miniviajes de YTQP.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionYTQP.Repositories.YTQPMiniViaje.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionYTQP.Repositories.YTQPMiniViaje.ListarRutas">
+            <summary>
+            Implementa método para listar las rutas de YTQP desde el orígen de datos.
+            </summary>
+            <returns>Lista de rutas.</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionYTQP.Repositories.YTQPUsuarioRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de usuarios de YTQP.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionYTQP.Repositories.YTQPUsuarioRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionYTQP.Repositories.YTQPUsuarioRepository.SeleccionarPorEmail(System.String)">
+            <summary>
+            Implementa método para seleccionar un usuario de acuerdo a su email, desde el orígen de datos.
+            </summary>
+            <param name="usuarioEmail">E_mail del usuario</param>
+            <returns>Entidad del usuario en YTQP.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionYTQP.Repositories.YTQPUsuarioRepository.SeleccionarPorEmailEnviado(System.String)">
+            <summary>
+            Implementa método para seleccionar un usuario de acuerdo a su email si tiene e-mail enviado, desde el orígen de datos.
+            </summary>
+            <param name="usuarioEmail">E_mail del usuario</param>
+            <returns>Entidad del usuario en YTQP.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionYTQP.Repositories.YTQPUsuarioRepository.InsertarNuevo(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionYTQP.utb_YTQP_Usuario)">
+            <summary>
+            Implementa método para insertar un nuevo usuario desde el origen de datos.
+            </summary>
+            <param name="Usuario">Entidad usuario.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionYTQP.Repositories.YTQPUsuarioRepository.ActualizarCorreoConfirmacionValidado(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionYTQP.utb_YTQP_Usuario)">
+            <summary>
+            Implementa método para actualizar la confirmacion del email en el orígen de datos.
+            </summary>
+            <param name="usuario">Datos del usuario que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionYTQP.Repositories.YTQPUsuarioRepository.ActualizarContrasenia(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionYTQP.utb_YTQP_Usuario)">
+            <summary>
+            Implementa método para actualizar la contraseña en el orígen de datos.
+            </summary>
+            <param name="usuario">Datos del usuario que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionYTQP.Repositories.YTQPUsuarioRepository.SeleccionarParaMiPerfil(System.Guid)">
+            <summary>
+            Implementa método para seleccionar el usuario para la pantalla Mi Perfil, desde el orígen de datos.
+            </summary>
+            <param name="var_IdUsuario">Id del usuario.</param>
+            <returns>Usuario seleccionado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionYTQP.Repositories.YTQPUsuarioRepository.SeleccionarPorId(System.Guid)">
+            <summary>
+            Implementa método para seleccionar el usuario por su Id, desde el orígen de datos.
+            </summary>
+            <param name="var_IdUsuario">Id del usuario.</param>
+            <returns>Usuario seleccionado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionYTQP.Repositories.YTQPUsuarioRepository.Actualizar(PROMPERU.YTQPRutasCortas.Domain.Entities.GestionYTQP.utb_YTQP_Usuario)">
+            <summary>
+            Implementa método para actualizar un usuario en el orígen de datos.
+            </summary>
+            <param name="usuario">Datos del usuario que se actualiza.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionYTQP.Repositories.YTQPUsuarioRepository.EliminarPorEmail(System.String)">
+            <summary>
+            Implementa método para eliminar un usuario de manera física, desde el origen de datos
+            </summary>
+            <param name="usuarioEmail">Email del usuario</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.GestionYTQP.Repositories.YTQPUsuarioRepository.ListarPorTextoAutocomplete(System.String,System.Int32)">
+            <summary>
+            Implementa método para buscar usuarios por texto (automplete) desde el orígen de datos.
+            </summary>
+            <param name="filtro">Filtro para buscar las rutas.</param>
+            <param name="maximoItems">Cantidad máxima de items para mostrar</param>
+            <returns>Lista de usuarios.</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.ModuloReportes.Repositories.ReportRCRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de reportes.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.ModuloReportes.Repositories.ReportRCRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.ModuloReportes.Repositories.ReportRCRepository.DestinosBuscados(System.DateTime,System.DateTime)">
+            <summary>
+            Implementa método para obtener la data del reporte de "Ranking de destinos buscados" desde el orígen de datos.
+            </summary>
+            <param name="fechaInicio">Fecha de inicio.</param>
+            <param name="fechaFinal">Fecha de final.</param>
+            <returns>Datos del reporte.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.ModuloReportes.Repositories.ReportRCRepository.EstadoUso">
+            <summary>
+            Implementa método para obtener la data del reporte de "Estados de uso" desde el orígen de datos.
+            </summary>
+            <returns>Datos del reporte.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.ModuloReportes.Repositories.ReportRCRepository.ConsolidadoRegistroDistrito(System.DateTime,System.DateTime)">
+            <summary>
+            Implementa método para obtener la data del reporte de "Consolidado de Registros al Sistema por Ubigeo" desde el orígen de datos.
+            </summary>
+            <param name="fechaInicio">Fecha de inicio.</param>
+            <param name="fechaFinal">Fecha de final.</param>
+            <returns>Datos del reporte.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.ModuloReportes.Repositories.ReportRCRepository.DesplazamientoRuta(System.Int32)">
+            <summary>
+            Implementa método para obtener la data del reporte de "Desplazamientos de Usuarios a la Ruta Corta" desde el orígen de datos.
+            </summary>
+            <param name="anio">Año.</param>
+            <returns>Datos del reporte.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.ModuloReportes.Repositories.ReportRCRepository.RankingSeccionVisitada(System.DateTime,System.DateTime)">
+            <summary>
+            Implementa método para obtener la data del reporte de "Ranking de Secciones Internas mas Visitadas" desde el orígen de datos.
+            </summary>
+            <param name="fechaInicio">Fecha de inicio.</param>
+            <param name="fechaFinal">Fecha de final.</param>
+            <returns>Datos del reporte.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.ModuloReportes.Repositories.ReportRCRepository.ListaTuristas(System.DateTime,System.DateTime)">
+            <summary>
+            Implementa método para obtener la data del reporte de "Lista de Turistas Registrados en el App" desde el orígen de datos.
+            </summary>
+            <param name="fechaInicio">Fecha de inicio.</param>
+            <param name="fechaFinal">Fecha de fin.</param>
+            <returns>Datos del reporte.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.ModuloReportes.Repositories.ReportRCRepository.NotificacionPushMasivo(System.Int32)">
+            <summary>
+            Implementa método para obtener data del reporte de las notificaciones Push por su Id, desde el orígen de datos.
+            </summary>
+            <param name="pushId">Id de la Notificación Push.</param>
+            <returns>Datos del reporte.</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.ModuloReportes.Repositories.ReportYTQPRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de reportes.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.ModuloReportes.Repositories.ReportYTQPRepository.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.ModuloReportes.Repositories.ReportYTQPRepository.ConsolidadoRegistroGenero">
+            <summary>
+            Implementa método para obtener la data del reporte de "Consolidado de Registros al Sistema por Género" desde el orígen de datos.
+            </summary>
+            <returns>Datos del reporte.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.ModuloReportes.Repositories.ReportYTQPRepository.ConsolidadoRegistroEdad">
+            <summary>
+            Implementa método para obtener la data del reporte de "Consolidado de Registros al Sistema por Edad" desde el orígen de datos.
+            </summary>
+            <returns>Datos del reporte.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.ModuloReportes.Repositories.ReportYTQPRepository.ListaUsuariosYTQP(System.DateTime,System.DateTime)">
+            <summary>
+            Implementa método para obtener la data del reporte de "Lista de Turistas Registrados en el App" desde el orígen de datos.
+            </summary>
+            <param name="fechaInicio">Fecha de inicio.</param>
+            <param name="fechaFinal">Fecha de fin.</param>
+            <returns>Datos del reporte.</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="YTUQUEPLANES_BD_2016_V01Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="YTUQUEPLANES_BD_2016_V01Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="utb_YTQP_Oferta" EntityType="YTUQUEPLANES_BD_2016_V01Model.utb_YTQP_Oferta" />
+    <EntitySet Name="utb_YTQP_Usuario" EntityType="YTUQUEPLANES_BD_2016_V01Model.utb_YTQP_Usuario" />
+  </EntityContainer>
+  <EntityType Name="utb_YTQP_Oferta">
+    <Key>
+      <PropertyRef Name="int_IdOferta" />
+    </Key>
+    <Property Name="int_IdOferta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="var_Nombre" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="var_Imagen" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="chr_IdRegion" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="int_IdTipoOferta" Type="Byte" />
+    <Property Name="dtm_FechaVigenciaInicio" Type="DateTime" Precision="0" />
+    <Property Name="dtm_FechaVigenciaFin" Type="DateTime" Precision="0" />
+    <Property Name="dec_PrecioBase" Type="Decimal" Precision="6" Scale="1" />
+    <Property Name="dec_PrecioFinal" Type="Decimal" Precision="6" Scale="1" />
+    <Property Name="int_IdFestividad" Type="Byte" />
+    <Property Name="var_SEOTitulo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="var_SEODescripcion" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="var_SEOKeywords" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="int_Estado" Type="Byte" />
+    <Property Name="int_Duracion" Type="Byte" />
+    <Property Name="var_Duracion" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="int_IdCreacion" Type="Int32" />
+    <Property Name="dtm_Creacion" Type="DateTime" Precision="3" />
+    <Property Name="int_IdModificacion" Type="Int32" />
+    <Property Name="dtm_Modificacion" Type="DateTime" Precision="3" />
+    <Property Name="int_IdEliminacion" Type="Int32" />
+    <Property Name="dtm_Eliminacion" Type="DateTime" Precision="3" />
+    <Property Name="bit_Certificado" Type="Boolean" Nullable="false" />
+    <Property Name="bit_Universitario" Type="Boolean" Nullable="false" />
+    <Property Name="var_RutaNombre" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="utb_YTQP_Usuario">
+    <Key>
+      <PropertyRef Name="var_IdUsuario" />
+    </Key>
+    <Property Name="var_IdUsuario" Type="Guid" Nullable="false" />
+    <Property Name="var_Nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="var_Apellidos" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="var_Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="bit_Sexo" Type="Boolean" />
+    <Property Name="int_Estado" Type="Byte" />
+    <Property Name="dtm_FechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="var_Password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="var_FechaNacimiento" Type="DateTime" Precision="0" />
+    <Property Name="var_DNI" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="chr_IdRegion" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="dtm_FechaConfirmacion" Type="DateTime" Precision="3" />
+    <Property Name="bit_MailEnviado" Type="Boolean" />
+    <Property Name="var_IP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="var_MailError" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="bit_ActualizadoRutasCortas" Type="Boolean" />
+    <Property Name="dtm_FechaRegistroRutasCortas" Type="DateTime" Precision="3" />
+  </EntityType>
+</Schema>

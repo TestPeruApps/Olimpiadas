@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Olimpiadas.DistributedServices.Interfaces</name>
+    </assembly>
+    <members>
+        <member name="T:Olimpiadas.DistributedServices.Interfaces.GestionContenido.IGestionContenidoService">
+            <summary>
+            Contrato del servicio con métodos de operaciones de Personal.
+            </summary>
+            <summary>
+            Contrato del servicio con métodos de operaciones de Participantes.
+            </summary>
+            <summary>
+            Contrato con métodos del servicio de la gestión de Contenido.
+            </summary>
+        </member>
+        <member name="M:Olimpiadas.DistributedServices.Interfaces.GestionContenido.IGestionContenidoService.PersonalPaginar(Olimpiadas.Application.Dto.Comun.PaginacionRequestDto{Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalDto})">
+            <summary>
+            Método del servicio para paginar el Personal.
+            </summary>
+            <param name="request">Datos para obtener las alertas paginadas.</param>
+            <returns>Datos con la paginación de alertas.</returns>
+        </member>
+        <member name="M:Olimpiadas.DistributedServices.Interfaces.GestionContenido.IGestionContenidoService.PersonalObtenerEditor(System.Nullable{System.Int32})">
+            <summary>
+            Método del servicio para obtener los datos necesarios para el editor de Personal.(Agregar o Modificar).
+            </summary>
+            <param name="idPersonal">Id del registro.</param>
+            <returns>Datos para mostrar el editor.</returns>
+        </member>
+        <member name="M:Olimpiadas.DistributedServices.Interfaces.GestionContenido.IGestionContenidoService.PersonalInsertar(Olimpiadas.Application.Dto.Comun.RequestDto{Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalDto})">
+            <summary>
+            Método del servicio para insertar un Personal.
+            </summary>
+            <param name="request">Datos que se insertan.</param>
+            <returns>Identificador del registro insertado.</returns>
+        </member>
+        <member name="M:Olimpiadas.DistributedServices.Interfaces.GestionContenido.IGestionContenidoService.PersonalActualizar(Olimpiadas.Application.Dto.Comun.RequestDto{Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalDto})">
+            <summary>
+            Método del servicio para actualizar un Personal.
+            </summary>
+            <param name="request">Datos del registro que se actualiza.</param>        
+        </member>
+        <member name="M:Olimpiadas.DistributedServices.Interfaces.GestionContenido.IGestionContenidoService.PersonalDesactivar(Olimpiadas.Application.Dto.Comun.RequestDto{Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalDto})">
+            <summary>
+            Método del servicio para desactivar un registro.
+            </summary>
+            <param name="request">Datos del registro que se desactiva.</param>
+        </member>
+        <member name="M:Olimpiadas.DistributedServices.Interfaces.GestionContenido.IGestionContenidoService.PersonalActivar(Olimpiadas.Application.Dto.Comun.RequestDto{Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalDto})">
+            <summary>
+            Método del servicio para activar un registro.
+            </summary>
+            <param name="request">Datos del registro que se activa.</param>
+        </member>
+        <member name="M:Olimpiadas.DistributedServices.Interfaces.GestionContenido.IGestionContenidoService.ParticipantePaginar(Olimpiadas.Application.Dto.Comun.PaginacionRequestDto{Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteDto})">
+            <summary>
+            Método del servicio para paginar los participantes.
+            </summary>
+            <param name="request">Datos para obtener las alertas paginadas.</param>
+            <returns>Datos con la paginación de alertas.</returns>
+        </member>
+        <member name="M:Olimpiadas.DistributedServices.Interfaces.GestionContenido.IGestionContenidoService.ParticipanteObtenerEditor(System.Nullable{System.Int32})">
+            <summary>
+            Método del servicio para obtener los datos necesarios para el editor de participantes.(Agregar o Modificar).
+            </summary>
+            <param name="idParticipante">Id del registro.</param>
+            <returns>Datos para mostrar el editor.</returns>
+        </member>
+        <member name="M:Olimpiadas.DistributedServices.Interfaces.GestionContenido.IGestionContenidoService.ParticipanteInsertar(Olimpiadas.Application.Dto.Comun.RequestDto{Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteDto})">
+            <summary>
+            Método del servicio para insertar una Participante.
+            </summary>
+            <param name="request">Datos que se insertan.</param>
+            <returns>Identificador del registro insertado.</returns>
+        </member>
+        <member name="M:Olimpiadas.DistributedServices.Interfaces.GestionContenido.IGestionContenidoService.ParticipanteActualizar(Olimpiadas.Application.Dto.Comun.RequestDto{Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteDto})">
+            <summary>
+            Método del servicio para actualizar una Participante.
+            </summary>
+            <param name="request">Datos del registro que se actualiza.</param>        
+        </member>
+        <member name="M:Olimpiadas.DistributedServices.Interfaces.GestionContenido.IGestionContenidoService.ParticipanteDesactivar(Olimpiadas.Application.Dto.Comun.RequestDto{Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteDto})">
+            <summary>
+            Método del servicio para desactivar un registro.
+            </summary>
+            <param name="request">Datos del registro que se desactiva.</param>
+        </member>
+        <member name="M:Olimpiadas.DistributedServices.Interfaces.GestionContenido.IGestionContenidoService.ParticipanteActivar(Olimpiadas.Application.Dto.Comun.RequestDto{Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteDto})">
+            <summary>
+            Método del servicio para activar un registro.
+            </summary>
+            <param name="request">Datos del registro que se activa.</param>
+        </member>
+        <member name="M:Olimpiadas.DistributedServices.Interfaces.GestionContenido.IGestionContenidoService.Prueba">
+            <summary>
+            Método del servicio para realizar la prueba de conexión a este.
+            </summary>
+            <returns>Datos de prueba de conexión.</returns>
+        </member>
+        <member name="T:Olimpiadas.DistributedServices.Interfaces.GestionSeguridad.IGestionSeguridadService">
+            <summary>
+            Contrato del servicio con métodos de operaciones de Usuarios.
+            </summary>
+            <summary>
+            Contrato con métodos del servicio de la gestión de  Seguridad.
+            </summary>
+        </member>
+        <member name="M:Olimpiadas.DistributedServices.Interfaces.GestionSeguridad.IGestionSeguridadService.UsuarioListarMenu(System.Int16)">
+            <summary>
+            Método del servicio para obtener el menú de un usuario.
+            </summary>
+            <param name="usuarioId">Id del usuario.</param>
+            <returns>Permisos de</returns>
+        </member>
+        <member name="M:Olimpiadas.DistributedServices.Interfaces.GestionSeguridad.IGestionSeguridadService.UsuarioValidarLogin(Olimpiadas.Application.Dto.GestionSeguridad.Usuarios.ValidarLoginRequestDto)">
+            <summary>
+            Método del servicio para validar la autenticación del Login
+            </summary>
+            <param name="request">Datos del login</param>
+            <returns>Datos resultantes del proceso</returns>
+        </member>
+        <member name="M:Olimpiadas.DistributedServices.Interfaces.GestionSeguridad.IGestionSeguridadService.Prueba">
+            <summary>
+            Método del servicio para realizar la prueba de conexión a este.
+            </summary>
+            <returns>Datos de prueba de conexión.</returns>
+        </member>
+    </members>
+</doc>

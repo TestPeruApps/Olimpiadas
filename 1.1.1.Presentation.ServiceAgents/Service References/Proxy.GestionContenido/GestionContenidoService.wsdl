@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="PROMPERU.GestionContenidoService" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://tempuri.org/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="GestionContenidoService" targetNamespace="PROMPERU.GestionContenidoService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://tempuri.org/" location="http://localhost:56904/GestionContenidoService.svc?wsdl=wsdl0" />
+  <wsdl:types>
+    <xsd:schema targetNamespace="PROMPERU.GestionContenidoService/Imports">
+      <xsd:import schemaLocation="http://localhost:56904/GestionContenidoService.svc?xsd=xsd0" namespace="PROMPERU.GestionContenidoService" />
+      <xsd:import schemaLocation="http://localhost:56904/GestionContenidoService.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Fault" />
+      <xsd:import schemaLocation="http://localhost:56904/GestionContenidoService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:56904/GestionContenidoService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" />
+      <xsd:import schemaLocation="http://localhost:56904/GestionContenidoService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Olimpiadas.CrossCutting.Enumerations" />
+      <xsd:import schemaLocation="http://localhost:56904/GestionContenidoService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionContenido.Personal" />
+      <xsd:import schemaLocation="http://localhost:56904/GestionContenidoService.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:56904/GestionContenidoService.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionContenido.Participante" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IGestionContenidoService_PersonalPaginar_InputMessage">
+    <wsdl:part name="parameters" element="tns:PersonalPaginar" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_PersonalPaginar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PersonalPaginarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_PersonalPaginar_ServiceErrorResponseDtoFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Fault" name="detail" element="q1:ServiceErrorResponseDto" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_PersonalObtenerEditor_InputMessage">
+    <wsdl:part name="parameters" element="tns:PersonalObtenerEditor" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_PersonalObtenerEditor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PersonalObtenerEditorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_PersonalObtenerEditor_ServiceErrorResponseDtoFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Fault" name="detail" element="q2:ServiceErrorResponseDto" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_PersonalInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:PersonalInsertar" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_PersonalInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PersonalInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_PersonalInsertar_ServiceErrorResponseDtoFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Fault" name="detail" element="q3:ServiceErrorResponseDto" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_PersonalActualizar_InputMessage">
+    <wsdl:part name="parameters" element="tns:PersonalActualizar" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_PersonalActualizar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PersonalActualizarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_PersonalActualizar_ServiceErrorResponseDtoFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Fault" name="detail" element="q4:ServiceErrorResponseDto" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_PersonalDesactivar_InputMessage">
+    <wsdl:part name="parameters" element="tns:PersonalDesactivar" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_PersonalDesactivar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PersonalDesactivarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_PersonalDesactivar_ServiceErrorResponseDtoFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Fault" name="detail" element="q5:ServiceErrorResponseDto" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_PersonalActivar_InputMessage">
+    <wsdl:part name="parameters" element="tns:PersonalActivar" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_PersonalActivar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PersonalActivarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_PersonalActivar_ServiceErrorResponseDtoFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Fault" name="detail" element="q6:ServiceErrorResponseDto" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_ParticipantePaginar_InputMessage">
+    <wsdl:part name="parameters" element="tns:ParticipantePaginar" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_ParticipantePaginar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ParticipantePaginarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_ParticipantePaginar_ServiceErrorResponseDtoFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Fault" name="detail" element="q7:ServiceErrorResponseDto" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_ParticipanteObtenerEditor_InputMessage">
+    <wsdl:part name="parameters" element="tns:ParticipanteObtenerEditor" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_ParticipanteObtenerEditor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ParticipanteObtenerEditorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_ParticipanteObtenerEditor_ServiceErrorResponseDtoFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Fault" name="detail" element="q8:ServiceErrorResponseDto" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_ParticipanteInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:ParticipanteInsertar" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_ParticipanteInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ParticipanteInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_ParticipanteInsertar_ServiceErrorResponseDtoFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Fault" name="detail" element="q9:ServiceErrorResponseDto" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_ParticipanteActualizar_InputMessage">
+    <wsdl:part name="parameters" element="tns:ParticipanteActualizar" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_ParticipanteActualizar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ParticipanteActualizarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_ParticipanteActualizar_ServiceErrorResponseDtoFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Fault" name="detail" element="q10:ServiceErrorResponseDto" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_ParticipanteDesactivar_InputMessage">
+    <wsdl:part name="parameters" element="tns:ParticipanteDesactivar" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_ParticipanteDesactivar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ParticipanteDesactivarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_ParticipanteDesactivar_ServiceErrorResponseDtoFault_FaultMessage">
+    <wsdl:part xmlns:q11="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Fault" name="detail" element="q11:ServiceErrorResponseDto" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_ParticipanteActivar_InputMessage">
+    <wsdl:part name="parameters" element="tns:ParticipanteActivar" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_ParticipanteActivar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ParticipanteActivarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_ParticipanteActivar_ServiceErrorResponseDtoFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Fault" name="detail" element="q12:ServiceErrorResponseDto" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_Prueba_InputMessage">
+    <wsdl:part name="parameters" element="tns:Prueba" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_Prueba_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PruebaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionContenidoService_Prueba_ServiceErrorResponseDtoFault_FaultMessage">
+    <wsdl:part xmlns:q13="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Fault" name="detail" element="q13:ServiceErrorResponseDto" />
+  </wsdl:message>
+  <wsdl:portType msc:usingSession="false" name="IGestionContenidoService">
+    <wsdl:operation name="PersonalPaginar">
+      <wsdl:input wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/PersonalPaginar" message="tns:IGestionContenidoService_PersonalPaginar_InputMessage" />
+      <wsdl:output wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/PersonalPaginarResponse" message="tns:IGestionContenidoService_PersonalPaginar_OutputMessage" />
+      <wsdl:fault wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/PersonalPaginarServiceErrorResponseDtoFault" name="ServiceErrorResponseDtoFault" message="tns:IGestionContenidoService_PersonalPaginar_ServiceErrorResponseDtoFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonalObtenerEditor">
+      <wsdl:input wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/PersonalObtenerEditor" message="tns:IGestionContenidoService_PersonalObtenerEditor_InputMessage" />
+      <wsdl:output wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/PersonalObtenerEditorResponse" message="tns:IGestionContenidoService_PersonalObtenerEditor_OutputMessage" />
+      <wsdl:fault wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/PersonalObtenerEditorServiceErrorResponseDtoFault" name="ServiceErrorResponseDtoFault" message="tns:IGestionContenidoService_PersonalObtenerEditor_ServiceErrorResponseDtoFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonalInsertar">
+      <wsdl:input wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/PersonalInsertar" message="tns:IGestionContenidoService_PersonalInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/PersonalInsertarResponse" message="tns:IGestionContenidoService_PersonalInsertar_OutputMessage" />
+      <wsdl:fault wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/PersonalInsertarServiceErrorResponseDtoFault" name="ServiceErrorResponseDtoFault" message="tns:IGestionContenidoService_PersonalInsertar_ServiceErrorResponseDtoFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonalActualizar">
+      <wsdl:input wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/PersonalActualizar" message="tns:IGestionContenidoService_PersonalActualizar_InputMessage" />
+      <wsdl:output wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/PersonalActualizarResponse" message="tns:IGestionContenidoService_PersonalActualizar_OutputMessage" />
+      <wsdl:fault wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/PersonalActualizarServiceErrorResponseDtoFault" name="ServiceErrorResponseDtoFault" message="tns:IGestionContenidoService_PersonalActualizar_ServiceErrorResponseDtoFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonalDesactivar">
+      <wsdl:input wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/PersonalDesactivar" message="tns:IGestionContenidoService_PersonalDesactivar_InputMessage" />
+      <wsdl:output wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/PersonalDesactivarResponse" message="tns:IGestionContenidoService_PersonalDesactivar_OutputMessage" />
+      <wsdl:fault wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/PersonalDesactivarServiceErrorResponseDtoFault" name="ServiceErrorResponseDtoFault" message="tns:IGestionContenidoService_PersonalDesactivar_ServiceErrorResponseDtoFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PersonalActivar">
+      <wsdl:input wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/PersonalActivar" message="tns:IGestionContenidoService_PersonalActivar_InputMessage" />
+      <wsdl:output wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/PersonalActivarResponse" message="tns:IGestionContenidoService_PersonalActivar_OutputMessage" />
+      <wsdl:fault wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/PersonalActivarServiceErrorResponseDtoFault" name="ServiceErrorResponseDtoFault" message="tns:IGestionContenidoService_PersonalActivar_ServiceErrorResponseDtoFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ParticipantePaginar">
+      <wsdl:input wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipantePaginar" message="tns:IGestionContenidoService_ParticipantePaginar_InputMessage" />
+      <wsdl:output wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipantePaginarResponse" message="tns:IGestionContenidoService_ParticipantePaginar_OutputMessage" />
+      <wsdl:fault wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipantePaginarServiceErrorResponseDtoFault" name="ServiceErrorResponseDtoFault" message="tns:IGestionContenidoService_ParticipantePaginar_ServiceErrorResponseDtoFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ParticipanteObtenerEditor">
+      <wsdl:input wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipanteObtenerEditor" message="tns:IGestionContenidoService_ParticipanteObtenerEditor_InputMessage" />
+      <wsdl:output wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipanteObtenerEditorResponse" message="tns:IGestionContenidoService_ParticipanteObtenerEditor_OutputMessage" />
+      <wsdl:fault wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipanteObtenerEditorServiceErrorResponseDtoFault" name="ServiceErrorResponseDtoFault" message="tns:IGestionContenidoService_ParticipanteObtenerEditor_ServiceErrorResponseDtoFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ParticipanteInsertar">
+      <wsdl:input wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipanteInsertar" message="tns:IGestionContenidoService_ParticipanteInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipanteInsertarResponse" message="tns:IGestionContenidoService_ParticipanteInsertar_OutputMessage" />
+      <wsdl:fault wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipanteInsertarServiceErrorResponseDtoFault" name="ServiceErrorResponseDtoFault" message="tns:IGestionContenidoService_ParticipanteInsertar_ServiceErrorResponseDtoFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ParticipanteActualizar">
+      <wsdl:input wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipanteActualizar" message="tns:IGestionContenidoService_ParticipanteActualizar_InputMessage" />
+      <wsdl:output wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipanteActualizarResponse" message="tns:IGestionContenidoService_ParticipanteActualizar_OutputMessage" />
+      <wsdl:fault wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipanteActualizarServiceErrorResponseDtoFault" name="ServiceErrorResponseDtoFault" message="tns:IGestionContenidoService_ParticipanteActualizar_ServiceErrorResponseDtoFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ParticipanteDesactivar">
+      <wsdl:input wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipanteDesactivar" message="tns:IGestionContenidoService_ParticipanteDesactivar_InputMessage" />
+      <wsdl:output wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipanteDesactivarResponse" message="tns:IGestionContenidoService_ParticipanteDesactivar_OutputMessage" />
+      <wsdl:fault wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipanteDesactivarServiceErrorResponseDtoFault" name="ServiceErrorResponseDtoFault" message="tns:IGestionContenidoService_ParticipanteDesactivar_ServiceErrorResponseDtoFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ParticipanteActivar">
+      <wsdl:input wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipanteActivar" message="tns:IGestionContenidoService_ParticipanteActivar_InputMessage" />
+      <wsdl:output wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipanteActivarResponse" message="tns:IGestionContenidoService_ParticipanteActivar_OutputMessage" />
+      <wsdl:fault wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipanteActivarServiceErrorResponseDtoFault" name="ServiceErrorResponseDtoFault" message="tns:IGestionContenidoService_ParticipanteActivar_ServiceErrorResponseDtoFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Prueba">
+      <wsdl:input wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/Prueba" message="tns:IGestionContenidoService_Prueba_InputMessage" />
+      <wsdl:output wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/PruebaResponse" message="tns:IGestionContenidoService_Prueba_OutputMessage" />
+      <wsdl:fault wsaw:Action="PROMPERU.GestionContenidoService/IGestionContenidoService/PruebaServiceErrorResponseDtoFault" name="ServiceErrorResponseDtoFault" message="tns:IGestionContenidoService_Prueba_ServiceErrorResponseDtoFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="GestionContenidoService">
+    <wsdl:port name="BasicBindingGestionContenido" binding="i0:BasicBindingGestionContenido">
+      <soap:address location="http://localhost:56904/GestionContenidoService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

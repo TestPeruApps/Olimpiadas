@@ -1,0 +1,283 @@
+[Datos Generales]
+Identificador="329e0d35-9591-4139-8ac3-e769c3b0ec9b"
+Fecha y Hora="05/11/2019 20:49:33"
+Título="Error en el servicio ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+Process Information.Process ID="15524"
+Process Information.Process Name="iisexpress"
+Process Information.Account Name="DESKTOP-I5HBAO3\Mario"
+Thread Information.Thread ID="22"
+Thread Information.Thread account name="DESKTOP-I5HBAO3\Mario"
+SqlException.Server="190.41.94.92"
+SqlException.Procedure="USP_Atractivo_INS"
+SqlException.LineNumber="0"
+SqlException.Message="El parámetro formal "@Atra_Id" no se declaró como parámetro OUTPUT, pero es el parámetro real pasado en el resultado solicitado."
+SqlException.Number="8162"
+SqlException.Class="16"
+SqlException.State="2"
+SqlException.ErrorCode="-2146232060"
+SqlException.SqlError1.Server="190.41.94.92"
+SqlException.SqlError1.Procedure="USP_Atractivo_INS"
+SqlException.SqlError1.LineNumber="0"
+SqlException.SqlError1.Message="El parámetro formal "@Atra_Id" no se declaró como parámetro OUTPUT, pero es el parámetro real pasado en el resultado solicitado."
+SqlException.SqlError1.Number="8162"
+SqlException.SqlError1.Class="16"
+SqlException.SqlError1.State="2"
+
+[Request]
+
+
+
+[Response]
+
+
+
+[Datos Generales]
+Identificador="adf6a81d-0a53-41e1-b34e-d2ca25009a40"
+Fecha y Hora="05/11/2019 20:52:10"
+Título="Error en el servicio ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+Process Information.Process ID="20472"
+Process Information.Process Name="iisexpress"
+Process Information.Account Name="DESKTOP-I5HBAO3\Mario"
+Thread Information.Thread ID="19"
+Thread Information.Thread account name="DESKTOP-I5HBAO3\Mario"
+SqlException.Server="190.41.94.92"
+SqlException.Procedure="USP_Atractivo_INS"
+SqlException.LineNumber="131"
+SqlException.Message="No se puede insertar el valor NULL en la columna 'Atra_ClimaActualImagen', tabla 'BDYTQPRutasCortas_DEV.RUTAS.Atractivo'. La columna no admite valores NULL. Error de INSERT.
+Se terminó la instrucción."
+SqlException.Number="515"
+SqlException.Class="16"
+SqlException.State="2"
+SqlException.ErrorCode="-2146232060"
+SqlException.SqlError1.Server="190.41.94.92"
+SqlException.SqlError1.Procedure="USP_Atractivo_INS"
+SqlException.SqlError1.LineNumber="131"
+SqlException.SqlError1.Message="No se puede insertar el valor NULL en la columna 'Atra_ClimaActualImagen', tabla 'BDYTQPRutasCortas_DEV.RUTAS.Atractivo'. La columna no admite valores NULL. Error de INSERT."
+SqlException.SqlError1.Number="515"
+SqlException.SqlError1.Class="16"
+SqlException.SqlError1.State="2"
+SqlException.SqlError2.Server="190.41.94.92"
+SqlException.SqlError2.Procedure="USP_Atractivo_INS"
+SqlException.SqlError2.LineNumber="131"
+SqlException.SqlError2.Message="Se terminó la instrucción."
+SqlException.SqlError2.Number="3621"
+SqlException.SqlError2.Class="0"
+SqlException.SqlError2.State="0"
+
+[Request]
+
+
+
+[Response]
+
+
+
+[Datos Generales]
+Identificador="98a1740a-b7a3-4238-83b7-f03995018c0f"
+Fecha y Hora="05/11/2019 21:31:56"
+Título="Error en el servicio ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+Process Information.Process ID="8784"
+Process Information.Process Name="iisexpress"
+Process Information.Account Name="DESKTOP-I5HBAO3\Mario"
+Thread Information.Thread ID="15"
+Thread Information.Thread account name="DESKTOP-I5HBAO3\Mario"
+SqlException.Server="190.41.94.92"
+SqlException.Procedure="USP_Atractivo_INS"
+SqlException.LineNumber="131"
+SqlException.Message="No se puede insertar el valor NULL en la columna 'Atra_TextoAlCompartir', tabla 'BDYTQPRutasCortas_DEV.RUTAS.Atractivo'. La columna no admite valores NULL. Error de INSERT.
+Se terminó la instrucción."
+SqlException.Number="515"
+SqlException.Class="16"
+SqlException.State="2"
+SqlException.ErrorCode="-2146232060"
+SqlException.SqlError1.Server="190.41.94.92"
+SqlException.SqlError1.Procedure="USP_Atractivo_INS"
+SqlException.SqlError1.LineNumber="131"
+SqlException.SqlError1.Message="No se puede insertar el valor NULL en la columna 'Atra_TextoAlCompartir', tabla 'BDYTQPRutasCortas_DEV.RUTAS.Atractivo'. La columna no admite valores NULL. Error de INSERT."
+SqlException.SqlError1.Number="515"
+SqlException.SqlError1.Class="16"
+SqlException.SqlError1.State="2"
+SqlException.SqlError2.Server="190.41.94.92"
+SqlException.SqlError2.Procedure="USP_Atractivo_INS"
+SqlException.SqlError2.LineNumber="131"
+SqlException.SqlError2.Message="Se terminó la instrucción."
+SqlException.SqlError2.Number="3621"
+SqlException.SqlError2.Class="0"
+SqlException.SqlError2.State="0"
+
+[Request]
+
+
+
+[Response]
+
+
+
+[Datos Generales]
+Identificador="98a1740a-b7a3-4238-83b7-f03995018c0f"
+Fecha y Hora="05/11/2019 21:33:15"
+Título="Error en el servicio ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+Process Information.Process ID="8784"
+Process Information.Process Name="iisexpress"
+Process Information.Account Name="DESKTOP-I5HBAO3\Mario"
+Thread Information.Thread ID="60"
+Thread Information.Thread account name="DESKTOP-I5HBAO3\Mario"
+SqlException.Server="190.41.94.92"
+SqlException.Procedure="USP_Atractivo_INS"
+SqlException.LineNumber="131"
+SqlException.Message="Instrucción INSERT en conflicto con la restricción FOREIGN KEY "FK_Atractivo_Ruta". El conflicto ha aparecido en la base de datos "BDYTQPRutasCortas_DEV", tabla "RUTAS.Ruta", column 'Ruta_Id'.
+Se terminó la instrucción."
+SqlException.Number="547"
+SqlException.Class="16"
+SqlException.State="0"
+SqlException.ErrorCode="-2146232060"
+SqlException.SqlError1.Server="190.41.94.92"
+SqlException.SqlError1.Procedure="USP_Atractivo_INS"
+SqlException.SqlError1.LineNumber="131"
+SqlException.SqlError1.Message="Instrucción INSERT en conflicto con la restricción FOREIGN KEY "FK_Atractivo_Ruta". El conflicto ha aparecido en la base de datos "BDYTQPRutasCortas_DEV", tabla "RUTAS.Ruta", column 'Ruta_Id'."
+SqlException.SqlError1.Number="547"
+SqlException.SqlError1.Class="16"
+SqlException.SqlError1.State="0"
+SqlException.SqlError2.Server="190.41.94.92"
+SqlException.SqlError2.Procedure="USP_Atractivo_INS"
+SqlException.SqlError2.LineNumber="131"
+SqlException.SqlError2.Message="Se terminó la instrucción."
+SqlException.SqlError2.Number="3621"
+SqlException.SqlError2.Class="0"
+SqlException.SqlError2.State="0"
+
+[Request]
+
+
+
+[Response]
+
+
+
+[Datos Generales]
+Identificador="a96c5f3b-0a4b-4345-89de-88bbda0de01d"
+Fecha y Hora="05/11/2019 21:59:22"
+Título="Error en el servicio ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+Process Information.Process ID="15316"
+Process Information.Process Name="iisexpress"
+Process Information.Account Name="DESKTOP-I5HBAO3\Mario"
+Thread Information.Thread ID="11"
+Thread Information.Thread account name="DESKTOP-I5HBAO3\Mario"
+SqlException.Server="190.41.94.92"
+SqlException.Procedure="USP_Atractivo_Actividad_INS_IdsConcatenados"
+SqlException.LineNumber="0"
+SqlException.Message="El procedimiento o la función 'USP_Atractivo_Actividad_INS_IdsConcatenados' esperaba el parámetro '@Rexp_ExperienciaIds', que no se ha especificado."
+SqlException.Number="201"
+SqlException.Class="16"
+SqlException.State="4"
+SqlException.ErrorCode="-2146232060"
+SqlException.SqlError1.Server="190.41.94.92"
+SqlException.SqlError1.Procedure="USP_Atractivo_Actividad_INS_IdsConcatenados"
+SqlException.SqlError1.LineNumber="0"
+SqlException.SqlError1.Message="El procedimiento o la función 'USP_Atractivo_Actividad_INS_IdsConcatenados' esperaba el parámetro '@Rexp_ExperienciaIds', que no se ha especificado."
+SqlException.SqlError1.Number="201"
+SqlException.SqlError1.Class="16"
+SqlException.SqlError1.State="4"
+
+[Request]
+
+
+
+[Response]
+
+
+
+[Datos Generales]
+Identificador="a96c5f3b-0a4b-4345-89de-88bbda0de01d"
+Fecha y Hora="05/11/2019 22:01:27"
+Título="Error en el servicio ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+Process Information.Process ID="15316"
+Process Information.Process Name="iisexpress"
+Process Information.Account Name="DESKTOP-I5HBAO3\Mario"
+Thread Information.Thread ID="11"
+Thread Information.Thread account name="DESKTOP-I5HBAO3\Mario"
+SqlException.Server="190.41.94.92"
+SqlException.Procedure="USP_Atractivo_Actividad_INS_IdsConcatenados"
+SqlException.LineNumber="54"
+SqlException.Message="Error de conversión al convertir el valor varchar '29/32/35' al tipo de datos smallint."
+SqlException.Number="245"
+SqlException.Class="16"
+SqlException.State="1"
+SqlException.ErrorCode="-2146232060"
+SqlException.SqlError1.Server="190.41.94.92"
+SqlException.SqlError1.Procedure="USP_Atractivo_Actividad_INS_IdsConcatenados"
+SqlException.SqlError1.LineNumber="54"
+SqlException.SqlError1.Message="Error de conversión al convertir el valor varchar '29/32/35' al tipo de datos smallint."
+SqlException.SqlError1.Number="245"
+SqlException.SqlError1.Class="16"
+SqlException.SqlError1.State="1"
+
+[Request]
+
+
+
+[Response]
+
+
+
+[Datos Generales]
+Identificador="664965da-76e6-4df3-844c-63df9c20fa7e"
+Fecha y Hora="05/11/2019 22:03:58"
+Título="Error en el servicio ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+Process Information.Process ID="19876"
+Process Information.Process Name="iisexpress"
+Process Information.Account Name="DESKTOP-I5HBAO3\Mario"
+Thread Information.Thread ID="15"
+Thread Information.Thread account name="DESKTOP-I5HBAO3\Mario"
+SqlException.Server="190.41.94.92"
+SqlException.Procedure="USP_Atractivo_UPD_Actividades"
+SqlException.LineNumber="35"
+SqlException.Message="El nombre de objeto 'CONTENIDO.Atractivo_Actividad' no es válido."
+SqlException.Number="208"
+SqlException.Class="16"
+SqlException.State="1"
+SqlException.ErrorCode="-2146232060"
+SqlException.SqlError1.Server="190.41.94.92"
+SqlException.SqlError1.Procedure="USP_Atractivo_UPD_Actividades"
+SqlException.SqlError1.LineNumber="35"
+SqlException.SqlError1.Message="El nombre de objeto 'CONTENIDO.Atractivo_Actividad' no es válido."
+SqlException.SqlError1.Number="208"
+SqlException.SqlError1.Class="16"
+SqlException.SqlError1.State="1"
+
+[Request]
+
+
+
+[Response]
+
+
+

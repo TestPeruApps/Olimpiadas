@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{65856BE7-CB5B-4A9F-8A65-8A37497669D3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Olimpiadas.Application.Reports</RootNamespace>
+    <AssemblyName>Olimpiadas.Application.Reports</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\BaseLogicReports.cs" />
+    <Compile Include="Core\Extensions\ReportSourceExtensions.cs" />
+    <Compile Include="ModuloReportes\ReportAppService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\1.3.2 Application.Dto\1.3.2.Application.Dto.csproj">
+      <Project>{d657a5c5-4eae-45dd-9f80-03a035f429b9}</Project>
+      <Name>1.3.2.Application.Dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\1.3.3 Application.Interfaces\1.3.3.Application.Interfaces.csproj">
+      <Project>{426f1d14-dffa-4715-8d27-18f2ad6ea0b5}</Project>
+      <Name>1.3.3.Application.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\1.4.1 Domain.Core\1.4.1.Domain.Core.csproj">
+      <Project>{A442EBFA-C497-4603-8631-6C38B6842223}</Project>
+      <Name>1.4.1.Domain.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\1.4.2 Domain.Entities\1.4.2.Domain.Entities.csproj">
+      <Project>{3656522c-d961-4dce-96d9-9cb41e6c4c94}</Project>
+      <Name>1.4.2.Domain.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\1.4.3 Domain.PublicSiteModule\1.4.3.Domain.Modulos.csproj">
+      <Project>{41583196-20B8-4B34-B0C3-3D463DC8DBF6}</Project>
+      <Name>1.4.3.Domain.Modulos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\1.6.1 CrossCutting.Enumerations\1.6.1.CrossCutting.Enumerations.csproj">
+      <Project>{930943d2-c164-45e5-a3e7-e96b488ad9e8}</Project>
+      <Name>1.6.1.CrossCutting.Enumerations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\1.6.2.CrossCutting.Strings\1.6.2.CrossCutting.Strings.csproj">
+      <Project>{b862ea8c-d377-4b8f-9cdd-760dc09bd75a}</Project>
+      <Name>1.6.2.CrossCutting.Strings</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\1.6.3 CrossCutting.Helper\1.6.3.CrossCutting.Helper.csproj">
+      <Project>{42d68f6a-0a73-4861-99dc-5ea4c742dc00}</Project>
+      <Name>1.6.3.CrossCutting.Helper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\PROMPERU.YTQPRutasCortas.Domain.Entities.ValueObject.ReporteDesplazamientoRutaVob.datasource" />
+    <None Include="Properties\DataSources\PROMPERU.YTQPRutasCortas.Domain.Entities.ValueObject.ReporteDestinosBuscadosVob.datasource" />
+    <None Include="Properties\DataSources\PROMPERU.YTQPRutasCortas.Domain.Entities.ValueObject.ReporteEstadoUsoVob.datasource" />
+    <None Include="Properties\DataSources\PROMPERU.YTQPRutasCortas.Domain.Entities.ValueObject.ReporteNotificaionesPushVob.datasource" />
+    <None Include="Properties\DataSources\PROMPERU.YTQPRutasCortas.Domain.Entities.ValueObject.ReporteRegistroDistritoVob.datasource" />
+    <None Include="Properties\DataSources\PROMPERU.YTQPRutasCortas.Domain.Entities.ValueObject.ReporteRegistroEdadVob.datasource" />
+    <None Include="Properties\DataSources\PROMPERU.YTQPRutasCortas.Domain.Entities.ValueObject.ReporteRegistroGeneroVob.datasource" />
+    <None Include="Properties\DataSources\PROMPERU.YTQPRutasCortas.Domain.Entities.ValueObject.ReporteRegistroTuristasVob.datasource" />
+    <None Include="Properties\DataSources\PROMPERU.YTQPRutasCortas.Domain.Entities.ValueObject.ReporteSeccionesVisitadasVob.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reportes\DestinosBuscados.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reportes\RankingSeccionVisitada.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reportes\RegistroPorEdad.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reportes\RegistroPorGenero.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reportes\EstadoDeUso.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reportes\RegistroPorDistrito.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reportes\RegistroTurista.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reportes\DesplazamientoARuta.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reportes\NotificacinesPushMasivo.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

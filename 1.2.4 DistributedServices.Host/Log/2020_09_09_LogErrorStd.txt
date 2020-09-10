@@ -1,0 +1,236 @@
+[Datos Generales]
+Identificador="5bed3b43-4050-4a6d-bbf2-6001295080bc"
+Fecha y Hora="09/09/2020 20:58:56"
+Título="Error en el servicio ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+Process Information.Process ID="4036"
+Process Information.Process Name="iisexpress"
+Process Information.Account Name="LAPTOP-MARIO\Mario"
+Thread Information.Thread ID="19"
+Thread Information.Thread account name="LAPTOP-MARIO\Mario"
+Exception.Type="ArgumentNullException"
+Exception.Message="El valor del parámetro es incorrecto
+Nombre del parámetro: request.Usua_Id"
+Exception.StackTrace="   en Olimpiadas.Application.Core.AppServiceBase`1.ValidarParametrosPaginacion(PaginacionRequestDto`1 request) en D:\Archivos\Proyectos\Olimpiadas\1.3.1 Application.Core\AppServiceBase.cs:línea 69
+   en Olimpiadas.Application.Implementations.GestionContenido.ParticipanteAppService.Paginar(PaginacionRequestDto`1 request) en D:\Archivos\Proyectos\Olimpiadas\1.3.4 Application.Implementations\GestionContenido\ParticipanteAppService.cs:línea 85
+   en Olimpiadas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.ParticipantePaginar(PaginacionRequestDto`1 request) en D:\Archivos\Proyectos\Olimpiadas\1.2.3 DistributedServices.Implementations\GestionContenido\GestionContenidoService.Participante.cs:línea 23
+   en SyncInvokeParticipantePaginar(Object , Object[] , Object[] )
+   en System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   en System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)"
+
+[Request]
+
+
+
+[Response]
+
+
+
+[Datos Generales]
+Identificador="e8183b7d-feac-4547-9299-a1c41c3c0780"
+Fecha y Hora="09/09/2020 23:06:39"
+Título="Error en el servicio ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+Process Information.Process ID="3772"
+Process Information.Process Name="iisexpress"
+Process Information.Account Name="LAPTOP-MARIO\Mario"
+Thread Information.Thread ID="26"
+Thread Information.Thread account name="LAPTOP-MARIO\Mario"
+Exception.Type="ArgumentException"
+Exception.Message="El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'."
+Exception.StackTrace="   en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en Olimpiadas.Infrastructure.Data.Core.Mapeador.MapearFila[TComplex](IDataReader dataReader, EquivalenciaDataReaderEntidad[] equivalenciasDataReaderEntidad) en D:\Archivos\Proyectos\Olimpiadas\1.5.1 Infrastructure.Core\Mapeador.cs:línea 179
+   en Olimpiadas.Infrastructure.Data.Core.Mapeador.MapearListaComplex[TComplex](IDataReader dataReader) en D:\Archivos\Proyectos\Olimpiadas\1.5.1 Infrastructure.Core\Mapeador.cs:línea 45
+   en Olimpiadas.Infrastructure.Data.Core.Repository`1.Paginar[TResultado](ParametroAccesosDatosTipado parametroAccesosDatos, TResultado filtro, CriteriosPaginacionDto criteriosPaginacion) en D:\Archivos\Proyectos\Olimpiadas\1.5.1 Infrastructure.Core\Repository.cs:línea 91
+   en Olimpiadas.Infrastructure.Data.GestionContenido.Repositories.ParticipanteRepository.Paginar(ParticipanteDto filtro, CriteriosPaginacionDto criteriosPaginacion) en D:\Archivos\Proyectos\Olimpiadas\1.5.2 Infrastructure.Data\GestionContenido\Repositories\ParticipanteRepository.cs:línea 54
+   en Olimpiadas.Application.Implementations.GestionContenido.ParticipanteAppService.Paginar(PaginacionRequestDto`1 request) en D:\Archivos\Proyectos\Olimpiadas\1.3.4 Application.Implementations\GestionContenido\ParticipanteAppService.cs:línea 94
+   en Olimpiadas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.ParticipantePaginar(PaginacionRequestDto`1 request) en D:\Archivos\Proyectos\Olimpiadas\1.2.3 DistributedServices.Implementations\GestionContenido\GestionContenidoService.Participante.cs:línea 23
+   en SyncInvokeParticipantePaginar(Object , Object[] , Object[] )
+   en System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   en System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)"
+
+[Request]
+
+
+
+[Response]
+
+
+
+[Datos Generales]
+Identificador="e8183b7d-feac-4547-9299-a1c41c3c0780"
+Fecha y Hora="09/09/2020 23:06:55"
+Título="Error en el servicio ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+Process Information.Process ID="3772"
+Process Information.Process Name="iisexpress"
+Process Information.Account Name="LAPTOP-MARIO\Mario"
+Thread Information.Thread ID="27"
+Thread Information.Thread account name="LAPTOP-MARIO\Mario"
+Exception.Type="ArgumentException"
+Exception.Message="El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'."
+Exception.StackTrace="   en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en Olimpiadas.Infrastructure.Data.Core.Mapeador.MapearFila[TComplex](IDataReader dataReader, EquivalenciaDataReaderEntidad[] equivalenciasDataReaderEntidad) en D:\Archivos\Proyectos\Olimpiadas\1.5.1 Infrastructure.Core\Mapeador.cs:línea 179
+   en Olimpiadas.Infrastructure.Data.Core.Mapeador.MapearListaComplex[TComplex](IDataReader dataReader) en D:\Archivos\Proyectos\Olimpiadas\1.5.1 Infrastructure.Core\Mapeador.cs:línea 45
+   en Olimpiadas.Infrastructure.Data.Core.Repository`1.Paginar[TResultado](ParametroAccesosDatosTipado parametroAccesosDatos, TResultado filtro, CriteriosPaginacionDto criteriosPaginacion) en D:\Archivos\Proyectos\Olimpiadas\1.5.1 Infrastructure.Core\Repository.cs:línea 91
+   en Olimpiadas.Infrastructure.Data.GestionContenido.Repositories.ParticipanteRepository.Paginar(ParticipanteDto filtro, CriteriosPaginacionDto criteriosPaginacion) en D:\Archivos\Proyectos\Olimpiadas\1.5.2 Infrastructure.Data\GestionContenido\Repositories\ParticipanteRepository.cs:línea 54
+   en Olimpiadas.Application.Implementations.GestionContenido.ParticipanteAppService.Paginar(PaginacionRequestDto`1 request) en D:\Archivos\Proyectos\Olimpiadas\1.3.4 Application.Implementations\GestionContenido\ParticipanteAppService.cs:línea 94
+   en Olimpiadas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.ParticipantePaginar(PaginacionRequestDto`1 request) en D:\Archivos\Proyectos\Olimpiadas\1.2.3 DistributedServices.Implementations\GestionContenido\GestionContenidoService.Participante.cs:línea 23
+   en SyncInvokeParticipantePaginar(Object , Object[] , Object[] )
+   en System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   en System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)"
+
+[Request]
+
+
+
+[Response]
+
+
+
+[Datos Generales]
+Identificador="e8183b7d-feac-4547-9299-a1c41c3c0780"
+Fecha y Hora="09/09/2020 23:08:08"
+Título="Error en el servicio ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+Process Information.Process ID="3772"
+Process Information.Process Name="iisexpress"
+Process Information.Account Name="LAPTOP-MARIO\Mario"
+Thread Information.Thread ID="27"
+Thread Information.Thread account name="LAPTOP-MARIO\Mario"
+Exception.Type="ArgumentException"
+Exception.Message="El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'."
+Exception.StackTrace="   en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en Olimpiadas.Infrastructure.Data.Core.Mapeador.MapearFila[TComplex](IDataReader dataReader, EquivalenciaDataReaderEntidad[] equivalenciasDataReaderEntidad) en D:\Archivos\Proyectos\Olimpiadas\1.5.1 Infrastructure.Core\Mapeador.cs:línea 179
+   en Olimpiadas.Infrastructure.Data.Core.Mapeador.MapearListaComplex[TComplex](IDataReader dataReader) en D:\Archivos\Proyectos\Olimpiadas\1.5.1 Infrastructure.Core\Mapeador.cs:línea 45
+   en Olimpiadas.Infrastructure.Data.Core.Repository`1.Paginar[TResultado](ParametroAccesosDatosTipado parametroAccesosDatos, TResultado filtro, CriteriosPaginacionDto criteriosPaginacion) en D:\Archivos\Proyectos\Olimpiadas\1.5.1 Infrastructure.Core\Repository.cs:línea 91
+   en Olimpiadas.Infrastructure.Data.GestionContenido.Repositories.ParticipanteRepository.Paginar(ParticipanteDto filtro, CriteriosPaginacionDto criteriosPaginacion) en D:\Archivos\Proyectos\Olimpiadas\1.5.2 Infrastructure.Data\GestionContenido\Repositories\ParticipanteRepository.cs:línea 54
+   en Olimpiadas.Application.Implementations.GestionContenido.ParticipanteAppService.Paginar(PaginacionRequestDto`1 request) en D:\Archivos\Proyectos\Olimpiadas\1.3.4 Application.Implementations\GestionContenido\ParticipanteAppService.cs:línea 94
+   en Olimpiadas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.ParticipantePaginar(PaginacionRequestDto`1 request) en D:\Archivos\Proyectos\Olimpiadas\1.2.3 DistributedServices.Implementations\GestionContenido\GestionContenidoService.Participante.cs:línea 23
+   en SyncInvokeParticipantePaginar(Object , Object[] , Object[] )
+   en System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   en System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)"
+
+[Request]
+
+
+
+[Response]
+
+
+
+[Datos Generales]
+Identificador="e8183b7d-feac-4547-9299-a1c41c3c0780"
+Fecha y Hora="09/09/2020 23:09:22"
+Título="Error en el servicio ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+Process Information.Process ID="3772"
+Process Information.Process Name="iisexpress"
+Process Information.Account Name="LAPTOP-MARIO\Mario"
+Thread Information.Thread ID="27"
+Thread Information.Thread account name="LAPTOP-MARIO\Mario"
+Exception.Type="ArgumentException"
+Exception.Message="El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'."
+Exception.StackTrace="   en System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   en System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   en System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   en System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   en System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   en Olimpiadas.Infrastructure.Data.Core.Mapeador.MapearFila[TComplex](IDataReader dataReader, EquivalenciaDataReaderEntidad[] equivalenciasDataReaderEntidad) en D:\Archivos\Proyectos\Olimpiadas\1.5.1 Infrastructure.Core\Mapeador.cs:línea 179
+   en Olimpiadas.Infrastructure.Data.Core.Mapeador.MapearListaComplex[TComplex](IDataReader dataReader) en D:\Archivos\Proyectos\Olimpiadas\1.5.1 Infrastructure.Core\Mapeador.cs:línea 45
+   en Olimpiadas.Infrastructure.Data.Core.Repository`1.Paginar[TResultado](ParametroAccesosDatosTipado parametroAccesosDatos, TResultado filtro, CriteriosPaginacionDto criteriosPaginacion) en D:\Archivos\Proyectos\Olimpiadas\1.5.1 Infrastructure.Core\Repository.cs:línea 91
+   en Olimpiadas.Infrastructure.Data.GestionContenido.Repositories.ParticipanteRepository.Paginar(ParticipanteDto filtro, CriteriosPaginacionDto criteriosPaginacion) en D:\Archivos\Proyectos\Olimpiadas\1.5.2 Infrastructure.Data\GestionContenido\Repositories\ParticipanteRepository.cs:línea 54
+   en Olimpiadas.Application.Implementations.GestionContenido.ParticipanteAppService.Paginar(PaginacionRequestDto`1 request) en D:\Archivos\Proyectos\Olimpiadas\1.3.4 Application.Implementations\GestionContenido\ParticipanteAppService.cs:línea 94
+   en Olimpiadas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.ParticipantePaginar(PaginacionRequestDto`1 request) en D:\Archivos\Proyectos\Olimpiadas\1.2.3 DistributedServices.Implementations\GestionContenido\GestionContenidoService.Participante.cs:línea 23
+   en SyncInvokeParticipantePaginar(Object , Object[] , Object[] )
+   en System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   en System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)"
+
+[Request]
+
+
+
+[Response]
+
+
+

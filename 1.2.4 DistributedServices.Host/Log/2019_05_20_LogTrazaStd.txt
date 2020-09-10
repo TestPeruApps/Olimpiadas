@@ -1,0 +1,63 @@
+[Datos Generales]
+Identificador="814e993d-533c-427f-b21a-58c986f78202"
+Fecha y Hora="05/20/2019 23:09:53"
+Título="ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+
+[Request]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:56904/GestionRutasService.svc</To>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">PROMPERU.GestionRutasService/IGestionRutasService/RecomendacionInsertar</Action>
+  </s:Header>
+  <s:Body>
+    <RecomendacionInsertar xmlns="PROMPERU.GestionRutasService">
+      <request xmlns:a="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Comun" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:Auditoria>
+          <a:Ip>127.0.0.1</a:Ip>
+          <a:Usua_Id>1</a:Usua_Id>
+        </a:Auditoria>
+        <a:Registro xmlns:b="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Rutas">
+          <b:Indice>0</b:Indice>
+          <b:Rrec_Activo>true</b:Rrec_Activo>
+          <b:Rrec_Descripcion>sdadasdadada</b:Rrec_Descripcion>
+          <b:Rrec_FechaCreacion>0001-01-01T00:00:00</b:Rrec_FechaCreacion>
+          <b:Rrec_FechaEdicion i:nil="true" />
+          <b:Rrec_Id>0</b:Rrec_Id>
+          <b:Rrec_IpCreacion i:nil="true" />
+          <b:Rrec_IpEdicion i:nil="true" />
+          <b:Rrec_OrdenVisualizacion>0</b:Rrec_OrdenVisualizacion>
+          <b:Rrec_RutaId>15</b:Rrec_RutaId>
+          <b:Rrec_UsuarioCreacion i:nil="true" />
+          <b:Rrec_UsuarioEdicion i:nil="true" />
+        </a:Registro>
+      </request>
+    </RecomendacionInsertar>
+  </s:Body>
+</s:Envelope>
+
+
+[Response]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <s:Fault>
+      <faultcode>s:ErrorNegocio</faultcode>
+      <faultstring xml:lang="es-PE">A ocurrido un error de Logica de Negocio. (Servicio de Incidencias)</faultstring>
+      <detail>
+        <ServiceErrorResponseDto xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Fault">
+          <Code>0005</Code>
+          <Description>A ocurrido un error de Logica de Negocio. (Servicio de Incidencias)</Description>
+          <Message>Debe asignar valores a los siguientes campos: 'Orden de visualización'</Message>
+          <SubCode>ErrorNegocio</SubCode>
+          <Type>ErrorNegocio</Type>
+        </ServiceErrorResponseDto>
+      </detail>
+    </s:Fault>
+  </s:Body>
+</s:Envelope>
+
+

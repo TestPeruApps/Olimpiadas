@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/PROMPERU.MessagingEngine.BusinessLogic.DataType" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/PROMPERU.MessagingEngine.BusinessLogic.DataType" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/PROMPERU.MessagingEngine.CrossCutting.Enumerations" />
+  <xs:complexType name="OfertaRespuesta">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Exitoso" type="xs:boolean" />
+      <xs:element minOccurs="0" name="MensajeError" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OfertaRespuesta" nillable="true" type="tns:OfertaRespuesta" />
+  <xs:complexType name="Push">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Asunto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Contenido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirebaseApi_ServerKey" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Push_Activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Push_DataOpcionalTipo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Push_EnvioConErrores" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Push_FechaHoraFinEnvio" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Push_FechaHoraInicioEnvio" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Push_FechaHoraProgramada" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Push_Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Token" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Url_FirebaseApi" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Push" nillable="true" type="tns:Push" />
+  <xs:complexType name="PushRespuesta">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Enviado" type="xs:boolean" />
+      <xs:element minOccurs="0" name="FcmResponseString" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MensajeError" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PushRespuesta" nillable="true" type="tns:PushRespuesta" />
+  <xs:complexType name="Mensaje">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Adjuntos" nillable="true" type="tns:ArrayOfAdjunto" />
+      <xs:element minOccurs="0" name="Destinatarios" nillable="true" type="tns:ArrayOfDestino" />
+      <xs:element minOccurs="0" name="Mens_Asunto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mens_Cuerpo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mens_DestinatariosIds" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mens_Enviado" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Mens_Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Mens_Manual" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Mens_PrioridadId" type="xs:short" />
+      <xs:element minOccurs="0" name="Mens_UsuarioCreacion" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Mensaje" nillable="true" type="tns:Mensaje" />
+  <xs:complexType name="ArrayOfAdjunto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Adjunto" nillable="true" type="tns:Adjunto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAdjunto" nillable="true" type="tns:ArrayOfAdjunto" />
+  <xs:complexType name="Adjunto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Adju_Archivo" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="Adju_Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Adju_MensajeId" type="xs:int" />
+      <xs:element minOccurs="0" name="Adju_NombreArchivo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Adju_TipoContenido" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Adjunto" nillable="true" type="tns:Adjunto" />
+  <xs:complexType name="ArrayOfDestino">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Destino" nillable="true" type="tns:Destino" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDestino" nillable="true" type="tns:ArrayOfDestino" />
+  <xs:complexType name="Destino">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Dest_Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Dest_Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Dest_MensajeId" type="xs:int" />
+      <xs:element minOccurs="0" name="Dest_TipoDestinoId" type="xs:short" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/PROMPERU.MessagingEngine.CrossCutting.Enumerations" minOccurs="0" name="TipoDestinoEmail" type="q1:EnumTipoDestinoEmail" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Destino" nillable="true" type="tns:Destino" />
+  <xs:complexType name="MensajeRespuesta">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Enviado" type="xs:boolean" />
+      <xs:element minOccurs="0" name="MensajeError" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MensajeId" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MensajeRespuesta" nillable="true" type="tns:MensajeRespuesta" />
+</xs:schema>

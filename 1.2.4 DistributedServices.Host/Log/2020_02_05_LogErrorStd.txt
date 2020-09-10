@@ -1,0 +1,37 @@
+[Datos Generales]
+Identificador="31b87928-5016-44ab-9699-994f62d440c9"
+Fecha y Hora="02/05/2020 22:02:47"
+Título="Error en el servicio ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+Process Information.Process ID="20484"
+Process Information.Process Name="iisexpress"
+Process Information.Account Name="DESKTOP-I5HBAO3\Mario"
+Thread Information.Thread ID="9"
+Thread Information.Thread account name="DESKTOP-I5HBAO3\Mario"
+SqlException.Server=""
+SqlException.Procedure=""
+SqlException.LineNumber="0"
+SqlException.Message="Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: Named Pipes Provider, error: 40 - No se pudo abrir una conexión con SQL Server)"
+SqlException.Number="2"
+SqlException.Class="20"
+SqlException.State="0"
+SqlException.ErrorCode="-2146232060"
+SqlException.SqlError1.Server=""
+SqlException.SqlError1.Procedure=""
+SqlException.SqlError1.LineNumber="0"
+SqlException.SqlError1.Message="Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: Named Pipes Provider, error: 40 - No se pudo abrir una conexión con SQL Server)"
+SqlException.SqlError1.Number="2"
+SqlException.SqlError1.Class="20"
+SqlException.SqlError1.State="0"
+
+[Request]
+
+
+
+[Response]
+
+
+

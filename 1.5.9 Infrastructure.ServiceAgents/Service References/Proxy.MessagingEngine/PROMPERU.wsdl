@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="PROMPERU" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="PROMPERU" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="PROMPERU/Imports">
+      <xsd:import namespace="PROMPERU" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/PROMPERU.MessagingEngine.BusinessLogic.DataType" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/PROMPERU.MessagingEngine.CrossCutting.Enumerations" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMessagingEngine_ActualizarEstadoUso_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarEstadoUso" />
+  </wsdl:message>
+  <wsdl:message name="IMessagingEngine_ActualizarEstadoUso_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarEstadoUsoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMessagingEngine_SincronizarOfertasManual_InputMessage">
+    <wsdl:part name="parameters" element="tns:SincronizarOfertasManual" />
+  </wsdl:message>
+  <wsdl:message name="IMessagingEngine_SincronizarOfertasManual_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SincronizarOfertasManualResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMessagingEngine_ProbarNotificacionPush_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProbarNotificacionPush" />
+  </wsdl:message>
+  <wsdl:message name="IMessagingEngine_ProbarNotificacionPush_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProbarNotificacionPushResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMessagingEngine_MensajeEnviarSinRespuesta_InputMessage">
+    <wsdl:part name="parameters" element="tns:MensajeEnviarSinRespuesta" />
+  </wsdl:message>
+  <wsdl:message name="IMessagingEngine_MensajeEnviar_InputMessage">
+    <wsdl:part name="parameters" element="tns:MensajeEnviar" />
+  </wsdl:message>
+  <wsdl:message name="IMessagingEngine_MensajeEnviar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MensajeEnviarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMessagingEngine_MensajeReenviar_InputMessage">
+    <wsdl:part name="parameters" element="tns:MensajeReenviar" />
+  </wsdl:message>
+  <wsdl:message name="IMessagingEngine_MensajeReenviar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MensajeReenviarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMessagingEngine_MensajeProbar_InputMessage">
+    <wsdl:part name="parameters" element="tns:MensajeProbar" />
+  </wsdl:message>
+  <wsdl:message name="IMessagingEngine_MensajeProbar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MensajeProbarResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IMessagingEngine">
+    <wsdl:operation name="ActualizarEstadoUso">
+      <wsdl:input wsaw:Action="PROMPERU/IMessagingEngine/ActualizarEstadoUso" message="tns:IMessagingEngine_ActualizarEstadoUso_InputMessage" />
+      <wsdl:output wsaw:Action="PROMPERU/IMessagingEngine/ActualizarEstadoUsoResponse" message="tns:IMessagingEngine_ActualizarEstadoUso_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SincronizarOfertasManual">
+      <wsdl:input wsaw:Action="PROMPERU/IMessagingEngine/SincronizarOfertasManual" message="tns:IMessagingEngine_SincronizarOfertasManual_InputMessage" />
+      <wsdl:output wsaw:Action="PROMPERU/IMessagingEngine/SincronizarOfertasManualResponse" message="tns:IMessagingEngine_SincronizarOfertasManual_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProbarNotificacionPush">
+      <wsdl:input wsaw:Action="PROMPERU/IMessagingEngine/ProbarNotificacionPush" message="tns:IMessagingEngine_ProbarNotificacionPush_InputMessage" />
+      <wsdl:output wsaw:Action="PROMPERU/IMessagingEngine/ProbarNotificacionPushResponse" message="tns:IMessagingEngine_ProbarNotificacionPush_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MensajeEnviarSinRespuesta">
+      <wsdl:input wsaw:Action="PROMPERU/IMessagingEngine/MensajeEnviarSinRespuesta" message="tns:IMessagingEngine_MensajeEnviarSinRespuesta_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MensajeEnviar">
+      <wsdl:input wsaw:Action="PROMPERU/IMessagingEngine/MensajeEnviar" message="tns:IMessagingEngine_MensajeEnviar_InputMessage" />
+      <wsdl:output wsaw:Action="PROMPERU/IMessagingEngine/MensajeEnviarResponse" message="tns:IMessagingEngine_MensajeEnviar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MensajeReenviar">
+      <wsdl:input wsaw:Action="PROMPERU/IMessagingEngine/MensajeReenviar" message="tns:IMessagingEngine_MensajeReenviar_InputMessage" />
+      <wsdl:output wsaw:Action="PROMPERU/IMessagingEngine/MensajeReenviarResponse" message="tns:IMessagingEngine_MensajeReenviar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MensajeProbar">
+      <wsdl:input wsaw:Action="PROMPERU/IMessagingEngine/MensajeProbar" message="tns:IMessagingEngine_MensajeProbar_InputMessage" />
+      <wsdl:output wsaw:Action="PROMPERU/IMessagingEngine/MensajeProbarResponse" message="tns:IMessagingEngine_MensajeProbar_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

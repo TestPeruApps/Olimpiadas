@@ -1,0 +1,10 @@
+D:\Celsat\RutasCortas\PROMPERU.YTQPRutasCortas\CompareDatabase\bin\Debug\CompareDatabase.dacpac
+D:\Celsat\RutasCortas\PROMPERU.YTQPRutasCortas\CompareDatabase\bin\Debug\CompareDatabase.dll
+D:\Celsat\RutasCortas\PROMPERU.YTQPRutasCortas\CompareDatabase\bin\Debug\CompareDatabase.pdb
+D:\Celsat\RutasCortas\PROMPERU.YTQPRutasCortas\CompareDatabase\obj\Debug\CompareDatabase.sqlprojAssemblyReference.cache
+D:\Celsat\RutasCortas\PROMPERU.YTQPRutasCortas\CompareDatabase\obj\Debug\Model.xml
+D:\Celsat\RutasCortas\PROMPERU.YTQPRutasCortas\CompareDatabase\obj\Debug\refactor.xml
+D:\Celsat\RutasCortas\PROMPERU.YTQPRutasCortas\CompareDatabase\obj\Debug\postdeploy.sql
+D:\Celsat\RutasCortas\PROMPERU.YTQPRutasCortas\CompareDatabase\obj\Debug\predeploy.sql
+D:\Celsat\RutasCortas\PROMPERU.YTQPRutasCortas\CompareDatabase\obj\Debug\CompareDatabase.dll
+D:\Celsat\RutasCortas\PROMPERU.YTQPRutasCortas\CompareDatabase\obj\Debug\CompareDatabase.pdb

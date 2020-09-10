@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="PROMPERU.GestionContenidoService" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="PROMPERU.GestionContenidoService" location="http://localhost:56904/GestionContenidoService.svc?wsdl" />
+  <wsdl:types />
+  <wsdl:binding name="BasicBindingGestionContenido" type="i0:IGestionContenidoService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PersonalPaginar">
+      <soap:operation soapAction="PROMPERU.GestionContenidoService/IGestionContenidoService/PersonalPaginar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorResponseDtoFault">
+        <soap:fault use="literal" name="ServiceErrorResponseDtoFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="PersonalObtenerEditor">
+      <soap:operation soapAction="PROMPERU.GestionContenidoService/IGestionContenidoService/PersonalObtenerEditor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorResponseDtoFault">
+        <soap:fault use="literal" name="ServiceErrorResponseDtoFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="PersonalInsertar">
+      <soap:operation soapAction="PROMPERU.GestionContenidoService/IGestionContenidoService/PersonalInsertar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorResponseDtoFault">
+        <soap:fault use="literal" name="ServiceErrorResponseDtoFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="PersonalActualizar">
+      <soap:operation soapAction="PROMPERU.GestionContenidoService/IGestionContenidoService/PersonalActualizar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorResponseDtoFault">
+        <soap:fault use="literal" name="ServiceErrorResponseDtoFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="PersonalDesactivar">
+      <soap:operation soapAction="PROMPERU.GestionContenidoService/IGestionContenidoService/PersonalDesactivar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorResponseDtoFault">
+        <soap:fault use="literal" name="ServiceErrorResponseDtoFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="PersonalActivar">
+      <soap:operation soapAction="PROMPERU.GestionContenidoService/IGestionContenidoService/PersonalActivar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorResponseDtoFault">
+        <soap:fault use="literal" name="ServiceErrorResponseDtoFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ParticipantePaginar">
+      <soap:operation soapAction="PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipantePaginar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorResponseDtoFault">
+        <soap:fault use="literal" name="ServiceErrorResponseDtoFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ParticipanteObtenerEditor">
+      <soap:operation soapAction="PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipanteObtenerEditor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorResponseDtoFault">
+        <soap:fault use="literal" name="ServiceErrorResponseDtoFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ParticipanteInsertar">
+      <soap:operation soapAction="PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipanteInsertar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorResponseDtoFault">
+        <soap:fault use="literal" name="ServiceErrorResponseDtoFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ParticipanteActualizar">
+      <soap:operation soapAction="PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipanteActualizar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorResponseDtoFault">
+        <soap:fault use="literal" name="ServiceErrorResponseDtoFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ParticipanteDesactivar">
+      <soap:operation soapAction="PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipanteDesactivar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorResponseDtoFault">
+        <soap:fault use="literal" name="ServiceErrorResponseDtoFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ParticipanteActivar">
+      <soap:operation soapAction="PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipanteActivar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorResponseDtoFault">
+        <soap:fault use="literal" name="ServiceErrorResponseDtoFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Prueba">
+      <soap:operation soapAction="PROMPERU.GestionContenidoService/IGestionContenidoService/Prueba" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorResponseDtoFault">
+        <soap:fault use="literal" name="ServiceErrorResponseDtoFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

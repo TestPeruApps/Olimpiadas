@@ -1,0 +1,64 @@
+[Datos Generales]
+Identificador="4d19103d-8369-4ea8-9950-8f9e885bd540"
+Fecha y Hora="09/10/2020 01:03:39"
+Título="ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+
+[Request]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:56904/GestionContenidoService.svc</To>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipantePaginar</Action>
+  </s:Header>
+  <s:Body>
+    <ParticipantePaginar xmlns="PROMPERU.GestionContenidoService">
+      <request xmlns:a="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:CriteriosPaginacion>
+          <a:NumeroPagina>0</a:NumeroPagina>
+          <a:OrdenacionDireccion>Ninguna</a:OrdenacionDireccion>
+          <a:SortBy i:nil="true" />
+          <a:TamanioPagina>0</a:TamanioPagina>
+        </a:CriteriosPaginacion>
+        <a:Filtro xmlns:b="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionContenido.Participante">
+          <b:Activo i:nil="true" />
+          <b:IdDeporte>0</b:IdDeporte>
+          <b:IdPais>0</b:IdPais>
+          <b:IdParticipante i:nil="true" />
+          <b:NombreDeporte i:nil="true" />
+          <b:NombrePais i:nil="true" />
+          <b:NombreParticipante i:nil="true" />
+        </a:Filtro>
+        <a:Usua_Id>0</a:Usua_Id>
+      </request>
+    </ParticipantePaginar>
+  </s:Body>
+</s:Envelope>
+
+
+[Response]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <s:Fault>
+      <faultcode>s:ErrorNoManejado</faultcode>
+      <faultstring xml:lang="es-PE">PageSize
+Nombre del parámetro: El tamaño de la página solicitada debe ser mayor a cero.</faultstring>
+      <detail>
+        <ServiceErrorResponseDto xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Fault">
+          <Code>0004</Code>
+          <Description>PageSize
+Nombre del parámetro: El tamaño de la página solicitada debe ser mayor a cero.</Description>
+          <Message>PageSize
+Nombre del parámetro: El tamaño de la página solicitada debe ser mayor a cero.</Message>
+          <SubCode>ErrorNoManejado</SubCode>
+          <Type>ErrorNoManejado</Type>
+        </ServiceErrorResponseDto>
+      </detail>
+    </s:Fault>
+  </s:Body>
+</s:Envelope>
+
+

@@ -1,0 +1,47 @@
+[Datos Generales]
+Identificador="aecac71e-1cf7-4c5c-b9d5-7166202c4620"
+Fecha y Hora="08/10/2019 13:59:49"
+Título="ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+
+[Request]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:56904/GestionSeguridadService.svc</To>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">PROMPERU.GestionSeguridadService/IGestionSeguridadService/UsuarioValidarLogin</Action>
+  </s:Header>
+  <s:Body>
+    <UsuarioValidarLogin xmlns="PROMPERU.GestionSeguridadService">
+      <request xmlns:a="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.GestionSeguridad.Usuarios" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:Contrasenia>123456</a:Contrasenia>
+        <a:Login>ADMINISTRADOR@GMAIL.COM</a:Login>
+      </request>
+    </UsuarioValidarLogin>
+  </s:Body>
+</s:Envelope>
+
+
+[Response]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <s:Fault>
+      <faultcode>s:ErrorNegocio</faultcode>
+      <faultstring xml:lang="es-PE">La contraseña ingresada es incorrecta</faultstring>
+      <detail>
+        <ServiceErrorResponseDto xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Fault">
+          <Code>0005</Code>
+          <Description>La contraseña ingresada es incorrecta</Description>
+          <Message>La contraseña ingresada es incorrecta</Message>
+          <SubCode>ErrorNegocio</SubCode>
+          <Type>ErrorNegocio</Type>
+        </ServiceErrorResponseDto>
+      </detail>
+    </s:Fault>
+  </s:Body>
+</s:Envelope>
+
+

@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5EBA4EBA-6EBE-4A68-B9E9-ED26548A45DE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Olimpiadas.Presentation.ServiceAgents</RootNamespace>
+    <AssemblyName>Olimpiadas.Presentation.ServiceAgents</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\Proxy.GestionContenido\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Proxy.GestionSeguridad\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteEditorResponseDto.datasource" />
+    <None Include="Properties\DataSources\Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipantePaginacionResponseDto.datasource" />
+    <None Include="Properties\DataSources\Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalEditorResponseDto.datasource" />
+    <None Include="Properties\DataSources\Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalPaginacionResponseDto.datasource" />
+    <None Include="Service References\Proxy.GestionContenido\GestionContenidoService.wsdl" />
+    <None Include="Service References\Proxy.GestionContenido\GestionContenidoService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Proxy.GestionContenido\GestionContenidoService1.wsdl" />
+    <None Include="Service References\Proxy.GestionContenido\GestionContenidoService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Proxy.GestionContenido\GestionContenidoService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Proxy.GestionContenido\GestionContenidoService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Proxy.GestionContenido\GestionContenidoService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Proxy.GestionContenido\GestionContenidoService5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Proxy.GestionContenido\GestionContenidoService6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Proxy.GestionContenido\GestionContenidoService7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Proxy.GestionSeguridad\GestionSeguridadService.wsdl" />
+    <None Include="Service References\Proxy.GestionSeguridad\GestionSeguridadService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Proxy.GestionSeguridad\GestionSeguridadService1.wsdl" />
+    <None Include="Service References\Proxy.GestionSeguridad\GestionSeguridadService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Proxy.GestionSeguridad\GestionSeguridadService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Proxy.GestionSeguridad\GestionSeguridadService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Proxy.GestionContenido\" />
+    <WCFMetadataStorage Include="Service References\Proxy.GestionSeguridad\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Proxy.GestionSeguridad\GestionSeguridadService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Proxy.GestionSeguridad\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Proxy.GestionSeguridad\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Proxy.GestionSeguridad\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Proxy.GestionContenido\GestionContenidoService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Proxy.GestionContenido\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Proxy.GestionContenido\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Proxy.GestionContenido\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\1.3.2 Application.Dto\1.3.2.Application.Dto.csproj">
+      <Project>{d657a5c5-4eae-45dd-9f80-03a035f429b9}</Project>
+      <Name>1.3.2.Application.Dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\1.6.1 CrossCutting.Enumerations\1.6.1.CrossCutting.Enumerations.csproj">
+      <Project>{930943d2-c164-45e5-a3e7-e96b488ad9e8}</Project>
+      <Name>1.6.1.CrossCutting.Enumerations</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

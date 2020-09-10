@@ -1,0 +1,22 @@
+﻿@using Olimpiadas.Web.CMS.Areas.Seguridad.ViewModels.Autenticacion
+@model Olimpiadas.Web.CMS.Models.HomeViewModel
+@{
+    var nonce = Context.Items["csp-nonce"].ToString();
+    if (Model == null)
+    {
+        ViewBag.Title = "Login";
+        Layout = "~/Views/Shared/_Layout.Login.cshtml";
+    }
+}
+@if (Model != null)
+{
+    <environment names="Staging,Production">
+    </environment>
+    <ul id="ul-tab-main" class="nav nav-tabs"></ul>
+    <div id="tab-main" class="tab-content">
+    </div>
+}
+else
+{
+    await Html.RenderPartialAsync("~/Areas/Seguridad/Views/Autenticacion/Login.cshtml", new LoginViewModel());
+}

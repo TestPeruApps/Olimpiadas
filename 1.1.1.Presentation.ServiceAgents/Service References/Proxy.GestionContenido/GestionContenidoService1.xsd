@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:56904/GestionContenidoService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionContenido.Personal" />
+  <xs:import schemaLocation="http://localhost:56904/GestionContenidoService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Olimpiadas.CrossCutting.Enumerations" />
+  <xs:import schemaLocation="http://localhost:56904/GestionContenidoService.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://localhost:56904/GestionContenidoService.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionContenido.Participante" />
+  <xs:complexType name="PaginacionRequestDtoOfPersonalDtoq_SnvNoln">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="PaginacionRequestDtoOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="PersonalDto" Namespace="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionContenido.Personal" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="CriteriosPaginacion" nillable="true" type="tns:CriteriosPaginacionDto" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionContenido.Personal" name="Filtro" nillable="true" type="q1:PersonalDto" />
+      <xs:element minOccurs="0" name="Usua_Id" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PaginacionRequestDtoOfPersonalDtoq_SnvNoln" nillable="true" type="tns:PaginacionRequestDtoOfPersonalDtoq_SnvNoln" />
+  <xs:complexType name="CriteriosPaginacionDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ColumnaOrdenacion" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="NumeroPagina" type="xs:int" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Olimpiadas.CrossCutting.Enumerations" name="OrdenacionDireccion" type="q2:EnumDireccionPaginacion" />
+      <xs:element name="SortBy" nillable="true" type="xs:string" />
+      <xs:element name="TamanioPagina" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CriteriosPaginacionDto" nillable="true" type="tns:CriteriosPaginacionDto" />
+  <xs:complexType name="BasePaginacionResponseDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EstadosSiNo" nillable="true" type="tns:ArrayOfItemDto" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Opciones" nillable="true" type="q3:ArrayOfshort" />
+      <xs:element minOccurs="0" name="TotalItems" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BasePaginacionResponseDto" nillable="true" type="tns:BasePaginacionResponseDto" />
+  <xs:complexType name="ArrayOfItemDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ItemDto" nillable="true" type="tns:ItemDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfItemDto" nillable="true" type="tns:ArrayOfItemDto" />
+  <xs:complexType name="ItemDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdTipo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreTipo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ItemDto" nillable="true" type="tns:ItemDto" />
+  <xs:complexType name="RequestDtoOfPersonalDtoq_SnvNoln">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="RequestDtoOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="PersonalDto" Namespace="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionContenido.Personal" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Auditoria" nillable="true" type="tns:AuditoriaDto" />
+      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionContenido.Personal" minOccurs="0" name="Registro" nillable="true" type="q4:PersonalDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RequestDtoOfPersonalDtoq_SnvNoln" nillable="true" type="tns:RequestDtoOfPersonalDtoq_SnvNoln" />
+  <xs:complexType name="AuditoriaDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Ip" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Usua_Id" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AuditoriaDto" nillable="true" type="tns:AuditoriaDto" />
+  <xs:complexType name="PaginacionRequestDtoOfParticipanteDtoUUk90aB6">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="PaginacionRequestDtoOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ParticipanteDto" Namespace="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionContenido.Participante" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="CriteriosPaginacion" nillable="true" type="tns:CriteriosPaginacionDto" />
+      <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionContenido.Participante" name="Filtro" nillable="true" type="q5:ParticipanteDto" />
+      <xs:element minOccurs="0" name="Usua_Id" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PaginacionRequestDtoOfParticipanteDtoUUk90aB6" nillable="true" type="tns:PaginacionRequestDtoOfParticipanteDtoUUk90aB6" />
+  <xs:complexType name="RequestDtoOfParticipanteDtoUUk90aB6">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="RequestDtoOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ParticipanteDto" Namespace="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionContenido.Participante" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Auditoria" nillable="true" type="tns:AuditoriaDto" />
+      <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionContenido.Participante" minOccurs="0" name="Registro" nillable="true" type="q6:ParticipanteDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RequestDtoOfParticipanteDtoUUk90aB6" nillable="true" type="tns:RequestDtoOfParticipanteDtoUUk90aB6" />
+</xs:schema>

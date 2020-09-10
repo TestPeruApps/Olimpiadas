@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GestionRutas" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Atractivo_Actividad">
+    <Key>
+      <PropertyRef Name="Aact_AtractivoId" />
+      <PropertyRef Name="Aact_ActividadId" />
+    </Key>
+    <Property Name="Aact_AtractivoId" Type="Int32" Nullable="false" />
+    <Property Name="Aact_ActividadId" Type="Int16" Nullable="false" />
+    <Property Name="Aact_Asignado" Type="Boolean" Nullable="false" />
+    <Property Name="Aact_UsuarioCreacion" Type="Int16" Nullable="false" />
+    <Property Name="Aact_UsuarioEdicion" Type="Int16" />
+    <Property Name="Aact_FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Aact_FechaEdicion" Type="DateTime" Precision="3" />
+    <Property Name="Aact_IpCreacion" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Aact_IpEdicion" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Atractivo" Relationship="GestionRutas.FK_Atractivo_Actividad_Atractivo" FromRole="Atractivo_Actividad" ToRole="Atractivo" />
+  </EntityType>
+  <EntityType Name="Atractivo_Servicio">
+    <Key>
+      <PropertyRef Name="Aser_AtractivoId" />
+      <PropertyRef Name="Aser_ServicioId" />
+    </Key>
+    <Property Name="Aser_AtractivoId" Type="Int32" Nullable="false" />
+    <Property Name="Aser_ServicioId" Type="Int16" Nullable="false" />
+    <Property Name="Aser_Asignado" Type="Boolean" Nullable="false" />
+    <Property Name="Aser_UsuarioCreacion" Type="Int16" Nullable="false" />
+    <Property Name="Aser_UsuarioEdicion" Type="Int16" />
+    <Property Name="Aser_FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Aser_FechaEdicion" Type="DateTime" Precision="3" />
+    <Property Name="Aser_IpCreacion" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Aser_IpEdicion" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Atractivo" Relationship="GestionRutas.FK_Atractivo_Servicio_Atractivo" FromRole="Atractivo_Servicio" ToRole="Atractivo" />
+  </EntityType>
+  <EntityType Name="Ruta_Experiencia">
+    <Key>
+      <PropertyRef Name="Rexp_RutaId" />
+      <PropertyRef Name="Rexp_ExperienciaId" />
+    </Key>
+    <Property Name="Rexp_RutaId" Type="Int32" Nullable="false" />
+    <Property Name="Rexp_ExperienciaId" Type="Int16" Nullable="false" />
+    <Property Name="Rexp_Asignado" Type="Boolean" Nullable="false" />
+    <Property Name="Rexp_UsuarioCreacion" Type="Int16" Nullable="false" />
+    <Property Name="Rexp_UsuarioEdicion" Type="Int16" />
+    <Property Name="Rexp_FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Rexp_FechaEdicion" Type="DateTime" Precision="3" />
+    <Property Name="Rexp_IpCreacion" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Rexp_IpEdicion" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Ruta" Relationship="GestionRutas.FK_Ruta_Experiencia_Ruta" FromRole="Ruta_Experiencia" ToRole="Ruta" />
+  </EntityType>
+  <EntityContainer Name="DbContextGestionRutas" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Atractivo_Actividad" EntityType="Self.Atractivo_Actividad" />
+    <EntitySet Name="Atractivo_Servicio" EntityType="Self.Atractivo_Servicio" />
+    <EntitySet Name="Ruta_Experiencia" EntityType="Self.Ruta_Experiencia" />
+    <EntitySet Name="RutaRecomendacion" EntityType="GestionRutas.RutaRecomendacion" />
+    <EntitySet Name="Ruta" EntityType="GestionRutas.Ruta" />
+    <AssociationSet Name="FK_Ruta_Experiencia_Ruta" Association="GestionRutas.FK_Ruta_Experiencia_Ruta">
+      <End Role="Ruta" EntitySet="Ruta" />
+      <End Role="Ruta_Experiencia" EntitySet="Ruta_Experiencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RutaRecomendacion_Ruta" Association="GestionRutas.FK_RutaRecomendacion_Ruta">
+      <End Role="Ruta" EntitySet="Ruta" />
+      <End Role="RutaRecomendacion" EntitySet="RutaRecomendacion" />
+    </AssociationSet>
+    <EntitySet Name="RutaCoordenada" EntityType="GestionRutas.RutaCoordenada" />
+    <AssociationSet Name="FK_RutaCoordenada_Ruta" Association="GestionRutas.FK_RutaCoordenada_Ruta">
+      <End Role="Ruta" EntitySet="Ruta" />
+      <End Role="RutaCoordenada" EntitySet="RutaCoordenada" />
+    </AssociationSet>
+    <EntitySet Name="Atractivo" EntityType="GestionRutas.Atractivo" />
+    <AssociationSet Name="FK_Atractivo_Actividad_Atractivo" Association="GestionRutas.FK_Atractivo_Actividad_Atractivo">
+      <End Role="Atractivo" EntitySet="Atractivo" />
+      <End Role="Atractivo_Actividad" EntitySet="Atractivo_Actividad" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Atractivo_Atractivo" Association="GestionRutas.FK_Atractivo_Atractivo">
+      <End Role="Atractivo" EntitySet="Atractivo" />
+      <End Role="Atractivo1" EntitySet="Atractivo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Atractivo_Ruta" Association="GestionRutas.FK_Atractivo_Ruta">
+      <End Role="Ruta" EntitySet="Ruta" />
+      <End Role="Atractivo" EntitySet="Atractivo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Atractivo_Servicio_Atractivo" Association="GestionRutas.FK_Atractivo_Servicio_Atractivo">
+      <End Role="Atractivo" EntitySet="Atractivo" />
+      <End Role="Atractivo_Servicio" EntitySet="Atractivo_Servicio" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="RutaRecomendacion">
+    <Key>
+      <PropertyRef Name="Rrec_Id" />
+    </Key>
+    <Property Name="Rrec_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Rrec_RutaId" Type="Int32" Nullable="false" />
+    <Property Name="Rrec_Descripcion" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Rrec_OrdenVisualizacion" Type="Byte" Nullable="false" />
+    <Property Name="Rrec_Activo" Type="Boolean" Nullable="false" />
+    <Property Name="Rrec_UsuarioCreacion" Type="Int16" Nullable="false" />
+    <Property Name="Rrec_UsuarioEdicion" Type="Int16" />
+    <Property Name="Rrec_FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Rrec_FechaEdicion" Type="DateTime" Precision="3" />
+    <Property Name="Rrec_IpCreacion" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Rrec_IpEdicion" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Ruta" Relationship="GestionRutas.FK_RutaRecomendacion_Ruta" FromRole="RutaRecomendacion" ToRole="Ruta" />
+  </EntityType>
+  <EntityType Name="Ruta">
+    <Key>
+      <PropertyRef Name="Ruta_Id" />
+    </Key>
+    <Property Name="Ruta_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ruta_OrigenId" Type="Int16" Nullable="false" />
+    <Property Name="Ruta_DestinoId" Type="Int16" Nullable="false" />
+    <Property Name="Ruta_Nombre" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Ruta_QueVisitar" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="Ruta_Latitud" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Ruta_Longitud" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Ruta_ClimaDicMarId" Type="Int16" Nullable="false" />
+    <Property Name="Ruta_ClimaMarJunId" Type="Int16" Nullable="false" />
+    <Property Name="Ruta_ClimaJunSetId" Type="Int16" Nullable="false" />
+    <Property Name="Ruta_ClimaSetDicId" Type="Int16" Nullable="false" />
+    <Property Name="Ruta_TemperaturaMaxima" Type="Byte" />
+    <Property Name="Ruta_TemperaturaMinima" Type="Byte" />
+    <Property Name="Ruta_TemperaturaActual" Type="Byte" />
+    <Property Name="Ruta_ClimaActualId" Type="Int16" />
+    <Property Name="Ruta_ClimaActualImagen" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Ruta_ClimaActualDescripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Ruta_EnLaRuta" Type="String" Nullable="false" MaxLength="800" FixedLength="false" Unicode="false" />
+    <Property Name="Ruta_ComoIrEnBus" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="Ruta_ComoIrEnAuto" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="Ruta_DiasEstadiaMinima" Type="Byte" Nullable="false" />
+    <Property Name="Ruta_ValoracionPromedio" Type="Decimal" Precision="2" Scale="1" />
+    <Property Name="Ruta_TotalComentarios" Type="Int32" Nullable="false" />
+    <Property Name="Ruta_ExperienciaIds" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Ruta_ExperienciaNombres" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Ruta_ActividadesIds" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Ruta_TextoAlCompartir" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Ruta_OrdenVisualizacion" Type="Byte" Nullable="false" />
+    <Property Name="Ruta_Activo" Type="Boolean" Nullable="false" />
+    <Property Name="Ruta_UsuarioCreacion" Type="Int16" Nullable="false" />
+    <Property Name="Ruta_UsuarioEdicion" Type="Int16" />
+    <Property Name="Ruta_FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Ruta_FechaEdicion" Type="DateTime" Precision="3" />
+    <Property Name="Ruta_IpCreacion" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Ruta_IpEdicion" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Ruta_Experiencia" Relationship="GestionRutas.FK_Ruta_Experiencia_Ruta" FromRole="Ruta" ToRole="Ruta_Experiencia" />
+    <NavigationProperty Name="RutaRecomendacion" Relationship="GestionRutas.FK_RutaRecomendacion_Ruta" FromRole="Ruta" ToRole="RutaRecomendacion" />
+    <NavigationProperty Name="RutaCoordenada" Relationship="GestionRutas.FK_RutaCoordenada_Ruta" FromRole="Ruta" ToRole="RutaCoordenada" />
+    <NavigationProperty Name="Atractivo" Relationship="GestionRutas.FK_Atractivo_Ruta" FromRole="Ruta" ToRole="Atractivo" />
+    <Property Name="Ruta_Version" Type="Int32" Nullable="false" />
+    <Property Name="Ruta_NombreImagen" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="Ruta_NotificacionEnviada" Type="Boolean" />
+    <Property Name="Ruta_EnYTQP" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK_Ruta_Experiencia_Ruta">
+    <End Type="GestionRutas.Ruta" Role="Ruta" Multiplicity="1" />
+    <End Type="GestionRutas.Ruta_Experiencia" Role="Ruta_Experiencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ruta">
+        <PropertyRef Name="Ruta_Id" />
+      </Principal>
+      <Dependent Role="Ruta_Experiencia">
+        <PropertyRef Name="Rexp_RutaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RutaRecomendacion_Ruta">
+    <End Type="GestionRutas.Ruta" Role="Ruta" Multiplicity="1" />
+    <End Type="GestionRutas.RutaRecomendacion" Role="RutaRecomendacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ruta">
+        <PropertyRef Name="Ruta_Id" />
+      </Principal>
+      <Dependent Role="RutaRecomendacion">
+        <PropertyRef Name="Rrec_RutaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="RutaCoordenada">
+    <Key>
+      <PropertyRef Name="Coor_Id" />
+    </Key>
+    <Property Name="Coor_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Coor_LatitudSuperior" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Coor_LongitudSuperior" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Coor_LatitudInferior" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Coor_LongitudInferior" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Coor_Activo" Type="Boolean" Nullable="false" />
+    <Property Name="Coor_UsuarioCreacion" Type="Int16" Nullable="false" />
+    <Property Name="Coor_UsuarioEdicion" Type="Int16" />
+    <Property Name="Coor_FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Coor_FechaEdicion" Type="DateTime" Precision="3" />
+    <Property Name="Coor_IpCreacion" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Coor_IpEdicion" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Coor_RutaId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Ruta" Relationship="GestionRutas.FK_RutaCoordenada_Ruta" FromRole="RutaCoordenada" ToRole="Ruta" />
+  </EntityType>
+  <Association Name="FK_RutaCoordenada_Ruta">
+    <End Type="GestionRutas.Ruta" Role="Ruta" Multiplicity="1" />
+    <End Type="GestionRutas.RutaCoordenada" Role="RutaCoordenada" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ruta">
+        <PropertyRef Name="Ruta_Id" />
+      </Principal>
+      <Dependent Role="RutaCoordenada">
+        <PropertyRef Name="Coor_RutaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Atractivo">
+    <Key>
+      <PropertyRef Name="Atra_Id" />
+    </Key>
+    <Property Name="Atra_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Atra_RutaId" Type="Int32" Nullable="false" />
+    <Property Name="Atra_PadreId" Type="Int32" />
+    <Property Name="Atra_Nombre" Type="String" Nullable="false" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="Atra_Descripcion" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Atra_Direccion" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Atra_Distancia" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="Atra_Latitud" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Atra_Longitud" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Atra_TemperaturaMaxima" Type="Byte" />
+    <Property Name="Atra_TemperaturaMinima" Type="Byte" />
+    <Property Name="Atra_ClimaDicMarId" Type="Byte" />
+    <Property Name="Atra_ClimaMarJunId" Type="Byte" />
+    <Property Name="Atra_ClimaJunSetId" Type="Byte" />
+    <Property Name="Atra_ClimaSetDicId" Type="Byte" />
+    <Property Name="Atra_ActividadIds" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Atra_ActividadNombres" Type="String" Nullable="false" MaxLength="700" FixedLength="false" Unicode="false" />
+    <Property Name="Atra_ServicioIds" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Atra_ServicioNombres" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Atra_TemperaturaActual" Type="Byte" />
+    <Property Name="Atra_ClimaActualId" Type="Int16" />
+    <Property Name="Atra_ClimaActualImagen" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Atra_ClimaActualDescripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Atra_ValoracionPromedio" Type="Decimal" Precision="2" Scale="1" />
+    <Property Name="Atra_TotalComentarios" Type="Int32" Nullable="false" />
+    <Property Name="Atra_TextoAlCompartir" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Atra_OrdenVisualizacion" Type="Int16" Nullable="false" />
+    <Property Name="Atra_Activo" Type="Boolean" Nullable="false" />
+    <Property Name="Atra_MostrarEnApp" Type="Boolean" Nullable="false" />
+    <Property Name="Atra_UsuarioCreacion" Type="Int16" Nullable="false" />
+    <Property Name="Atra_UsuarioEdicion" Type="Int16" />
+    <Property Name="Atra_FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Atra_FechaEdicion" Type="DateTime" Precision="3" />
+    <Property Name="Atra_IpCreacion" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Atra_IpEdicion" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Atractivo_Actividad" Relationship="GestionRutas.FK_Atractivo_Actividad_Atractivo" FromRole="Atractivo" ToRole="Atractivo_Actividad" />
+    <NavigationProperty Name="Atractivo1" Relationship="GestionRutas.FK_Atractivo_Atractivo" FromRole="Atractivo" ToRole="Atractivo1" />
+    <NavigationProperty Name="Atractivo2" Relationship="GestionRutas.FK_Atractivo_Atractivo" FromRole="Atractivo1" ToRole="Atractivo" />
+    <NavigationProperty Name="Ruta" Relationship="GestionRutas.FK_Atractivo_Ruta" FromRole="Atractivo" ToRole="Ruta" />
+    <NavigationProperty Name="Atractivo_Servicio" Relationship="GestionRutas.FK_Atractivo_Servicio_Atractivo" FromRole="Atractivo" ToRole="Atractivo_Servicio" />
+    <Property Name="Atra_NombreImagen" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="Atra_Version" Type="Int32" Nullable="false" />
+    <Property Name="Atra_NotificacionEnviada" Type="Boolean" />
+    <Property Name="Atra_FechaActualizacionClima" Type="DateTime" Precision="3" />
+  </EntityType>
+  <Association Name="FK_Atractivo_Actividad_Atractivo">
+    <End Type="GestionRutas.Atractivo" Role="Atractivo" Multiplicity="1" />
+    <End Type="GestionRutas.Atractivo_Actividad" Role="Atractivo_Actividad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Atractivo">
+        <PropertyRef Name="Atra_Id" />
+      </Principal>
+      <Dependent Role="Atractivo_Actividad">
+        <PropertyRef Name="Aact_AtractivoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Atractivo_Atractivo">
+    <End Type="GestionRutas.Atractivo" Role="Atractivo" Multiplicity="0..1" />
+    <End Type="GestionRutas.Atractivo" Role="Atractivo1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Atractivo">
+        <PropertyRef Name="Atra_Id" />
+      </Principal>
+      <Dependent Role="Atractivo1">
+        <PropertyRef Name="Atra_PadreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Atractivo_Ruta">
+    <End Type="GestionRutas.Ruta" Role="Ruta" Multiplicity="1" />
+    <End Type="GestionRutas.Atractivo" Role="Atractivo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ruta">
+        <PropertyRef Name="Ruta_Id" />
+      </Principal>
+      <Dependent Role="Atractivo">
+        <PropertyRef Name="Atra_RutaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Atractivo_Servicio_Atractivo">
+    <End Type="GestionRutas.Atractivo" Role="Atractivo" Multiplicity="1" />
+    <End Type="GestionRutas.Atractivo_Servicio" Role="Atractivo_Servicio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Atractivo">
+        <PropertyRef Name="Atra_Id" />
+      </Principal>
+      <Dependent Role="Atractivo_Servicio">
+        <PropertyRef Name="Aser_AtractivoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

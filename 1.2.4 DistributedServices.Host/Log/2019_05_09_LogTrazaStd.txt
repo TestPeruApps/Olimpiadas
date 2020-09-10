@@ -1,0 +1,428 @@
+[Datos Generales]
+Identificador="342d0a8e-4120-4670-b88c-ea1362998bc5"
+Fecha y Hora="05/09/2019 21:32:19"
+Título="ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+
+[Request]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:56904/GestionSeguridadService.svc</To>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">PROMPERU.GestionSeguridadService/IGestionSeguridadService/UsuarioObtenerEditor</Action>
+  </s:Header>
+  <s:Body>
+    <UsuarioObtenerEditor xmlns="PROMPERU.GestionSeguridadService">
+      <usuarioId>15</usuarioId>
+    </UsuarioObtenerEditor>
+  </s:Body>
+</s:Envelope>
+
+
+[Response]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <s:Fault>
+      <faultcode>s:ErrorNoManejado</faultcode>
+      <faultstring xml:lang="es-PE">A ocurrido un error inesperado. (Servicio de Incidencias)</faultstring>
+      <detail>
+        <ServiceErrorResponseDto xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Fault">
+          <Code>0004</Code>
+          <Description>A ocurrido un error inesperado. (Servicio de Incidencias)</Description>
+          <Message>Referencia a objeto no establecida como instancia de un objeto.</Message>
+          <SubCode>ErrorNoManejado</SubCode>
+          <Type>ErrorNoManejado</Type>
+        </ServiceErrorResponseDto>
+      </detail>
+    </s:Fault>
+  </s:Body>
+</s:Envelope>
+
+
+[Datos Generales]
+Identificador="3b96cf11-fc97-44f5-84b8-6d28e4267e0c"
+Fecha y Hora="05/09/2019 23:11:04"
+Título="ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+
+[Request]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:56904/GestionRutasService.svc</To>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">PROMPERU.GestionRutasService/IGestionRutasService/CoordenadaInsertar</Action>
+  </s:Header>
+  <s:Body>
+    <CoordenadaInsertar xmlns="PROMPERU.GestionRutasService">
+      <request xmlns:a="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Comun" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:Auditoria>
+          <a:Ip>192.168.10.001</a:Ip>
+          <a:Usua_Id>1</a:Usua_Id>
+        </a:Auditoria>
+        <a:Registro xmlns:b="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Rutas">
+          <b:Coor_Activo>false</b:Coor_Activo>
+          <b:Coor_FechaCreacion>0001-01-01T00:00:00</b:Coor_FechaCreacion>
+          <b:Coor_FechaEdicion i:nil="true" />
+          <b:Coor_Id>0</b:Coor_Id>
+          <b:Coor_IpCreacion i:nil="true" />
+          <b:Coor_IpEdicion i:nil="true" />
+          <b:Coor_LatitudInferior>789</b:Coor_LatitudInferior>
+          <b:Coor_LatitudSuperior>123</b:Coor_LatitudSuperior>
+          <b:Coor_LongitudInferior>567</b:Coor_LongitudInferior>
+          <b:Coor_LongitudSuperior>456</b:Coor_LongitudSuperior>
+          <b:Coor_RutaId>15</b:Coor_RutaId>
+          <b:Coor_UsuarioCreacion>0</b:Coor_UsuarioCreacion>
+          <b:Coor_UsuarioEdicion i:nil="true" />
+        </a:Registro>
+      </request>
+    </CoordenadaInsertar>
+  </s:Body>
+</s:Envelope>
+
+
+[Response]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <s:Fault>
+      <faultcode>s:ErrorNoManejado</faultcode>
+      <faultstring xml:lang="es-PE">A ocurrido un error inesperado. (Servicio de Incidencias)</faultstring>
+      <detail>
+        <ServiceErrorResponseDto xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Fault">
+          <Code>0004</Code>
+          <Description>A ocurrido un error inesperado. (Servicio de Incidencias)</Description>
+          <Message>Referencia a objeto no establecida como instancia de un objeto.</Message>
+          <SubCode>ErrorNoManejado</SubCode>
+          <Type>ErrorNoManejado</Type>
+        </ServiceErrorResponseDto>
+      </detail>
+    </s:Fault>
+  </s:Body>
+</s:Envelope>
+
+
+[Datos Generales]
+Identificador="3b96cf11-fc97-44f5-84b8-6d28e4267e0c"
+Fecha y Hora="05/09/2019 23:11:50"
+Título="ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+
+[Request]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:56904/GestionRutasService.svc</To>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">PROMPERU.GestionRutasService/IGestionRutasService/CoordenadaInsertar</Action>
+  </s:Header>
+  <s:Body>
+    <CoordenadaInsertar xmlns="PROMPERU.GestionRutasService">
+      <request xmlns:a="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Comun" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:Auditoria>
+          <a:Ip>192.168.10.001</a:Ip>
+          <a:Usua_Id>1</a:Usua_Id>
+        </a:Auditoria>
+        <a:Registro xmlns:b="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Rutas">
+          <b:Coor_Activo>false</b:Coor_Activo>
+          <b:Coor_FechaCreacion>0001-01-01T00:00:00</b:Coor_FechaCreacion>
+          <b:Coor_FechaEdicion i:nil="true" />
+          <b:Coor_Id>0</b:Coor_Id>
+          <b:Coor_IpCreacion i:nil="true" />
+          <b:Coor_IpEdicion i:nil="true" />
+          <b:Coor_LatitudInferior>789</b:Coor_LatitudInferior>
+          <b:Coor_LatitudSuperior>123</b:Coor_LatitudSuperior>
+          <b:Coor_LongitudInferior>567</b:Coor_LongitudInferior>
+          <b:Coor_LongitudSuperior>456</b:Coor_LongitudSuperior>
+          <b:Coor_RutaId>15</b:Coor_RutaId>
+          <b:Coor_UsuarioCreacion>0</b:Coor_UsuarioCreacion>
+          <b:Coor_UsuarioEdicion i:nil="true" />
+        </a:Registro>
+      </request>
+    </CoordenadaInsertar>
+  </s:Body>
+</s:Envelope>
+
+
+[Response]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <s:Fault>
+      <faultcode>s:ErrorNoManejado</faultcode>
+      <faultstring xml:lang="es-PE">A ocurrido un error inesperado. (Servicio de Incidencias)</faultstring>
+      <detail>
+        <ServiceErrorResponseDto xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Fault">
+          <Code>0004</Code>
+          <Description>A ocurrido un error inesperado. (Servicio de Incidencias)</Description>
+          <Message>Referencia a objeto no establecida como instancia de un objeto.</Message>
+          <SubCode>ErrorNoManejado</SubCode>
+          <Type>ErrorNoManejado</Type>
+        </ServiceErrorResponseDto>
+      </detail>
+    </s:Fault>
+  </s:Body>
+</s:Envelope>
+
+
+[Datos Generales]
+Identificador="3b96cf11-fc97-44f5-84b8-6d28e4267e0c"
+Fecha y Hora="05/09/2019 23:12:32"
+Título="ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+
+[Request]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:56904/GestionRutasService.svc</To>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">PROMPERU.GestionRutasService/IGestionRutasService/CoordenadaInsertar</Action>
+  </s:Header>
+  <s:Body>
+    <CoordenadaInsertar xmlns="PROMPERU.GestionRutasService">
+      <request xmlns:a="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Comun" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:Auditoria>
+          <a:Ip>192.168.10.001</a:Ip>
+          <a:Usua_Id>1</a:Usua_Id>
+        </a:Auditoria>
+        <a:Registro xmlns:b="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Rutas">
+          <b:Coor_Activo>false</b:Coor_Activo>
+          <b:Coor_FechaCreacion>0001-01-01T00:00:00</b:Coor_FechaCreacion>
+          <b:Coor_FechaEdicion i:nil="true" />
+          <b:Coor_Id>0</b:Coor_Id>
+          <b:Coor_IpCreacion i:nil="true" />
+          <b:Coor_IpEdicion i:nil="true" />
+          <b:Coor_LatitudInferior>789</b:Coor_LatitudInferior>
+          <b:Coor_LatitudSuperior>123</b:Coor_LatitudSuperior>
+          <b:Coor_LongitudInferior>567</b:Coor_LongitudInferior>
+          <b:Coor_LongitudSuperior>456</b:Coor_LongitudSuperior>
+          <b:Coor_RutaId>15</b:Coor_RutaId>
+          <b:Coor_UsuarioCreacion>0</b:Coor_UsuarioCreacion>
+          <b:Coor_UsuarioEdicion i:nil="true" />
+        </a:Registro>
+      </request>
+    </CoordenadaInsertar>
+  </s:Body>
+</s:Envelope>
+
+
+[Response]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <s:Fault>
+      <faultcode>s:ErrorNoManejado</faultcode>
+      <faultstring xml:lang="es-PE">A ocurrido un error inesperado. (Servicio de Incidencias)</faultstring>
+      <detail>
+        <ServiceErrorResponseDto xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Fault">
+          <Code>0004</Code>
+          <Description>A ocurrido un error inesperado. (Servicio de Incidencias)</Description>
+          <Message>Referencia a objeto no establecida como instancia de un objeto.</Message>
+          <SubCode>ErrorNoManejado</SubCode>
+          <Type>ErrorNoManejado</Type>
+        </ServiceErrorResponseDto>
+      </detail>
+    </s:Fault>
+  </s:Body>
+</s:Envelope>
+
+
+[Datos Generales]
+Identificador="3b96cf11-fc97-44f5-84b8-6d28e4267e0c"
+Fecha y Hora="05/09/2019 23:13:20"
+Título="ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+
+[Request]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:56904/GestionRutasService.svc</To>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">PROMPERU.GestionRutasService/IGestionRutasService/CoordenadaInsertar</Action>
+  </s:Header>
+  <s:Body>
+    <CoordenadaInsertar xmlns="PROMPERU.GestionRutasService">
+      <request xmlns:a="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Comun" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:Auditoria>
+          <a:Ip>192.168.10.001</a:Ip>
+          <a:Usua_Id>1</a:Usua_Id>
+        </a:Auditoria>
+        <a:Registro xmlns:b="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Rutas">
+          <b:Coor_Activo>false</b:Coor_Activo>
+          <b:Coor_FechaCreacion>0001-01-01T00:00:00</b:Coor_FechaCreacion>
+          <b:Coor_FechaEdicion i:nil="true" />
+          <b:Coor_Id>0</b:Coor_Id>
+          <b:Coor_IpCreacion i:nil="true" />
+          <b:Coor_IpEdicion i:nil="true" />
+          <b:Coor_LatitudInferior>789</b:Coor_LatitudInferior>
+          <b:Coor_LatitudSuperior>123</b:Coor_LatitudSuperior>
+          <b:Coor_LongitudInferior>567</b:Coor_LongitudInferior>
+          <b:Coor_LongitudSuperior>456</b:Coor_LongitudSuperior>
+          <b:Coor_RutaId>15</b:Coor_RutaId>
+          <b:Coor_UsuarioCreacion>0</b:Coor_UsuarioCreacion>
+          <b:Coor_UsuarioEdicion i:nil="true" />
+        </a:Registro>
+      </request>
+    </CoordenadaInsertar>
+  </s:Body>
+</s:Envelope>
+
+
+[Response]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <s:Fault>
+      <faultcode>s:ErrorNoManejado</faultcode>
+      <faultstring xml:lang="es-PE">A ocurrido un error inesperado. (Servicio de Incidencias)</faultstring>
+      <detail>
+        <ServiceErrorResponseDto xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Fault">
+          <Code>0004</Code>
+          <Description>A ocurrido un error inesperado. (Servicio de Incidencias)</Description>
+          <Message>Referencia a objeto no establecida como instancia de un objeto.</Message>
+          <SubCode>ErrorNoManejado</SubCode>
+          <Type>ErrorNoManejado</Type>
+        </ServiceErrorResponseDto>
+      </detail>
+    </s:Fault>
+  </s:Body>
+</s:Envelope>
+
+
+[Datos Generales]
+Identificador="3b96cf11-fc97-44f5-84b8-6d28e4267e0c"
+Fecha y Hora="05/09/2019 23:15:27"
+Título="ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+
+[Request]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:56904/GestionRutasService.svc</To>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">PROMPERU.GestionRutasService/IGestionRutasService/CoordenadaInsertar</Action>
+  </s:Header>
+  <s:Body>
+    <CoordenadaInsertar xmlns="PROMPERU.GestionRutasService">
+      <request xmlns:a="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Comun" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:Auditoria>
+          <a:Ip>192.168.10.001</a:Ip>
+          <a:Usua_Id>1</a:Usua_Id>
+        </a:Auditoria>
+        <a:Registro xmlns:b="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Rutas">
+          <b:Coor_Activo>false</b:Coor_Activo>
+          <b:Coor_FechaCreacion>0001-01-01T00:00:00</b:Coor_FechaCreacion>
+          <b:Coor_FechaEdicion i:nil="true" />
+          <b:Coor_Id>0</b:Coor_Id>
+          <b:Coor_IpCreacion i:nil="true" />
+          <b:Coor_IpEdicion i:nil="true" />
+          <b:Coor_LatitudInferior>789</b:Coor_LatitudInferior>
+          <b:Coor_LatitudSuperior>123</b:Coor_LatitudSuperior>
+          <b:Coor_LongitudInferior>567</b:Coor_LongitudInferior>
+          <b:Coor_LongitudSuperior>456</b:Coor_LongitudSuperior>
+          <b:Coor_RutaId>15</b:Coor_RutaId>
+          <b:Coor_UsuarioCreacion>0</b:Coor_UsuarioCreacion>
+          <b:Coor_UsuarioEdicion i:nil="true" />
+        </a:Registro>
+      </request>
+    </CoordenadaInsertar>
+  </s:Body>
+</s:Envelope>
+
+
+[Response]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <s:Fault>
+      <faultcode>s:ErrorNoManejado</faultcode>
+      <faultstring xml:lang="es-PE">A ocurrido un error inesperado. (Servicio de Incidencias)</faultstring>
+      <detail>
+        <ServiceErrorResponseDto xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Fault">
+          <Code>0004</Code>
+          <Description>A ocurrido un error inesperado. (Servicio de Incidencias)</Description>
+          <Message>Referencia a objeto no establecida como instancia de un objeto.</Message>
+          <SubCode>ErrorNoManejado</SubCode>
+          <Type>ErrorNoManejado</Type>
+        </ServiceErrorResponseDto>
+      </detail>
+    </s:Fault>
+  </s:Body>
+</s:Envelope>
+
+
+[Datos Generales]
+Identificador="3b96cf11-fc97-44f5-84b8-6d28e4267e0c"
+Fecha y Hora="05/09/2019 23:23:47"
+Título="ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+
+[Request]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:56904/GestionRutasService.svc</To>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">PROMPERU.GestionRutasService/IGestionRutasService/CoordenadaActivar</Action>
+  </s:Header>
+  <s:Body>
+    <CoordenadaActivar xmlns="PROMPERU.GestionRutasService">
+      <request xmlns:a="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Comun" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:Auditoria>
+          <a:Ip>192.168.10.001</a:Ip>
+          <a:Usua_Id>1</a:Usua_Id>
+        </a:Auditoria>
+        <a:Registro xmlns:b="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Rutas">
+          <b:Coor_Activo>false</b:Coor_Activo>
+          <b:Coor_FechaCreacion>0001-01-01T00:00:00</b:Coor_FechaCreacion>
+          <b:Coor_FechaEdicion i:nil="true" />
+          <b:Coor_Id>1</b:Coor_Id>
+          <b:Coor_IpCreacion i:nil="true" />
+          <b:Coor_IpEdicion i:nil="true" />
+          <b:Coor_LatitudInferior i:nil="true" />
+          <b:Coor_LatitudSuperior i:nil="true" />
+          <b:Coor_LongitudInferior i:nil="true" />
+          <b:Coor_LongitudSuperior i:nil="true" />
+          <b:Coor_RutaId>0</b:Coor_RutaId>
+          <b:Coor_UsuarioCreacion>0</b:Coor_UsuarioCreacion>
+          <b:Coor_UsuarioEdicion i:nil="true" />
+        </a:Registro>
+      </request>
+    </CoordenadaActivar>
+  </s:Body>
+</s:Envelope>
+
+
+[Response]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <s:Fault>
+      <faultcode>s:ErrorNoManejado</faultcode>
+      <faultstring xml:lang="es-PE">A ocurrido un error inesperado. (Servicio de Incidencias)</faultstring>
+      <detail>
+        <ServiceErrorResponseDto xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Fault">
+          <Code>0004</Code>
+          <Description>A ocurrido un error inesperado. (Servicio de Incidencias)</Description>
+          <Message>Referencia a objeto no establecida como instancia de un objeto.</Message>
+          <SubCode>ErrorNoManejado</SubCode>
+          <Type>ErrorNoManejado</Type>
+        </ServiceErrorResponseDto>
+      </detail>
+    </s:Fault>
+  </s:Body>
+</s:Envelope>
+
+

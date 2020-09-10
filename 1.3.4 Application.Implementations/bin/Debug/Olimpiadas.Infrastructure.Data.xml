@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Olimpiadas.Infrastructure.Data</name>
+    </assembly>
+    <members>
+        <member name="T:Olimpiadas.Infrastructure.Data.GestionContenido.Repositories.PersonalRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de Personales.
+            </summary>
+        </member>
+        <member name="M:Olimpiadas.Infrastructure.Data.GestionContenido.Repositories.PersonalRepository.#ctor(Olimpiadas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:Olimpiadas.Infrastructure.Data.GestionContenido.Repositories.PersonalRepository.Paginar(Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalDto,Olimpiadas.Application.Dto.Comun.CriteriosPaginacionDto)">
+            <summary>
+            Implementa método para paginar el Personal desde el orígen de datos.
+            </summary>
+            <param name="filtro">Filtro de la paginación.</param>
+            <param name="criteriosPaginacion">Criterios de paginación.</param>
+            <returns>Lista paginada de personal.</returns>
+        </member>
+        <member name="M:Olimpiadas.Infrastructure.Data.GestionContenido.Repositories.PersonalRepository.SeleccionarPorId(System.Int32)">
+            <summary>
+            Implementa método para seleccionar un personal por su Id, desde el orígen de datos.
+            </summary>
+            <param name="idPersonal">Id del registro.</param>
+            <returns>Personal seleccionado.</returns>
+        </member>
+        <member name="M:Olimpiadas.Infrastructure.Data.GestionContenido.Repositories.PersonalRepository.Insertar(Olimpiadas.Domain.Entities.GestionContenido.Personal)">
+            <summary>
+            Implementa método para insertar un Personal en el orígen de datos.
+            </summary>
+            <param name="Personal">Datos del Personal a insertar.</param>
+        </member>
+        <member name="M:Olimpiadas.Infrastructure.Data.GestionContenido.Repositories.PersonalRepository.Actualizar(Olimpiadas.Domain.Entities.GestionContenido.Personal)">
+            <summary>
+            Implementa método para actualizar un Personal en el orígen de datos.
+            </summary>
+            <param name="Personal">Datos del Personal que se actualiza.</param>
+        </member>
+        <member name="M:Olimpiadas.Infrastructure.Data.GestionContenido.Repositories.PersonalRepository.ActualizarActivo(Olimpiadas.Domain.Entities.GestionContenido.Personal)">
+            <summary>
+            Implementa método para actualizar en campo Activo de un Personal en el orígen de datos.
+            </summary>
+            <param name="Personal">Datos del Personal que se actualiza.</param>
+        </member>
+        <member name="T:Olimpiadas.Infrastructure.Data.GestionContenido.Repositories.TipoRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de tipos.
+            </summary>
+        </member>
+        <member name="M:Olimpiadas.Infrastructure.Data.GestionContenido.Repositories.TipoRepository.#ctor(Olimpiadas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:Olimpiadas.Infrastructure.Data.GestionContenido.Repositories.TipoRepository.ListarActivosParaCachePorGrupo(System.Byte)">
+            <summary>
+            Implementa método para cargar la cache con el listado de los tipos activos de un grupo desde el orígen de datos.
+            </summary>
+            <param name="idGrupo">Id del grupo.</param>
+            <returns>Lista de tipos.</returns>
+        </member>
+        <member name="M:Olimpiadas.Infrastructure.Data.GestionContenido.Repositories.TipoRepository.SeleccionarPorId(System.Int16)">
+            <summary>
+            Implementa método para seleccionar un tipo por su Id, desde el orígen de datos.
+            </summary>
+            <param name="tipo_Id">Id de tipo.</param>
+            <returns>Tipo seleccionado.</returns>
+        </member>
+        <member name="T:Olimpiadas.Infrastructure.Data.GestionContenido.Repositories.ParticipanteRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de Participantees.
+            </summary>
+        </member>
+        <member name="M:Olimpiadas.Infrastructure.Data.GestionContenido.Repositories.ParticipanteRepository.#ctor(Olimpiadas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:Olimpiadas.Infrastructure.Data.GestionContenido.Repositories.ParticipanteRepository.Paginar(Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteDto,Olimpiadas.Application.Dto.Comun.CriteriosPaginacionDto)">
+            <summary>
+            Implementa método para paginar los Participantes desde el orígen de datos.
+            </summary>
+            <param name="filtro">Filtro de la paginación.</param>
+            <param name="criteriosPaginacion">Criterios de paginación.</param>
+            <returns>Lista paginada de Participantees.</returns>
+        </member>
+        <member name="M:Olimpiadas.Infrastructure.Data.GestionContenido.Repositories.ParticipanteRepository.SeleccionarPorId(System.Int32)">
+            <summary>
+            Implementa método para seleccionar un participante por su Id, desde el orígen de datos.
+            </summary>
+            <param name="idParticipante">Id del registro.</param>
+            <returns>Participante seleccionado.</returns>
+        </member>
+        <member name="M:Olimpiadas.Infrastructure.Data.GestionContenido.Repositories.ParticipanteRepository.Insertar(Olimpiadas.Domain.Entities.GestionContenido.Participante)">
+            <summary>
+            Implementa método para insertar un Participante en el orígen de datos.
+            </summary>
+            <param name="participante">Datos del Participante a insertar.</param>
+        </member>
+        <member name="M:Olimpiadas.Infrastructure.Data.GestionContenido.Repositories.ParticipanteRepository.Actualizar(Olimpiadas.Domain.Entities.GestionContenido.Participante)">
+            <summary>
+            Implementa método para actualizar un Participante en el orígen de datos.
+            </summary>
+            <param name="participante">Datos del Participante que se actualiza.</param>
+        </member>
+        <member name="M:Olimpiadas.Infrastructure.Data.GestionContenido.Repositories.ParticipanteRepository.ActualizarActivo(Olimpiadas.Domain.Entities.GestionContenido.Participante)">
+            <summary>
+            Implementa método para actualizar en campo Activo de un Participante en el orígen de datos.
+            </summary>
+            <param name="Participante">Datos del Participante que se actualiza.</param>
+        </member>
+        <member name="T:Olimpiadas.Infrastructure.Data.GestionSeguridad.Repositories.UsuarioRepository">
+            <summary>
+            Implementa los métodos de acceso a datos del repositorio de usuarios.
+            </summary>
+        </member>
+        <member name="M:Olimpiadas.Infrastructure.Data.GestionSeguridad.Repositories.UsuarioRepository.#ctor(Olimpiadas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:Olimpiadas.Infrastructure.Data.GestionSeguridad.Repositories.UsuarioRepository.SelecccionarPorLogin(System.String)">
+            <summary>
+            Implementa método para seleccionar un usuario por su login, desde el orígen de datos.
+            </summary>
+            <param name="loginUsuario">Login del usaurio.</param>
+            <returns>Registro seleccionado.</returns>
+        </member>
+        <member name="M:Olimpiadas.Infrastructure.Data.GestionSeguridad.Repositories.UsuarioRepository.SelecccionarPorId(System.Int16)">
+            <summary>
+            Implementa método para seleccionar un usuario por su Id, desde el orígen de datos.
+            </summary>
+            <param name="idUsuario">Id del usaurio.</param>
+            <returns>Usuario seleccionado.</returns>
+        </member>
+    </members>
+</doc>

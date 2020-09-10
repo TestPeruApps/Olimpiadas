@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GestionContenido.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Encuesta">
+    <Key>
+      <PropertyRef Name="Encu_Id" />
+    </Key>
+    <Property Name="Encu_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Encu_TuristaId" Type="int" Nullable="false" />
+    <Property Name="Encu_RutaId" Type="int" Nullable="false" />
+    <Property Name="Encu_FechaCreacion" Type="datetime" Nullable="false" />
+    <Property Name="Encu_IpCreacion" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EncuestaPregunta">
+    <Key>
+      <PropertyRef Name="Epreg_Id" />
+    </Key>
+    <Property Name="Epreg_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Epreg_EncuestaId" Type="int" Nullable="false" />
+    <Property Name="Epreg_PreguntaId" Type="int" Nullable="false" />
+    <Property Name="Epreg_Numeracion" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Epreg_Texto" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="Epreg_TipoRespuestaId" Type="smallint" Nullable="false" />
+    <Property Name="Epreg_FechaCreacion" Type="datetime" Nullable="false" />
+    <Property Name="Epreg_IpCreacion" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EncuestaRespuesta">
+    <Key>
+      <PropertyRef Name="Eresp_Id" />
+    </Key>
+    <Property Name="Eresp_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Eresp_PreguntaId" Type="int" Nullable="false" />
+    <Property Name="Eresp_RespuestaId" Type="int" />
+    <Property Name="Eresp_Numeracion" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Eresp_Texto" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="Eresp_Seleccionado" Type="bit" Nullable="false" />
+    <Property Name="Eresp_FechaCreacion" Type="datetime" Nullable="false" />
+    <Property Name="Eresp_IpCreacion" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Pregunta">
+    <Key>
+      <PropertyRef Name="Preg_Id" />
+    </Key>
+    <Property Name="Preg_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Preg_EncuestaId" Type="smallint" Nullable="false" />
+    <Property Name="Preg_RutaId" Type="int" />
+    <Property Name="Preg_Numeracion" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Preg_Texto" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="Preg_TipoRespuestaId" Type="smallint" Nullable="false" />
+    <Property Name="Preg_RespuestaTextos" Type="varchar(max)" />
+    <Property Name="Preg_Activo" Type="bit" Nullable="false" />
+    <Property Name="Preg_UsuarioCreacion" Type="smallint" Nullable="false" />
+    <Property Name="Preg_UsuarioEdicion" Type="smallint" />
+    <Property Name="Preg_FechaCreacion" Type="datetime" Nullable="false" />
+    <Property Name="Preg_FechaEdicion" Type="datetime" />
+    <Property Name="Preg_IpCreacion" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Preg_IpEdicion" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="Respuesta">
+    <Key>
+      <PropertyRef Name="Resp_Id" />
+    </Key>
+    <Property Name="Resp_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Resp_PreguntaId" Type="int" Nullable="false" />
+    <Property Name="Resp_Numeracion" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Resp_Texto" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="Resp_Activo" Type="bit" Nullable="false" />
+    <Property Name="Resp_UsuarioCreacion" Type="smallint" Nullable="false" />
+    <Property Name="Resp_UsuarioEdicion" Type="smallint" />
+    <Property Name="Resp_FechaCreacion" Type="datetime" Nullable="false" />
+    <Property Name="Resp_FechaEdicion" Type="datetime" />
+    <Property Name="Resp_IpCreacion" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Resp_IpEdicion" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <Association Name="FK_EncuestaPregunta_Encuesta">
+    <End Role="Encuesta" Type="Self.Encuesta" Multiplicity="1" />
+    <End Role="EncuestaPregunta" Type="Self.EncuestaPregunta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Encuesta">
+        <PropertyRef Name="Encu_Id" />
+      </Principal>
+      <Dependent Role="EncuestaPregunta">
+        <PropertyRef Name="Epreg_EncuestaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EncuestaRespuesta_EncuestaPregunta">
+    <End Role="EncuestaPregunta" Type="Self.EncuestaPregunta" Multiplicity="1" />
+    <End Role="EncuestaRespuesta" Type="Self.EncuestaRespuesta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EncuestaPregunta">
+        <PropertyRef Name="Epreg_Id" />
+      </Principal>
+      <Dependent Role="EncuestaRespuesta">
+        <PropertyRef Name="Eresp_PreguntaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EncuestaRespuesta_EncuestaPregunta1">
+    <End Role="EncuestaPregunta" Type="Self.EncuestaPregunta" Multiplicity="1" />
+    <End Role="EncuestaRespuesta" Type="Self.EncuestaRespuesta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EncuestaPregunta">
+        <PropertyRef Name="Epreg_Id" />
+      </Principal>
+      <Dependent Role="EncuestaRespuesta">
+        <PropertyRef Name="Eresp_PreguntaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Respuesta_Pregunta">
+    <End Role="Pregunta" Type="Self.Pregunta" Multiplicity="1" />
+    <End Role="Respuesta" Type="Self.Respuesta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pregunta">
+        <PropertyRef Name="Preg_Id" />
+      </Principal>
+      <Dependent Role="Respuesta">
+        <PropertyRef Name="Resp_PreguntaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="GestionContenidoStoreContainer">
+    <EntitySet Name="Encuesta" EntityType="Self.Encuesta" Schema="ENCUESTA" store:Type="Tables" />
+    <EntitySet Name="EncuestaPregunta" EntityType="Self.EncuestaPregunta" Schema="ENCUESTA" store:Type="Tables" />
+    <EntitySet Name="EncuestaRespuesta" EntityType="Self.EncuestaRespuesta" Schema="ENCUESTA" store:Type="Tables" />
+    <EntitySet Name="Pregunta" EntityType="Self.Pregunta" Schema="ENCUESTA" store:Type="Tables" />
+    <EntitySet Name="Respuesta" EntityType="Self.Respuesta" Schema="ENCUESTA" store:Type="Tables" />
+    <AssociationSet Name="FK_EncuestaPregunta_Encuesta" Association="Self.FK_EncuestaPregunta_Encuesta">
+      <End Role="Encuesta" EntitySet="Encuesta" />
+      <End Role="EncuestaPregunta" EntitySet="EncuestaPregunta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EncuestaRespuesta_EncuestaPregunta" Association="Self.FK_EncuestaRespuesta_EncuestaPregunta">
+      <End Role="EncuestaPregunta" EntitySet="EncuestaPregunta" />
+      <End Role="EncuestaRespuesta" EntitySet="EncuestaRespuesta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EncuestaRespuesta_EncuestaPregunta1" Association="Self.FK_EncuestaRespuesta_EncuestaPregunta1">
+      <End Role="EncuestaPregunta" EntitySet="EncuestaPregunta" />
+      <End Role="EncuestaRespuesta" EntitySet="EncuestaRespuesta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Respuesta_Pregunta" Association="Self.FK_Respuesta_Pregunta">
+      <End Role="Pregunta" EntitySet="Pregunta" />
+      <End Role="Respuesta" EntitySet="Respuesta" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

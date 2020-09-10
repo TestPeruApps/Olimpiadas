@@ -1,0 +1,34 @@
+﻿[
+  {
+    "outputFile": "wwwroot/css/forms/layout.login.css",
+    "inputFile": "wwwroot/css/forms/layout.login.less"
+  },
+  {
+    "outputFile": "wwwroot/css/forms/layout.main.css",
+    "inputFile": "wwwroot/css/forms/layout.main.less"
+  },
+  {
+    "outputFile": "wwwroot/css/forms/site.base.css",
+    "inputFile": "wwwroot/css/forms/site.base.less"
+  },
+  {
+    "outputFile": "wwwroot/css/forms/site.skin.css",
+    "inputFile": "wwwroot/css/forms/site.skin.less"
+  },
+  {
+    "outputFile": "wwwroot/css/forms/reporte.base.css",
+    "inputFile": "wwwroot/css/forms/reporte.base.less"
+  },
+  {
+    "outputFile": "wwwroot/js/forms/functionNotificacion.es5.js",
+    "inputFile": "wwwroot/js/forms/functionNotificacion.js"
+  },
+  {
+    "outputFile": "wwwroot/css/forms/form.verMapa.css",
+    "inputFile": "wwwroot/css/forms/form.verMapa.less"
+  },
+  {
+    "outputFile": "wwwroot/css/forms/site.definicion.css",
+    "inputFile": "wwwroot/css/forms/site.definicion.less"
+  }
+]

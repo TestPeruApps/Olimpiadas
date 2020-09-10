@@ -1,0 +1,412 @@
+[Datos Generales]
+Identificador="07a03863-d7d2-4a56-9df4-8bb24ccba050"
+Fecha y Hora="09/09/2020 14:01:28"
+Título="ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+
+[Request]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:56904/GestionSeguridadService.svc</To>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">PROMPERU.GestionSeguridadService/IGestionSeguridadService/UsuarioValidarLogin</Action>
+  </s:Header>
+  <s:Body>
+    <UsuarioValidarLogin xmlns="PROMPERU.GestionSeguridadService">
+      <request xmlns:a="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionSeguridad.Usuarios" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:Contrasenia>123456</a:Contrasenia>
+        <a:Login>123</a:Login>
+      </request>
+    </UsuarioValidarLogin>
+  </s:Body>
+</s:Envelope>
+
+
+[Response]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <s:Fault>
+      <faultcode>s:ErrorNegocio</faultcode>
+      <faultstring xml:lang="es-PE">El usuario aún no ha sido registrado</faultstring>
+      <detail>
+        <ServiceErrorResponseDto xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Fault">
+          <Code>0005</Code>
+          <Description>El usuario aún no ha sido registrado</Description>
+          <Message>El usuario aún no ha sido registrado</Message>
+          <SubCode>ErrorNegocio</SubCode>
+          <Type>ErrorNegocio</Type>
+        </ServiceErrorResponseDto>
+      </detail>
+    </s:Fault>
+  </s:Body>
+</s:Envelope>
+
+
+[Datos Generales]
+Identificador="2d81e372-b153-4a05-b31c-bad8ecba882d"
+Fecha y Hora="09/09/2020 17:35:53"
+Título="ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+
+[Request]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:56904/GestionSeguridadService.svc</To>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">PROMPERU.GestionSeguridadService/IGestionSeguridadService/UsuarioValidarLogin</Action>
+  </s:Header>
+  <s:Body>
+    <UsuarioValidarLogin xmlns="PROMPERU.GestionSeguridadService">
+      <request xmlns:a="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionSeguridad.Usuarios" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:Contrasenia>1234567</a:Contrasenia>
+        <a:Login>administrador</a:Login>
+      </request>
+    </UsuarioValidarLogin>
+  </s:Body>
+</s:Envelope>
+
+
+[Response]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <s:Fault>
+      <faultcode>s:ErrorNegocio</faultcode>
+      <faultstring xml:lang="es-PE">La contraseña ingresada es incorrecta</faultstring>
+      <detail>
+        <ServiceErrorResponseDto xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Fault">
+          <Code>0005</Code>
+          <Description>La contraseña ingresada es incorrecta</Description>
+          <Message>La contraseña ingresada es incorrecta</Message>
+          <SubCode>ErrorNegocio</SubCode>
+          <Type>ErrorNegocio</Type>
+        </ServiceErrorResponseDto>
+      </detail>
+    </s:Fault>
+  </s:Body>
+</s:Envelope>
+
+
+[Datos Generales]
+Identificador="067002e2-89ac-4e9e-bf87-e457f0a1a85f"
+Fecha y Hora="09/09/2020 20:58:56"
+Título="ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+
+[Request]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:56904/GestionContenidoService.svc</To>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipantePaginar</Action>
+  </s:Header>
+  <s:Body>
+    <ParticipantePaginar xmlns="PROMPERU.GestionContenidoService">
+      <request xmlns:a="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:CriteriosPaginacion>
+          <a:ColumnaOrdenacion />
+          <a:NumeroPagina>1</a:NumeroPagina>
+          <a:OrdenacionDireccion>ASC</a:OrdenacionDireccion>
+          <a:SortBy i:nil="true" />
+          <a:TamanioPagina>10</a:TamanioPagina>
+        </a:CriteriosPaginacion>
+        <a:Filtro xmlns:b="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionContenido.Participante">
+          <b:Activo>false</b:Activo>
+          <b:ApellidoParticipante i:nil="true" />
+          <b:IdDeporte>0</b:IdDeporte>
+          <b:IdPais>0</b:IdPais>
+          <b:IdParticipante>0</b:IdParticipante>
+          <b:NombreDeporte>0</b:NombreDeporte>
+          <b:NombrePais i:nil="true" />
+          <b:NombreParticipante i:nil="true" />
+        </a:Filtro>
+        <a:Usua_Id>0</a:Usua_Id>
+      </request>
+    </ParticipantePaginar>
+  </s:Body>
+</s:Envelope>
+
+
+[Response]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <s:Fault>
+      <faultcode>s:ErrorNoManejado</faultcode>
+      <faultstring xml:lang="es-PE">El valor del parámetro es incorrecto
+Nombre del parámetro: request.Usua_Id</faultstring>
+      <detail>
+        <ServiceErrorResponseDto xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Fault">
+          <Code>0004</Code>
+          <Description>El valor del parámetro es incorrecto
+Nombre del parámetro: request.Usua_Id</Description>
+          <Message>El valor del parámetro es incorrecto
+Nombre del parámetro: request.Usua_Id</Message>
+          <SubCode>ErrorNoManejado</SubCode>
+          <Type>ErrorNoManejado</Type>
+        </ServiceErrorResponseDto>
+      </detail>
+    </s:Fault>
+  </s:Body>
+</s:Envelope>
+
+
+[Datos Generales]
+Identificador="e1e75235-4086-4d43-8e81-d05648b07ba2"
+Fecha y Hora="09/09/2020 23:06:39"
+Título="ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+
+[Request]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:56904/GestionContenidoService.svc</To>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipantePaginar</Action>
+  </s:Header>
+  <s:Body>
+    <ParticipantePaginar xmlns="PROMPERU.GestionContenidoService">
+      <request xmlns:a="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:CriteriosPaginacion>
+          <a:ColumnaOrdenacion />
+          <a:NumeroPagina>1</a:NumeroPagina>
+          <a:OrdenacionDireccion>ASC</a:OrdenacionDireccion>
+          <a:SortBy i:nil="true" />
+          <a:TamanioPagina>10</a:TamanioPagina>
+        </a:CriteriosPaginacion>
+        <a:Filtro xmlns:b="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionContenido.Participante">
+          <b:Activo i:nil="true" />
+          <b:ApellidoParticipante i:nil="true" />
+          <b:IdDeporte>0</b:IdDeporte>
+          <b:IdPais>0</b:IdPais>
+          <b:IdParticipante i:nil="true" />
+          <b:NombreDeporte>0</b:NombreDeporte>
+          <b:NombrePais i:nil="true" />
+          <b:NombreParticipante i:nil="true" />
+        </a:Filtro>
+        <a:Usua_Id>0</a:Usua_Id>
+      </request>
+    </ParticipantePaginar>
+  </s:Body>
+</s:Envelope>
+
+
+[Response]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <s:Fault>
+      <faultcode>s:ErrorNoManejado</faultcode>
+      <faultstring xml:lang="es-PE">El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.</faultstring>
+      <detail>
+        <ServiceErrorResponseDto xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Fault">
+          <Code>0004</Code>
+          <Description>El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.</Description>
+          <Message>El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.</Message>
+          <SubCode>ErrorNoManejado</SubCode>
+          <Type>ErrorNoManejado</Type>
+        </ServiceErrorResponseDto>
+      </detail>
+    </s:Fault>
+  </s:Body>
+</s:Envelope>
+
+
+[Datos Generales]
+Identificador="e1e75235-4086-4d43-8e81-d05648b07ba2"
+Fecha y Hora="09/09/2020 23:06:55"
+Título="ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+
+[Request]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:56904/GestionContenidoService.svc</To>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipantePaginar</Action>
+  </s:Header>
+  <s:Body>
+    <ParticipantePaginar xmlns="PROMPERU.GestionContenidoService">
+      <request xmlns:a="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:CriteriosPaginacion>
+          <a:ColumnaOrdenacion />
+          <a:NumeroPagina>1</a:NumeroPagina>
+          <a:OrdenacionDireccion>ASC</a:OrdenacionDireccion>
+          <a:SortBy i:nil="true" />
+          <a:TamanioPagina>10</a:TamanioPagina>
+        </a:CriteriosPaginacion>
+        <a:Filtro xmlns:b="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionContenido.Participante">
+          <b:Activo i:nil="true" />
+          <b:ApellidoParticipante i:nil="true" />
+          <b:IdDeporte>0</b:IdDeporte>
+          <b:IdPais>0</b:IdPais>
+          <b:IdParticipante i:nil="true" />
+          <b:NombreDeporte>0</b:NombreDeporte>
+          <b:NombrePais i:nil="true" />
+          <b:NombreParticipante i:nil="true" />
+        </a:Filtro>
+        <a:Usua_Id>0</a:Usua_Id>
+      </request>
+    </ParticipantePaginar>
+  </s:Body>
+</s:Envelope>
+
+
+[Response]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <s:Fault>
+      <faultcode>s:ErrorNoManejado</faultcode>
+      <faultstring xml:lang="es-PE">El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.</faultstring>
+      <detail>
+        <ServiceErrorResponseDto xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Fault">
+          <Code>0004</Code>
+          <Description>El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.</Description>
+          <Message>El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.</Message>
+          <SubCode>ErrorNoManejado</SubCode>
+          <Type>ErrorNoManejado</Type>
+        </ServiceErrorResponseDto>
+      </detail>
+    </s:Fault>
+  </s:Body>
+</s:Envelope>
+
+
+[Datos Generales]
+Identificador="e1e75235-4086-4d43-8e81-d05648b07ba2"
+Fecha y Hora="09/09/2020 23:08:08"
+Título="ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+
+[Request]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:56904/GestionContenidoService.svc</To>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipantePaginar</Action>
+  </s:Header>
+  <s:Body>
+    <ParticipantePaginar xmlns="PROMPERU.GestionContenidoService">
+      <request xmlns:a="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:CriteriosPaginacion>
+          <a:ColumnaOrdenacion />
+          <a:NumeroPagina>1</a:NumeroPagina>
+          <a:OrdenacionDireccion>ASC</a:OrdenacionDireccion>
+          <a:SortBy i:nil="true" />
+          <a:TamanioPagina>10</a:TamanioPagina>
+        </a:CriteriosPaginacion>
+        <a:Filtro xmlns:b="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionContenido.Participante">
+          <b:Activo i:nil="true" />
+          <b:ApellidoParticipante i:nil="true" />
+          <b:IdDeporte>0</b:IdDeporte>
+          <b:IdPais>0</b:IdPais>
+          <b:IdParticipante i:nil="true" />
+          <b:NombreDeporte>0</b:NombreDeporte>
+          <b:NombrePais i:nil="true" />
+          <b:NombreParticipante i:nil="true" />
+        </a:Filtro>
+        <a:Usua_Id>0</a:Usua_Id>
+      </request>
+    </ParticipantePaginar>
+  </s:Body>
+</s:Envelope>
+
+
+[Response]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <s:Fault>
+      <faultcode>s:ErrorNoManejado</faultcode>
+      <faultstring xml:lang="es-PE">El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.</faultstring>
+      <detail>
+        <ServiceErrorResponseDto xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Fault">
+          <Code>0004</Code>
+          <Description>El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.</Description>
+          <Message>El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.</Message>
+          <SubCode>ErrorNoManejado</SubCode>
+          <Type>ErrorNoManejado</Type>
+        </ServiceErrorResponseDto>
+      </detail>
+    </s:Fault>
+  </s:Body>
+</s:Envelope>
+
+
+[Datos Generales]
+Identificador="e1e75235-4086-4d43-8e81-d05648b07ba2"
+Fecha y Hora="09/09/2020 23:09:22"
+Título="ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+
+[Request]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:56904/GestionContenidoService.svc</To>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">PROMPERU.GestionContenidoService/IGestionContenidoService/ParticipantePaginar</Action>
+  </s:Header>
+  <s:Body>
+    <ParticipantePaginar xmlns="PROMPERU.GestionContenidoService">
+      <request xmlns:a="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:CriteriosPaginacion>
+          <a:ColumnaOrdenacion />
+          <a:NumeroPagina>1</a:NumeroPagina>
+          <a:OrdenacionDireccion>ASC</a:OrdenacionDireccion>
+          <a:SortBy i:nil="true" />
+          <a:TamanioPagina>10</a:TamanioPagina>
+        </a:CriteriosPaginacion>
+        <a:Filtro xmlns:b="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionContenido.Participante">
+          <b:Activo i:nil="true" />
+          <b:ApellidoParticipante i:nil="true" />
+          <b:IdDeporte>0</b:IdDeporte>
+          <b:IdPais>0</b:IdPais>
+          <b:IdParticipante i:nil="true" />
+          <b:NombreDeporte>0</b:NombreDeporte>
+          <b:NombrePais i:nil="true" />
+          <b:NombreParticipante i:nil="true" />
+        </a:Filtro>
+        <a:Usua_Id>0</a:Usua_Id>
+      </request>
+    </ParticipantePaginar>
+  </s:Body>
+</s:Envelope>
+
+
+[Response]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <s:Fault>
+      <faultcode>s:ErrorNoManejado</faultcode>
+      <faultstring xml:lang="es-PE">El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.</faultstring>
+      <detail>
+        <ServiceErrorResponseDto xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Fault">
+          <Code>0004</Code>
+          <Description>El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.</Description>
+          <Message>El objeto de tipo 'System.String' no puede convertirse en el tipo 'System.Int32'.</Message>
+          <SubCode>ErrorNoManejado</SubCode>
+          <Type>ErrorNoManejado</Type>
+        </ServiceErrorResponseDto>
+      </detail>
+    </s:Fault>
+  </s:Body>
+</s:Envelope>
+
+

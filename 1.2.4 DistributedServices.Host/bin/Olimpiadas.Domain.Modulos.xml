@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Olimpiadas.Domain.Modulos</name>
+    </assembly>
+    <members>
+        <member name="T:Olimpiadas.Domain.Modulos.GestionContenido.IPersonalRepository">
+            <summary>
+            Interface con los métodos de acceso a datos del repositorio de personal.
+            </summary>
+        </member>
+        <member name="M:Olimpiadas.Domain.Modulos.GestionContenido.IPersonalRepository.Paginar(Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalDto,Olimpiadas.Application.Dto.Comun.CriteriosPaginacionDto)">
+            <summary>
+            Método para paginar los avatars desde el orígen de datos.
+            </summary>
+            <param name="filtro">Filtro de la paginación.</param>
+            <param name="criteriosPaginacion">Criterios de paginación.</param>
+            <returns>Lista paginada de personal.</returns>
+        </member>
+        <member name="M:Olimpiadas.Domain.Modulos.GestionContenido.IPersonalRepository.SeleccionarPorId(System.Int32)">
+            <summary>
+            Método para seleccionar un Personal por su Id, desde el orígen de datos.
+            </summary>
+            <param name="idPersonal">Id del registro.</param>
+            <returns>Personal seleccionado.</returns>
+        </member>
+        <member name="M:Olimpiadas.Domain.Modulos.GestionContenido.IPersonalRepository.Insertar(Olimpiadas.Domain.Entities.GestionContenido.Personal)">
+            <summary>
+            Método para insertar un Personal en el orígen de datos.
+            </summary>
+            <param name="Personal">Datos del Personal a insertar.</param>
+        </member>
+        <member name="M:Olimpiadas.Domain.Modulos.GestionContenido.IPersonalRepository.Actualizar(Olimpiadas.Domain.Entities.GestionContenido.Personal)">
+            <summary>
+            Método para actualizar un Personal en el orígen de datos.
+            </summary>
+            <param name="Personal">Datos del Personal que se actualiza.</param>
+        </member>
+        <member name="M:Olimpiadas.Domain.Modulos.GestionContenido.IPersonalRepository.ActualizarActivo(Olimpiadas.Domain.Entities.GestionContenido.Personal)">
+            <summary>
+            Método para actualizar en campo Activo de un Personal en el orígen de datos.
+            </summary>
+            <param name="Personal">Datos del Personal que se actualiza.</param>
+        </member>
+        <member name="T:Olimpiadas.Domain.Modulos.GestionContenido.ITipoRepository">
+            <summary>
+            Interface con los métodos de acceso a datos del repositorio de tipos.
+            </summary>
+        </member>
+        <member name="M:Olimpiadas.Domain.Modulos.GestionContenido.ITipoRepository.ListarActivosParaCachePorGrupo(System.Byte)">
+            <summary>
+            Método para cargar la cache con el listado de los tipos activos de un grupo desde el orígen de datos.
+            </summary>
+            <param name="tipo_grupoId">Id del grupo.</param>
+            <returns>Lista de tipos.</returns>
+        </member>
+        <member name="M:Olimpiadas.Domain.Modulos.GestionContenido.ITipoRepository.SeleccionarPorId(System.Int16)">
+            <summary>
+            Método para seleccionar un tipo por su Id, desde el orígen de datos.
+            </summary>
+            <param name="tipo_Id">Id de tipo.</param>
+            <returns>Tipo seleccionado.</returns>
+        </member>
+        <member name="T:Olimpiadas.Domain.Modulos.GestionContenido.IParticipanteRepository">
+            <summary>
+            Interface con los métodos de acceso a datos del repositorio de participantes.
+            </summary>
+        </member>
+        <member name="M:Olimpiadas.Domain.Modulos.GestionContenido.IParticipanteRepository.Paginar(Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteDto,Olimpiadas.Application.Dto.Comun.CriteriosPaginacionDto)">
+            <summary>
+            Método para paginar los avatars desde el orígen de datos.
+            </summary>
+            <param name="filtro">Filtro de la paginación.</param>
+            <param name="criteriosPaginacion">Criterios de paginación.</param>
+            <returns>Lista paginada de avatares.</returns>
+        </member>
+        <member name="M:Olimpiadas.Domain.Modulos.GestionContenido.IParticipanteRepository.SeleccionarPorId(System.Int32)">
+            <summary>
+            Método para seleccionar un participante por su Id, desde el orígen de datos.
+            </summary>
+            <param name="idParticipante">Id del registro.</param>
+            <returns>Participante seleccionado.</returns>
+        </member>
+        <member name="M:Olimpiadas.Domain.Modulos.GestionContenido.IParticipanteRepository.Insertar(Olimpiadas.Domain.Entities.GestionContenido.Participante)">
+            <summary>
+            Método para insertar un Participante en el orígen de datos.
+            </summary>
+            <param name="participante">Datos del Participante a insertar.</param>
+        </member>
+        <member name="M:Olimpiadas.Domain.Modulos.GestionContenido.IParticipanteRepository.Actualizar(Olimpiadas.Domain.Entities.GestionContenido.Participante)">
+            <summary>
+            Método para actualizar un Participante en el orígen de datos.
+            </summary>
+            <param name="participante">Datos del Participante que se actualiza.</param>
+        </member>
+        <member name="M:Olimpiadas.Domain.Modulos.GestionContenido.IParticipanteRepository.ActualizarActivo(Olimpiadas.Domain.Entities.GestionContenido.Participante)">
+            <summary>
+            Método para actualizar en campo Activo de un Participante en el orígen de datos.
+            </summary>
+            <param name="Participante">Datos del Participante que se actualiza.</param>
+        </member>
+        <member name="T:Olimpiadas.Domain.Modulos.GestionSeguridad.IUsuarioRepository">
+            <summary>
+            Interface con métodos del repositorio de usuarios.
+            </summary>
+        </member>
+        <member name="M:Olimpiadas.Domain.Modulos.GestionSeguridad.IUsuarioRepository.SelecccionarPorLogin(System.String)">
+            <summary>
+            Método para seleccionar un usuario por su login, desde el orígen de datos.
+            </summary>
+            <param name="loginUsuario">Login del usaurio.</param>
+            <returns>Registro seleccionado.</returns>
+        </member>
+        <member name="M:Olimpiadas.Domain.Modulos.GestionSeguridad.IUsuarioRepository.SelecccionarPorId(System.Int16)">
+            <summary>
+            Método para seleccionar un usuario por su Id, desde el orígen de datos.
+            </summary>
+            <param name="idUsuario">Id del usaurio.</param>
+            <returns>Usuario seleccionado.</returns>
+        </member>
+    </members>
+</doc>

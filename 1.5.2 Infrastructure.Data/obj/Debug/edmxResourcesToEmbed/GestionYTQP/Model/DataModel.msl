@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="YTUQUEPLANES_BD_2016_V01ModelStoreContainer" CdmEntityContainer="YTUQUEPLANES_BD_2016_V01Entities">
+    <EntitySetMapping Name="utb_YTQP_Oferta">
+      <EntityTypeMapping TypeName="YTUQUEPLANES_BD_2016_V01Model.utb_YTQP_Oferta">
+        <MappingFragment StoreEntitySet="utb_YTQP_Oferta">
+          <ScalarProperty Name="var_RutaNombre" ColumnName="var_RutaNombre" />
+          <ScalarProperty Name="bit_Universitario" ColumnName="bit_Universitario" />
+          <ScalarProperty Name="bit_Certificado" ColumnName="bit_Certificado" />
+          <ScalarProperty Name="dtm_Eliminacion" ColumnName="dtm_Eliminacion" />
+          <ScalarProperty Name="int_IdEliminacion" ColumnName="int_IdEliminacion" />
+          <ScalarProperty Name="dtm_Modificacion" ColumnName="dtm_Modificacion" />
+          <ScalarProperty Name="int_IdModificacion" ColumnName="int_IdModificacion" />
+          <ScalarProperty Name="dtm_Creacion" ColumnName="dtm_Creacion" />
+          <ScalarProperty Name="int_IdCreacion" ColumnName="int_IdCreacion" />
+          <ScalarProperty Name="var_Duracion" ColumnName="var_Duracion" />
+          <ScalarProperty Name="int_Duracion" ColumnName="int_Duracion" />
+          <ScalarProperty Name="int_Estado" ColumnName="int_Estado" />
+          <ScalarProperty Name="var_SEOKeywords" ColumnName="var_SEOKeywords" />
+          <ScalarProperty Name="var_SEODescripcion" ColumnName="var_SEODescripcion" />
+          <ScalarProperty Name="var_SEOTitulo" ColumnName="var_SEOTitulo" />
+          <ScalarProperty Name="int_IdFestividad" ColumnName="int_IdFestividad" />
+          <ScalarProperty Name="dec_PrecioFinal" ColumnName="dec_PrecioFinal" />
+          <ScalarProperty Name="dec_PrecioBase" ColumnName="dec_PrecioBase" />
+          <ScalarProperty Name="dtm_FechaVigenciaFin" ColumnName="dtm_FechaVigenciaFin" />
+          <ScalarProperty Name="dtm_FechaVigenciaInicio" ColumnName="dtm_FechaVigenciaInicio" />
+          <ScalarProperty Name="int_IdTipoOferta" ColumnName="int_IdTipoOferta" />
+          <ScalarProperty Name="chr_IdRegion" ColumnName="chr_IdRegion" />
+          <ScalarProperty Name="var_Imagen" ColumnName="var_Imagen" />
+          <ScalarProperty Name="var_Nombre" ColumnName="var_Nombre" />
+          <ScalarProperty Name="int_IdOferta" ColumnName="int_IdOferta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="utb_YTQP_Usuario">
+      <EntityTypeMapping TypeName="YTUQUEPLANES_BD_2016_V01Model.utb_YTQP_Usuario">
+        <MappingFragment StoreEntitySet="utb_YTQP_Usuario">
+          <ScalarProperty Name="dtm_FechaRegistroRutasCortas" ColumnName="dtm_FechaRegistroRutasCortas" />
+          <ScalarProperty Name="bit_ActualizadoRutasCortas" ColumnName="bit_ActualizadoRutasCortas" />
+          <ScalarProperty Name="var_MailError" ColumnName="var_MailError" />
+          <ScalarProperty Name="var_IP" ColumnName="var_IP" />
+          <ScalarProperty Name="bit_MailEnviado" ColumnName="bit_MailEnviado" />
+          <ScalarProperty Name="dtm_FechaConfirmacion" ColumnName="dtm_FechaConfirmacion" />
+          <ScalarProperty Name="chr_IdRegion" ColumnName="chr_IdRegion" />
+          <ScalarProperty Name="var_DNI" ColumnName="var_DNI" />
+          <ScalarProperty Name="var_FechaNacimiento" ColumnName="var_FechaNacimiento" />
+          <ScalarProperty Name="var_Password" ColumnName="var_Password" />
+          <ScalarProperty Name="dtm_FechaRegistro" ColumnName="dtm_FechaRegistro" />
+          <ScalarProperty Name="int_Estado" ColumnName="int_Estado" />
+          <ScalarProperty Name="bit_Sexo" ColumnName="bit_Sexo" />
+          <ScalarProperty Name="var_Mail" ColumnName="var_Mail" />
+          <ScalarProperty Name="var_Apellidos" ColumnName="var_Apellidos" />
+          <ScalarProperty Name="var_Nombre" ColumnName="var_Nombre" />
+          <ScalarProperty Name="var_IdUsuario" ColumnName="var_IdUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,138 @@
+﻿@using System.Globalization
+@model Olimpiadas.Web.CMS.Models.HomeViewModel
+@{    
+    var nonce = Context.Items["csp-nonce"].ToString();
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>PROMPERU | YTQP</title>
+    <meta http-equiv="Content-Type" content="text/html;" charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="MARIO LOZANO" />
+    <meta name="author" content="MARIO LOZANO" />
+    <link href="~/images/favicon/favicon.ico" rel="apple-touch-icon" type="image/x-icon" />
+    <link href="~/images/favicon/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <environment names="Development">
+        <link nonce=@nonce rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link nonce=@nonce rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.min.css" />
+        <link nonce=@nonce rel="stylesheet" href="~/lib/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css" />
+        <link nonce=@nonce rel="stylesheet" href="~/lib/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.css" />
+        <link nonce=@nonce rel="stylesheet" href="~/lib/jquery-ui/themes/base/jquery-ui.css" />
+        <link nonce=@nonce rel="stylesheet" href="~/lib/iCheck/skins/square/blue.css" />
+        <link nonce=@nonce rel="stylesheet" href="~/lib/bootstrap-fileinput/css/fileinput.css" />
+        <link nonce=@nonce rel="stylesheet" href="~/lib/bootstrap-select/dist/css/bootstrap-select.css" />
+        <link nonce=@nonce rel="stylesheet" href="~/lib/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.css" />
+        <link nonce=@nonce rel="stylesheet" href="~/lib/lightbox2/dist/css/lightbox.css" />
+        <link nonce=@nonce rel="stylesheet" href="~/lib/select2/dist/css/select2.min.css" />
+        <link nonce=@nonce rel="stylesheet" href="~/lib/cropperjs/dist/cropper.min.css">
+        <link nonce=@nonce rel="stylesheet" href="~/css/forms/site.base.css" />
+        <link nonce=@nonce rel="stylesheet" href="~/css/forms/site.temp.css" />
+        <link nonce=@nonce rel="stylesheet" href="~/css/forms/site.skin.css" />
+        <link nonce=@nonce rel="stylesheet" href="~/css/forms/form.verMapa.css" />
+        <link nonce=@nonce rel="stylesheet" href="~/css/forms/reporte.base.css" />
+        <link nonce=@nonce rel="stylesheet" href="~/css/forms/layout.main.css" />
+
+        <script nonce=@nonce src="~/lib/jquery/dist/jquery.js"></script>
+        <script nonce=@nonce src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script nonce=@nonce src="~/lib/cropperjs/dist/cropper.min.js"></script>
+        <script nonce=@nonce src="~/lib/lightbox2/dist/js/lightbox.js"></script>
+
+        <script nonce=@nonce src="~/lib/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.js"></script>
+        <script nonce=@nonce src="~/lib/bootstrap3-dialog/dist/js/bootstrap-dialog.js"></script>
+        <script nonce=@nonce src="~/lib/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+        <script nonce=@nonce src="~/lib/moment/min/moment.min.js"></script>
+        <script nonce=@nonce src="~/lib/moment/locale/es.js"></script>
+        <script nonce=@nonce src="~/lib/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+        <script nonce=@nonce src="~/lib/jquery-mask/dist/jquery.mask.min.js"></script>
+
+        <script nonce=@nonce src="~/lib/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.js"></script>
+        <script nonce=@nonce src="~/lib/bootstrap-fileinput/js/fileinput.js"></script>
+        <script nonce=@nonce src="~/lib/bootstrap-fileinput/js/plugins/canvas-to-blob.js"></script>
+        <script nonce=@nonce src="~/lib/bootstrap-select/dist/js/bootstrap-select.js"></script>
+        <script nonce=@nonce src="~/lib/bootstrap-select/dist/js/i18n/defaults-es_ES.js"></script>
+        <script nonce=@nonce src="~/lib/select2/dist/js/select2.min.js"></script>
+
+        <script nonce=@nonce src="~/lib/formValidation/formValidation.js"></script>
+        <script nonce=@nonce src="~/lib/formValidation/Framework.bootstrap.js"></script>
+        <script nonce=@nonce src="~/lib/formValidation/i18n.js"></script>
+        <script nonce=@nonce src="~/lib/formValidation/mandatoryIcon.js"></script>
+        <script nonce=@nonce src="~/lib/formValidation/es_ES.js"></script>
+        <script nonce=@nonce src="~/lib/noty/js/noty/packaged/jquery.noty.packaged.js"></script>
+        <!--
+    <script nonce=@nonce src="~/lib/ckeditor5/ckeditor.js"></script>
+    <script nonce=@nonce src="~/lib/ckeditor5/translations/es.js"></script>
+        -->
+        <script nonce=@nonce src="~/lib/iCheck/icheck.js"></script>
+        <script nonce=@nonce src="~/lib/knockout/dist/knockout.js"></script>
+        <script nonce=@nonce src="~/lib/jquery.serializeToJSON/dist/jquery.serializeToJSON.js"></script>
+        <script nonce=@nonce src="~/lib/signalr/dist/browser/signalr.min.js"></script>
+
+        <script nonce=@nonce src="~/js/forms/app.js"></script>
+        <script nonce=@nonce src="~/js/forms/autocomplete.js"></script>
+
+
+        <script nonce=@nonce src="~/js/forms/formPersonal.js"></script>
+        <script nonce=@nonce src="~/js/forms/formParticipante.js"></script>
+        <script nonce=@nonce src="~/js/forms/formHome.js"></script>
+        <script nonce=@nonce src="~/js/forms/formUsuario.js"></script>
+        <script nonce=@nonce src="~/js/forms/formLogin.js"></script>
+
+
+        <script nonce=@nonce src="~/js/helper/baseEditor.js"></script>
+        <script nonce=@nonce src="~/js/helper/baseGrid.js"></script>
+        <script nonce=@nonce src="~/js/helper/helperAjax.js"></script>
+        <script nonce=@nonce src="~/js/helper/helperConstantes.js"></script>
+        <script nonce=@nonce src="~/js/helper/helperConstantes.url.js"></script>
+        <script nonce=@nonce src="~/js/helper/helperFunctions.js"></script>
+        <script nonce=@nonce src="~/js/helper/helperGrid.js"></script>
+        <script nonce=@nonce src="~/js/helper/helperNotificacion.js"></script>
+        <script nonce=@nonce src="~/js/helper/helperSite.js"></script>
+
+        @RenderSection("scripts_head", required: false)
+
+    </environment>
+    <environment names="Staging,Production">
+        <link nonce=@nonce rel="stylesheet" href="~/css/shared.min.css" asp-append-version="true" />
+        <link nonce=@nonce rel="stylesheet" href="~/css/main.min.css" asp-append-version="true" />
+        <script nonce=@nonce src="~/js/shared.min.js" asp-append-version="true"></script>
+        <script nonce=@nonce src="~/js/main.min.js" asp-append-version="true"></script>
+        <script nonce=@nonce src="~/js/functionNotificacion.es5.min.js"></script>
+        <script nonce=@nonce src="~/lib/ckeditor5/ckeditor.js"></script>
+        <script nonce=@nonce src="~/lib/ckeditor5/translations/es.js"></script>        
+        @RenderSection("scripts_head", required: false)
+    </environment>    
+    <style nonce="@nonce">
+        body {
+            --ck-z-default: 100;
+            --ck-z-modal: calc( var(--ck-z-default) + 999 );
+        }
+    </style>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+    <div id="id-layout-processing">
+        <img src="~/Images/processing.gif" />
+    </div>
+    <div id="id-message" class="displayNo"></div>
+    <div class="wrapper">
+        @Html.Partial("_LayoutMain.Head", Model)
+        @Html.Partial("_LayoutMain.Lateral", Model)
+        <div class="content-wrapper">
+            <section class="content-page p-15">
+                @RenderBody()
+            </section>
+        </div>
+        @Html.Partial("_LayoutMain.Footer")
+        <div class="control-sidebar-bg"></div>
+    </div>
+    <environment names="Development">
+        <script nonce=@nonce src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBC0jpd1eX1mGCvfLLcwAc48dq1VgvYa4A"></script>
+        @RenderSection("scripts_body", required: false)
+    </environment>
+    <environment names="Staging,Production">
+        <script nonce=@nonce src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBC0jpd1eX1mGCvfLLcwAc48dq1VgvYa4A"></script>
+        @RenderSection("scripts_body", required: false)
+    </environment>
+</body>
+</html>

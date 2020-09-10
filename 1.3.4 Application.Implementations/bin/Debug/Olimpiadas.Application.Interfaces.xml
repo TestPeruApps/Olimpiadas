@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Olimpiadas.Application.Interfaces</name>
+    </assembly>
+    <members>
+        <member name="T:Olimpiadas.Application.Interfaces.GestionContenido.IPersonalAppService">
+            <summary>
+            Interface con métodos para orquestar operaciones del personal.
+            </summary>
+        </member>
+        <member name="M:Olimpiadas.Application.Interfaces.GestionContenido.IPersonalAppService.Paginar(Olimpiadas.Application.Dto.Comun.PaginacionRequestDto{Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalDto})">
+            <summary>
+            Implementa método orquestador para paginar el Personal.
+            </summary>
+            <param name="request">Datos para obtener las alertas paginados.</param>
+            <returns>Datos con la paginación de alertas.</returns>
+        </member>
+        <member name="M:Olimpiadas.Application.Interfaces.GestionContenido.IPersonalAppService.ObtenerEditor(System.Nullable{System.Int32})">
+            <summary>
+            Método orquestador para obtener los datos necesarios para el editor de Personals.(Agregar o Modificar).
+            </summary>
+            <param name="idPersonal">Id del registro.</param>
+            <returns>Datos para mostrar el editor.</returns>
+        </member>
+        <member name="M:Olimpiadas.Application.Interfaces.GestionContenido.IPersonalAppService.Insertar(Olimpiadas.Application.Dto.Comun.RequestDto{Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalDto})">
+            <summary>
+            Método orquestador para insertar una Personal.
+            </summary>
+            <param name="request">Datos que se insertan.</param>
+            <returns>Identificador del registro insertado.</returns>
+        </member>
+        <member name="M:Olimpiadas.Application.Interfaces.GestionContenido.IPersonalAppService.Actualizar(Olimpiadas.Application.Dto.Comun.RequestDto{Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalDto})">
+            <summary>
+            Método orquestador para actualizar una Personal.
+            </summary>
+            <param name="request">Datos del registro que se actualiza.</param>        
+        </member>
+        <member name="M:Olimpiadas.Application.Interfaces.GestionContenido.IPersonalAppService.Desactivar(Olimpiadas.Application.Dto.Comun.RequestDto{Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalDto})">
+            <summary>
+            Método orquestador para desactivar un registro.
+            </summary>
+            <param name="request">Datos del registro que se desactiva.</param>
+        </member>
+        <member name="M:Olimpiadas.Application.Interfaces.GestionContenido.IPersonalAppService.Activar(Olimpiadas.Application.Dto.Comun.RequestDto{Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalDto})">
+            <summary>
+            Método orquestador para activar una Personal.
+            </summary>
+            <param name="request">Datos del registro que se activa.</param>
+        </member>
+        <member name="T:Olimpiadas.Application.Interfaces.GestionContenido.IParticipanteAppService">
+            <summary>
+            Interface con métodos para orquestar operaciones de los participantes.
+            </summary>
+        </member>
+        <member name="M:Olimpiadas.Application.Interfaces.GestionContenido.IParticipanteAppService.Paginar(Olimpiadas.Application.Dto.Comun.PaginacionRequestDto{Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteDto})">
+            <summary>
+            Método orquestador para paginar las alertas.
+            </summary>
+            <param name="request">Datos para obtener las alertas paginados.</param>
+            <returns>Datos con la paginación de alertas.</returns>
+        </member>
+        <member name="M:Olimpiadas.Application.Interfaces.GestionContenido.IParticipanteAppService.ObtenerEditor(System.Nullable{System.Int32})">
+            <summary>
+            Método orquestador para obtener los datos necesarios para el editor de participantes.(Agregar o Modificar).
+            </summary>
+            <param name="idParticipante">Id del registro.</param>
+            <returns>Datos para mostrar el editor.</returns>
+        </member>
+        <member name="M:Olimpiadas.Application.Interfaces.GestionContenido.IParticipanteAppService.Insertar(Olimpiadas.Application.Dto.Comun.RequestDto{Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteDto})">
+            <summary>
+            Método orquestador para insertar una Participante.
+            </summary>
+            <param name="request">Datos que se insertan.</param>
+            <returns>Identificador del registro insertado.</returns>
+        </member>
+        <member name="M:Olimpiadas.Application.Interfaces.GestionContenido.IParticipanteAppService.Actualizar(Olimpiadas.Application.Dto.Comun.RequestDto{Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteDto})">
+            <summary>
+            Método orquestador para actualizar una Participante.
+            </summary>
+            <param name="request">Datos del registro que se actualiza.</param>        
+        </member>
+        <member name="M:Olimpiadas.Application.Interfaces.GestionContenido.IParticipanteAppService.Desactivar(Olimpiadas.Application.Dto.Comun.RequestDto{Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteDto})">
+            <summary>
+            Método orquestador para desactivar un registro.
+            </summary>
+            <param name="request">Datos del registro que se desactiva.</param>
+        </member>
+        <member name="M:Olimpiadas.Application.Interfaces.GestionContenido.IParticipanteAppService.Activar(Olimpiadas.Application.Dto.Comun.RequestDto{Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteDto})">
+            <summary>
+            Método orquestador para activar una Participante.
+            </summary>
+            <param name="request">Datos del registro que se activa.</param>
+        </member>
+        <member name="T:Olimpiadas.Application.Interfaces.GestionSeguridad.IUsuarioAppService">
+            <summary>
+            Interface con métodos para orquestar operaciones de Usuarios.
+            </summary>
+        </member>
+        <member name="M:Olimpiadas.Application.Interfaces.GestionSeguridad.IUsuarioAppService.ValidarLogin(Olimpiadas.Application.Dto.GestionSeguridad.Usuarios.ValidarLoginRequestDto)">
+            <summary>
+            Método orquestador para validar la autenticación del Login
+            </summary>
+            <param name="request">Datos del login</param>
+            <returns>Datos resultantes del proceso</returns>
+        </member>
+        <member name="M:Olimpiadas.Application.Interfaces.GestionSeguridad.IUsuarioAppService.ListarMenuPorUsuario(System.Int16)">
+            <summary>
+            Método orquestador para obtener el menú de un usuario.
+            </summary>
+            <param name="usuarioId">Id del usuario.</param>
+            <returns>Permisos de</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,76 @@
+﻿@using System.Globalization
+@{    
+    var nonce = Context.Items["csp-nonce"].ToString();
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>PERUAPPS | TEST</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content="" />
+    <meta name="author" content="Essentta" />
+    <link href="~/images/favicon/favicon.ico" rel="apple-touch-icon" type="image/x-icon" />
+    <link href="~/images/favicon/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <environment names="Development">
+        <link nonce=@nonce rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link nonce=@nonce rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.min.css" />
+
+        <link nonce=@nonce rel="stylesheet" href="~/css/forms/site.base.css" />
+        <link nonce=@nonce rel="stylesheet" href="~/css/forms/site.temp.css" />
+        <link nonce=@nonce rel="stylesheet" href="~/css/forms/site.skin.css" />
+
+        <link nonce=@nonce rel="stylesheet" href="~/css/forms/layout.login.css" />
+
+        <script nonce=@nonce src="~/lib/jquery/dist/jquery-3.4.1.min.js"></script>
+        <script nonce=@nonce src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script nonce=@nonce src="~/lib/bootstrap3-dialog/dist/js/bootstrap-dialog.js"></script>
+
+        <script nonce=@nonce src="~/lib/formValidation/formValidation.js"></script>
+        <script nonce=@nonce src="~/lib/formValidation/Framework.bootstrap.js"></script>
+        <script nonce=@nonce src="~/lib/formValidation/i18n.js"></script>
+        <script nonce=@nonce src="~/lib/formValidation/mandatoryIcon.js"></script>
+        <script nonce=@nonce src="~/lib/formValidation/es_ES.js"></script>
+        <script nonce=@nonce src="~/lib/noty/js/noty/packaged/jquery.noty.packaged.js"></script>
+
+        <script nonce=@nonce src="~/js/helper/baseEditor.js"></script>
+        <script nonce=@nonce src="~/js/helper/baseGrid.js"></script>
+        <script nonce=@nonce src="~/js/helper/helperAjax.js"></script>
+        <script nonce=@nonce src="~/js/helper/helperConstantes.js"></script>
+        <script nonce=@nonce src="~/js/helper/helperConstantes.url.js"></script>
+        <script nonce=@nonce src="~/js/helper/helperFunctions.js"></script>
+        <script nonce=@nonce src="~/js/helper/helperGrid.js"></script>
+        <script nonce=@nonce src="~/js/helper/helperNotificacion.js"></script>
+        <script nonce=@nonce src="~/js/helper/helperSite.js"></script>
+
+        <script nonce=@nonce src="~/js/forms/app.js"></script>
+        <script nonce=@nonce src="~/js/forms/formLogin.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <link nonce=@nonce rel="stylesheet" href="~/css/shared.min.css" asp-append-version="true" />
+        <link nonce=@nonce rel="stylesheet" href="~/css/login.min.css" asp-append-version="true" />
+        <script nonce=@nonce src="~/js/shared.min.js" asp-append-version="true"></script>
+    </environment>    
+</head>
+<body>
+    <div id="id-layout-processing">
+        <img src="~/Images/processing.gif" />
+    </div>
+    @RenderBody()
+    <footer>
+        <h1>
+            <span><b>PERUAPPS</b>|TEST</span>
+        </h1>
+        <div>
+            <address>
+                <span>
+                    Av. Jorge Basadre 610, San Isidro - Lima, <br />
+                    (51-1) 616 7300 / 616 7400
+                </span>
+            </address>
+        </div>
+
+    </footer>
+</body>
+</html>

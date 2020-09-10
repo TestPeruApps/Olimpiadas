@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Olimpiadas.Application.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Olimpiadas.Application.Core.AppServiceBase`1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Olimpiadas.Application.Core.AppServiceBase`1.ValidarParametroRequest(Olimpiadas.Application.Dto.Comun.RequestDto{`0})">
+            <summary>
+            Método para validar parámetro del request.
+            </summary>
+            <param name="request">Clase que se valida.</param>
+        </member>
+        <member name="M:Olimpiadas.Application.Core.AppServiceBase`1.ValidarParametroRequest``1(Olimpiadas.Application.Dto.Comun.RequestDto{``0})">
+            <summary>
+            Método para validar parámetro del request.
+            </summary>
+            <param name="request">Clase que se valida.</param>
+        </member>
+        <member name="M:Olimpiadas.Application.Core.AppServiceBase`1.ValidarFormatoFecha(System.String)">
+            <summary>
+            Método para validar el formato de la fecha
+            </summary>
+            <param name="fecha">Fecha que se valida.</param>
+        </member>
+        <member name="M:Olimpiadas.Application.Core.AppServiceBase`1.ValidarParametrosPaginacion(Olimpiadas.Application.Dto.Comun.PaginacionRequestDto{`0})">
+            <summary>
+            Método para validar los parámetros para realizar la paginación.
+            </summary>
+            <param name="request">Clase que se valida.</param>
+        </member>
+        <member name="M:Olimpiadas.Application.Core.AppServiceBase`1.ValidarParametrosPaginacion(Olimpiadas.Application.Dto.Comun.CriteriosPaginacionDto)">
+            <summary>
+            Método para validar los parámetros de paginación
+            </summary>
+            <param name="request"></param>
+        </member>
+        <member name="T:Olimpiadas.Application.Core.ValidationsHelper">
+            <summary>
+            Helper para realizar validaciones de parámetros.
+            </summary>
+        </member>
+        <member name="M:Olimpiadas.Application.Core.ValidationsHelper.ValidarCriteriosPaginacion(Olimpiadas.Application.Dto.Comun.CriteriosPaginacionDto)">
+            <summary>
+            Método para validar los parámetros para realizar la paginación.
+            </summary>
+            <param name="criteriosPaginacion">Datos con los criterios de paginación.</param>
+        </member>
+    </members>
+</doc>

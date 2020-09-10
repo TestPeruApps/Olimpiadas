@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Olimpiadas.CrossCutting.Enumerations</name>
+    </assembly>
+    <members>
+        <member name="T:Olimpiadas.CrossCutting.Enumerations.EnumTipoRangoFecha">
+            <summary>
+            Enumeración los tipos de rango de fechas.
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.EnumTipoRangoFecha.PorDia">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.EnumTipoRangoFecha.PorRango">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.EnumTipoRangoFecha.PorMes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.EnumTipoRangoFecha.PorTrimestre">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.EnumTipoRangoFecha.PorSemestre">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.EnumTipoRangoFecha.PorAnio">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Olimpiadas.CrossCutting.Enumerations.EnumDireccionPaginacion">
+            <summary>
+            Enumeración con las dirección de ordenación.
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.EnumDireccionPaginacion.Ninguna">
+            <summary>
+            Con ordenación por defecto. (Depederá de la consulta y/o índices de la tabla)
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.EnumDireccionPaginacion.ASC">
+            <summary>
+            Ordenación en forma ascendente.
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.EnumDireccionPaginacion.DESC">
+            <summary>
+            Ordenación en forma descendente.
+            </summary>
+        </member>
+        <member name="T:Olimpiadas.CrossCutting.Enumerations.EnumFormatoReporte">
+            <summary>
+            Tipo de formato para retornas reportes, estos deben ser iguales a la enumeracion de CrystalReports
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.EnumFormatoReporte.NoFormat">
+            <summary>
+            Formato PDF
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.EnumFormatoReporte.PortableDocFormat">
+            <summary>
+            Formato PDF
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.EnumFormatoReporte.Excel">
+            <summary>
+            Formato Excel
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.EnumFormatoReporte.ExcelRecord">
+            <summary>
+            Formato Excel Datos
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.EnumFormatoReporte.HTML32">
+            <summary>
+            Formato HTML32
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.EnumFormatoReporte.HTML40">
+            <summary>
+            Formato HTML 4
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.EnumFormatoReporte.Text">
+            <summary>
+            Formato de texto plano
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.EnumFormatoReporte.WordForWindows">
+            <summary>
+            Formato word
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.EnumFormatoReporte.Xml">
+            <summary>
+            Formato XML.
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.EnumFormatoReporte.CrystalReport">
+            <summary>
+            Formato Crystalreport.
+            </summary>
+        </member>
+        <member name="T:Olimpiadas.CrossCutting.Enumerations.FormatoReporteEnumReportViewer">
+            <summary>
+            Tipo de formato para retornas reportes, estos deben ser iguales a la enumeracion de CrystalReports
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.FormatoReporteEnumReportViewer.PortableDocFormat">
+            <summary>
+            Formato PDF
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.FormatoReporteEnumReportViewer.Excel">
+            <summary>
+            Formato Excel
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.FormatoReporteEnumReportViewer.ExcelRecord">
+            <summary>
+            Formato Excel Datos
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.FormatoReporteEnumReportViewer.Word">
+            <summary>
+            Formato word
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.FormatoReporteEnumReportViewer.Image">
+            <summary>
+            Formato XML.
+            </summary>
+        </member>
+        <member name="T:Olimpiadas.CrossCutting.Enumerations.EnumTipoNotificacion">
+            <summary>
+            Enumeración con los niveles de gravedad de los mensajes.
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.EnumTipoNotificacion.Ninguno">
+            <summary>
+            Mensaje con nivel de gravedad no identificado.
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.EnumTipoNotificacion.Informativo">
+            <summary>
+            Indica que el mensaje es solo informativo.
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.EnumTipoNotificacion.Alerta">
+            <summary>
+            Indica que se produjo una alerta en el sistema.
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.EnumTipoNotificacion.Error">
+            <summary>
+            Indica un error del sistema.
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.EnumTipoNotificacion.Satisfactorio">
+            <summary>
+            Indica que el proceso se realizo satisfactoriamente.
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.CrossCutting.Enumerations.EnumTipoNotificacion.Advertencia">
+            <summary>
+            Indica que el proceso no se pudo realizar y presenta aadvertencias.
+            </summary>
+        </member>
+    </members>
+</doc>

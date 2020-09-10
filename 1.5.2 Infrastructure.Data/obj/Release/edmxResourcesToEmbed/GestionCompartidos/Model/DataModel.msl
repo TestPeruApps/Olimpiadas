@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GestionCompartidosStoreContainer" CdmEntityContainer="DbContextGestionCompartidos">
+    <EntitySetMapping Name="Ubigeo">
+      <EntityTypeMapping TypeName="GestionCompartidos.Ubigeo">
+        <MappingFragment StoreEntitySet="Ubigeo">
+          <ScalarProperty Name="Ubig_IpEdicion" ColumnName="Ubig_IpEdicion" />
+          <ScalarProperty Name="Ubig_IpCreacion" ColumnName="Ubig_IpCreacion" />
+          <ScalarProperty Name="Ubig_FechaEdicion" ColumnName="Ubig_FechaEdicion" />
+          <ScalarProperty Name="Ubig_FechaCreacion" ColumnName="Ubig_FechaCreacion" />
+          <ScalarProperty Name="Ubig_UsuarioEdicion" ColumnName="Ubig_UsuarioEdicion" />
+          <ScalarProperty Name="Ubig_UsuarioCreacion" ColumnName="Ubig_UsuarioCreacion" />
+          <ScalarProperty Name="Ubig_Nombre3Niveles" ColumnName="Ubig_Nombre3Niveles" />
+          <ScalarProperty Name="Ubig_Nombre2Niveles" ColumnName="Ubig_Nombre2Niveles" />
+          <ScalarProperty Name="Ubig_IdPadre" ColumnName="Ubig_IdPadre" />
+          <ScalarProperty Name="Ubig_TipoId" ColumnName="Ubig_TipoId" />
+          <ScalarProperty Name="Ubig_NombreDepartamento" ColumnName="Ubig_NombreDepartamento" />
+          <ScalarProperty Name="Ubig_NombreProvincia" ColumnName="Ubig_NombreProvincia" />
+          <ScalarProperty Name="Ubig_NombreDistrito" ColumnName="Ubig_NombreDistrito" />
+          <ScalarProperty Name="Ubig_Nombre" ColumnName="Ubig_Nombre" />
+          <ScalarProperty Name="Ubig_CodigoDepartamento" ColumnName="Ubig_CodigoDepartamento" />
+          <ScalarProperty Name="Ubig_CodigoProvincia" ColumnName="Ubig_CodigoProvincia" />
+          <ScalarProperty Name="Ubig_Codigo" ColumnName="Ubig_Codigo" />
+          <ScalarProperty Name="Ubig_Id" ColumnName="Ubig_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Parametro">
+      <EntityTypeMapping TypeName="GestionCompartidos.Parametro">
+        <MappingFragment StoreEntitySet="Parametro">
+          <ScalarProperty Name="Para_ValorBool" ColumnName="Para_ValorBool" />
+          <ScalarProperty Name="Para_ValorNumero" ColumnName="Para_ValorNumero" />
+          <ScalarProperty Name="Para_ValorTexto" ColumnName="Para_ValorTexto" />
+          <ScalarProperty Name="Para_Nombre" ColumnName="Para_Nombre" />
+          <ScalarProperty Name="Para_Id" ColumnName="Para_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Grupo">
+      <EntityTypeMapping TypeName="GestionCompartidos.Grupo">
+        <MappingFragment StoreEntitySet="Grupo">
+          <ScalarProperty Name="Grup_IconografiaExtencion" ColumnName="Grup_IconografiaExtencion" />
+          <ScalarProperty Name="Grup_IconografiaAlto" ColumnName="Grup_IconografiaAlto" />
+          <ScalarProperty Name="Grup_IconografiaAncho" ColumnName="Grup_IconografiaAncho" />
+          <ScalarProperty Name="Grup_EsIconografia" ColumnName="Grup_EsIconografia" />
+          <ScalarProperty Name="Grup_EsEditable" ColumnName="Grup_EsEditable" />
+          <ScalarProperty Name="Grup_UsadoEn" ColumnName="Grup_UsadoEn" />
+          <ScalarProperty Name="Grup_PadreId" ColumnName="Grup_PadreId" />
+          <ScalarProperty Name="Grup_Nombre" ColumnName="Grup_Nombre" />
+          <ScalarProperty Name="Grup_Id" ColumnName="Grup_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipo">
+      <EntityTypeMapping TypeName="GestionCompartidos.Tipo">
+        <MappingFragment StoreEntitySet="Tipo">
+          <ScalarProperty Name="Tipo_IpEdicion" ColumnName="Tipo_IpEdicion" />
+          <ScalarProperty Name="Tipo_IpCreacion" ColumnName="Tipo_IpCreacion" />
+          <ScalarProperty Name="Tipo_FechaEdicion" ColumnName="Tipo_FechaEdicion" />
+          <ScalarProperty Name="Tipo_FechaCreacion" ColumnName="Tipo_FechaCreacion" />
+          <ScalarProperty Name="Tipo_UsuarioEdicion" ColumnName="Tipo_UsuarioEdicion" />
+          <ScalarProperty Name="Tipo_UsuarioCreacion" ColumnName="Tipo_UsuarioCreacion" />
+          <ScalarProperty Name="Tipo_Activo" ColumnName="Tipo_Activo" />
+          <ScalarProperty Name="Tipo_ColorEnApp" ColumnName="Tipo_ColorEnApp" />
+          <ScalarProperty Name="Tipo_Etiqueta" ColumnName="Tipo_Etiqueta" />
+          <ScalarProperty Name="Tipo_Descripcion" ColumnName="Tipo_Descripcion" />
+          <ScalarProperty Name="Tipo_Abreviatura" ColumnName="Tipo_Abreviatura" />
+          <ScalarProperty Name="Tipo_Nombre" ColumnName="Tipo_Nombre" />
+          <ScalarProperty Name="Tipo_GrupoId" ColumnName="Tipo_GrupoId" />
+          <ScalarProperty Name="Tipo_Id" ColumnName="Tipo_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

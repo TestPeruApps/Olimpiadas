@@ -1,0 +1,13 @@
+﻿@model Olimpiadas.Web.CMS.Models.HomeViewModel
+@{
+    var nonce = Context.Items["csp-nonce"].ToString();
+}
+
+<audio id="audio" controls class="displayNo">
+    <source type="audio/mp3" src="~/audio/rington1.mp3">
+</audio>
+<script nonce="@nonce">
+    $(document).ready(function () {
+        formHome.loadNotificaciones();
+    });
+</script>

@@ -1,0 +1,1748 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PROMPERU.YTQPRutasCortas.DistributedServices.Implementations</name>
+    </assembly>
+    <members>
+        <member name="T:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService">
+            <summary>
+            Implementa contrato del servicio con métodos de operaciones de Avatares.
+            </summary>
+            <summary>
+            
+            </summary>
+            <summary>
+            
+            </summary>
+            <summary>
+            Implementa contrato con métodos del servicio JSON para los aplicativos móviles.
+            </summary>
+            <summary>
+            
+            </summary>
+            <summary>
+            Implementa contrato del servicio con métodos de operaciones de Beneficios.
+            </summary>
+            <summary>
+            
+            </summary>
+            <summary>
+            
+            </summary>
+            <summary>
+            
+            </summary>
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.AvatarVer(System.String)">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para pantalla "Avatar".
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <returns>Datos de la pantalla "Avatar".</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.DistritosBuscar(System.String)">
+            <summary>
+            Implementa método del servicio para buscar distritos.
+            </summary>
+            <param name="filtro">Filtro para buscar los ditritos.</param>
+            <returns>Datos de la busqueda de distritos".</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.ExperienciasVer(System.String)">
+            <summary>
+            Implementa método del servicio para obtener los datos de la ventana Experiencias.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <returns>Datos de la ventana Experiencias.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.ViajeProgramadoEliminar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestAppDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionApp.Experiencias.ViajeProgramadoEliminarRequestDto})">
+            <summary>
+            Implementa método del servicio para eliminar un viaje programado.
+            </summary>
+            <param name="request">Datos necesarios del viaje programdo que se elimina.</param>
+            <returns>Datos resultantes del proceso.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.ViajeProgramadoListarRutasParaAgregar(System.String)">
+            <summary>
+            Implementa método del servicio para listar las rutas para agregar como visita programada.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <returns>Datos de la ventana Agregar viaje.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.ViajeProgramadoVer(System.String,System.String)">
+            <summary>
+            Implementa método del servicio para obtener los datos de la ventana Programar Viaje.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <param name="rpro_Id">Id del viaje programado.</param>
+            <returns>Datos de la ventana Programar viaje.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.ViajeProgramadoActualizar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestAppDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionApp.Experiencias.ViajeProgramadoActualizarRequestDto})">
+            <summary>
+            Implementa método del servicio para actualizar un viaje programado.
+            </summary>
+            <param name="request">Datos necesarios para actualizar el viaje programado.</param>
+            <returns>Datos resultantes del proceso.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.RutaVisitadaVer(System.String,System.String)">
+            <summary>
+            Implementa método del servicio para obtener los datos de la ventana Ruta Visitada.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <param name="rvis_Id">Id de la ruta visitada.</param>
+            <returns>Datos de la ventana Ruta Visitada.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.ExperienciasListarPorPaginacion(System.String,System.String,System.String)">
+            <summary>
+            Implementa método del servicio para obtener los datos de la ventana Experiencias Compartidas.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <param name="numeroPagina">Número de pagina.</param>
+            <param name="tamanioPagina">Tamaño de página.</param>
+            <returns>Datos de la ventana Experiencias Compartidas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.ViajeProgramadoInsertar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestAppDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.RutasProgramadas.RutaProgramadaInsertarRequestDto})">
+            <summary>
+            Implementa método del servicio para insertar un viaje programado.
+            </summary>
+            <param name="request">Datos necesarios para insertar el viaje programado.</param>
+            <returns>Datos resultantes del proceso.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.ParametroObtener(System.String,System.String,System.String)">
+            <summary>
+            Implementa método del servicio para obtener los parámetros del app.
+            </summary>
+            <param name="anchoPantalla">Ancho de la pantalla del app.</param>
+            <param name="altoPantalla">Alto de la pantalla del app.</param>
+            <param name="turi_id">Id. del turista (opcional)</param>
+            <returns>Parámetros del app.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.BeneficiosVer(System.String)">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para la pantalla "Beneficios".
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <returns>Datos de la pantalla "Beneficios".</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.PremioVer(System.String,System.String)">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para la pantalla "Premio".
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <param name="prem_Id">Id del premio.</param>
+            <returns>Datos de la pantalla "Premio".</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.MiPerfilVer(System.String)">
+            <summary>
+            Implementa método del servicio para obtener los datos de la pantalla "Mi Perfil".
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <returns>Datos de la pantalla "Mi Perfil".</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.MiPerfilVerEditor(System.String)">
+            <summary>
+            Implementa método del servicio para obtener los datos del editor del perfil del turista.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <returns>Datos de la pantalla del editor de perfil.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.MiPerfilActualizar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestAppDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionApp.MiPerfil.MiPerfilActualizarRequestDto})">
+            <summary>
+            Implementa método del servicio para actualizar el perfil del turista.
+            </summary>
+            <param name="request">Datos del perfil de turista.</param>
+            <returns>Datos resultantes del proceso.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.MiPerfilCambiarContrasenia(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestAppDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionApp.MiPerfil.MiPerfilCambiarContraseniaRequestDto})">
+            <summary>
+            Implementa método del servicio para cambiar la contraseña del turista.
+            </summary>
+            <param name="request">Datos del la nueva contraseña.</param>
+            <returns>Datos resultantes del proceso.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.MiPerfilCerrarSesion(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestAppDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionApp.MiPerfil.MiPerfilCerrarSesionRequestDto})">
+            <summary>
+            Implementa método del servicio para cerrar la sesión del turista en el app.
+            </summary>
+            <param name="request">Datos del turista.</param>
+            <returns>Datos resultantes del proceso.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.MiPerfilVerAcercaDe(System.String)">
+            <summary>
+            Implementa método del servicio para obtener los datos de la pantalla Acerca De.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <returns>Datos de la pantalla Acerca De.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.MiPerfilVerDirectorio(System.String)">
+            <summary>
+            Implementa método del servicio para obtener los datos de la pantalla Números Importantes.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <returns>Datos de la pantalla Números Importantes.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.MiPerfilSeguridad(System.String)">
+            <summary>
+            Implementa método del servicio para para agregar una visita a la pantalla "Seguridad".
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <returns>Datos resultantes del proceso.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.MiPerfilValorarApp(System.String)">
+            <summary>
+            Implementa método del servicio para agregar una visita a la pantalla "Valorar App".
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <returns>Datos resultantes del proceso.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.ObtenerTerminosCondiciones(System.String)">
+            <summary>
+            Implementa método del servicio para obtener los datos de términos y condiciones.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <returns>Datos de los terminos y condiciones.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.ObtenerPoliticaPrivacidad(System.String)">
+            <summary>
+            Implementa método del servicio para obtener los datos de política de privacidad.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <returns>Datos de la política de privacidad.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.HomeVer(System.String,System.String)">
+            <summary>
+            Implementa método del servicio para obtener los datos del home.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <param name="appP_VersionCoordenadas">Versiòn de las coordenadas.</param>
+            <returns>Datos de la pantalla home.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.OfertasVerMas(System.String)">
+            <summary>
+            Implementa método del servicio para obtener las ofertas del home.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <returns>Lista de ofertas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.DestacadosVerMas(System.String)">
+            <summary>
+            Implementa método del servicio para obtener los destacados del home.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <returns>Lista de destacados.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.HomeVerBusquedaAvanzada(System.String)">
+            <summary>
+            Implementa método del servicio para obtener los datos de la pantalla "Búsqueda Avanzada".
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <returns>Datos de la pantalla "Busqueda Avanzada".</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.AlertasPaginar(System.String,System.String,System.String)">
+            <summary>
+            Implementa método del servicio para obtener los datos de la pantalla alertas.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <param name="numeroPagina">Número de página.</param>
+            <param name="tamanioPagina">Tamaño de página.</param>
+            <returns>Datos de la pantalla Alertas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.RutasBuscarPorTexto(System.String,System.String)">
+            <summary>
+            Implementa método del servicio para obtener los datos de la pantalla búsqueda por texto.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <param name="filtro">Filtro usado para realizar la búsqueda.</param>
+            <returns>Datos de la pantalla Busqueda por texto.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.RutasVerTodo(System.String)">
+            <summary>
+            Implementa método del servicio para obtener los datos de la pantalla "Ver Todas las Rutas".
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <returns>Datos de la pantalla "Ver Todas las Rutas".</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.RutaMiDestino(System.String,System.String,System.String)">
+            <summary>
+            Impleenta método del servicio para obtener los datos de la pantalla "Mi Destino".
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <param name="ruta_id">Id de la ruta.</param>
+            <param name="rutaBuscada">Bool que indica si la ruta fue buscada.</param>
+            <returns>Datos de la pantalla "Mi Destino".</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.RutaListarPorBusquedaAvanzada(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestAppDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionApp.Home.RutaListarPorBusquedaAvanzadaRequestDto})">
+            <summary>
+            Implementa método del servicio realizar la búsqueda avanzada y obtener los datos de la pantalla "Home"
+            </summary>
+            <param name="request">Datos necesarios realizar la búsqueda avanzada.</param>
+            <returns>Datos de la pantalla home.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.AtractivosVer(System.String,System.String)">
+            <summary>
+            Implementa método del servicio para obtener los datos de la pantalla "Atractivos".
+            </summary>
+            <param name="turi_id">Id del turista.</param>
+            <param name="ruta_id">Id de la ruta.</param>
+            <returns>Datos de la pantalla "Atractivos".</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.AtractivoVer(System.String,System.String)">
+            <summary>
+            Implementa método del servicio para obtener los datos de la pantalla "Detalle del Atractivo".
+            </summary>
+            <param name="turi_id">Id del turista.</param>
+            <param name="atra_id">Id del atractivo.</param>
+            <returns>Datos de la pantalla "Detalle del Atractivo".</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.AtractivoVerLeyenda(System.String,System.String)">
+            <summary>
+            Implementa método del servicio para obtener los datos de la pantalla "Ver Leyanda".
+            </summary>
+            <param name="turi_id">Id del turista.</param>
+            <param name="atra_id">Id del atractivo.</param>
+            <returns>Datos de la pantalla "Ver Leyenda".</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.ValoracionesPaginar(System.String,System.String,System.String,System.String)">
+            <summary>
+            Implementa método del servicio para paginar las valoraciones de la pantalla "Detalle del Atractivo".
+            </summary>
+            <param name="turi_id">Id del turista.</param>
+            <param name="atra_id">Id del atractivo.</param>
+            <param name="numeroPagina">Número de página.</param>
+            <param name="tamanioPagina">Tamaño de página.</param>
+            <returns>Valoraciones de la pantalla "Detalle del Atractivo".</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.AtractivoValorar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestAppDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionApp.Home.AtractivoValorarRequestDto})">
+            <summary>
+            Implementa método del servicio para valorar un atractivo.
+            </summary>
+            <param name="request">Datos necesarios valorar el atractivo.</param>
+            <returns>Datos resultantes del proceso.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.OfertasVer(System.String,System.String)">
+            <summary>
+            Implementa método del servicio para obtener los datos de la pantalla "Ofertas".
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <param name="ruta_id">Id de la ruta.</param>
+            <returns>Datos de la pantalla "Ofertas".</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.MapaVer(System.String,System.String,System.String,System.String)">
+            <summary>
+            Implementa método del servicio para obtener los datos de la pantalla "Ver Mapa".
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <param name="appP_VersionCoordenadas">Versión de las coordenadas.</param>
+            <param name="latitud">Latitud actual.</param>
+            <param name="longitud">Longitud actual.</param>
+            <returns>Datos de la pantalla "Ver Mapa".</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.RutaDescargarOffLine(System.String,System.String)">
+            <summary>
+            Implementa método del servicio para obtener los datos para la descarga offline de las rutas.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <param name="ruta_Id">Id de la ruta.</param>
+            <returns>Datos de la pantalla "Atractivos".</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.AgregarEliminarRutaProgramada(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestAppDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionApp.Home.RutaActualizarRutaProgramadaRequestDto})">
+            <summary>
+            Implementa método del servicio para actualizar (agregar / eliminar) una ruta programada
+            </summary>
+            <param name="request">Datos de la ruta programada</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.EncuestaObtener(System.String,System.String)">
+            <summary>
+            Implementa método del servicio para obtener los datos de la encuesta.
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <param name="ruta_Id">Id de la ruta.</param>
+            <returns>Datos de la pantalla "Rutas".</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.EncuestaInsertar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestAppDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionApp.Encuesta.EncuestaRequestDto})">
+            <summary>
+            Implementa método del servicio para insertar una Encuesta.
+            </summary>
+            <param name="request">Datos de la encuesta que se inserta.</param>
+            <returns>Identificador de la encuesta insertado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.EnviarNotificacionesPushManual(System.String,System.String,System.String)">
+            <summary>
+            Implementa método del servicio para valorar un atractivo.
+            </summary>
+            <param name="titulo">Título de la notificación</param>
+            <param name="cuerpo">Cuerpo de la notificación</param>
+            <param name="turi_Id">Id. del turista</param>
+            <returns>Datos resultantes del proceso.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.ListarCoberturaPorRutaParaApp(System.String)">
+            <summary>
+            Implementa método del servicio para listar la cobertura de una ruta de acuerdo a un Id.
+            </summary>
+            <param name="ruta_Id">Id de la ruta.</param>
+            <returns>Datos de la cobertura.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.RutaVisitadaInsertar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestAppDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.RutasVisitadas.RutaVisitadaRequestDto})">
+            <summary>
+            Implementa método del servicio para insertar una ruta visitada.
+            </summary>
+            <param name="request">Datos de la ruta visitada que se inserta.</param>
+            <returns>Identificador de la ruta visitada insertado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.AtractivoVisitadoInsertar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestAppDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.RutasVisitadas.RutaVisitadaRequest_AtractivosDto})">
+            <summary>
+            Implementa método del servicio para insertar un atractivo visitado.
+            </summary>
+            <param name="request">Datos del atractivo visitado que se inserta.</param>
+            <returns>Identificador del atractivo visitado insertado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.TuristaInsertarPorRegistro(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestAppDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Turistas.TuristaRegistroRequestDto})">
+            <summary>
+            Implementa método del servicio para registrar un nuevo turista por correo y contraseña
+            </summary>
+            <param name="request">Datos del registro de turista</param>
+            <returns>Datos resultantes del proceso</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.TuristaVerificaCodigoRegistro(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestAppDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Turistas.TuristaValidarCodigoRequestDto})">
+            <summary>
+            Implementa método del servicio para verificar código de 4 dígitos del registro de turista
+            </summary>
+            <param name="request">Datos de la verificación de código</param>
+            <returns>Datos resultantes del proceso</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.TuristaIngresarConEmail(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestAppDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Turistas.TuristaIngresarConEmailRequestDto})">
+            <summary>
+            Implementa método del servicio para realizar el ingreso al sistema mediante e-mail y contraseña
+            </summary>
+            <param name="request">Datos del ingreso con usuario y contraseña</param>
+            <returns>Datos resultantes del proceso</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.TuristaIngresarRedSocial(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestAppDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Turistas.TuristaValidarRedSocialRequestDto})">
+            <summary>
+            Implementa método del servicio para registrar o ingresar el usuario por red social
+            </summary>
+            <param name="request">Datos de la validación por red social</param>
+            <returns>Datos resultantes del proceso</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.TuristaObtenerRecuperoContrasenia(System.String)">
+            <summary>
+            Implementa método del servicio para enviar código de 4 digitos para restablecer contraseña
+            </summary>
+            <param name="email">Correo electrónico a consultar</param>
+            <returns>Datos resultantes del proceso</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.TuristaActualizarContraseniaConToken(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestAppDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Turistas.TuristaCambiarContraseniaRequestDto})">
+            <summary>
+            Implementa método del servicio para actualizar contraseña de un turista.
+            </summary>
+            <param name="request">Datos de la nueva contraseña.</param>
+            <returns>Datos resultantes del proceso.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.TuristaVer(System.String)">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para la pantalla "Turista".
+            </summary>
+            <param name="turi_Id">Id del turista.</param>
+            <returns>Datos de la pantalla "Turista".</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.TuristaActualizar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestAppDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Turistas.TuristaActualizarRequestDto})">
+            <summary>
+            Implementa método del servicio para actualizar un turista.
+            </summary>
+            <param name="request">Datos del turista.</param>
+            <returns>Datos resultantes del proceso.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.TuristaActualizarTokenApp(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestAppDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Turistas.TuristaActualizarTokenAppRequestDto})">
+            <summary>
+            Implementa método del servicio para actualizar el token del app de un turista.
+            </summary>
+            <param name="request">Datos del turista.</param>
+            <returns>Datos resultantes del proceso.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.TuristaEliminarPorEmail(System.String)">
+            <summary>
+            Implementa método del servicio para eliminar un turista de manera física. 
+            </summary>
+            <param name="email">Email del turista</param>
+            <returns>Datos resultantes del servicio</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.PruebaGetSatisfactorio(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="pruebaId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.PruebaGetConError(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="pruebaId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.PruebaGetConAdvertencia(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="pruebaId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.PruebaPostSatisfactorio(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.PruebaDto)">
+            <summary>
+            
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.PruebaPostConError(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.PruebaDto)">
+            <summary>
+            
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.PruebaPostConAdvertencia(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.PruebaDto)">
+            <summary>
+            
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionApp.GestionAppService.ProbarRutaNombre">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionCompartido.GestionCompartidoService">
+            <summary>
+            Implementa contrato con métodos del servicio de la gestión de Compartido.
+            </summary>
+            <summary>
+            Implementa contrato del servicio con métodos de operaciones de Tipos.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionCompartido.GestionCompartidoService.Prueba">
+            <summary>
+            Implementa método del servicio para realizar la prueba de conexión a este.
+            </summary>
+            <returns>Datos de prueba de conexión.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionCompartido.GestionCompartidoService.TipoPaginar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.PaginacionRequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionCompartido.Tipo.TipoDto})">
+            <summary>
+            Implementa método del servicio para paginar los Tipos.
+            </summary>
+            <param name="request">Datos para obtener las Tipos paginadas.</param>
+            <returns>Datos con la paginación de Tipos.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionCompartido.GestionCompartidoService.TipoObtenerEditor(System.Nullable{System.Int16})">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para el editor de Tipos.(Agregar o Modificar).
+            </summary>
+            <param name="tipo_Id">Id de la Tipo.</param>
+            <returns>Datos para mostrar el editor de Tipos.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionCompartido.GestionCompartidoService.TipoInsertar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionCompartido.Tipo.TipoDto})">
+            <summary>
+            Implementa método del servicio para insertar un Tipo.
+            </summary>
+            <param name="request">Datos de la Tipo que se inserta.</param>
+            <returns>Identificador de la Tipo insertado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionCompartido.GestionCompartidoService.TipoActualizar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionCompartido.Tipo.TipoDto})">
+            <summary>
+            Implementa método del servicio para actualizar un Tipo.
+            </summary>
+            <param name="request">Datos de la Tipo que se actualiza.</param>        
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionCompartido.GestionCompartidoService.TipoDesactivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionCompartido.Tipo.TipoDto})">
+            <summary>
+            Implementa método del servicio para desactivar un Tipo.
+            </summary>
+            <param name="request">Datos de la Tipo que se desactiva.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionCompartido.GestionCompartidoService.TipoActivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionCompartido.Tipo.TipoDto})">
+            <summary>
+            Implementa método del servicio para activar un Tipo.
+            </summary>
+            <param name="request">Datos de la Tipo que se activa.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionCompartido.GestionCompartidoService.TipoListarPorGrupo(System.Nullable{System.Byte})">
+            <summary>
+            Implementa método del servicio para obtener los tipos necesarios para la grilla de tipos.
+            </summary>
+            <param name="grup_Id">Id. del Grupo</param>
+            <returns>Lista de tipos.</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService">
+            <summary>
+            Implementa contrato del servicio con métodos de operaciones de Directorios.
+            </summary>
+            <summary>
+            Implementa contrato del servicio con métodos de operaciones de Avatares.
+            </summary>
+            <summary>
+            Implementa contrato del servicio con métodos de operaciones de Alertas.
+            </summary>
+            <summary>
+            Implementa contrato del servicio con métodos de operaciones de Atractivos Valorados.
+            </summary>
+            <summary>
+            Implementa contrato del servicio con métodos de operaciones de Beneficios.
+            </summary>
+            <summary>
+            Implementa contrato del servicio con métodos de operaciones de Iconografias.
+            </summary>
+            <summary>
+            Implementa contrato del servicio con métodos de operaciones de Iconografias.
+            </summary>
+            <summary>
+            Implementa contrato del servicio con métodos de operaciones de Iconografias.
+            </summary>
+            <summary>
+            Implementa contrato del servicio con métodos de operaciones de Campañas.
+            </summary>
+            <summary>
+            Implementa contrato con métodos del servicio de la gestión de contenido.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.DirectorioPaginar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.PaginacionRequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Directorios.DirectorioDto})">
+            <summary>
+            Implementa método del servicio para paginar los directorios.
+            </summary>
+            <param name="request">Datos para obtener las directorios paginadas.</param>
+            <returns>Datos con la paginación de directorios.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.DirectorioObtenerEditor(System.Nullable{System.Int32})">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para el editor de directorios.(Agregar o Modificar).
+            </summary>
+            <param name="dire_Id">Id de la directorio.</param>
+            <returns>Datos para mostrar el editor de directorios.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.DirectorioInsertar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Directorios.DirectorioDto})">
+            <summary>
+            Implementa método del servicio para insertar un directorio.
+            </summary>
+            <param name="request">Datos de la directorio que se inserta.</param>
+            <returns>Identificador de la directorio insertado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.DirectorioActualizar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Directorios.DirectorioDto})">
+            <summary>
+            Implementa método del servicio para actualizar un directorio.
+            </summary>
+            <param name="request">Datos de la directorio que se actualiza.</param>        
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.DirectorioDesactivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Directorios.DirectorioDto})">
+            <summary>
+            Implementa método del servicio para desactivar un directorio.
+            </summary>
+            <param name="request">Datos de la directorio que se desactiva.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.DirectorioActivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Directorios.DirectorioDto})">
+            <summary>
+            Implementa método del servicio para activar un directorio.
+            </summary>
+            <param name="request">Datos de la directorio que se activa.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.AvatarPaginar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.PaginacionRequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Avatar.AvatarDto})">
+            <summary>
+            Implementa método del servicio para paginar los avatares.
+            </summary>
+            <param name="request">Datos para obtener las avatares paginadas.</param>
+            <returns>Datos con la paginación de avatares.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.AvatarObtenerEditor(System.Nullable{System.Int16})">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para el editor de avatares.(Agregar o Modificar).
+            </summary>
+            <param name="avat_Id">Id del avatar.</param>
+            <returns>Datos para mostrar el editor de avatares.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.AvatarInsertar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Avatar.AvatarDto})">
+            <summary>
+            Implementa método del servicio para insertar un avatar.
+            </summary>
+            <param name="request">Datos del avatar que se inserta.</param>
+            <returns>Identificador del avatar insertado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.AvatarActualizar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Avatar.AvatarDto})">
+            <summary>
+            Implementa método del servicio para actualizar un avatar.
+            </summary>
+            <param name="request">Datos del avatar que se actualiza.</param>        
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.AvatarDesactivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Avatar.AvatarDto})">
+            <summary>
+            Implementa método del servicio para desactivar un avatar.
+            </summary>
+            <param name="request">Datos del avatar que se desactiva.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.AvatarActivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Avatar.AvatarDto})">
+            <summary>
+            Implementa método del servicio para activar un avatar.
+            </summary>
+            <param name="request">Datos del avatar que se activa.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.AvatarPuntuacionObtenerEditor(PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.AppParametros.ObtenerConfiguradorRequestDto)">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para el editor de parametros.(Agregar o Modificar).
+            </summary>
+            <param name="request">Datos de parametro que se desa obtener.</param>
+            <returns>Datos para mostrar el editor de avatares.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.AvatarActualizarPuntuacion(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.AppParametros.AppParametroDto})">
+            <summary>
+            Implementa método del servicio para actualizar los puntos para avatar de un parametro.
+            </summary>
+            <param name="request">Datos del parametro que se actualiza.</param>        
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.AlertaPaginar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.PaginacionRequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Alertas.AlertaDto})">
+            <summary>
+            Implementa método del servicio para paginar los alertas.
+            </summary>
+            <param name="request">Datos para obtener las alertas paginadas.</param>
+            <returns>Datos con la paginación de alertas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.AlertaObtenerEditor(System.Nullable{System.Int32})">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para el editor de alertas.(Agregar o Modificar).
+            </summary>
+            <param name="bene_Id">Id de la alerta.</param>
+            <returns>Datos para mostrar el editor de alertas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.AlertaInsertar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Alertas.AlertaDto})">
+            <summary>
+            Implementa método del servicio para insertar un alerta.
+            </summary>
+            <param name="request">Datos de la alerta que se inserta.</param>
+            <returns>Identificador de la alerta insertado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.AlertaActualizar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Alertas.AlertaDto})">
+            <summary>
+            Implementa método del servicio para actualizar un alerta.
+            </summary>
+            <param name="request">Datos de la alerta que se actualiza.</param>        
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.AlertaDesactivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Alertas.AlertaDto})">
+            <summary>
+            Implementa método del servicio para desactivar un alerta.
+            </summary>
+            <param name="request">Datos de la alerta que se desactiva.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.AlertaActivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Alertas.AlertaDto})">
+            <summary>
+            Implementa método del servicio para activar un alerta.
+            </summary>
+            <param name="request">Datos de la alerta que se activa.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.AtractivoValoradoPaginar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.PaginacionRequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.AtractivoValorado.AtractivoValoradoDto})">
+            <summary>
+            Implementa método del servicio para paginar los atractivos valorados
+            </summary>
+            <param name="request">Datos para obtener las valoraciones paginados.</param>
+            <returns>Datos con la paginación de valoraciones</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.AtractivoValoradoObtenerEditor(System.Nullable{System.Int32})">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para el editor de atractivos valorados.(Agregar o Modificar).
+            </summary>
+            <param name="aval_Id">Id de la valoración.</param>
+            <returns>Datos para mostrar el editor de atractivos valorados.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.AtractivoValoradoActualizar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.AtractivoValorado.AtractivoValoradoDto})">
+            <summary>
+            Implementa método del servicio para actualizar una Valoración.
+            </summary>
+            <param name="request">Datos del atractivo valorado que se actualiza.</param>        
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.AtractivoValoradoCantidadesPendientes">
+            <summary>
+            Implementa método del servicio para obtener la cantidad de atractivos valorados pendientes de evaluar.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.BeneficioPaginar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.PaginacionRequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Beneficio.BeneficioDto})">
+            <summary>
+            Implementa método del servicio para paginar los beneficios.
+            </summary>
+            <param name="request">Datos para obtener las beneficios paginadas.</param>
+            <returns>Datos con la paginación de beneficios.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.BeneficioObtenerEditor(System.Nullable{System.Int32})">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para el editor de beneficios.(Agregar o Modificar).
+            </summary>
+            <param name="bene_Id">Id de la beneficio.</param>
+            <returns>Datos para mostrar el editor de beneficios.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.BeneficioInsertar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Beneficio.BeneficioDto})">
+            <summary>
+            Implementa método del servicio para insertar un beneficio.
+            </summary>
+            <param name="request">Datos de la beneficio que se inserta.</param>
+            <returns>Identificador de la beneficio insertado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.BeneficioActualizar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Beneficio.BeneficioDto})">
+            <summary>
+            Implementa método del servicio para actualizar un beneficio.
+            </summary>
+            <param name="request">Datos de la beneficio que se actualiza.</param>        
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.BeneficioDesactivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Beneficio.BeneficioDto})">
+            <summary>
+            Implementa método del servicio para desactivar un beneficio.
+            </summary>
+            <param name="request">Datos de la beneficio que se desactiva.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.BeneficioActivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Beneficio.BeneficioDto})">
+            <summary>
+            Implementa método del servicio para activar un beneficio.
+            </summary>
+            <param name="request">Datos de la beneficio que se activa.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.AppParametroObtenerEditor(System.Nullable{System.Byte})">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para el editor de parametros.(Agregar o Modificar).
+            </summary>
+            <param name="appP_Id">Id del Parametro.</param>
+            <returns>Datos para mostrar el editor de parametros.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.AppParametroObtenerConfigurador(PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.AppParametros.ObtenerConfiguradorRequestDto)">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para el configurador de parametros.
+            </summary>
+            <param name="request">Datos para obtener el configurador de parámetros</param>
+            <returns>Datos para mostrar el configurador de parametros.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.AppParametroActualizarBienvenida(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.AppParametros.AppParametroDto})">
+            <summary>
+            Implementa método del servicio para actualizar los datos de la pantalla de bienvenida en los parámetros del App
+            </summary>
+            <param name="request">Datos del parametro a actualizar</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.AppParametroActualizarFuncionalidades(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.AppParametros.AppParametroDto})">
+            <summary>
+            Implementa método del servicio para actualizar los datos de funcionalidades en los parámetros del App
+            </summary>
+            <param name="request">Datos del parametro a actualizar</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.AppParametroActualizarInicioSesion(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.AppParametros.AppParametroDto})">
+            <summary>
+            Implementa método del servicio para actualizar los datos de inicio de sesion en los parámetros del App
+            </summary>
+            <param name="request">Datos del parametro a actualizar</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.AppParametroActualizarTerminos(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.AppParametros.AppParametroDto})">
+            <summary>
+            Implementa método del servicio para actualizar los datos de inicio de sesion en los parámetros del App
+            </summary>
+            <param name="request">Datos del parametro a actualizar</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.AppParametroActualizarPoliticas(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.AppParametros.AppParametroDto})">
+            <summary>
+            Implementa método del servicio para actualizar los datos de inicio de sesion en los parámetros del App
+            </summary>
+            <param name="request">Datos del parametro a actualizar</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.AppParametroActualizarAventura(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.AppParametros.AppParametroDto})">
+            <summary>
+            Implementa método del servicio para actualizar los datos de inicio de sesion en los parámetros del App
+            </summary>
+            <param name="request">Datos del parametro a actualizar</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.AppParametroActualizarPreguntasFrecuentesUrl(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.AppParametros.AppParametroDto})">
+            <summary>
+            Implementa método del servicio para actualizar los datos de Preguntas frecuentes en los parámetros del App
+            </summary>
+            <param name="request">Datos del parametro a actualizar</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.OfertaObtenerSincronizador(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.AuditoriaDto)">
+            <summary>
+            Método del servicio para obtener los datos necesarios para el sincronizador de ofertas.
+            </summary>
+            <param name="auditoria">Datos de auditoría.</param>
+            <returns>Datos para mostrar el sincronizador de ofertas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.OfertaSincronizar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.AuditoriaDto)">
+            <summary>
+            Método del servicio para sincronizar las ofertas.
+            </summary>
+            <param name="auditoria">Datos de auditoría.</param>
+            <returns>Datos para mostrar el sincronizador de ofertas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.IconografiaPaginar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.PaginacionRequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Iconografia.IconografiaDto})">
+            <summary>
+            Implementa método del servicio para paginar los iconografias.
+            </summary>
+            <param name="request">Datos para obtener las iconografias paginadas.</param>
+            <returns>Datos con la paginación de iconografias.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.IconografiaObtenerEditor(System.Nullable{System.Int16})">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para el editor de iconografias.(Agregar o Modificar).
+            </summary>
+            <param name="icon_Id">Id de iconografia.</param>
+            <returns>Datos para mostrar el editor de iconografias.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.IconografiaListarDestinos(System.Byte)">
+            <summary>
+            Implementa método del servicio para obtener los destinos necesarios para el editor de iconografias.
+            </summary>
+            <param name="grup_Id">Id. del Grupo</param>
+            <returns>Lista de destinos.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.IconografiaListarGrupoDetalle(System.Byte,System.Int16,System.Nullable{System.Int16})">
+            <summary>
+            Implementa método del servicio para obtener los detalles de grupo necesarios para el editor de iconografias.
+            </summary>
+            <param name="grup_Id">Id. del Grupo</param>
+            <param name="icon_DestinoId">Id. del Destino</param>
+            <param name="icon_Id">Id de iconografia.</param>
+            <returns>lista de detalles de grupo.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.IconografiaInsertar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Iconografia.IconografiaDto})">
+            <summary>
+            Implementa método del servicio para insertar una iconografia.
+            </summary>
+            <param name="request">Datos del iconografia que se inserta.</param>
+            <returns>Identificador de la iconografia insertado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.IconografiaActualizar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Iconografia.IconografiaDto})">
+            <summary>
+            Implementa método del servicio para actualizar una iconografia.
+            </summary>
+            <param name="request">Datos de la iconografia que se actualiza.</param>        
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.IconografiaDesactivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Iconografia.IconografiaDto})">
+            <summary>
+            Implementa método del servicio para desactivar un iconografia.
+            </summary>
+            <param name="request">Datos de la iconografia que se desactiva.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.IconografiaActivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Iconografia.IconografiaDto})">
+            <summary>
+            Implementa método del servicio para activar un iconografia.
+            </summary>
+            <param name="request">Datos de la iconografia que se activa.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.CampaniaPaginar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.PaginacionRequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Campanias.CampaniaDto})">
+            <summary>
+            Implementa método del servicio para paginar las campañas.
+            </summary>
+            <param name="request">Datos para obtener las campañas paginadas.</param>
+            <returns>Datos con la paginación de campañas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.CampaniaObtenerEditor(System.Nullable{System.Int32})">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para el editor de campañas.(Agregar o Modificar).
+            </summary>
+            <param name="camp_Id">Id de la campaña.</param>
+            <returns>Datos para mostrar el editor de campañas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.CampaniaInsertar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Campanias.CampaniaDto})">
+            <summary>
+            Implementa método del servicio para insertar un campania.
+            </summary>
+            <param name="request">Datos de la campaña que se inserta.</param>
+            <returns>Identificador de la campaña insertado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.CampaniaActualizar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Campanias.CampaniaDto})">
+            <summary>
+            Implementa método del servicio para actualizar un campania.
+            </summary>
+            <param name="request">Datos de la campaña que se actualiza.</param>        
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.CampaniaDesactivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Campanias.CampaniaDto})">
+            <summary>
+            Implementa método del servicio para desactivar un campania.
+            </summary>
+            <param name="request">Datos de la campaña que se desactiva.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.CampaniaActivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionContenido.Campanias.CampaniaDto})">
+            <summary>
+            Implementa método del servicio para activar un campania.
+            </summary>
+            <param name="request">Datos de la campaña que se activa.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.Prueba">
+            <summary>
+            Implementa método del servicio para realizar la prueba de conexión a este.
+            </summary>
+            <returns>Datos de prueba de conexión.</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionEncuestas.GestionEncuestasService">
+            <summary>
+            Implementa contrato del servicio con métodos de operaciones de Preguntas.
+            </summary>
+            <summary>
+            Implementa contrato del servicio con métodos de operaciones de Respuestas.
+            </summary>
+            <summary>
+            Implementa contrato con métodos del servicio de la gestión de encuestas.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionEncuestas.GestionEncuestasService.PreguntaPaginar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.PaginacionRequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionEncuestas.Pregunta.PreguntaDto})">
+            <summary>
+            Implementa método del servicio para paginar las preguntas.
+            </summary>
+            <param name="request">Datos para obtener las preguntas paginadas.</param>
+            <returns>Datos con la paginación de preguntas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionEncuestas.GestionEncuestasService.PreguntaObtenerEditor(System.Nullable{System.Int32})">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para el editor de preguntas.(Agregar o Modificar).
+            </summary>
+            <param name="preg_Id">Id de la pregunta.</param>
+            <returns>Datos para mostrar el editor de preguntas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionEncuestas.GestionEncuestasService.PreguntaInsertar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionEncuestas.Pregunta.PreguntaDto})">
+            <summary>
+            Implementa método del servicio para insertar un pregunta.
+            </summary>
+            <param name="request">Datos de la pregunta que se inserta.</param>
+            <returns>Identificador de la pregunta insertado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionEncuestas.GestionEncuestasService.PreguntaActualizar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionEncuestas.Pregunta.PreguntaDto})">
+            <summary>
+            Implementa método del servicio para actualizar un pregunta.
+            </summary>
+            <param name="request">Datos de la pregunta que se actualiza.</param>        
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionEncuestas.GestionEncuestasService.PreguntaDesactivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionEncuestas.Pregunta.PreguntaDto})">
+            <summary>
+            Implementa método del servicio para desactivar un pregunta.
+            </summary>
+            <param name="request">Datos de la pregunta que se desactiva.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionEncuestas.GestionEncuestasService.PreguntaActivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionEncuestas.Pregunta.PreguntaDto})">
+            <summary>
+            Implementa método del servicio para activar un pregunta.
+            </summary>
+            <param name="request">Datos de la pregunta que se activa.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionEncuestas.GestionEncuestasService.RespuestaListar(System.Nullable{System.Int32})">
+            <summary>
+            Implementa método del servicio para para listar las respuestas.
+            </summary>
+            <param name="preg_Id">Id de la pregunta.</param>
+            <returns>Datos con la lista de respuestas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionEncuestas.GestionEncuestasService.RespuestaObtenerEditor(System.Nullable{System.Int32})">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para el editor de respuestas.(Agregar o Modificar).
+            </summary>
+            <param name="resp_Id">Id de la respuesta.</param>
+            <returns>Datos para mostrar el editor de respuestas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionEncuestas.GestionEncuestasService.RespuestaInsertar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionEncuestas.Respuesta.RespuestaDto})">
+            <summary>
+            Implementa método del servicio para insertar un respuesta.
+            </summary>
+            <param name="request">Datos de la respuesta que se inserta.</param>
+            <returns>Identificador de la respuesta insertado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionEncuestas.GestionEncuestasService.RespuestaActualizar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionEncuestas.Respuesta.RespuestaDto})">
+            <summary>
+            Implementa método del servicio para actualizar un respuesta.
+            </summary>
+            <param name="request">Datos de la respuesta que se actualiza.</param>        
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionEncuestas.GestionEncuestasService.RespuestaDesactivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionEncuestas.Respuesta.RespuestaDto})">
+            <summary>
+            Implementa método del servicio para desactivar un respuesta.
+            </summary>
+            <param name="request">Datos de la respuesta que se desactiva.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionEncuestas.GestionEncuestasService.RespuestaActivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionEncuestas.Respuesta.RespuestaDto})">
+            <summary>
+            Implementa método del servicio para activar un respuesta.
+            </summary>
+            <param name="request">Datos de la respuesta que se activa.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionEncuestas.GestionEncuestasService.Prueba">
+            <summary>
+            Implementa método del servicio para realizar la prueba de conexión a este.
+            </summary>
+            <returns>Datos de prueba de conexión.</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionNotificacion.GestionNotificacionService">
+            <summary>
+            Implementa contrato del servicio con métodos de operaciones de mensajes.
+            </summary>
+            <summary>
+            Implementa contrato del servicio con métodos de operaciones de notificaciones.
+            </summary>
+            <summary>
+            Implementa contrato con métodos del servicio de la gestión de notificaciones.
+            </summary>
+            <summary>
+            Implementa contrato del servicio con métodos de operaciones de configuraciones.
+            </summary>
+            <summary>
+            Implementa contrato del servicio con métodos de operaciones de Pushs.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionNotificacion.GestionNotificacionService.MensajePaginar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.PaginacionRequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionNotificacion.Mensaje.MensajeDto})">
+            <summary>
+            Implementa método del servicio para paginar mensajes
+            </summary>
+            <param name="request">Datos para obtener el listado paginado de mensajes</param>
+            <returns>Datos con los listados paginados de mensajes</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionNotificacion.GestionNotificacionService.MensajeObtenerEditor(System.Nullable{System.Int32})">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para el editor de mensajes.(Agregar o Modificar).
+            </summary>
+            <param name="mens_Id">Id del mensaje.</param>
+            <returns>Datos para mostrar el editor de mensajes.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionNotificacion.GestionNotificacionService.MensajeObtenerAsuntoDetalle(System.Nullable{System.Int16})">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para el editor de mensajes. (Asunto Detalle)
+            </summary>
+            <param name="notificacionId">Id de la notificacion.</param>
+            <returns>Datos para mostrar el editor de mensajes.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionNotificacion.GestionNotificacionService.MensajeInsertar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionNotificacion.Mensaje.MensajeDto})">
+            <summary>
+            Implementa método del servicio para insertar un mensaje.
+            </summary>
+            <param name="request">Datos del mensaje que se inserta.</param>
+            <returns>Identificador del mensaje insertado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionNotificacion.GestionNotificacionService.MensajeReenviar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionNotificacion.Mensaje.MensajeDto})">
+            <summary>
+            Implementa método del servivio para reenviar un mensaje
+            </summary>
+            <param name="request">Datos del mensaje que se reenvía</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionNotificacion.GestionNotificacionService.MensajeProbar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionNotificacion.Mensaje.MensajeDto})">
+            <summary>
+            Implementa método del servicio para probar un mensaje
+            </summary>
+            <param name="request">Datos del mensaje que se prueba</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionNotificacion.GestionNotificacionService.NotificacionListarPush(PROMPERU.YTQPRutasCortas.Application.Dto.GestionNotificacion.Notificacion.NotificacionListadosRequestDto)">
+            <summary>
+            Implementa método del servicio para listar las notificaciones push
+            </summary>
+            <param name="request">Datos para obtener el listado de notificaciones push</param>
+            <returns>Datos con los listados de notificaciones</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionNotificacion.GestionNotificacionService.NotificacionListarEmail(PROMPERU.YTQPRutasCortas.Application.Dto.GestionNotificacion.Notificacion.NotificacionListadosRequestDto)">
+            <summary>
+            Implementa método del servicio para listar las notificaciones email
+            </summary>
+            <param name="request">Datos para obtener el listado de notificaciones email</param>
+            <returns>Datos con los listados de notificaciones email</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionNotificacion.GestionNotificacionService.NotificacionListarManual(PROMPERU.YTQPRutasCortas.Application.Dto.GestionNotificacion.Notificacion.NotificacionListadosRequestDto)">
+            <summary>
+            Implementa método del servicio para listar las notificaciones manuales
+            </summary>
+            <param name="request">Datos para obtener el listado de notificaciones manuales</param>
+            <returns>Datos con los listados de notificaciones manuales</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionNotificacion.GestionNotificacionService.NotificacionObtenerEditor(System.Nullable{System.Int16})">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para el editor de notificaciones.(Agregar o Modificar).
+            </summary>
+            <param name="noti_Id">Id de la notificación.</param>
+            <returns>Datos para mostrar el editor de notificaciones.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionNotificacion.GestionNotificacionService.NotificacionInsertar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionNotificacion.Notificacion.NotificacionDto})">
+            <summary>
+            Implementa método del servicio para insertar una notificación.
+            </summary>
+            <param name="request">Datos de la notificación que se inserta.</param>
+            <returns>Identificador de la notificación insertado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionNotificacion.GestionNotificacionService.NotificacionActualizar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionNotificacion.Notificacion.NotificacionDto})">
+            <summary>
+            Implementa método del servicio para actualizar una notificacion.
+            </summary>
+            <param name="request">Datos de la notificación que se actualiza.</param>        
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionNotificacion.GestionNotificacionService.NotificacionActivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionNotificacion.Notificacion.NotificacionDto})">
+            <summary>
+            Implementa método del servicio para activar una notificacion.
+            </summary>
+            <param name="request">Datos de la tipo que se activa.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionNotificacion.GestionNotificacionService.NotificacionDesactivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionNotificacion.Notificacion.NotificacionDto})">
+            <summary>
+            Implementa método del servicio para desactivar una notificacion.
+            </summary>
+            <param name="request">Datos de la tipo que se desactiva.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionNotificacion.GestionNotificacionService.Prueba">
+            <summary>
+            Implementa método del servicio para realizar la prueba de conexión a este.
+            </summary>
+            <returns>Datos de prueba de conexión.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionNotificacion.GestionNotificacionService.ConfiguracionBuscarUsuariosPorTexto(System.String,System.Int32)">
+            <summary>
+            Método del servicio para buscar usuarios por un texto.
+            </summary>
+            <param name="filtro">Filtro para buscar los usuarios.</param>
+            <param name="maximoItems">Cantidad máxima de items para mostrar</param>
+            <returns>Lista de usuarios.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionNotificacion.GestionNotificacionService.ConfiguracionObtenerEditorEmail">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para el configurador de notificaciones por email.
+            </summary>
+            <returns>Datos para mostrar el configurador de notificaciones por email.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionNotificacion.GestionNotificacionService.ConfiguracionObtenerEditorPush">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para el configurador de notificaciones push.
+            </summary>
+            <returns>Datos para mostrar el configurador de notificaciones push.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionNotificacion.GestionNotificacionService.ConfiguracionActualizarPush(PROMPERU.YTQPRutasCortas.Application.Dto.GestionNotificacion.Configuracion.ConfiguracionPushRequestDto)">
+            <summary>
+            Implementa método del servicio para actualizar los datos de la configuración de notificaciones push
+            </summary>
+            <param name="request">Datos de la configuración que se actualiza</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionNotificacion.GestionNotificacionService.ConfiguracionActualizarEmail(PROMPERU.YTQPRutasCortas.Application.Dto.GestionNotificacion.Configuracion.ConfiguracionEmailRequestDto)">
+            <summary>
+            Implementa método del servicio para actualizar los datos de la configuración de notificaciones por email
+            </summary>
+            <param name="request">Datos de la configuración que se actualiza</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionNotificacion.GestionNotificacionService.ConfiguracionProbarNotificacionesPush(PROMPERU.YTQPRutasCortas.Application.Dto.GestionNotificacion.Configuracion.ConfiguracionPushRequestDto)">
+            <summary>
+            Implementa método del servicio para probar configuración de notificaciones push
+            </summary>
+            <param name="request">Datos de la coniguración push que se prueba</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionNotificacion.GestionNotificacionService.PushPaginar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.PaginacionRequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionNotificacion.Push.PushDto})">
+            <summary>
+            Implementa método del servicio para paginar los push.
+            </summary>
+            <param name="request">Datos para obtener los push paginados.</param>
+            <returns>Datos con la paginación de push.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionNotificacion.GestionNotificacionService.PushObtenerEditor(System.Nullable{System.Int32})">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para el editor de push.(Agregar o Modificar).
+            </summary>
+            <param name="pushId">Id de la Notificación Push .</param>
+            <returns>Datos para mostrar el editor de push.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionNotificacion.GestionNotificacionService.PushLstarTargets(System.Int16)">
+            <summary>
+            Implementa método del servicio para obtener la lista de targets para la notificación push.
+            </summary>
+            <param name="destinatarioId">Id. del destinatario</param>
+            <returns>lista de detalles de grupo.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionNotificacion.GestionNotificacionService.PushInsertar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionNotificacion.Push.PushDto})">
+            <summary>
+            Implementa método del servicio para insertar una Notificación Push.
+            </summary>
+            <param name="request">Datos de la Notificación Push que se inserta.</param>
+            <returns>Identificador del usuario insertado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionNotificacion.GestionNotificacionService.PushActualizar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionNotificacion.Push.PushDto})">
+            <summary>
+            Implementa método del servicio para actualizar una Notificación Push.
+            </summary>
+            <param name="request">Datos de la Notificación Push que se actualiza.</param>        
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionNotificacion.GestionNotificacionService.PushDesactivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionNotificacion.Push.PushDto})">
+            <summary>
+            Implementa método del servicio para desactivar una Notificación Push.
+            </summary>
+            <param name="request">Datos de la Notificación Push que se desactiva.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionNotificacion.GestionNotificacionService.PushActivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionNotificacion.Push.PushDto})">
+            <summary>
+            Implementa método del servicio para activar una Notificación Push.
+            </summary>
+            <param name="request">Datos de la Notificación Push que se activa.</param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService">
+            <summary>
+            Implementa contrato del servicio con métodos de operaciones de rutas.
+            </summary>
+            <summary>
+            Implementa contrato del servicio con métodos de operaciones de coordenadas de rutas.
+            </summary>
+            <summary>
+            Implementa contrato del servicio con métodos de operaciones de recomendaciones de rutas.
+            </summary>
+            <summary>
+            Implementa contrato del servicio con métodos de operaciones de rutas.
+            </summary>
+            <summary>
+            Implementa contrato con métodos del servicio de la gestión de rutas.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.AtractivoPaginar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.PaginacionRequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Atractivos.AtractivoDto})">
+            <summary>
+            Implementa método del servicio para paginar los atractivos.
+            </summary>
+            <param name="request">Datos para obtener los atractivos paginadas.</param>
+            <returns>Datos con la paginación de atractivos.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.AtractivoDesactivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Atractivos.AtractivoDto})">
+            <summary>
+            Implementa método del servicio para desactivar un atractivo.
+            </summary>
+            <param name="request">Datos del atractivo que se desactiva.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.AtractivoActivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Atractivos.AtractivoDto})">
+            <summary>
+            Implementa método del servicio para activar un atractivo.
+            </summary>
+            <param name="request">Datos l atractivo que se activa.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.AtractivoObtenerEditor(System.Nullable{System.Int32})">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para el editor de Atractivos (Agregar o Modificar).
+            </summary>
+            <param name="id">Datos para obtener el editor</param>
+            <returns>Datos para mostrar en el editor</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.AtractivoObtenerImagenes(System.Int32)">
+            <summary>
+            Implementa método del servicio para obtener los datos de las imagenes
+            </summary>
+            <param name="atractivo_Id">Id del atractivo</param>
+            <returns>Datos para mostrar las imagenes del atractivo.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.AtractivoInsertar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Atractivos.AtractivoDto})">
+            <summary>
+            Implementa método del servicio para insertar una atractivo.
+            </summary>
+            <param name="request">Datos de la atractivo que se inserta.</param>
+            <returns>Identificador de la atractivo insertado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.AtractivoActualizar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Atractivos.AtractivoDto})">
+            <summary>
+            Implementa método del servicio para actualizar una atractivo.
+            </summary>
+            <param name="request">Datos de la atractivo que se actualiza.</param>        
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.AtractivoActualizarImagen(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Atractivos.AtractivoActualizarImagenRequestDto})">
+            <summary>
+            Implementa método del servicio para actualizar una imagen.
+            </summary>
+            <param name="request">Datos de la imagen que se actualiza.</param>        
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.CoordenadaObtenerGrid(System.Int32)">
+            <summary>
+            Implementa método del servicio para obtener la lista de coordenadas de una ruta para el editor de rutas (Agregar o Modificar).
+            </summary>
+            <param name="ruta_Id">Id de la ruta</param>
+            <returns>Datos para mostrar el editor de coordenadas</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.CoordenadaDesactivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Rutas.RutaCoordenadaDto})">
+            <summary>
+            Implementa método del servicio para desactivar una coordenada.
+            </summary>
+            <param name="request">Datos de la coordenada que se desactiva.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.CoordenadaActivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Rutas.RutaCoordenadaDto})">
+            <summary>
+            Implementa método del servicio para activar una coordenada.
+            </summary>
+            <param name="request">Datos de la coordenada que se activa.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.CoordenadaObtenerEditor(System.Nullable{System.Int32})">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para el editor de coordenadas.(Agregar o Modificar).
+            </summary>
+            <param name="rrec_Id">Id de la Coordenada</param>
+            <returns>Datos para mostrar el editor de coordenadas</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.CoordenadaInsertar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Rutas.RutaCoordenadaDto})">
+            <summary>
+            Implementa método del servicio para insertar una coordenada
+            </summary>
+            <param name="request">Datos de la coordenada que se inserta</param>
+            <returns>Identificador de la coordenada insertada</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.CoordenadaActualizar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Rutas.RutaCoordenadaDto})">
+            <summary>
+            Implementa método del servicio para actualizar una coordenada de ruta
+            </summary>
+            <param name="request">Datos de la coordenada que se actualiza</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.RecomendacionObtenerGrid(System.Int32)">
+            <summary>
+            Implementa método del servicio para obtener la lista de recomendaciones de una ruta para el editor de rutas (Agregar o Modificar).
+            </summary>
+            <param name="ruta_Id">Id de la ruta</param>
+            <returns>Datos para mostrar el editor de rutas</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.RecomendacionDesactivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Rutas.RutaRecomendacionDto})">
+            <summary>
+            Implementa método del servicio para desactivar una ruta.
+            </summary>
+            <param name="request">Datos del usuario que se desactiva.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.RecomendacionActivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Rutas.RutaRecomendacionDto})">
+            <summary>
+            Implementa método del servicio para activar una ruta.
+            </summary>
+            <param name="request">Datos de la ruta que se activa.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.RecomendacionObtenerEditor(System.Nullable{System.Int32})">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para el editor de rutas.(Agregar o Modificar).
+            </summary>
+            <param name="rrec_Id">Id de la recomendacion</param>
+            <returns>Datos para mostrar el editor de recomendaciones</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.RecomendacionInsertar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Rutas.RutaRecomendacionDto})">
+            <summary>
+            Implementa método del servicio para insertar una recomendación
+            </summary>
+            <param name="request">Datos de la recomendación que se inserta</param>
+            <returns>Identificador de la recomendación insertada</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.RecomendacionActualizar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Rutas.RutaRecomendacionDto})">
+            <summary>
+            Implementa método del servicio para actualizar una recomendación de ruta
+            </summary>
+            <param name="request">Datos de la recomendación que se actualiza</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.RutaBuscarPorTextoAutocomplete(System.String,System.Int32)">
+            <summary>
+            Implementa método del servicio para buscar las rutas.
+            </summary>
+            <param name="filtro">Filtro para buscar las rutas.</param>
+            <param name="maximoItems">Cantidad máxima de items del resultado de la búsqueda</param>
+            <returns>Lista de rutas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.RutaPaginar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.PaginacionRequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Rutas.RutaDto})">
+            <summary>
+            Implementa método del servicio para paginar las rutas.
+            </summary>
+            <param name="request">Datos para obtener las rutas paginadas.</param>
+            <returns>Datos con la paginación de rutas.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.RutaDesactivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Rutas.RutaDto})">
+            <summary>
+            Implementa método del servicio para desactivar una ruta.
+            </summary>
+            <param name="request">Datos del usuario que se desactiva.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.RutaActivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Rutas.RutaDto})">
+            <summary>
+            Implementa método del servicio para activar una ruta.
+            </summary>
+            <param name="request">Datos de la ruta que se activa.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.RutaObtenerEditor(System.Nullable{System.Int32})">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para el editor de rutas.(Agregar o Modificar).
+            </summary>
+            <param name="ruta_Id">Id de la ruta</param>
+            <returns>Datos para mostrar el editor de rutas</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.RutaObtenerDatos(System.Int32)">
+            <summary>
+            Implementa método del servicio para obtener los datos de la rutas.
+            </summary>
+            <param name="ruta_Id">Id de la ruta</param>
+            <returns>Datos de la Ruta.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.RutaObtenerImagenes(System.Int32)">
+            <summary>
+            Implementa método del servicio para obtener las imagenes de rutas.
+            </summary>
+            <param name="ruta_Id">Id de la ruta</param>
+            <returns>Datos para mostrar el editor de rutas</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.RutaInsertarDatos(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Rutas.RutaDto})">
+            <summary>
+            Implementa método del servicio para insertar los datos de una ruta.
+            </summary>
+            <param name="request">Datos del usuario que se inserta.</param>
+            <returns>Identificador del usuario insertado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.RutaActualizarDatos(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Rutas.RutaDto})">
+            <summary>
+            Implementa método del servicio para actualizar los datos de una ruta.
+            </summary>
+            <param name="request">Datos de la ruta que se actualiza.</param>        
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.RutaActualizarImagen(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Rutas.RutaActualizarImagenRequestDto})">
+            <summary>
+            Implementa método del servicio para actualizar una imagen de la ruta.
+            </summary>
+            <param name="request">Datos de la imagen que se actualiza.</param>        
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.RutaActualizarImagenDistancia(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Rutas.RutaActualizarImagenRequestDto})">
+            <summary>
+            Implementa método del servicio para actualizar una imagen de distancia.
+            </summary>
+            <param name="request">Datos de la imagen que se actualiza.</param>        
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.RutaListarPorOrigenParaCombo(System.Int16)">
+            <summary>
+            Implementa método del servicio para listar rutas de acuerdo a un id. de origen
+            </summary>
+            <param name="origen_Id">Id. del origen</param>
+            <returns>Datos resultantes de la operación</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.RutaObtenerKML(System.Int32)">
+            <summary>
+            Implementa método del servicio para obtener el KML de la Ruta.
+            </summary>
+            <param name="ruta_Id">Id de la ruta</param>
+            <returns>Archivo KML de la Ruta.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionRutas.GestionRutasService.Prueba">
+            <summary>
+            Implementa método del servicio para realizar la prueba de conexión a este.
+            </summary>
+            <returns>Datos de prueba de conexión.</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionSeguridad.GestionSeguridadService">
+            <summary>
+            Implementa contrato del servicio con métodos de operaciones de Opciones de Roles.
+            </summary>
+            <summary>
+            Implementa contrato del servicio con métodos de operaciones de Roles.
+            </summary>
+            <summary>
+            Implementa contrato del servicio con métodos de operaciones de Usuarios.
+            </summary>
+            <summary>
+            Implementa contrato con métodos del servicio de la gestión de seguridad.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionSeguridad.GestionSeguridadService.Rol_OpcionObtenerEditor(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionSeguridad.Rol_Opciones.Rol_OpcionDto})">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para el editor de Opciones de Roles.
+            </summary>
+            <param name="request">Datos del editor.</param>
+            <returns>Datos para mostrar el editor de Opciones de Roles.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionSeguridad.GestionSeguridadService.Rol_OpcionListarOpciones(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionSeguridad.Rol_Opciones.Rol_OpcionDto})">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para el editor de asignacion de opciones a los roles.
+            </summary>
+            <param name="request">Datos para filtrar las opciones por rol.</param>
+            <returns>Datos para mostrar el editor de asignación de opciones.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionSeguridad.GestionSeguridadService.Rol_OpcionAsignarOpcion(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionSeguridad.Rol_Opciones.Rol_OpcionDto})">
+            <summary>
+            Implementa método del servicio para asignar opción al rol.
+            </summary>
+            <param name="request">Datos para asignar opción a rol.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionSeguridad.GestionSeguridadService.Rol_OpcionDesasignarOpcion(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionSeguridad.Rol_Opciones.Rol_OpcionDto})">
+            <summary>
+            Implementa método del servicio para desasignar opción al rol.
+            </summary>
+            <param name="request">Datos para desasignar opción a rol.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionSeguridad.GestionSeguridadService.RolPaginar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.PaginacionRequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionSeguridad.Roles.RolDto})">
+            <summary>
+            Implementa método del servicio para paginar los roles.
+            </summary>
+            <param name="request">Datos con la paginación de roles.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionSeguridad.GestionSeguridadService.RolObtenerEditor(System.Nullable{System.Int16})">
+            <summary>
+            Implemenat método del servicio para obtener los datos necesarios para el editor de roles.(Agregar o Modificar).
+            </summary>
+            <param name="rol_Id">Identificador del rol.</param>
+            <returns>Datos para mostrar el editor de roles.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionSeguridad.GestionSeguridadService.RolInsertar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionSeguridad.Roles.RolDto})">
+            <summary>
+            Implementa método del servicio para insertar un rol.
+            </summary>
+            <param name="request">Datos del rol que se inserta.</param>
+            <returns>Id del rol insertado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionSeguridad.GestionSeguridadService.RolActualizar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionSeguridad.Roles.RolDto})">
+            <summary>
+            Implementa método del servicio para actualizar un rol.
+            </summary>
+            <param name="request">Datos del rol que se actualiza.</param>     
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionSeguridad.GestionSeguridadService.RolDesactivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionSeguridad.Roles.RolDto})">
+            <summary>
+            Implementa método del servicio para desactivar un rol.
+            </summary>
+            <param name="request">Datos de la rol que se desactiva.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionSeguridad.GestionSeguridadService.RolActivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionSeguridad.Roles.RolDto})">
+            <summary>
+            Implementa método del servicio para activar un rol.
+            </summary>
+            <param name="request">Datos de la rol que se activa.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionSeguridad.GestionSeguridadService.UsuarioPaginar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.PaginacionRequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionSeguridad.Usuarios.UsuarioDto})">
+            <summary>
+            Implementa método del servicio para paginar los usuarios.
+            </summary>
+            <param name="request">Datos para obtener los usuarios paginados.</param>
+            <returns>Datos con la paginación de usuarios.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionSeguridad.GestionSeguridadService.UsuarioObtenerEditor(System.Nullable{System.Int16})">
+            <summary>
+            Implementa método del servicio para obtener los datos necesarios para el editor de usuarios.(Agregar o Modificar).
+            </summary>
+            <param name="usuarioId">Id del usuario.</param>
+            <returns>Datos para mostrar el editor de usuarios.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionSeguridad.GestionSeguridadService.UsuarioInsertar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionSeguridad.Usuarios.UsuarioDto})">
+            <summary>
+            Implementa método del servicio para insertar un usuario.
+            </summary>
+            <param name="request">Datos del usuario que se inserta.</param>
+            <returns>Identificador del usuario insertado.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionSeguridad.GestionSeguridadService.UsuarioActualizar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionSeguridad.Usuarios.UsuarioDto})">
+            <summary>
+            Implementa método del servicio para actualizar un usuario.
+            </summary>
+            <param name="request">Datos del usuario que se actualiza.</param>        
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionSeguridad.GestionSeguridadService.UsuarioDesbloquear(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionSeguridad.Usuarios.UsuarioDto})">
+            <summary>
+            Implementa método del servicio para desbloquear un usuario.
+            </summary>
+            <param name="request">Datos del usuario que se desactiva.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionSeguridad.GestionSeguridadService.UsuarioDesactivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionSeguridad.Usuarios.UsuarioDto})">
+            <summary>
+            Implementa método del servicio para desactivar un usuario.
+            </summary>
+            <param name="request">Datos del usuario que se desactiva.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionSeguridad.GestionSeguridadService.UsuarioActivar(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionSeguridad.Usuarios.UsuarioDto})">
+            <summary>
+            Implementa método del servicio para activar un usuario.
+            </summary>
+            <param name="request">Datos del usuario que se activa.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionSeguridad.GestionSeguridadService.UsuarioListarMenu(System.Int16)">
+            <summary>
+            Implementa método del servicio para obtener el menú de un usuario.
+            </summary>
+            <param name="usuarioId">Id del usuario.</param>
+            <returns>Permisos de</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionSeguridad.GestionSeguridadService.UsuarioValidarLogin(PROMPERU.YTQPRutasCortas.Application.Dto.GestionSeguridad.Usuarios.ValidarLoginRequestDto)">
+            <summary>
+            Implementa método del servicio para validar la autenticación del Login
+            </summary>
+            <param name="request">Datos del login</param>
+            <returns>Datos resultantes del proceso</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionSeguridad.GestionSeguridadService.UsuarioRecuperarContrasenia(System.String)">
+            <summary>
+            Implementa método del servicio para recuperar la contrasenia del usuario
+            </summary>
+            <param name="usuario_Email">Email del usuario.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionSeguridad.GestionSeguridadService.UsuarioActualizarContrasenia(PROMPERU.YTQPRutasCortas.Application.Dto.Comun.RequestDto{PROMPERU.YTQPRutasCortas.Application.Dto.GestionSeguridad.Usuarios.CambiarContraseniaRequestDto})">
+            <summary>
+            Implementa método del servicio para actualizar contraseña de un usuario.
+            </summary>
+            <param name="request">Datos de la nueva contraseña.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionSeguridad.GestionSeguridadService.UsuarioObtenerPorActiveDirectory(System.String)">
+            <summary>
+            Implementa método del servicio para obtener por Active Directory
+            </summary>
+            <param name="usuario_Email">Email del usuario.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionSeguridad.GestionSeguridadService.Prueba">
+            <summary>
+            Implementa método del servicio para realizar la prueba de conexión a este.
+            </summary>
+            <returns>Datos de prueba de conexión.</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.ModuloReportes.ModuloReportesService">
+            <summary>
+            
+            </summary>
+            <summary>
+            Implementa contrato con métodos del servicio del módulo de reportes.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.ModuloReportes.ModuloReportesService.DestinosBuscados(PROMPERU.YTQPRutasCortas.Application.Dto.ModuloReportes.Reportes.RequestReporteDto)">
+            <summary>
+            Implementa método del servicio para obtener el reporte : "Destinos Buscados"
+            </summary>
+            <param name="request">Datos para obtener el reporte.</param>
+            <returns>Datos del reporte.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.ModuloReportes.ModuloReportesService.EstadoUso(PROMPERU.YTQPRutasCortas.Application.Dto.ModuloReportes.Reportes.RequestReporteDto)">
+            <summary>
+            Implementa método del servicio para obtener el reporte : "Estados de uso"
+            </summary>
+            <param name="request">Datos para obtener el reporte.</param>
+            <returns>Datos del reporte.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.ModuloReportes.ModuloReportesService.RegistroPorUbigeo(PROMPERU.YTQPRutasCortas.Application.Dto.ModuloReportes.Reportes.RequestReporteDto)">
+            <summary>
+            Implementa método del servicio para obtener el reporte : "Consolidado de Registros al Sistema por Ubigeo"
+            </summary>
+            <param name="request">Datos para obtener el reporte.</param>
+            <returns>Datos del reporte.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.ModuloReportes.ModuloReportesService.DesplazamientoARuta(PROMPERU.YTQPRutasCortas.Application.Dto.ModuloReportes.Reportes.RequestReporteDto)">
+            <summary>
+            Implementa método del servicio para obtener el reporte : "Desplazamientos de Usuarios a la Ruta Corta"
+            </summary>
+            <param name="request">Datos para obtener el reporte.</param>
+            <returns>Datos del reporte.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.ModuloReportes.ModuloReportesService.RankingSeccionVisitada(PROMPERU.YTQPRutasCortas.Application.Dto.ModuloReportes.Reportes.RequestReporteDto)">
+            <summary>
+            Implementa método del servicio para obtener el reporte : "Ranking de Secciones Internas mas Visitadas"
+            </summary>
+            <param name="request">Datos para obtener el reporte.</param>
+            <returns>Datos del reporte.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.ModuloReportes.ModuloReportesService.RegistroPorGenero(PROMPERU.YTQPRutasCortas.Application.Dto.ModuloReportes.Reportes.RequestReporteDto)">
+            <summary>
+            Implementa método del servicio para obtener el reporte : "Consolidado de Registros al Sistema por Género"
+            </summary>
+            <param name="request">Datos para obtener el reporte.</param>
+            <returns>Datos del reporte.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.ModuloReportes.ModuloReportesService.RegistroPorEdad(PROMPERU.YTQPRutasCortas.Application.Dto.ModuloReportes.Reportes.RequestReporteDto)">
+            <summary>
+            Implementa método del servicio para obtener el reporte : "Consolidado de Registros al Sistema por Edad"
+            </summary>
+            <param name="request">Datos para obtener el reporte.</param>
+            <returns>Datos del reporte.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.ModuloReportes.ModuloReportesService.RegistroTurista(PROMPERU.YTQPRutasCortas.Application.Dto.ModuloReportes.Reportes.RequestReporteDto)">
+            <summary>
+            Implementa método del servicio para obtener el reporte : "Lista de Turistas Registrados en el App"
+            </summary>
+            <param name="request">Datos para obtener el reporte.</param>
+            <returns>Datos del reporte.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.ModuloReportes.ModuloReportesService.NotificacionesPushMasivo(PROMPERU.YTQPRutasCortas.Application.Dto.ModuloReportes.Reportes.RequestReporteDto)">
+            <summary>
+            Implementa método del servicio para obtener el reporte : "Lista de Notificaciones Push Masivo"
+            </summary>
+            <param name="request">Datos para obtener el reporte</param>
+            <returns>Datos del reporte.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.ModuloReportes.ModuloReportesService.Prueba">
+            <summary>
+            Implementa método del servicio para realizar la prueba de conexión a este.
+            </summary>
+            <returns>Datos de prueba de conexión.</returns>
+        </member>
+    </members>
+</doc>

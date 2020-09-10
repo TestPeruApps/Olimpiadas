@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Atractivo_DesactivacionDenegada" xml:space="preserve">
+    <value>Para desactivar el último atractivo activo, primero desactive la ruta a la cual pertenece</value>
+  </data>
+  <data name="Atractivo_FaltaImagenes" xml:space="preserve">
+    <value>El atractivo no se puede activar, primero debe cargar todas sus imagenes</value>
+  </data>
+  <data name="AutenticacionUsuario_DatosIncorrectos" xml:space="preserve">
+    <value>El usuario o la contraseña son incorrectos</value>
+  </data>
+  <data name="AutenticacionUsuario_NoActivo" xml:space="preserve">
+    <value>El usuario "{0}", se encuentra inactivo</value>
+  </data>
+  <data name="AutenticacionUsuario_NoRegistrado" xml:space="preserve">
+    <value>El usuario "{0}", no se encuentra registrado en el sistema</value>
+  </data>
+  <data name="Avatar_DemasiadosNiveles" xml:space="preserve">
+    <value>La cantidad de avatares activos no puede superar los 10.</value>
+  </data>
+  <data name="Avatar_NivelExistente" xml:space="preserve">
+    <value>Ya existe registrado un avatar para el nivel ingresado, desactive el avatar de nombre: "{0}"</value>
+  </data>
+  <data name="Avatar_PuntajeMinimoNoValido" xml:space="preserve">
+    <value>El puntaje mínimo debe ser mayor al puntaje mínimo del avatar del nivel anterior</value>
+  </data>
+  <data name="Avatar_PuntajeMinimoNoValidoPosterior" xml:space="preserve">
+    <value>El puntaje mínimo debe ser menor al puntaje mínimo del avatar del nivel posterior.</value>
+  </data>
+  <data name="GeneralAsignacionValores" xml:space="preserve">
+    <value>Debe asignar valores a los siguientes campos: {0}</value>
+    <comment>Propiedades con valores no asignados</comment>
+  </data>
+  <data name="GeneralCodigoRegistrado" xml:space="preserve">
+    <value>El código: "{0}" ya se encuentra registrado y esta asiganado a: "{1}"</value>
+    <comment>Cuando el código ya se encuentra registrado.</comment>
+  </data>
+  <data name="GenereralCadenaValorIncorrecto" xml:space="preserve">
+    <value>La propiedad {0} tiene el valor incorecto</value>
+    <comment>Propiedad de tamaño incorrecto.</comment>
+  </data>
+  <data name="GenereralTamanioFijoIncorrecto" xml:space="preserve">
+    <value>La propiedad {0} debe tener {1} caracteres</value>
+    <comment>Propiedad de tamaño incorrecto.</comment>
+  </data>
+  <data name="Iconografia_Existente" xml:space="preserve">
+    <value>La Iconografía ya existe</value>
+  </data>
+  <data name="MensajeEnviadoCorrectamente" xml:space="preserve">
+    <value>Se envió correctamente</value>
+  </data>
+  <data name="NotificacionValidacion_NoExiste" xml:space="preserve">
+    <value>La notificación automática no existe</value>
+  </data>
+  <data name="Notificacion_CorreoEnviadoExitosamente" xml:space="preserve">
+    <value>Se envió a su correo un código de 4 cifras para su validación</value>
+  </data>
+  <data name="Notificacion_EnviadoExitosamenteRecuperarContrasenia" xml:space="preserve">
+    <value>Se ha enviado satisfactoriamente la contraseña a su correo</value>
+  </data>
+  <data name="Oferta_ProcesoFallido" xml:space="preserve">
+    <value>El proceso se ha interrumpido debido a errores, por favor revisar.</value>
+  </data>
+  <data name="Pregunta_DebeTener2RespuestasActivas" xml:space="preserve">
+    <value>La pregunta no se puede activar, debe tener por lo menos 2 respuestas activas.</value>
+  </data>
+  <data name="Pregunta_DebeTenerRespuestasActivas" xml:space="preserve">
+    <value>La pregunta no se puede activar, debe tener por lo menos 1 respuesta activa.</value>
+  </data>
+  <data name="Pregunta_NumeracionExistente" xml:space="preserve">
+    <value>Ya existe registrada una pregunta para la numeración ingresada, por favor vuelva a ingresar</value>
+  </data>
+  <data name="Push_ValidacionFechaHora" xml:space="preserve">
+    <value>Fecha y hora programada inválidas, debe ser por lo menos 2 minutos mayor a la fecha actual</value>
+  </data>
+  <data name="Respuesta_DebeTener2RespuestasActivas" xml:space="preserve">
+    <value>La respuesta no se puede desactivar, debido a que la pregunta es de opción multiple, y es obligatorio tener como mínimo 2 respuestas activas.</value>
+  </data>
+  <data name="Respuesta_DebeTenerRespuestasActivas" xml:space="preserve">
+    <value>La respuesta no se puede desactivar, debido a que la pregunta es de opción única y es obligatorio tener como mínimo 1 respuesta activa.</value>
+  </data>
+  <data name="Respuesta_NumeracionExistente" xml:space="preserve">
+    <value>Ya existe registrada una respuesta para la numeración ingresada, por favor vuelva a ingresar</value>
+  </data>
+  <data name="Ruta_FaltaAtractivosActivos" xml:space="preserve">
+    <value>La ruta no se puede activar, debe tener por lo menos un atractivo activo</value>
+  </data>
+  <data name="Ruta_FaltaImagenes" xml:space="preserve">
+    <value>La ruta no se puede activar, primero debe cargar todas sus imagenes</value>
+  </data>
+  <data name="TokenValidacion_CodigoFechaExpirada" xml:space="preserve">
+    <value>La fecha del código ingresado ha expirado, por favor vuelva a solicitar código</value>
+  </data>
+  <data name="TokenValidacion_CodigoIncorrecto" xml:space="preserve">
+    <value>El código que ha enviado no coincide con su correo electrónico, por favor intente nuevamente</value>
+  </data>
+  <data name="TokenValidacion_CodigoNoValidado" xml:space="preserve">
+    <value>El usuario aún no ha validado su código de 4 cifras.</value>
+  </data>
+  <data name="TokenValidacion_CodigoUsado" xml:space="preserve">
+    <value>El código ya fue usado el {0}</value>
+  </data>
+  <data name="TuristaNotificacion_ContraseniaActualizadaCorrectamente" xml:space="preserve">
+    <value>Su contraseña ha sido actualizada correctamente</value>
+  </data>
+  <data name="TuristaValidacion_ContraseniaActualIgualNueva" xml:space="preserve">
+    <value>La contraseña nueva no debe ser igual a la contraseña actual</value>
+  </data>
+  <data name="TuristaValidacion_ContraseniaActualIncorrecta" xml:space="preserve">
+    <value>La contraseña actual ingresada no es correcta, por favor reintentar</value>
+  </data>
+  <data name="TuristaValidacion_ContraseniaMinimoCaracteres" xml:space="preserve">
+    <value>La contraseña debe tener mínimo 6 caracteres, por favor ingresar de nuevo</value>
+  </data>
+  <data name="TuristaValidacion_ContraseniasNoCoinciden" xml:space="preserve">
+    <value>Las contraseñas ingresadas no coinciden, por favor ingresar de nuevo</value>
+  </data>
+  <data name="TuristaValidacion_DatosIncorrectosEnYTQP" xml:space="preserve">
+    <value>Datos incorrectos en sistema YTQP</value>
+  </data>
+  <data name="TuristaValidacion_EdadInvalida" xml:space="preserve">
+    <value>Para poder registrarse en el app debe ser mayor de edad</value>
+  </data>
+  <data name="TuristaValidacion_ExisteUsuarioEnYTQP" xml:space="preserve">
+    <value>Hemos detectado que su email ya existe en la web de YTQP ¿Desea usar la misma cuenta para este aplicativo?</value>
+  </data>
+  <data name="TuristaValidacion_PrivacidadEsObligatorio" xml:space="preserve">
+    <value>Debe aceptar el contrato de Privacidad del aplicativo</value>
+  </data>
+  <data name="TuristaValidacion_TerminosEsObligatorio" xml:space="preserve">
+    <value>Debe aceptar los Términos y Condiciones del aplicativo</value>
+  </data>
+  <data name="TuristaValidacion_TokenTemporalIncorrecto" xml:space="preserve">
+    <value>Ha cambiado el correo electrónico que ingresó, por favor reintentar</value>
+  </data>
+  <data name="TuristaValidacion_UsuarioNoExiste" xml:space="preserve">
+    <value>Correo electrónico no registrado</value>
+  </data>
+  <data name="Turista_DeseaUsarCorreoYTQP" xml:space="preserve">
+    <value>Ese correo ya se encuentra registrado en la página de YTQP ¿Desea usar ese mismo correo para este aplicativo?</value>
+  </data>
+  <data name="Turista_MensajeNoEnviado" xml:space="preserve">
+    <value>No se pudo enviar el mensaje, por favor revise si su correo electrónico es correcto</value>
+  </data>
+  <data name="Turista_PushNoEnviado" xml:space="preserve">
+    <value>No se pudo enviar la notificación Push, por favor verifique su configuración</value>
+  </data>
+  <data name="UsuarioNotificacion_ContraseniaActualizadaCorrectamente" xml:space="preserve">
+    <value>Su contraseña ha sido actualizada correctamente</value>
+  </data>
+  <data name="UsuarioValidacion_ContraseniaActualIgualNueva" xml:space="preserve">
+    <value>La contraseña nueva no debe ser igual a la contraseña actual</value>
+  </data>
+  <data name="UsuarioValidacion_ContraseniaActualIncorrecta" xml:space="preserve">
+    <value>La contraseña actual ingresada no es correcta, por favor reintentar</value>
+  </data>
+  <data name="UsuarioValidacion_ContraseniaMinimoCaracteres" xml:space="preserve">
+    <value>La contraseña debe tener mínimo 6 caracteres, por favor ingresar de nuevo</value>
+  </data>
+  <data name="UsuarioValidacion_ContraseniasNoCoinciden" xml:space="preserve">
+    <value>Las contraseñas ingresadas no coinciden, por favor ingresar de nuevo</value>
+  </data>
+  <data name="UsuarioValidacion_DominioIncorrecto" xml:space="preserve">
+    <value>El dominio ingresado es incorrecto</value>
+  </data>
+  <data name="UsuarioValidacion_EmailIncorrecto" xml:space="preserve">
+    <value>El email ingresado es incorrecto</value>
+  </data>
+  <data name="UsuarioValidacion_LoginDominioIncorrecto" xml:space="preserve">
+    <value>El usuario de dominio no existe</value>
+  </data>
+  <data name="UsuarioValidacion_TipoAutenticacionDominio" xml:space="preserve">
+    <value>El cambio de contraseña no es valido para autenticación por dominio</value>
+  </data>
+  <data name="UsuarioValidacion_UsuarioNoExiste" xml:space="preserve">
+    <value>Usuario no registrado en YTQP</value>
+  </data>
+  <data name="UsuarioValidacion_UsuarioNoExisteRutasCortas" xml:space="preserve">
+    <value>Usuario no registrado en Rutas Cortas</value>
+  </data>
+  <data name="UsuarioYTQP_ContraseniaIncorrecta" xml:space="preserve">
+    <value>Por favor ingrese la contraseña que uso para registrarse en la web de YTQP</value>
+  </data>
+  <data name="Usuario_Bloqueado" xml:space="preserve">
+    <value>El usuario {0} esta bloqueado, consulte con el Adminsitrador del Sistema o espere hasta el día de mañana.</value>
+  </data>
+  <data name="Usuario_ContraseniaActualIncorrecta" xml:space="preserve">
+    <value>La contraseña ingresada es incorrecta</value>
+  </data>
+  <data name="Usuario_CredencialesInvalidas" xml:space="preserve">
+    <value>Las credenciales son inválidas</value>
+  </data>
+  <data name="Usuario_Desactivado" xml:space="preserve">
+    <value>El usuario {0} se encuentra desactivado.</value>
+  </data>
+  <data name="Usuario_EmailExistente" xml:space="preserve">
+    <value>El email "{0}" ya se encuentra registrado a nombre de {1}.</value>
+    <comment>Cuando el email ya se encuentra registrado</comment>
+  </data>
+  <data name="Usuario_EmailNoIngresado" xml:space="preserve">
+    <value>Debe especificar el correo electrónico</value>
+    <comment>Para registrar una persona es obligatorio e email.</comment>
+  </data>
+  <data name="Usuario_Inactivo" xml:space="preserve">
+    <value>El usuario se encuentra inactivo</value>
+  </data>
+  <data name="Usuario_LoginNoExiste" xml:space="preserve">
+    <value>El usuario aún no ha sido registrado</value>
+  </data>
+  <data name="Usuario_SinRoles" xml:space="preserve">
+    <value>El usuario {0} no tiene los permisos necesarios</value>
+  </data>
+  <data name="Usuario_ValidarRecuperarContraseniaDominio" xml:space="preserve">
+    <value>La recuperacion de contraseña no es valido para autenticacion por dominio</value>
+  </data>
+  <data name="ValidacionDiasFechaProgramada" xml:space="preserve">
+    <value>Cantidad de días de aviso inválida</value>
+  </data>
+  <data name="ValidacionFechaNull" xml:space="preserve">
+    <value>Por favor ingresar la fecha</value>
+  </data>
+  <data name="ValidacionFechasInicioFin" xml:space="preserve">
+    <value>La fecha inicial debe ser mayor a la fecha final</value>
+  </data>
+  <data name="ValidadionIconografiasPendientes" xml:space="preserve">
+    <value>Todos los detalles para el grupo y destino seleccionado ya fueron registrados</value>
+  </data>
+</root>

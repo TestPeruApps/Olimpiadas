@@ -1,0 +1,23 @@
+﻿@model cloudscribe.Pagination.Models.IPagedList
+<div>
+    <cs-pager cs-paging-pagesize="@Model.PageSize"
+              cs-paging-pagenumber="@Model.PageNumber"
+              cs-paging-totalitems="@Model.TotalItemCount"
+              cs-show-first-last="true"
+              cs-show-numbered="true"
+              cs-pager-li-current-class="active"
+              cs-pager-li-non-active-class="disabled"
+              asp-route-pagesize="@Model.PageSize"></cs-pager>
+</div>
+@if (Model.TotalItemCount > 0)
+{
+    <div>
+        Mostrando @Model.ItemStart - @Model.ItemEnd de @Model.TotalItemCount item(s)
+    </div>
+}
+else
+{
+    <div>
+        No se encontraron registros
+    </div>
+}

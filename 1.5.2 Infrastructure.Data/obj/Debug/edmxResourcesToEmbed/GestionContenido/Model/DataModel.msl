@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GestionContenidoStoreContainer" CdmEntityContainer="DbContextGestionContenido">
+    <EntitySetMapping Name="Comisario">
+      <EntityTypeMapping TypeName="GestionContenido.Comisario">
+        <MappingFragment StoreEntitySet="Comisario">
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="IdTipoComisario" ColumnName="IdTipoComisario" />
+          <ScalarProperty Name="IdPersonal" ColumnName="IdPersonal" />
+          <ScalarProperty Name="IdEvento" ColumnName="IdEvento" />
+          <ScalarProperty Name="IdComisario" ColumnName="IdComisario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ComplejoDeportivo">
+      <EntityTypeMapping TypeName="GestionContenido.ComplejoDeportivo">
+        <MappingFragment StoreEntitySet="ComplejoDeportivo">
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="Presupuesto" ColumnName="Presupuesto" />
+          <ScalarProperty Name="TotalAreaOcupada" ColumnName="TotalAreaOcupada" />
+          <ScalarProperty Name="IdJefeComplejo" ColumnName="IdJefeComplejo" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="IdTipoComplejo" ColumnName="IdTipoComplejo" />
+          <ScalarProperty Name="NombreComplejo" ColumnName="NombreComplejo" />
+          <ScalarProperty Name="IdSede" ColumnName="IdSede" />
+          <ScalarProperty Name="IdComplejo" ColumnName="IdComplejo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Equipamiento">
+      <EntityTypeMapping TypeName="GestionContenido.Equipamiento">
+        <MappingFragment StoreEntitySet="Equipamiento">
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="NombreEquipamiento" ColumnName="NombreEquipamiento" />
+          <ScalarProperty Name="IdEquipamiento" ColumnName="IdEquipamiento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Evento">
+      <EntityTypeMapping TypeName="GestionContenido.Evento">
+        <MappingFragment StoreEntitySet="Evento">
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="IdEstadoEvento" ColumnName="IdEstadoEvento" />
+          <ScalarProperty Name="CantidadComisariosEvento" ColumnName="CantidadComisariosEvento" />
+          <ScalarProperty Name="CantidadParticipantesEvento" ColumnName="CantidadParticipantesEvento" />
+          <ScalarProperty Name="HoraFinEvento" ColumnName="HoraFinEvento" />
+          <ScalarProperty Name="DuracionMinutosEvento" ColumnName="DuracionMinutosEvento" />
+          <ScalarProperty Name="TieneDuracionEvento" ColumnName="TieneDuracionEvento" />
+          <ScalarProperty Name="HoraInicioEvento" ColumnName="HoraInicioEvento" />
+          <ScalarProperty Name="FechaEvento" ColumnName="FechaEvento" />
+          <ScalarProperty Name="IdLocalizacion" ColumnName="IdLocalizacion" />
+          <ScalarProperty Name="IdDeporte" ColumnName="IdDeporte" />
+          <ScalarProperty Name="IdEvento" ColumnName="IdEvento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Grupo">
+      <EntityTypeMapping TypeName="GestionContenido.Grupo">
+        <MappingFragment StoreEntitySet="Grupo">
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="NombreGrupo" ColumnName="NombreGrupo" />
+          <ScalarProperty Name="IdGrupo" ColumnName="IdGrupo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Localizacion">
+      <EntityTypeMapping TypeName="GestionContenido.Localizacion">
+        <MappingFragment StoreEntitySet="Localizacion">
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="NombreLocalizacion" ColumnName="NombreLocalizacion" />
+          <ScalarProperty Name="IdComplejo" ColumnName="IdComplejo" />
+          <ScalarProperty Name="IdLocalizacion" ColumnName="IdLocalizacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MaterialEvento">
+      <EntityTypeMapping TypeName="GestionContenido.MaterialEvento">
+        <MappingFragment StoreEntitySet="MaterialEvento">
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="IdEquipamiento" ColumnName="IdEquipamiento" />
+          <ScalarProperty Name="IdEvento" ColumnName="IdEvento" />
+          <ScalarProperty Name="IdMaterial" ColumnName="IdMaterial" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MaterialMantenimiento">
+      <EntityTypeMapping TypeName="GestionContenido.MaterialMantenimiento">
+        <MappingFragment StoreEntitySet="MaterialMantenimiento">
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="IdEquipamiento" ColumnName="IdEquipamiento" />
+          <ScalarProperty Name="IdComplejo" ColumnName="IdComplejo" />
+          <ScalarProperty Name="IdMaterial" ColumnName="IdMaterial" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Participante">
+      <EntityTypeMapping TypeName="GestionContenido.Participante">
+        <MappingFragment StoreEntitySet="Participante">
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="IdDeporte" ColumnName="IdDeporte" />
+          <ScalarProperty Name="IdPais" ColumnName="IdPais" />
+          <ScalarProperty Name="NombreParticipante" ColumnName="NombreParticipante" />
+          <ScalarProperty Name="IdParticipante" ColumnName="IdParticipante" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Personal">
+      <EntityTypeMapping TypeName="GestionContenido.Personal">
+        <MappingFragment StoreEntitySet="Personal">
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="DniPersonal" ColumnName="DniPersonal" />
+          <ScalarProperty Name="NombrePersonal" ColumnName="NombrePersonal" />
+          <ScalarProperty Name="IdPersonal" ColumnName="IdPersonal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Registro">
+      <EntityTypeMapping TypeName="GestionContenido.Registro">
+        <MappingFragment StoreEntitySet="Registro">
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="IdParticipante" ColumnName="IdParticipante" />
+          <ScalarProperty Name="IdEvento" ColumnName="IdEvento" />
+          <ScalarProperty Name="IdRegistro" ColumnName="IdRegistro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sede">
+      <EntityTypeMapping TypeName="GestionContenido.Sede">
+        <MappingFragment StoreEntitySet="Sede">
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="PresupuestoTotalSede" ColumnName="PresupuestoTotalSede" />
+          <ScalarProperty Name="CantidadComplejosSede" ColumnName="CantidadComplejosSede" />
+          <ScalarProperty Name="NombreSede" ColumnName="NombreSede" />
+          <ScalarProperty Name="IdSede" ColumnName="IdSede" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipo">
+      <EntityTypeMapping TypeName="GestionContenido.Tipo">
+        <MappingFragment StoreEntitySet="Tipo">
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="NombreTipo" ColumnName="NombreTipo" />
+          <ScalarProperty Name="IdGrupo" ColumnName="IdGrupo" />
+          <ScalarProperty Name="IdTipo" ColumnName="IdTipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

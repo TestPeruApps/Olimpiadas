@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GestionNotificacion" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DbContextGestionNotificacion" annotation:LazyLoadingEnabled="false">
+    <EntitySet Name="Notificacion" EntityType="GestionNotificacion.Notificacion" />
+    <EntitySet Name="Destino" EntityType="GestionNotificacion.Destino" />
+    <EntitySet Name="Mensaje" EntityType="GestionNotificacion.Mensaje" />
+    <AssociationSet Name="FK_Destino_Mensaje" Association="GestionNotificacion.FK_Destino_Mensaje">
+      <End Role="Mensaje" EntitySet="Mensaje" />
+      <End Role="Destino" EntitySet="Destino" />
+    </AssociationSet>
+    <EntitySet Name="Error" EntityType="GestionNotificacion.Error" />
+    <EntitySet Name="Push" EntityType="GestionNotificacion.Push" />
+  </EntityContainer>
+  <EntityType Name="Notificacion">
+    <Key>
+      <PropertyRef Name="Noti_Id" />
+    </Key>
+    <Property Name="Noti_Id" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Noti_TipoId" Type="Int16" Nullable="false" />
+    <Property Name="Noti_DisparadorId" Type="Int16" />
+    <Property Name="Noti_Asunto" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Noti_Cuerpo" Type="String" Nullable="false" MaxLength="5000" FixedLength="false" Unicode="false" />
+    <Property Name="Noti_FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Noti_UsuarioEdicion" Type="Int16" />
+    <Property Name="Noti_FechaEdicion" Type="DateTime" Precision="3" />
+    <Property Name="Noti_IpEdicion" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Noti_UsuarioCreacion" Type="Int16" Nullable="false" />
+    <Property Name="Noti_IpCreacion" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Noti_Activo" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Destino">
+    <Key>
+      <PropertyRef Name="Dest_Id" />
+    </Key>
+    <Property Name="Dest_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Dest_TipoDestinoId" Type="Int16" Nullable="false" />
+    <Property Name="Dest_MensajeId" Type="Int32" Nullable="false" />
+    <Property Name="Dest_Email" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Mensaje" Relationship="GestionNotificacion.FK_Destino_Mensaje" FromRole="Destino" ToRole="Mensaje" />
+  </EntityType>
+  <EntityType Name="Mensaje">
+    <Key>
+      <PropertyRef Name="Mens_Id" />
+    </Key>
+    <Property Name="Mens_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Mens_PrioridadId" Type="Int16" Nullable="false" />
+    <Property Name="Mens_Asunto" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="Mens_Cuerpo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Mens_CorreoOrigen" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Mens_FechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Mens_FechaInicioEnvio" Type="DateTime" Precision="3" />
+    <Property Name="Mens_FechaFinEnvio" Type="DateTime" Precision="3" />
+    <Property Name="Mens_Destinatarios" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+    <Property Name="Mens_DestinatariosIds" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Mens_EsPremio" Type="Boolean" />
+    <Property Name="Mens_Enviado" Type="Boolean" Nullable="false" />
+    <Property Name="Mens_TieneError" Type="Boolean" />
+    <Property Name="Mens_Error" Type="String" Nullable="false" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="Mens_Manual" Type="Boolean" />
+    <NavigationProperty Name="Destino" Relationship="GestionNotificacion.FK_Destino_Mensaje" FromRole="Mensaje" ToRole="Destino" />
+    <Property Name="Mens_UsuarioCreacion" Type="Int16" />
+  </EntityType>
+  <Association Name="FK_Destino_Mensaje">
+    <End Type="GestionNotificacion.Mensaje" Role="Mensaje" Multiplicity="1" />
+    <End Type="GestionNotificacion.Destino" Role="Destino" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mensaje">
+        <PropertyRef Name="Mens_Id" />
+      </Principal>
+      <Dependent Role="Destino">
+        <PropertyRef Name="Dest_MensajeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Error">
+    <Key>
+      <PropertyRef Name="Erro_Id" />
+    </Key>
+    <Property Name="Erro_Id" Type="Int32" Nullable="false" />
+    <Property Name="Erro_Procedimiento" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Erro_Mensaje" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Erro_Numero" Type="Int32" Nullable="false" />
+    <Property Name="Erro_Severidad" Type="Int32" Nullable="false" />
+    <Property Name="Erro_Estado" Type="Int32" Nullable="false" />
+    <Property Name="Erro_Linea" Type="Int32" />
+    <Property Name="Erro_Fecha" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="Push">
+    <Key>
+      <PropertyRef Name="Push_Id" />
+    </Key>
+    <Property Name="Push_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Push_Anio" Type="Int16" Nullable="false" />
+    <Property Name="Push_Mes" Type="Byte" Nullable="false" />
+    <Property Name="Push_Automatico" Type="Boolean" Nullable="false" />
+    <Property Name="Push_DestinatarioId" Type="Int16" Nullable="false" />
+    <Property Name="Push_OrigenId" Type="Int16" Nullable="false" />
+    <Property Name="Push_TargetId" Type="Int32" Nullable="false" />
+    <Property Name="Push_TargetDescripcion" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Push_Asunto" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Push_Cuerpo" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Push_CantidadUsuarios" Type="Int32" Nullable="false" />
+    <Property Name="Push_CantidadNotificaciones" Type="Int32" Nullable="false" />
+    <Property Name="Push_EnvioConErrores" Type="Boolean" Nullable="false" />
+    <Property Name="Push_Activo" Type="Boolean" Nullable="false" />
+    <Property Name="Push_FechaHoraProgramada" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Push_FechaHoraInicioEnvio" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Push_FechaHoraFinEnvio" Type="DateTime" Precision="3" />
+    <Property Name="Push_UsuarioCreacion" Type="Int16" Nullable="false" />
+    <Property Name="Push_UsuarioEdicion" Type="Int16" />
+    <Property Name="Push_FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Push_FechaEdicion" Type="DateTime" Precision="3" />
+    <Property Name="Push_IpCreacion" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Push_IpEdicion" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

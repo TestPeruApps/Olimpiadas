@@ -1,0 +1,42 @@
+﻿@model Olimpiadas.Web.CMS.Areas.Contenido.ViewModels.Participantes.ParticipanteEditorViewModel
+
+@{
+    var nonce = Context.Items["csp-nonce"].ToString();
+}
+
+<form id="participanteEditorForm" action="/" class="form-horizontal" autocomplete="off" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+    <input asp-for="Participante.IdParticipante" type="hidden" />
+    <div class="form-group">
+        <label asp-for="Participante.NombreParticipante" class="col-sm-2 control-label">Nombre :</label>
+        <div class="col-sm-10">
+            <input asp-for="Participante.NombreParticipante" maxlength="500" required="" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="Participante.IdPais" class="col-sm-2 control-label">País :</label>
+        <div class="col-sm-10 selectContainer mw-220">
+            <select asp-for="Participante.IdPais" asp-items="Model.Paises" required="" class="form-control"><option value="">Ninguno</option></select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="Participante.IdDeporte" class="col-sm-2 control-label">Deporte :</label>
+        <div class="col-sm-10 selectContainer mw-220">
+            <select asp-for="Participante.IdDeporte" asp-items="Model.Deportes" required="" class="form-control"><option value="">Ninguno</option></select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Activo :</label>
+        <div class="col-sm-10">
+            <div>
+                @Html.CheckBox("Participante.Activo", Model.Participante.Activo.GetValueOrDefault(false))
+            </div>
+        </div>
+    </div>
+</form>
+
+<script nonce="@nonce">
+    $(document).ready(function () {
+        formParticipante.editor.load();
+    });
+</script>

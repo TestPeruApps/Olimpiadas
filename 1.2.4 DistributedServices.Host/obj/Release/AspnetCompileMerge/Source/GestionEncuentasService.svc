@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.GestionEncuestas.GestionEncuestasService" CodeBehind="GestionEncuestasService.svc.cs" %>

@@ -1,0 +1,251 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Archivos\\Proyectos\\Olimpiadas\\1.1.3 Presentation.Web.CentroControl\\1.1.3 Presentation.Web.CMS.csproj": {}
+  },
+  "projects": {
+    "D:\\Archivos\\Proyectos\\Olimpiadas\\1.1.1.Presentation.ServiceAgents\\1.1.1 Presentation.ServiceAgents.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Archivos\\Proyectos\\Olimpiadas\\1.1.1.Presentation.ServiceAgents\\1.1.1 Presentation.ServiceAgents.csproj",
+        "projectName": "1.1.1 Presentation.ServiceAgents",
+        "projectPath": "D:\\Archivos\\Proyectos\\Olimpiadas\\1.1.1.Presentation.ServiceAgents\\1.1.1 Presentation.ServiceAgents.csproj",
+        "frameworks": {
+          "net47": {
+            "projectReferences": {
+              "D:\\Archivos\\Proyectos\\Olimpiadas\\1.3.2 Application.Dto\\1.3.2.Application.Dto.csproj": {
+                "projectPath": "D:\\Archivos\\Proyectos\\Olimpiadas\\1.3.2 Application.Dto\\1.3.2.Application.Dto.csproj"
+              },
+              "D:\\Archivos\\Proyectos\\Olimpiadas\\1.6.1 CrossCutting.Enumerations\\1.6.1.CrossCutting.Enumerations.csproj": {
+                "projectPath": "D:\\Archivos\\Proyectos\\Olimpiadas\\1.6.1 CrossCutting.Enumerations\\1.6.1.CrossCutting.Enumerations.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net47": {}
+      }
+    },
+    "D:\\Archivos\\Proyectos\\Olimpiadas\\1.1.3 Presentation.Web.CentroControl\\1.1.3 Presentation.Web.CMS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Archivos\\Proyectos\\Olimpiadas\\1.1.3 Presentation.Web.CentroControl\\1.1.3 Presentation.Web.CMS.csproj",
+        "projectName": "Olimpiadas.Web.CMS",
+        "projectPath": "D:\\Archivos\\Proyectos\\Olimpiadas\\1.1.3 Presentation.Web.CentroControl\\1.1.3 Presentation.Web.CMS.csproj",
+        "packagesPath": "C:\\Users\\Mario\\.nuget\\packages\\",
+        "outputPath": "D:\\Archivos\\Proyectos\\Olimpiadas\\1.1.3 Presentation.Web.CentroControl\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Mario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net47"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net47": {
+            "projectReferences": {
+              "D:\\Archivos\\Proyectos\\Olimpiadas\\1.1.1.Presentation.ServiceAgents\\1.1.1 Presentation.ServiceAgents.csproj": {
+                "projectPath": "D:\\Archivos\\Proyectos\\Olimpiadas\\1.1.1.Presentation.ServiceAgents\\1.1.1 Presentation.ServiceAgents.csproj"
+              },
+              "D:\\Archivos\\Proyectos\\Olimpiadas\\1.3.2 Application.Dto\\1.3.2.Application.Dto.csproj": {
+                "projectPath": "D:\\Archivos\\Proyectos\\Olimpiadas\\1.3.2 Application.Dto\\1.3.2.Application.Dto.csproj"
+              },
+              "D:\\Archivos\\Proyectos\\Olimpiadas\\1.6.1 CrossCutting.Enumerations\\1.6.1.CrossCutting.Enumerations.csproj": {
+                "projectPath": "D:\\Archivos\\Proyectos\\Olimpiadas\\1.6.1 CrossCutting.Enumerations\\1.6.1.CrossCutting.Enumerations.csproj"
+              },
+              "D:\\Archivos\\Proyectos\\Olimpiadas\\1.6.2.CrossCutting.Strings\\1.6.2.CrossCutting.Strings.csproj": {
+                "projectPath": "D:\\Archivos\\Proyectos\\Olimpiadas\\1.6.2.CrossCutting.Strings\\1.6.2.CrossCutting.Strings.csproj"
+              },
+              "D:\\Archivos\\Proyectos\\Olimpiadas\\1.6.3 CrossCutting.Helper\\1.6.3.CrossCutting.Helper.csproj": {
+                "projectPath": "D:\\Archivos\\Proyectos\\Olimpiadas\\1.6.3 CrossCutting.Helper\\1.6.3.CrossCutting.Helper.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net47": {
+          "dependencies": {
+            "Microsoft.ApplicationInsights.AspNetCore": {
+              "target": "Package",
+              "version": "[2.7.1, )"
+            },
+            "Microsoft.AspNetCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Cookies": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.CookiePolicy": {
+              "target": "Package",
+              "version": "[2.2.8, )"
+            },
+            "Microsoft.AspNetCore.HttpsPolicy": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.ViewCompilation": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.ResponseCompression": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Microsoft.AspNetCore.SignalR.Client": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Microsoft.AspNetCore.StaticFiles": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.PlatformAbstractions": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Microsoft.VisualStudio.Web.BrowserLink": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "cloudscribe.Web.Pagination": {
+              "target": "Package",
+              "version": "[2.1.2, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\Archivos\\Proyectos\\Olimpiadas\\1.3.2 Application.Dto\\1.3.2.Application.Dto.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Archivos\\Proyectos\\Olimpiadas\\1.3.2 Application.Dto\\1.3.2.Application.Dto.csproj",
+        "projectName": "1.3.2.Application.Dto",
+        "projectPath": "D:\\Archivos\\Proyectos\\Olimpiadas\\1.3.2 Application.Dto\\1.3.2.Application.Dto.csproj",
+        "frameworks": {
+          "net47": {
+            "projectReferences": {
+              "D:\\Archivos\\Proyectos\\Olimpiadas\\1.6.1 CrossCutting.Enumerations\\1.6.1.CrossCutting.Enumerations.csproj": {
+                "projectPath": "D:\\Archivos\\Proyectos\\Olimpiadas\\1.6.1 CrossCutting.Enumerations\\1.6.1.CrossCutting.Enumerations.csproj"
+              },
+              "D:\\Archivos\\Proyectos\\Olimpiadas\\1.6.2.CrossCutting.Strings\\1.6.2.CrossCutting.Strings.csproj": {
+                "projectPath": "D:\\Archivos\\Proyectos\\Olimpiadas\\1.6.2.CrossCutting.Strings\\1.6.2.CrossCutting.Strings.csproj"
+              },
+              "D:\\Archivos\\Proyectos\\Olimpiadas\\1.6.3 CrossCutting.Helper\\1.6.3.CrossCutting.Helper.csproj": {
+                "projectPath": "D:\\Archivos\\Proyectos\\Olimpiadas\\1.6.3 CrossCutting.Helper\\1.6.3.CrossCutting.Helper.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net47": {}
+      }
+    },
+    "D:\\Archivos\\Proyectos\\Olimpiadas\\1.6.1 CrossCutting.Enumerations\\1.6.1.CrossCutting.Enumerations.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Archivos\\Proyectos\\Olimpiadas\\1.6.1 CrossCutting.Enumerations\\1.6.1.CrossCutting.Enumerations.csproj",
+        "projectName": "1.6.1.CrossCutting.Enumerations",
+        "projectPath": "D:\\Archivos\\Proyectos\\Olimpiadas\\1.6.1 CrossCutting.Enumerations\\1.6.1.CrossCutting.Enumerations.csproj"
+      },
+      "frameworks": {
+        "net47": {}
+      }
+    },
+    "D:\\Archivos\\Proyectos\\Olimpiadas\\1.6.2.CrossCutting.Strings\\1.6.2.CrossCutting.Strings.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Archivos\\Proyectos\\Olimpiadas\\1.6.2.CrossCutting.Strings\\1.6.2.CrossCutting.Strings.csproj",
+        "projectName": "1.6.2.CrossCutting.Strings",
+        "projectPath": "D:\\Archivos\\Proyectos\\Olimpiadas\\1.6.2.CrossCutting.Strings\\1.6.2.CrossCutting.Strings.csproj"
+      },
+      "frameworks": {
+        "net47": {}
+      }
+    },
+    "D:\\Archivos\\Proyectos\\Olimpiadas\\1.6.3 CrossCutting.Helper\\1.6.3.CrossCutting.Helper.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Archivos\\Proyectos\\Olimpiadas\\1.6.3 CrossCutting.Helper\\1.6.3.CrossCutting.Helper.csproj",
+        "projectName": "1.6.3.CrossCutting.Helper",
+        "projectPath": "D:\\Archivos\\Proyectos\\Olimpiadas\\1.6.3 CrossCutting.Helper\\1.6.3.CrossCutting.Helper.csproj",
+        "frameworks": {
+          "net47": {
+            "projectReferences": {
+              "D:\\Archivos\\Proyectos\\Olimpiadas\\1.6.1 CrossCutting.Enumerations\\1.6.1.CrossCutting.Enumerations.csproj": {
+                "projectPath": "D:\\Archivos\\Proyectos\\Olimpiadas\\1.6.1 CrossCutting.Enumerations\\1.6.1.CrossCutting.Enumerations.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net47": {}
+      }
+    }
+  }
+}

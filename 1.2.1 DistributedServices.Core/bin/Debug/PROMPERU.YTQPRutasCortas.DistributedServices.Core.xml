@@ -1,0 +1,542 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PROMPERU.YTQPRutasCortas.DistributedServices.Core</name>
+    </assembly>
+    <members>
+        <member name="T:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Authorization.RestAuthorizationManager">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Authorization.RestAuthorizationManager.CheckAccessCore(System.ServiceModel.OperationContext)">
+            <summary>
+            
+            </summary>
+            <param name="operationContext"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Error.ErrorBehavior">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Error.ErrorBehavior.Enabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Error.ErrorBehavior.#ctor(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="enabled"></param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Error.ErrorBehavior.Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)">
+            <summary>
+            Proporciona la capacidad de inspeccionar el host de servicio y la descripción del servicio para confirmar que el servicio puede ejecutarse correctamente.
+            </summary>
+            <param name="serviceDescription"></param>
+            <param name="serviceHostBase"></param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Error.ErrorBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)">
+            <summary>
+            Proporciona la capacidad de pasar datos personalizados a los elementos de enlace para admitir la implementación del contrato.
+            </summary>
+            <param name="serviceDescription"></param>
+            <param name="serviceHostBase"></param>
+            <param name="endpoints"></param>
+            <param name="bindingParameters"></param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Error.ErrorBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)">
+            <summary>
+            Proporciona la capacidad de cambixar los valores de propiedad en tiempo de ejecución o insertar objetos de extensión personalizados como controladores de errores, interceptores de mensajes o de parámetros, extensiones de seguridad, y otros objetos de extensión personalizados.
+            </summary>
+            <param name="serviceDescription">La descripción del servicio.</param>
+            <param name="serviceHostBase">El host que se está compilando actualmente.</param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Error.ErrorBehaviorSection">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Error.ErrorBehaviorSection.Enabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Error.ErrorBehaviorSection.CreateBehavior">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Error.ErrorBehaviorSection.BehaviorType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Error.ErrorHandler">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Error.ErrorHandler.Enabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Error.ErrorHandler.#ctor(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="enabled"></param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Error.ErrorHandler.HandleError(System.Exception)">
+            <summary>
+            
+            </summary>
+            <param name="error"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Error.ErrorHandler.ProvideFault(System.Exception,System.ServiceModel.Channels.MessageVersion,System.ServiceModel.Channels.Message@)">
+            <summary>
+            
+            </summary>
+            <param name="error"></param>
+            <param name="version"></param>
+            <param name="fault"></param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Error.ErrorHelper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Error.ErrorHelper.ConstruirError(System.Exception)">
+            <summary>
+            
+            </summary>
+            <param name="error"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Factories.UnityContainerFactory">
+            <summary>
+            Factoria para crear el contenedor Unity.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Factories.UnityContainerFactory.GetContainer">
+            <summary>
+            Obtiene la interfaz del contendor unity.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Factories.UnityInstanceProvider">
+            <summary>
+            Implementa métodos para controlar la creación y el reciclaje de objetos del servicio.
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Factories.UnityInstanceProvider.Container">
+            <summary>
+            Interface contendor Unity.
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Factories.UnityInstanceProvider.ServiceType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Factories.UnityInstanceProvider.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Factories.UnityInstanceProvider.#ctor(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Factories.UnityInstanceProvider.GetInstance(System.ServiceModel.InstanceContext,System.ServiceModel.Channels.Message)">
+            <summary>
+            Implementa método para devolver un objeto del servicio.
+            </summary>
+            <param name="instanceContext"></param>
+            <param name="message">El mensaje que activó la creación de un objeto de servicio.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Factories.UnityInstanceProvider.GetInstance(System.ServiceModel.InstanceContext)">
+            <summary>
+            Implementa método para devolver un objeto del servicio.
+            </summary>
+            <param name="instanceContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Factories.UnityInstanceProvider.ReleaseInstance(System.ServiceModel.InstanceContext,System.Object)">
+            <summary>
+            Implementa método cuando un objeto de InstanceContext recicla un objeto de servicio.
+            </summary>
+            <param name="instanceContext"></param>
+            <param name="instance"></param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Factories.UnityServiceBehavior">
+            <summary>
+            Implementa mecanismo para modificar o insertar las extensiones personalizadas en un servicio completo.
+            </summary>
+        </member>
+        <member name="F:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Factories.UnityServiceBehavior._serviceHost">
+            <summary>
+            Host del servicio
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Factories.UnityServiceBehavior.InstanceProvider">
+            <summary>
+            Interface con métodos para controlar la creación y el reciclaje de objetos del servicio.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Factories.UnityServiceBehavior.#ctor">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Factories.UnityServiceBehavior.#ctor(Microsoft.Practices.Unity.IUnityContainer)">
+            <summary>
+            Constructor de la clase.
+            </summary>
+            <param name="unity">Interface del contenedor Unity.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Factories.UnityServiceBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)">
+            <summary>
+            Implementa método para cambiar los valores de propiedad en tiempo de ejecución o insertar objetos de extensión personalizados como controladores de errores, interceptores de mensajes o de parámetros, extensiones de seguridad, y otros objetos de extensión personalizados.
+            </summary>
+            <param name="serviceDescription"></param>
+            <param name="serviceHostBase"></param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Factories.UnityServiceBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)">
+            <summary>
+            Implemenat método para pasar datos personalizados a los elementos de enlace para admitir la implementación del contrato.
+            </summary>
+            <param name="serviceDescription"></param>
+            <param name="serviceHostBase"></param>
+            <param name="endpoints"></param>
+            <param name="bindingParameters"></param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Factories.UnityServiceBehavior.Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)">
+            <summary>
+            Implementa mecamnismo para inspeccionar el host de servicio y la descripción del servicio para confirmar que el servicio puede ejecutarse correctamente.
+            </summary>
+            <param name="serviceDescription"></param>
+            <param name="serviceHostBase"></param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Factories.UnityServiceBehavior.AddToHost(System.ServiceModel.ServiceHost)">
+            <summary>
+            Establece el servicio y agrega el comportamiento asociado al servicio.
+            </summary>
+            <param name="host"></param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Factories.UnityServiceHost">
+            <summary>
+            Proporciona un host para los servicios Unity.
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Factories.UnityServiceHost.Container">
+            <summary>
+            Interface del contenedor Unity.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Factories.UnityServiceHost.#ctor">
+            <summary>
+            Inicializa una nueva instancia de la clase
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Factories.UnityServiceHost.#ctor(System.Type,System.Uri[])">
+            <summary>
+            Inicializa una nueva instancia de la clase con el tipo de servicio y las direcciones base especificadas.
+            </summary>
+            <param name="serviceType">Tipo de servicio que se crea.</param>
+            <param name="baseAddresses">Dirección base específica.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Factories.UnityServiceHost.OnOpening">
+            <summary>
+            Se invoca durante la transición de un objeto de comunicación al estado de abriendo.
+            </summary>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Factories.UnityServiceHostFactory">
+            <summary>
+            Generador de instancias UnityServiceHost que se crean dinámicamente como respuesta a los mensajes entrantes.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Factories.UnityServiceHostFactory.#ctor">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Factories.UnityServiceHostFactory.CreateServiceHost(System.Type,System.Uri[])">
+            <summary>
+            Crea un UnityServiceHostFactory para una tipo especificado con una dirección base concreta.
+            </summary>
+            <param name="serviceType"></param>
+            <param name="baseAddresses"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Log.LogHelper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Log.LogHelper.#ctor(System.Boolean,System.Boolean,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="enabledError"></param>
+            <param name="enabledTrace"></param>
+            <param name="eventSource"></param>
+            <param name="logNameError"></param>
+            <param name="logNameTrace"></param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Log.LogHelper.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Log.LogHelper.AddError(System.String,System.String,System.Exception)">
+            <summary>
+            
+            </summary>
+            <param name="titulo"></param>
+            <param name="identificador"></param>
+            <param name="ex"></param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Log.LogHelper.AddTrace(System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="titulo"></param>
+            <param name="identificador"></param>
+            <param name="request"></param>
+            <param name="response"></param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Resources.Fault_Code">
+            <summary>
+              Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Resources.Fault_Code.ResourceManager">
+            <summary>
+              Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Resources.Fault_Code.Culture">
+            <summary>
+              Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+              búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Resources.Fault_Code.ErrorAccessDenied">
+            <summary>
+              Busca una cadena traducida similar a 0003.
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Resources.Fault_Code.ErrorBD">
+            <summary>
+              Busca una cadena traducida similar a 0001.
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Resources.Fault_Code.ErrorBusinessLogic">
+            <summary>
+              Busca una cadena traducida similar a 0005.
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Resources.Fault_Code.ErrorNotImplemented">
+            <summary>
+              Busca una cadena traducida similar a 0006.
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Resources.Fault_Code.ErrorTimeOut">
+            <summary>
+              Busca una cadena traducida similar a 0002.
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Resources.Fault_Code.ErrorUnexpected">
+            <summary>
+              Busca una cadena traducida similar a 0004.
+            </summary>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Resources.Fault_Message">
+            <summary>
+              Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Resources.Fault_Message.ResourceManager">
+            <summary>
+              Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Resources.Fault_Message.Culture">
+            <summary>
+              Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+              búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Resources.Fault_Message.ErrorAccessDenied">
+            <summary>
+              Busca una cadena traducida similar a A ocurrido un error de Acceso Denegado. (Servicio de Incidencias).
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Resources.Fault_Message.ErrorBD">
+            <summary>
+              Busca una cadena traducida similar a A ocurrido un error en la capa de Datos. (Servicio de Incidencias).
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Resources.Fault_Message.ErrorBusinessLogic">
+            <summary>
+              Busca una cadena traducida similar a A ocurrido un error de Logica de Negocio. (Servicio de Incidencias).
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Resources.Fault_Message.ErrorNotImplemented">
+            <summary>
+              Busca una cadena traducida similar a Esta funcionalidad no esta implementada. (Servicio de Incidencias).
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Resources.Fault_Message.ErrorTimeOut">
+            <summary>
+              Busca una cadena traducida similar a A ocurrido un error de TimeOut. (Servicio de Incidencias).
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Resources.Fault_Message.ErrorUnexpected">
+            <summary>
+              Busca una cadena traducida similar a A ocurrido un error inesperado. (Servicio de Incidencias).
+            </summary>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Resources.Messages">
+            <summary>
+              Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Resources.Messages.ResourceManager">
+            <summary>
+              Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Resources.Messages.Culture">
+            <summary>
+              Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+              búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Resources.Messages.exception_ArgumentosInvalidos">
+            <summary>
+              Busca una cadena traducida similar a Los argumentos de entrada no son válidos.
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Resources.Messages.message_DefaultErrorMessage">
+            <summary>
+              Busca una cadena traducida similar a Oooppps this operation can&apos;t be processed at this moment. Please try it later. If problem persist contact with your System Administrator.
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Resources.Messages.Message_error">
+            <summary>
+              Busca una cadena traducida similar a Error en el servicio ServicioIncidencia.
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Resources.Messages.ServicioIncidenciaTrace">
+            <summary>
+              Busca una cadena traducida similar a ServicioIncidencia.
+            </summary>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Trace.TraceBehavior">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Trace.TraceBehavior.Enabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Trace.TraceBehavior.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Trace.TraceBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Channels.BindingParameterCollection)">
+            <summary>
+            
+            </summary>
+            <param name="endpoint"></param>
+            <param name="bindingParameters"></param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Trace.TraceBehavior.ApplyClientBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.ClientRuntime)">
+            <summary>
+            
+            </summary>
+            <param name="endpoint"></param>
+            <param name="clientRuntime"></param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Trace.TraceBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.EndpointDispatcher)">
+            <summary>
+            
+            </summary>
+            <param name="endpoint"></param>
+            <param name="endpointDispatcher"></param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Trace.TraceBehavior.Validate(System.ServiceModel.Description.ServiceEndpoint)">
+            <summary>
+            
+            </summary>
+            <param name="endpoint"></param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Trace.TraceBehaviorSection">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Trace.TraceBehaviorSection.Enabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Trace.TraceBehaviorSection.BehaviorType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Trace.TraceBehaviorSection.CreateBehavior">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Trace.TraceInspector">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Trace.TraceInspector.Enabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Trace.TraceInspector.#ctor(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="enabled"></param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Trace.TraceInspector.AfterReceiveRequest(System.ServiceModel.Channels.Message@,System.ServiceModel.IClientChannel,System.ServiceModel.InstanceContext)">
+            <summary>
+            
+            </summary>
+            <param name="request"></param>
+            <param name="channel"></param>
+            <param name="instanceContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.DistributedServices.Core.Trace.TraceInspector.BeforeSendReply(System.ServiceModel.Channels.Message@,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="reply"></param>
+            <param name="correlationState"></param>
+        </member>
+    </members>
+</doc>

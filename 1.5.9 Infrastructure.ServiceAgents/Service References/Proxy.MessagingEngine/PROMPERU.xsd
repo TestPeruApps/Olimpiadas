@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="PROMPERU" elementFormDefault="qualified" targetNamespace="PROMPERU" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/PROMPERU.MessagingEngine.BusinessLogic.DataType" />
+  <xs:element name="ActualizarEstadoUso">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActualizarEstadoUsoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SincronizarOfertasManual">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="usuarioCreacion" type="xs:short" />
+        <xs:element minOccurs="0" name="ipCreacion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SincronizarOfertasManualResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/PROMPERU.MessagingEngine.BusinessLogic.DataType" minOccurs="0" name="SincronizarOfertasManualResult" nillable="true" type="q1:OfertaRespuesta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProbarNotificacionPush">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/PROMPERU.MessagingEngine.BusinessLogic.DataType" minOccurs="0" name="push" nillable="true" type="q2:Push" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProbarNotificacionPushResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/PROMPERU.MessagingEngine.BusinessLogic.DataType" minOccurs="0" name="ProbarNotificacionPushResult" nillable="true" type="q3:PushRespuesta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MensajeEnviarSinRespuesta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/PROMPERU.MessagingEngine.BusinessLogic.DataType" minOccurs="0" name="mensaje" nillable="true" type="q4:Mensaje" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MensajeEnviar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/PROMPERU.MessagingEngine.BusinessLogic.DataType" minOccurs="0" name="mensaje" nillable="true" type="q5:Mensaje" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MensajeEnviarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/PROMPERU.MessagingEngine.BusinessLogic.DataType" minOccurs="0" name="MensajeEnviarResult" nillable="true" type="q6:MensajeRespuesta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MensajeReenviar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/PROMPERU.MessagingEngine.BusinessLogic.DataType" minOccurs="0" name="mensaje" nillable="true" type="q7:Mensaje" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MensajeReenviarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/PROMPERU.MessagingEngine.BusinessLogic.DataType" minOccurs="0" name="MensajeReenviarResult" nillable="true" type="q8:MensajeRespuesta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MensajeProbar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/PROMPERU.MessagingEngine.BusinessLogic.DataType" minOccurs="0" name="mensaje" nillable="true" type="q9:Mensaje" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MensajeProbarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/PROMPERU.MessagingEngine.BusinessLogic.DataType" minOccurs="0" name="MensajeProbarResult" nillable="true" type="q10:MensajeRespuesta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

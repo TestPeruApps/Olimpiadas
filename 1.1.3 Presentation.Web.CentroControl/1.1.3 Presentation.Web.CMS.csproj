@@ -1,0 +1,135 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <TypeScriptToolsVersion>2.5</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net47</TargetFramework>    
+    <AssemblyName>Olimpiadas.Web.CMS</AssemblyName>
+    <RootNamespace>Olimpiadas.Web.CMS</RootNamespace>
+    <MvcRazorCompileOnPublish>true</MvcRazorCompileOnPublish>
+    <SignAssembly>False</SignAssembly>    
+    <UserSecretsId>b3fb368f-ea9d-44d3-8619-047eca39ed1e</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\lib\ckeditor\**" />
+    <Content Remove="wwwroot\lib\ckeditor\**" />
+    <EmbeddedResource Remove="wwwroot\lib\ckeditor\**" />
+    <None Remove="wwwroot\lib\ckeditor\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="bundleconfig.json" />
+    <Content Remove="compilerconfig.json" />        
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\css\forms\reporte.base.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\css\forms\site.base.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\css\forms\site.skin.min.css" />    
+  </ItemGroup>
+
+  <ItemGroup>    
+    <PackageReference Include="cloudscribe.Web.Pagination" Version="2.1.2" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.7.1" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.CookiePolicy" Version="2.2.8" />
+    <PackageReference Include="Microsoft.AspNetCore.HttpsPolicy" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.ViewCompilation" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.AspNetCore.ResponseCompression" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />    
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="1.1.0" />    
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>    
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.2.0" />                
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" PrivateAssets="All" />
+  </ItemGroup>   
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1" />
+  </ItemGroup>   
+  
+  <ItemGroup>
+    <ProjectReference Include="..\1.1.1.Presentation.ServiceAgents\1.1.1 Presentation.ServiceAgents.csproj" />
+    <ProjectReference Include="..\1.3.2 Application.Dto\1.3.2.Application.Dto.csproj" />
+    <ProjectReference Include="..\1.6.1 CrossCutting.Enumerations\1.6.1.CrossCutting.Enumerations.csproj" />
+    <ProjectReference Include="..\1.6.2.CrossCutting.Strings\1.6.2.CrossCutting.Strings.csproj" />
+    <ProjectReference Include="..\1.6.3 CrossCutting.Helper\1.6.3.CrossCutting.Helper.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>    
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />    
+  </ItemGroup>         
+
+  <ItemGroup>
+    <Content Update="wwwroot/css/forms/*.*" CopyToPublishDirectory="Never" />
+    <Content Update="wwwroot/css/*.css" CopyToPublishDirectory="PreserveNewest" />        
+
+    <Content Update="wwwroot/js/forms/*.*" CopyToPublishDirectory="Never" />
+    <Content Update="wwwroot/js/helper/*.*" CopyToPublishDirectory="Never" />
+    <Content Update="wwwroot/js/*.*" CopyToPublishDirectory="PreserveNewest" />   
+
+    <Content Update="wwwroot/lib/**/*.*" CopyToPublishDirectory="Never" />
+    <Content Update="wwwroot/lib/ckeditor5/**/*.*" CopyToPublishDirectory="PreserveNewest" />    
+
+    <Content Update="*.Config" CopyToPublishDirectory="Never" />
+    <Content Update="*.config" CopyToPublishDirectory="Never" />
+    <Content Update="*.pdb" CopyToPublishDirectory="Never" />
+    
+    <Content Update="*.json" CopyToPublishDirectory="Never" />
+    <Content Update="package.json" CopyToPublishDirectory="Never" />
+    <Content Update="appsettings.Development.json" CopyToPublishDirectory="Never" />    
+    <Content Update="*.pdb" CopyToPublishDirectory="Never" />        
+    <Compile Update="Resources\ResourcesDatosEstructurados.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>ResourcesDatosEstructurados.resx</DependentUpon>
+	  </Compile>
+  </ItemGroup>         
+
+  <ItemGroup>
+    <None Include="bundleconfig.json" />
+    <None Include="compilerconfig.json" CopyToPublishDirectory="Never" />    
+  </ItemGroup>         
+
+  <ItemGroup>
+    <Folder Include="wwwroot\img\bootstrap-colorpicker\" />
+  </ItemGroup>         
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptModuleKind />
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>  
+</Project>

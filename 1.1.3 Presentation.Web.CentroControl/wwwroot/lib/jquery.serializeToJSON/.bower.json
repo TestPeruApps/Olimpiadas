@@ -1,0 +1,36 @@
+{
+  "name": "jquery.serializeToJSON",
+  "version": "1.2.1",
+  "description": "Adds the method .serializeToJSON() to jQuery that Serialize an HTML form (familiar with ASP MVC) to a JavaScript object, supporting nested attributes and arrays.",
+  "main": "dist/jquery.serializeToJson.js",
+  "keywords": [
+    "form",
+    "serialize",
+    "json",
+    "helper",
+    "jquery",
+    "asp",
+    "mvc"
+  ],
+  "authors": [
+    "Raphael Nunes"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/raphaelm22/jquery.serializeToJSON",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "1.2.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.2.1",
+    "commit": "e9a138420a51af0c88bac33f670c6f2b6ca73647"
+  },
+  "_source": "https://github.com/raphaelm22/jquery.serializeToJSON.git",
+  "_target": "1.2.1",
+  "_originalSource": "jquery.serializeToJSON"
+}

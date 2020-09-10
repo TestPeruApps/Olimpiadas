@@ -1,0 +1,158 @@
+[Datos Generales]
+Identificador="cfcf424e-6347-447c-b8b1-075780513669"
+Fecha y Hora="07/10/2019 22:57:00"
+Título="Error en el servicio ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+Process Information.Process ID="17740"
+Process Information.Process Name="iisexpress"
+Process Information.Account Name="DESKTOP-I5HBAO3\Mario"
+Thread Information.Thread ID="6"
+Thread Information.Thread account name="DESKTOP-I5HBAO3\Mario"
+Exception.Type="CommunicationException"
+Exception.Message="El host remoto cerró la conexión. El error de código es 0x800704CD."
+Exception.InnerException1.Type="HttpException"
+Exception.InnerException1.Message="El host remoto cerró la conexión. El error de código es 0x800704CD."
+Exception.StackTrace="   en System.ServiceModel.Activation.HostedHttpContext.HostedRequestHttpOutput.HostedResponseOutputStream.CheckWrapThrow(Exception e)
+   en System.ServiceModel.Activation.HostedHttpContext.HostedRequestHttpOutput.HostedResponseOutputStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   en System.IO.BufferedStream.Flush()
+   en System.Xml.XmlStreamNodeWriter.Flush()
+   en System.Xml.XmlBaseWriter.Flush()
+   en System.Xml.XmlMtomWriter.Flush()
+   en System.ServiceModel.Channels.MtomMessageEncoder.WriteMessage(Message message, Stream stream, String startInfo, String boundary, String startUri, Boolean writeMessageHeaders)
+   en System.ServiceModel.Channels.HttpOutput.WriteStreamedMessage(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpPipeline.EmptyHttpPipeline.SendReplyCore(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpPipeline.EmptyHttpPipeline.SendReply(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpRequestContext.OnReply(Message message, TimeSpan timeout)
+   en System.ServiceModel.Activation.HostedHttpContext.OnReply(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestContextBase.Reply(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.Reply(MessageRpc& rpc)"
+
+[Request]
+
+
+
+[Response]
+
+
+
+[Datos Generales]
+Identificador="cfcf424e-6347-447c-b8b1-075780513669"
+Fecha y Hora="07/10/2019 22:57:00"
+Título="Error en el servicio ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+Process Information.Process ID="17740"
+Process Information.Process Name="iisexpress"
+Process Information.Account Name="DESKTOP-I5HBAO3\Mario"
+Thread Information.Thread ID="35"
+Thread Information.Thread account name="DESKTOP-I5HBAO3\Mario"
+Exception.Type="NullReferenceException"
+Exception.Message="Referencia a objeto no establecida como instancia de un objeto."
+Exception.StackTrace="   en PROMPERU.YTQPRutasCortas.Application.Reports.Core.ReporteBaseLogic.Dispose() en D:\Celsat\RutasCortas\PROMPERU.YTQPRutasCortas\1.3.5.Application.Reports\Core\BaseLogicReports.cs:línea 73
+   en PROMPERU.YTQPRutasCortas.Application.Reports.ModuloReportes.ReportAppService.Dispose() en D:\Celsat\RutasCortas\PROMPERU.YTQPRutasCortas\1.3.5.Application.Reports\ModuloReportes\ReportAppService.cs:línea 241
+   en PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.ModuloReportes.ModuloReportesService.EstadoUso(RequestReporteDto request) en D:\Celsat\RutasCortas\PROMPERU.YTQPRutasCortas\1.2.3 DistributedServices.Implementations\ModuloReportes\ModuloReportesService.Reportes.cs:línea 34
+   en SyncInvokeEstadoUso(Object , Object[] , Object[] )
+   en System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   en System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)"
+
+[Request]
+
+
+
+[Response]
+
+
+
+[Datos Generales]
+Identificador="cfcf424e-6347-447c-b8b1-075780513669"
+Fecha y Hora="07/10/2019 22:57:00"
+Título="Error en el servicio ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+Process Information.Process ID="17740"
+Process Information.Process Name="iisexpress"
+Process Information.Account Name="DESKTOP-I5HBAO3\Mario"
+Thread Information.Thread ID="6"
+Thread Information.Thread account name="DESKTOP-I5HBAO3\Mario"
+Exception.Type="NullReferenceException"
+Exception.Message="Referencia a objeto no establecida como instancia de un objeto."
+Exception.StackTrace="   en PROMPERU.YTQPRutasCortas.Application.Reports.Core.ReporteBaseLogic.Dispose() en D:\Celsat\RutasCortas\PROMPERU.YTQPRutasCortas\1.3.5.Application.Reports\Core\BaseLogicReports.cs:línea 73
+   en PROMPERU.YTQPRutasCortas.Application.Reports.ModuloReportes.ReportAppService.Dispose() en D:\Celsat\RutasCortas\PROMPERU.YTQPRutasCortas\1.3.5.Application.Reports\ModuloReportes\ReportAppService.cs:línea 241
+   en PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.ModuloReportes.ModuloReportesService.EstadoUso(RequestReporteDto request) en D:\Celsat\RutasCortas\PROMPERU.YTQPRutasCortas\1.2.3 DistributedServices.Implementations\ModuloReportes\ModuloReportesService.Reportes.cs:línea 34
+   en SyncInvokeEstadoUso(Object , Object[] , Object[] )
+   en System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   en System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)"
+
+[Request]
+
+
+
+[Response]
+
+
+
+[Datos Generales]
+Identificador="9925bdff-2a48-453e-91bb-0b3d472fabb0"
+Fecha y Hora="07/10/2019 23:03:26"
+Título="Error en el servicio ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+Process Information.Process ID="14864"
+Process Information.Process Name="iisexpress"
+Process Information.Account Name="DESKTOP-I5HBAO3\Mario"
+Thread Information.Thread ID="6"
+Thread Information.Thread account name="DESKTOP-I5HBAO3\Mario"
+Exception.Type="NullReferenceException"
+Exception.Message="Referencia a objeto no establecida como instancia de un objeto."
+Exception.StackTrace="   en PROMPERU.YTQPRutasCortas.Application.Reports.Core.ReporteBaseLogic.Dispose() en D:\Celsat\RutasCortas\PROMPERU.YTQPRutasCortas\1.3.5.Application.Reports\Core\BaseLogicReports.cs:línea 73
+   en PROMPERU.YTQPRutasCortas.Application.Reports.ModuloReportes.ReportAppService.Dispose() en D:\Celsat\RutasCortas\PROMPERU.YTQPRutasCortas\1.3.5.Application.Reports\ModuloReportes\ReportAppService.cs:línea 241
+   en PROMPERU.YTQPRutasCortas.DistributedServices.Implementations.ModuloReportes.ModuloReportesService.EstadoUso(RequestReporteDto request) en D:\Celsat\RutasCortas\PROMPERU.YTQPRutasCortas\1.2.3 DistributedServices.Implementations\ModuloReportes\ModuloReportesService.Reportes.cs:línea 34
+   en SyncInvokeEstadoUso(Object , Object[] , Object[] )
+   en System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   en System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)"
+
+[Request]
+
+
+
+[Response]
+
+
+

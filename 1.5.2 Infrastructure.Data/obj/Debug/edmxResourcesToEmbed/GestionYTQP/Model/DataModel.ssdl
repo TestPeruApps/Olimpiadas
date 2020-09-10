@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="YTUQUEPLANES_BD_2016_V01Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="utb_YTQP_Oferta">
+    <Key>
+      <PropertyRef Name="int_IdOferta" />
+    </Key>
+    <Property Name="int_IdOferta" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="var_Nombre" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="var_Imagen" Type="varchar" MaxLength="100" />
+    <Property Name="chr_IdRegion" Type="char" MaxLength="2" />
+    <Property Name="int_IdTipoOferta" Type="tinyint" />
+    <Property Name="dtm_FechaVigenciaInicio" Type="date" />
+    <Property Name="dtm_FechaVigenciaFin" Type="date" />
+    <Property Name="dec_PrecioBase" Type="decimal" Precision="6" Scale="1" />
+    <Property Name="dec_PrecioFinal" Type="decimal" Precision="6" Scale="1" />
+    <Property Name="int_IdFestividad" Type="tinyint" />
+    <Property Name="var_SEOTitulo" Type="varchar" MaxLength="100" />
+    <Property Name="var_SEODescripcion" Type="varchar" MaxLength="500" />
+    <Property Name="var_SEOKeywords" Type="varchar" MaxLength="100" />
+    <Property Name="int_Estado" Type="tinyint" />
+    <Property Name="int_Duracion" Type="tinyint" />
+    <Property Name="var_Duracion" Type="varchar" MaxLength="30" />
+    <Property Name="int_IdCreacion" Type="int" />
+    <Property Name="dtm_Creacion" Type="datetime" />
+    <Property Name="int_IdModificacion" Type="int" />
+    <Property Name="dtm_Modificacion" Type="datetime" />
+    <Property Name="int_IdEliminacion" Type="int" />
+    <Property Name="dtm_Eliminacion" Type="datetime" />
+    <Property Name="bit_Certificado" Type="bit" Nullable="false" />
+    <Property Name="bit_Universitario" Type="bit" Nullable="false" />
+    <Property Name="var_RutaNombre" Type="varchar" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="utb_YTQP_Usuario">
+    <Key>
+      <PropertyRef Name="var_IdUsuario" />
+    </Key>
+    <Property Name="var_IdUsuario" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="var_Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="var_Apellidos" Type="varchar" MaxLength="50" />
+    <Property Name="var_Mail" Type="varchar" MaxLength="50" />
+    <Property Name="bit_Sexo" Type="bit" />
+    <Property Name="int_Estado" Type="tinyint" />
+    <Property Name="dtm_FechaRegistro" Type="datetime" />
+    <Property Name="var_Password" Type="varchar" MaxLength="20" />
+    <Property Name="var_FechaNacimiento" Type="date" />
+    <Property Name="var_DNI" Type="varchar" MaxLength="8" />
+    <Property Name="chr_IdRegion" Type="char" MaxLength="2" />
+    <Property Name="dtm_FechaConfirmacion" Type="datetime" />
+    <Property Name="bit_MailEnviado" Type="bit" />
+    <Property Name="var_IP" Type="varchar" MaxLength="50" />
+    <Property Name="var_MailError" Type="varchar" MaxLength="500" />
+    <Property Name="bit_ActualizadoRutasCortas" Type="bit" />
+    <Property Name="dtm_FechaRegistroRutasCortas" Type="datetime" />
+  </EntityType>
+  <EntityContainer Name="YTUQUEPLANES_BD_2016_V01ModelStoreContainer">
+    <EntitySet Name="utb_YTQP_Oferta" EntityType="Self.utb_YTQP_Oferta" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="utb_YTQP_Usuario" EntityType="Self.utb_YTQP_Usuario" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

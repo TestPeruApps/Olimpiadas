@@ -1,0 +1,1185 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PROMPERU.YTQPRutasCortas.CrossCutting.Helper</name>
+    </assembly>
+    <members>
+        <member name="T:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Imagenes.Imagen">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Imagenes.Imagen.GetEncoder(System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            
+            </summary>
+            <param name="format"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Imagenes.Imagen.VerificarExistencia(System.String,System.String)">
+            <summary>
+            Verifica si existe la imagen en disco.
+            </summary>
+            <param name="nombreImagenConExtension">Nombre de la imagen contiene la extension.</param>
+            <param name="keyUrlImagen">Key de la imagen.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Imagenes.Imagen.CrearCambiandoTamanioYCalidad(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Cambia el tamaño y calidad de la imagen, guardando esta en el directorio indicado.
+            </summary>
+            <param name="rutaYNombreImagenOrigen">Rura en disco de la imagen orígen contiene el nombre y la extension.</param>
+            <param name="keyUrlImagenDestino">Key de la imagen destino.</param>
+            <param name="anchoImagenDestino">Ancho de la imagen destino.</param>
+            <param name="altoImagenDestino">Alto de la imagen destino.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Imagenes.Imagen.CrearCambiandoTamanioYCalidad(System.String,System.String,System.Byte[],System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="rutaYNombreImagenOrigen"></param>
+            <param name="keyUrlImagenDestino"></param>
+            <param name="dataArray"></param>
+            <param name="cortarPosicionX"></param>
+            <param name="cortarPosicionY"></param>
+            <param name="cortarAncho"></param>
+            <param name="cortarAlto"></param>
+            <param name="anchoFinal"></param>
+            <param name="altoFinal"></param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Imagenes.Imagen.CrearCambiandoTamanioYCalidad(System.String,System.String,System.Int32)">
+            <summary>
+            Cambia el tamaño y calidad de la imagen, guardando esta en el directorio indicado.
+            </summary>
+            <param name="rutaYNombreImagenOrigen">Rura en disco de la imagen orígen contiene el nombre y la extension.</param>
+            <param name="keyUrlImagenDestino">Key de la imagen destino.</param>
+            <param name="altoImagenDestino">Alto de la imagen destino.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Imagenes.Imagen.GuardarEnDisco(System.Byte[],System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="dataArray"></param>
+            <param name="keyUrlImagenes"></param>
+            <param name="nombreImagenConExtension"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Imagenes.Imagen.ObtenerRutaEnDisco(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="keyUrlCarpeta"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Imagenes.Imagen.ObtenerRutaNombre(System.String,System.String)">
+            <summary>
+            Obtiene la ruta completa con el nombre del archivo almacenado en disco
+            </summary>
+            <param name="keyUrlImagenes">key de la imagen origen</param>
+            <param name="nombre">Nombre del archivo</param>
+            <returns>Ruta concatenada con el nombre del archivo</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Imagenes.Imagen.ProbarRutaNombre(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="keyUrlImagenes"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Exceptions.BusinessInformationPregunta`1">
+            <summary>
+            Expcion controlada de negocio
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Exceptions.BusinessInformationPregunta`1.#ctor(`0,System.String,System.Exception)">
+            <summary>
+            Inicializa una nueva instancia de la clase BusinessException con un mensaje de error especificado y una referencia a la excepción interna que representa la causa de esta excepción.
+            </summary>
+            <param name="datos">Datos adjuntos al mensaje.</param>
+            <param name="message">Mensaje que describe el error.</param>
+            <param name="innerException">La excepción que es la causa de la excepción actual o una referencia nula.</param>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Exceptions.BusinessInformationPregunta`1.Datos">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Exceptions.BusinessInformationConData`1">
+            <summary>
+            Expcion controlada de negocio
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Exceptions.BusinessInformationConData`1.#ctor(`0,System.String,System.Exception)">
+            <summary>
+            Inicializa una nueva instancia de la clase BusinessException con un mensaje de error especificado y una referencia a la excepción interna que representa la causa de esta excepción.
+            </summary>
+            <param name="datos">Datos adjuntos al mensaje.</param>
+            <param name="message">Mensaje que describe el error.</param>
+            <param name="innerException">La excepción que es la causa de la excepción actual o una referencia nula.</param>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Exceptions.BusinessInformationConData`1.Datos">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Exceptions.BusinessInformation">
+            <summary>
+            Expcion controlada de negocio
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Exceptions.BusinessInformation.#ctor(System.String,System.Exception)">
+            <summary>
+            Inicializa una nueva instancia de la clase BusinessException con un mensaje de error especificado y una referencia a la excepción interna que representa la causa de esta excepción.
+            </summary>
+            <param name="message">Mensaje que describe el error.</param>
+            <param name="innerException">La excepción que es la causa de la excepción actual o una referencia nula.</param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Exceptions.BusinessException">
+            <summary>
+            Expcion controlada de negocio
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Exceptions.BusinessException.#ctor(System.String,System.Exception)">
+            <summary>
+            Inicializa una nueva instancia de la clase BusinessException con un mensaje de error especificado y una referencia a la excepción interna que representa la causa de esta excepción.
+            </summary>
+            <param name="message">Mensaje que describe el error.</param>
+            <param name="innerException">La excepción que es la causa de la excepción actual o una referencia nula.</param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Net.HttpNotificacion">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Net.HttpNotificacion.NotificarAtractivoValoradoAsync">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Security.ActiveDirectory">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Security.ActiveDirectory.Autenticar(System.String,System.String,System.String,System.String)">
+            <summary>
+            Verifica que el dominio, usuario y contraseña sean incorectos
+            </summary>
+            <param name="dominio"></param>
+            <param name="usuario"></param>
+            <param name="pwd"></param>
+            <param name="path"></param>
+            <returns>Devuelve un valor booleano para indidcar si esta autenticado, o una exepción con los resultados de la autenticació.</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Security.GeneradorPassword">
+            <summary>
+            Clase que permite la generación de una contraseña. 
+            La contraseña contiene un número de caracteres fijos y permite especificar el porcentaje
+            de caracteres en mayúsculas y símbolos que se quieren obtener
+            </summary>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Security.GeneradorPassword.TipoCaracterEnum">
+            <summary>
+            Enumeración que permite conocer el tipo de juego de carácteres a emplear
+            para cada carácter
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Security.GeneradorPassword.LongitudPassword">
+            <summary>
+            Obtiene o establece la longitud en carácteres de la contraseña a obtener
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Security.GeneradorPassword.PorcentajeMayusculas">
+            <summary>
+            Obtiene o establece el porcentaje de carácteres en mayúsculas que 
+            contendrá la contraseña
+            </summary>
+            <exception cref="T:System.ArgumentOutOfRangeException">Se produce al intentar introducir
+            un valor que no coincida con un porcentaje</exception>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Security.GeneradorPassword.PorcentajeSimbolos">
+            <summary>
+            Obtiene o establece el porcentaje de símbolos que contendrá la contraseña
+            </summary>
+            <exception cref="T:System.ArgumentOutOfRangeException">Se produce al intentar introducir
+            un valor que no coincida con un porcentaje</exception>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Security.GeneradorPassword.PorcentajeNumeros">
+            <summary>
+            Obtiene o establece el número de caracteres numéricos que contendrá la contraseña
+            </summary>
+            <exception cref="T:System.ArgumentOutOfRangeException">Se produce al intentar introducir
+            un valor que no coincida con un porcentaje</exception>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Security.GeneradorPassword.#ctor">
+            <summary>
+            Constructor. La contraseña tendrá 8 caracteres, incluyendo una letra mayúscula, 
+            un número y un símbolo
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Security.GeneradorPassword.#ctor(System.Int32)">
+            <summary>
+            Constructor. La contraseña tendrá un 20% de caracteres en mayúsculas y otro tanto de 
+            símbolos
+            </summary>
+            <param name="longitudCaracteres">Longitud en carácteres de la contraseña a obtener</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">Se produce al intentar introducir
+            un porcentaje de caracteres especiales mayor de 100</exception>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Security.GeneradorPassword.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="longitudCaracteres">Longitud en carácteres de la contraseña a obtener</param>
+            <param name="porcentajeMayusculas">Porcentaje a aplicar de caracteres en mayúscula</param>
+            <param name="porcentajeSimbolos">Porcenta a aplicar de símbolos</param>
+            <param name="porcentajeNumeros">Porcentaje de caracteres numéricos</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">Se produce al intentar introducir
+            un porcentaje de caracteres especiales mayor de 100</exception>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Security.GeneradorPassword.GetNewPassword">
+            <summary>
+            Obtiene el password
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Security.GeneradorPassword.SetCaracteresEspeciales(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Permite establecer el número de caracteres especiales que se quieren obtener
+            </summary>
+            <param name="numeroCaracteresMayuscula">Número de caracteres en mayúscula</param>
+            <param name="numeroCaracteresNumericos">Número de caracteres numéricos</param>
+            <param name="numeroCaracteresSimbolos">Número de caracteres de símbolos</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Security.GeneradorPassword.GetPassword">
+            <summary>
+            Constructor. La contraseña tendrá 8 caracteres, incluyendo una letra mayúscula, 
+            un número y un símbolo
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Security.GeneradorPassword.GeneraPassword">
+            <summary>
+            Método que genera el password. Primero crea una cadena de caracteres 
+            en minúscula y va sustituyendo los caracteres especiales
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Security.GeneradorPassword.ReemplazaCaracteresEspeciales(System.Int32[],System.Int32,System.Int32,PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Security.GeneradorPassword.TipoCaracterEnum)">
+            <summary>
+            Reemplaza un caracter especial en la cadena Password
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Security.GeneradorPassword.GetPosicionesCaracteresEspeciales(System.Int32)">
+            <summary>
+            Obtiene un array con las posiciones en las que deberán colocarse los caracteres
+            especiales (Mayúsculas o Símbolos). Es importante que no se repitan los números
+            de posición para poder mantener el porcentaje de dichos carácteres
+            </summary>
+            <param name="numeroPosiciones">Valor que representa el número de posiciones
+            que deberán crearse sin repetir</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Security.GeneradorPassword.GetCaracterAleatorio(PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Security.GeneradorPassword.TipoCaracterEnum)">
+            <summary>
+            Obtiene un carácter aleatorio en base a la "matriz" del tipo de caracteres
+            </summary>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Security.Cryptography">
+            <summary>
+            Clase que proporciona servicios criptográficos de texto, entre los que se incluyen la codificación y descodificación segura de los datos y otras muchas operaciones como.
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Security.Cryptography.Key">
+            <summary>
+            La clave secreta que se va a utilizar para el algoritmo simétrico. 
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Security.Cryptography.IV">
+            <summary>
+            El vector de inicialización que se va a utilizar para el algoritmo simétrico. 
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Security.Cryptography.Encrypt(System.String)">
+            <summary>
+            Encripta una cadena de texto usando el algoritmo TripleDESCryptoServiceProvider.
+            </summary>
+            <param name="strData">Texto que se va a encriptar.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Security.Cryptography.EncryptToString(System.String)">
+            <summary>
+            Encripta la cadeba
+            </summary>
+            <param name="strData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Security.Cryptography.Decrypt(System.Byte[])">
+            <summary>
+            Descencripta una secuencia de bytes usando el algoritmo TripleDESCryptoServiceProvider.
+            </summary>
+            <param name="bytInput">Secuencia de bytes que se va a descencriptar.</param>
+            <returns>Cadena descencriptada</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Security.Cryptography.DecryptString(System.String)">
+            <summary>
+            Descencripta una secuencia de bytes usando el algoritmo TripleDESCryptoServiceProvider
+            </summary>
+            <param name="inputString">Cadena que se va a descencriptar, el cual debe estra como texto </param>
+            <returns>Cadena descencriptada</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Security.Cryptography.RandomPassword(System.Byte)">
+            <summary>
+            Genera una contraseña aleatoria.
+            </summary>
+            <param name="bytCantidadCarecteres">Cantidad de caracteres que debe tener la contraseña, el máximo es 10.</param>
+            <returns></returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Configuration.Config">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Configuration.Config.AppSettingObtenerEntero(System.String)">
+            <summary>
+            Lee el valor de la configuración del web.config.
+            </summary>
+            <param name="key">Nombre del valor de la configuración</param>
+            <returns>Valor de la configuración representada en entero.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Configuration.Config.AppSettingObtenerEnteroDefault(System.String,System.Int32)">
+            <summary>
+            Lee el valor de la configuración del web.config.
+            </summary>
+            <param name="key">Nombre del valor de la configuración</param>
+            <param name="valorPorDefecto">valor por defecto</param>
+            <returns>Valor de la configuración representada en entero.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Configuration.Config.AppSettingObtenerCadena(System.String)">
+            <summary>
+            Lee el valor de la configuración del web.config.
+            </summary>
+            <param name="key">Nombre del valor de la configuración</param>
+            <returns>Valor de la configuración representada en cadena.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Configuration.Config.AppSettingObtenerCadenaUrl(System.String)">
+            <summary>
+            Lee el valor de la configuración del web.config, obtiene la url solicitada adicionando la rura base
+            </summary>
+            <param name="key">Nombre del valor de la configuración</param>
+            <returns>Valor de la configuración representada en cadena.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Configuration.Config.AppSettingObtenerObtenerHora(System.String)">
+            <summary>
+            Lee el valor de la configuración del web.config.
+            </summary>
+            <param name="key">Nombre del valor de la configuración</param>
+            <returns>Valor de la configuración representada en cadena.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Configuration.Config.AppSettingObtenerObtenerCadenaConexion(System.String)">
+            <summary>
+            Lee el valor de la configuración del web.config.
+            </summary>
+            <param name="key">Nombre del valor de la configuración</param>
+            <returns>Valor de la configuración representada en cadena.</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Mapping.AutomapperTypeAdapter">
+            <summary>
+            Implementa el contrato  para realizar el mapeo de una entidad a otra con AutoMapper.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Mapping.AutomapperTypeAdapter.Adapt``2(``0)">
+            <summary>
+            Implementa el método que devuelve el adapta el objeto orígen al objeto destino.
+            </summary>
+            <typeparam name="TSource">Tipo de elemnto orígen.</typeparam>
+            <typeparam name="TTarget">Tipo de elemento destino.</typeparam>
+            <param name="source">Instancia del adatador.</param>
+            <returns>Mapeo del objeto orígen al objeto destino.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Mapping.AutomapperTypeAdapter.Adapt``1(System.Object)">
+            <summary>
+            Implementa el método que devuelve el adapta el objeto orígen a una instancia definida en TTarget.
+            </summary>
+            <typeparam name="TTarget">Tipo del elemento destino.</typeparam>
+            <param name="source">Instancia del adatador.</param>
+            <returns>Mapeo del objeto orígen al objeto destino.</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Mapping.AutomapperTypeAdapterFactory">
+            <summary>
+            Implementa loc métodos del contrato base para factoria del adaptador.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Mapping.AutomapperTypeAdapterFactory.#ctor">
+            <summary>
+            Inicializa una nueva factoria de adaptador para Automapper.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Mapping.AutomapperTypeAdapterFactory.Create">
+            <summary>
+            Implementa el métodos para crear nueva instancia para la factoria con AutoMapper
+            </summary>
+            <returns>Factoria para el adaptador AutoMapper.</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Mapping.Interface.ITypeAdapter">
+            <summary>
+            Contrato base para realizar el mapeo de una entidad a otra. (Este contrato trabaja con automapper,emitmapper,valueinjecter...)    
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Mapping.Interface.ITypeAdapter.Adapt``2(``0)">
+            <summary>
+            Adapta el objeto orígen al objeto destino.
+            </summary>
+            <typeparam name="TSource">Tipo de elemnto orígen.</typeparam>
+            <typeparam name="TTarget">Tipo de elemento destino.</typeparam>
+            <param name="source">Instancia del adatador.</param>
+            <returns>Mapeo del objeto orígen al objeto destino.</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Mapping.Interface.ITypeAdapter.Adapt``1(System.Object)">
+            <summary>
+            Adapta el objeto orígen a una instancia definida en TTarget.
+            </summary>
+            <typeparam name="TTarget">Tipo del elemento destino.</typeparam>
+            <param name="source">Instancia del adatador.</param>
+            <returns>Mapeo del objeto orígen al objeto destino.</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Mapping.Interface.ITypeAdapterFactory">
+            <summary>
+            Contrato base para factoria del adaptador.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Mapping.Interface.ITypeAdapterFactory.Create">
+            <summary>
+            Crea el tipo del adapatador.
+            </summary>
+            <returns>Adaptador creado del tipo ITypeAdapter.</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Mapping.ProjectionsExtensionMethods">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Mapping.ProjectionsExtensionMethods.ProjectedAs``1(System.Object)">
+            <summary>
+            Project a type using a object
+            </summary>
+            <typeparam name="TProjection">The dto projection</typeparam>
+            <param name="item">The source entity to project</param>
+            <returns>The projected type</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Mapping.ProjectionsExtensionMethods.ProjectedAsList``2(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            projected a enumerable collection of items
+            </summary>
+            <typeparam name="TProjection">The dtop projection type</typeparam>
+            <typeparam name="TSource">Tipo de la lista origen a convertir</typeparam>
+            <param name="items">the collection of entity items</param>
+            <returns>Projected collection</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Mapping.ProjectionsExtensionMethods.ProjectedAsCollection``1(System.Collections.Generic.IEnumerable{System.Object})">
+            <summary>
+            projected a enumerable collection of items
+            </summary>
+            <typeparam name="TProjection">The dtop projection type</typeparam>
+            <param name="items">the collection of entity items</param>
+            <returns>Projected collection</returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Mapping.ProjectionsExtensionMethods.ProjectedAsCollection``1(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            projected a enumerable collection of items
+            </summary>
+            <typeparam name="TProjection">The dtop projection type</typeparam>
+            <param name="items">the collection of entity items</param>
+            <returns>Projected collection</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Mapping.TypeAdapterFactory">
+            <summary>
+            Factoria para contrucción del adaptador.
+            </summary>
+        </member>
+        <member name="F:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Mapping.TypeAdapterFactory._currentTypeAdapterFactory">
+            <summary>
+            Contrato del tipo de adaptador actual.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Mapping.TypeAdapterFactory.SetCurrent(PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Mapping.Interface.ITypeAdapterFactory)">
+            <summary>
+            Establece contrato para la factoria del adaptador.
+            </summary>
+            <param name="adapterFactory">Contrato de la factoria del adaptador.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Mapping.TypeAdapterFactory.CreateAdapter">
+            <summary>
+            Crea un nuevo tipo de dapatador conla factoria actual.
+            </summary>
+            <returns>Instancia del tipo de adaptador creado.</returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ICache">
+            <summary>
+            Métodos para realizar operaciones con datos en cache.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ICache.ResolveList``2(System.String,System.Func{``0,System.Collections.Generic.IEnumerable{``1}},``0,System.Double)">
+            <summary>
+            Implementa método para obtener la lista del orígen de datos, guardar en cache y retorna los datos.
+            </summary>
+            <typeparam name="TParam">Parámetro para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del parametro</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="param">Parámetro a pasar</param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ICache.ResolveList``3(System.String,System.Func{``0,System.Collections.Generic.IEnumerable{``1}},``0,``1,System.Double)">
+            <summary>
+            Método para obtener la lista del orígen de datos, agrega un primer item, guadar en cache y retorna los datos.
+            </summary>
+            <typeparam name="TParam">Parámetro para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TTypeSource">Tipo de datos del origen.</typeparam>
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del key en cache</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="param">Parámetro a pasar</param>
+            <param name="primerItem"></param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ICache.ResolveList``3(System.String,System.Func{``0,System.Collections.Generic.IEnumerable{``1}},``0,System.Double)">
+            <summary>
+            Método para obtener la lista del orígen de datos, guardar en cache y retorna los datos.
+            </summary>
+            <typeparam name="TParam">Parámetro para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TTypeSource">Tipo de datos del origen.</typeparam>
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del parametro</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="param">Parámetro a pasar</param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ICache.ResolveList``4(System.String,System.Func{``0,``1,System.Collections.Generic.IEnumerable{``2}},``0,``1,System.Double)">
+            <summary>
+            
+            </summary>
+            <typeparam name="TParam1"></typeparam>
+            <typeparam name="TParam2"></typeparam>
+            <typeparam name="TTypeSource"></typeparam>
+            <typeparam name="TTypeResult"></typeparam>
+            <param name="name"></param>
+            <param name="methodCall"></param>
+            <param name="param1"></param>
+            <param name="param2"></param>
+            <param name="minutes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ICache.ResolveListOriginal``3(System.String,System.Func{``0,``1,System.Collections.Generic.IEnumerable{``2}},``0,``1,System.Double)">
+            <summary>
+            
+            </summary>
+            <typeparam name="TParam1"></typeparam>
+            <typeparam name="TParam2"></typeparam>
+            <typeparam name="TTypeResult"></typeparam>
+            <param name="name"></param>
+            <param name="methodCall"></param>
+            <param name="param1"></param>
+            <param name="param2"></param>
+            <param name="minutes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ICache.ResolveObject``4(System.String,System.Func{``0,``1,``2},``0,``1,System.Double)">
+            <summary>
+            Método para obtener objeto desde el orígen de datos, guardar en cache y retorna los datos.
+            </summary>
+            <typeparam name="TParam1">Parámetro 1 para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TParam2">Parámetro 2 para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TTypeSource">Tipo de datos del origen.</typeparam>
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del parametro</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="param1">Parámetro 1 a pasar</param>
+            <param name="param2">Parámetro 2 a pasar</param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ICache.ResolveObject``3(System.String,System.Func{``0,``1,``2},``0,``1,System.Double)">
+            <summary>
+            Método para obtener objeto desde el orígen de datos, guardar en cache y retorna los datos.
+            </summary>
+            <typeparam name="TParam1">Parámetro 1 para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TParam2">Parámetro 2 para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del parametro</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="param1">Parámetro 1 a pasar</param>
+            <param name="param2">Parámetro 2 a pasar</param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ICache.ResolveObject``4(System.String,System.Func{``0,``1,``2,``3},``0,``1,``2,System.Double)">
+            <summary>
+            Método para obtener objeto desde el orígen de datos, guardar en cache y retorna los datos.
+            </summary>
+            <typeparam name="TParam1">Parámetro 1 para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TParam2">Parámetro 2 para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TParam3">Parámetro 3 para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del parametro</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="param1">Parámetro 1 a pasar</param>
+            <param name="param2">Parámetro 2 a pasar</param>
+            <param name="param3">Parámetro 2 a pasar</param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ICache.ResolveObjectNoSaveCache``4(System.String,System.Func{``0,``1,``2},``0,``1)">
+            <summary>
+            Implementa método para obtener objeto desde el orígen de datos, guardar en cache y retorna los datos.
+            </summary>
+            <typeparam name="TParam1">Parámetro 1 para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TParam2">Parámetro 2 para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TTypeSource">Tipo de datos del origen.</typeparam>
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del parametro</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="param1">Parámetro 1 a pasar</param>
+            <param name="param2">Parámetro 2 a pasar</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ICache.ResolveList``2(System.String,System.Func{System.Collections.Generic.IEnumerable{``0}},System.Double)">
+            <summary>
+            Método para obtener la lista del orígen de datos, guardar en cache y retorna los datos.
+            </summary>        
+            <typeparam name="TTypeSource">Tipo de datos del origen.</typeparam>
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del key en cache</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ICache.ResolveObject``2(System.String,System.Func{``0},System.Double)">
+            <summary>
+            Implementa método para obtener la lista del orígen de datos, guardar en cache y retorna los datos.
+            </summary>        
+            <typeparam name="TTypeSource">Tipo de datos del origen.</typeparam>
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del key en cache</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ICache.ResolveObject``3(System.String,System.Func{``0,``1},``0,System.Double)">
+            <summary>
+            Implementa método para obtener la lista del orígen de datos, guardar en cache y retorna los datos.
+            </summary>     
+            <typeparam name="TParam">Parámetro para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TTypeSource">Tipo de datos del origen.</typeparam>
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del key en cache</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="param">Parámetro a pasar</param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ICache.ResolveObject``2(System.String,System.Func{``0,``1},``0,System.Double)">
+            <summary>
+            Implementa método para obtener la lista del orígen de datos, guardar en cache y retorna los datos.
+            </summary>
+            <typeparam name="TParam">Parámetro para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del key en cache</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="param">Parámetro a pasar</param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ICache.ResolveString``2(System.String,System.Func{``0,System.String},``0,System.Double)">
+            <summary>
+            
+            </summary>
+            <typeparam name="TParam"></typeparam>
+            <typeparam name="TTypeSource"></typeparam>
+            <param name="name"></param>
+            <param name="methodCall"></param>
+            <param name="param"></param>
+            <param name="minutes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ICache.ResolveString(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ICache.ResolveList``1(System.String,System.Func{System.Collections.Generic.IEnumerable{``0}},System.Double)">
+            <summary>
+            Método para obtener la lista del orígen de datos, guardar en cache y retorna los datos.
+            </summary>
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del key en cache</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ICache.ResolveList``4(System.String,System.Func{``0,``1,``2,System.Collections.Generic.IEnumerable{``3}},``0,``1,``2,System.Double)">
+            <summary>
+            Implementa método para obtener la lista del orígen de datos, guardar en cache y retorna los datos.
+            </summary>
+            <typeparam name="TParam1">Parámetro para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TParam2">Parámetro para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TParam3">Parámetro para llamar al método que obtiene datos</typeparam>        
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del parametro</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="param1">Parámetro a pasar</param>
+            <param name="param2">Parámetro a pasar</param>
+            <param name="param3">Parámetro a pasar</param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ICache.ResolveList``3(System.String,System.Func{``0,``1,System.Collections.Generic.IEnumerable{``2}},``0,``1,System.Double)">
+            <summary>
+            Implementa método para obtener la lista del orígen de datos, guardar en cache y retorna los datos.
+            </summary>
+            <typeparam name="TParam1">Parámetro para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TParam2">Parámetro para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del parametro</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="param1">Parámetro a pasar</param>
+            <param name="param2">Parámetro a pasar</param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ICache.ClearMemoryCache(System.String)">
+            <summary>
+            Método para obtener los datos de la memoria cache de objetos en base a su Key.
+            </summary>
+            <param name="keyCache">Nombre del key en cache</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ICache.SetOrAddItem``1(System.String,``0,System.Double)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="name"></param>
+            <param name="value"></param>
+            <param name="minutes"></param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ICache.ExisteVariable(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ICache.CrearVariable(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ServicioCache">
+            <summary>
+            Implementa métodos para realizar operaciones con datos en cache.
+            </summary>
+        </member>
+        <member name="F:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ServicioCache._objectCache">
+            <summary>
+            Memória cache de objetos, proporciona métodos y propiedades para tener acceso ala memoria cche de objetos.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ServicioCache.#ctor">
+            <summary>
+            Inicializa una nueva instancia de la clase.
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ServicioCache.ResolveList``3(System.String,System.Func{``0,System.Collections.Generic.IEnumerable{``1}},``0,``1,System.Double)">
+            <summary>
+            Implementa método para obtener la lista del orígen de datos, agrega un primer item, guadar en cache y retorna los datos.
+            </summary>
+            <typeparam name="TParam">Parámetro para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TTypeSource">Tipo de datos del origen.</typeparam>
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del key en cache</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="param">Parámetro a pasar</param>
+            <param name="primerItem"></param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ServicioCache.ResolveList``3(System.String,System.Func{``0,System.Collections.Generic.IEnumerable{``1}},``0,System.Double)">
+            <summary>
+            Implementa método para obtener la lista del orígen de datos, guardar en cache y retorna los datos.
+            </summary>
+            <typeparam name="TParam">Parámetro para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TTypeSource">Tipo de datos del origen.</typeparam>
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del parametro</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="param">Parámetro a pasar</param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ServicioCache.ResolveList``2(System.String,System.Func{``0,System.Collections.Generic.IEnumerable{``1}},``0,System.Double)">
+            <summary>
+            Implementa método para obtener la lista del orígen de datos, guardar en cache y retorna los datos.
+            </summary>
+            <typeparam name="TParam">Parámetro para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del parametro</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="param">Parámetro a pasar</param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ServicioCache.ResolveList``4(System.String,System.Func{``0,``1,System.Collections.Generic.IEnumerable{``2}},``0,``1,System.Double)">
+            <summary>
+            Implementa método para obtener la lista del orígen de datos, guardar en cache y retorna los datos.
+            </summary>
+            <typeparam name="TParam1">Parámetro para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TParam2">Parámetro para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TTypeSource">Tipo de datos del origen.</typeparam>
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del parametro</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="param1">Parámetro a pasar</param>
+            <param name="param2">Parámetro a pasar</param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ServicioCache.ResolveList``4(System.String,System.Func{``0,``1,``2,System.Collections.Generic.IEnumerable{``3}},``0,``1,``2,System.Double)">
+            <summary>
+            Implementa método para obtener la lista del orígen de datos, guardar en cache y retorna los datos.
+            </summary>
+            <typeparam name="TParam1">Parámetro para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TParam2">Parámetro para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TParam3">Parámetro para llamar al método que obtiene datos</typeparam>        
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del parametro</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="param1">Parámetro a pasar</param>
+            <param name="param2">Parámetro a pasar</param>
+            <param name="param3">Parámetro a pasar</param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ServicioCache.ResolveList``3(System.String,System.Func{``0,``1,System.Collections.Generic.IEnumerable{``2}},``0,``1,System.Double)">
+            <summary>
+            Implementa método para obtener la lista del orígen de datos, guardar en cache y retorna los datos.
+            </summary>
+            <typeparam name="TParam1">Parámetro para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TParam2">Parámetro para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del parametro</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="param1">Parámetro a pasar</param>
+            <param name="param2">Parámetro a pasar</param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ServicioCache.ResolveListOriginal``3(System.String,System.Func{``0,``1,System.Collections.Generic.IEnumerable{``2}},``0,``1,System.Double)">
+            <summary>
+            Implementa método para obtener la lista del orígen de datos, guardar en cache y retorna los datos.
+            </summary>
+            <typeparam name="TParam1">Parámetro para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TParam2">Parámetro para llamar al método que obtiene datos</typeparam>        
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del parametro</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="param1">Parámetro a pasar</param>
+            <param name="param2">Parámetro a pasar</param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ServicioCache.ResolveObjectNoSaveCache``4(System.String,System.Func{``0,``1,``2},``0,``1)">
+            <summary>
+            Implementa método para obtener objeto desde el orígen de datos, guardar en cache y retorna los datos.
+            </summary>
+            <typeparam name="TParam1">Parámetro 1 para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TParam2">Parámetro 2 para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TTypeSource">Tipo de datos del origen.</typeparam>
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del parametro</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="param1">Parámetro 1 a pasar</param>
+            <param name="param2">Parámetro 2 a pasar</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ServicioCache.ResolveList``2(System.String,System.Func{System.Collections.Generic.IEnumerable{``0}},System.Double)">
+            <summary>
+            Implementa método para obtener la lista del orígen de datos, guardar en cache y retorna los datos.
+            </summary>        
+            <typeparam name="TTypeSource">Tipo de datos del origen.</typeparam>
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del key en cache</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ServicioCache.ResolveObject``2(System.String,System.Func{``0},System.Double)">
+            <summary>
+            Implementa método para obtener la lista del orígen de datos, guardar en cache y retorna los datos.
+            </summary>        
+            <typeparam name="TTypeSource">Tipo de datos del origen.</typeparam>
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del key en cache</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ServicioCache.ResolveObject``3(System.String,System.Func{``0,``1},``0,System.Double)">
+            <summary>
+            Implementa método para obtener la lista del orígen de datos, guardar en cache y retorna los datos.
+            </summary>
+            <typeparam name="TParam">Parámetro para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TTypeSource">Tipo de datos del origen.</typeparam>
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del key en cache</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="param">Parámetro a pasar</param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ServicioCache.ResolveObject``4(System.String,System.Func{``0,``1,``2},``0,``1,System.Double)">
+            <summary>
+            Implementa método para obtener la lista del orígen de datos, guardar en cache y retorna los datos.
+            </summary>
+            <typeparam name="TParam1">Parámetro para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TParam2">Parámetro para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TTypeSource">Tipo de datos del origen.</typeparam>
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del key en cache</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="param1">Parámetro a pasar</param>
+            <param name="param2">Parámetro a pasar</param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ServicioCache.ResolveObject``3(System.String,System.Func{``0,``1,``2},``0,``1,System.Double)">
+            <summary>
+            Implementa método para obtener la lista del orígen de datos, guardar en cache y retorna los datos.
+            </summary>
+            <typeparam name="TParam1">Parámetro para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TParam2">Parámetro para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del key en cache</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="param1">Parámetro a pasar</param>
+            <param name="param2">Parámetro a pasar</param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ServicioCache.ResolveObject``4(System.String,System.Func{``0,``1,``2,``3},``0,``1,``2,System.Double)">
+            <summary>
+            Implementa método para obtener la lista del orígen de datos, guardar en cache y retorna los datos.
+            </summary>
+            <typeparam name="TParam1">Parámetro para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TParam2">Parámetro para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TParam3">Parámetro para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del key en cache</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="param1">Parámetro a pasar</param>
+            <param name="param2">Parámetro a pasar</param>
+            <param name="param3">Parámetro a pasar</param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ServicioCache.ResolveObject``2(System.String,System.Func{``0,``1},``0,System.Double)">
+            <summary>
+            Implementa método para obtener la lista del orígen de datos, guardar en cache y retorna los datos.
+            </summary>
+            <typeparam name="TParam">Parámetro para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del key en cache</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="param">Parámetro a pasar</param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ServicioCache.ResolveString``2(System.String,System.Func{``0,System.String},``0,System.Double)">
+            <summary>
+            Implementa método para obtener la lista del orígen de datos, guardar en cache y retorna los datos.
+            </summary>
+            <typeparam name="TParam">Parámetro para llamar al método que obtiene datos</typeparam>
+            <typeparam name="TTypeSource">Tipo de datos del origen.</typeparam>        
+            <param name="name">Nombre del key en cache</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="param">Parámetro a pasar</param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ServicioCache.ResolveString(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ServicioCache.ResolveList``1(System.String,System.Func{System.Collections.Generic.IEnumerable{``0}},System.Double)">
+            <summary>
+            Implementa método para obtener la lista del orígen de datos, guardar en cache y retorna los datos.
+            </summary>
+            <typeparam name="TTypeResult">Tipo de datos devuelto (Proyectado).</typeparam>
+            <param name="name">Nombre del key en cache</param>
+            <param name="methodCall">Metodo a llamar para obtener datos, si estos no existen en cache</param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ServicioCache.ClearMemoryCache(System.String)">
+            <summary>
+            Implementa método para obtener los datos de la memoria cache de objetos en base a su Key.
+            </summary>
+            <param name="keyCache">Nombre del key en cache</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ServicioCache.AddItem``1(System.String,``0,System.Double)">
+            <summary>
+            Agrega un item en cache.
+            </summary>
+            <typeparam name="T">Tipo a agregar</typeparam>
+            <param name="name">Nombre del parametro</param>
+            <param name="value">Objeto a agregar</param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ServicioCache.SetOrAddItem``1(System.String,``0,System.Double)">
+            <summary>
+            Agrega un item en cache.
+            </summary>
+            <typeparam name="T">Tipo a agregar</typeparam>
+            <param name="name">Nombre del parametro</param>
+            <param name="value">Objeto a agregar</param>
+            <param name="minutes">Tiempo que los datos permanecen en cache, 0 = sin fecha de expiración.</param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ServicioCache.ExisteVariable(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.CrossCutting.Helper.Caching.ServicioCache.CrearVariable(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="T:System.StringExtends">
+            <summary>
+            Métodos de extensión de la clase string.
+            </summary> 
+        </member>
+        <member name="M:System.StringExtends.TrimEmpty(System.String)">
+            <summary>
+            Función que indica si el valor de la fecha no esta asignada. (Es el valor por defecto)
+            </summary>
+            <param name="textoBase">Clase que se extendida con el valor de la fecha y hora.</param>        
+            <returns>Valor booleano que indica la conformidad del proceso.</returns>
+        </member>
+        <member name="T:System.DateTimeExtends">
+            <summary>
+            Métodos de extensión de la clase DateTime.
+            </summary> 
+        </member>
+        <member name="M:System.DateTimeExtends.DiferenciaDias(System.DateTime,System.DateTime)">
+            <summary>
+            Función para devolver la cantidad de días de diferencia entre 2 fechas
+            </summary>
+            <param name="fechaInicial">Final Incial.</param>        
+            <param name="fechaFinal">>Fecha final.</param>        
+            <returns>Valor booleano que indica la conformidad del proceso.</returns>
+        </member>
+        <member name="M:System.DateTimeExtends.EsFechaPorDefecto(System.DateTime)">
+            <summary>
+            Función que indica si el valor de la fecha no esta asignada. (Es el valor por defecto)
+            </summary>
+            <param name="fechaBase">Clase que se extendida con el valor de la fecha y hora.</param>        
+            <returns>Valor booleano que indica la conformidad del proceso.</returns>
+        </member>
+        <member name="M:System.DateTimeExtends.EsFechaHoraPorDefecto(System.DateTime)">
+            <summary>
+            Función que indica si el valor de la fecha no esta asignada. (Es el valor por defecto)
+            </summary>
+            <param name="fechaBase">Clase que se extendida con el valor de la fecha y hora.</param>        
+            <returns>Valor booleano que indica la conformidad del proceso.</returns>
+        </member>
+        <member name="M:System.DateTimeExtends.EsIgual(System.DateTime,System.DateTime)">
+            <summary>
+            Función que indica si el valor de la fecha es igual a la fecha proporcionada.
+            </summary>
+            <param name="fechaBase">Clase que se extendida con el valor de la fecha y hora.</param>
+            <param name="fechaComparacion">Fecha y hora con la cual se realiza la comparación.</param>
+            <returns>Valor booleano que indica la conformidad del proceso.</returns>
+        </member>
+        <member name="M:System.DateTimeExtends.EsMayor(System.DateTime,System.DateTime)">
+            <summary>
+            Función que indica si el valor de la fecha es mayor a la fecha proporcionada.
+            </summary>
+            <param name="fechaBase">Clase que se extendida con el valor de la fecha y hora.</param>
+            <param name="fechaComparacion">Fecha y hora con la cual se realiza la comparación.</param>
+            <returns>Valor booleano que indica la conformidad del proceso.</returns>
+        </member>
+        <member name="M:System.DateTimeExtends.EsMayorIgual(System.DateTime,System.DateTime)">
+            <summary>
+            Función que indica si el valor de la fecha es mayor o igual a la fecha proporcionada.
+            </summary>
+            <param name="fechaBase">Clase que se extendida con el valor de la fecha y hora.</param>
+            <param name="fechaComparacion">Fecha y hora con la cual se realiza la comparación.</param>
+            <returns>Valor booleano que indica la conformidad del proceso.</returns>
+        </member>
+        <member name="M:System.DateTimeExtends.EsMenor(System.DateTime,System.DateTime)">
+            <summary>
+            Función que indica si el valor de la fecha es menor a la fecha proporcionada.
+            </summary>
+            <param name="fechaBase">Clase que se extendida con el valor de la fecha y hora.</param>
+            <param name="fechaComparacion">Fecha y hora con la cual se realiza la comparación.</param>
+            <returns>Valor booleano que indica la conformidad del proceso.</returns>
+        </member>
+        <member name="M:System.DateTimeExtends.EsMenorIgual(System.DateTime,System.DateTime)">
+            <summary>
+            Función que indica si el valor de la fecha es menor o igual a la fecha proporcionada.
+            </summary>
+            <param name="fechaBase">Clase que se extendida con el valor de la fecha y hora.</param>
+            <param name="fechaComparacion">Fecha y hora con la cual se realiza la comparación.</param>
+            <returns>Valor booleano que indica la conformidad del proceso.</returns>
+        </member>
+        <member name="M:System.DateTimeExtends.IsEntre(System.DateTime,System.DateTime,System.DateTime)">
+            <summary>
+            Función que indica si el valor de la fecha se encuentra entre 2 fechas.
+            </summary>
+            <param name="fechaBase">Clase que se extendida con el valor de la fecha y hora.</param>
+            <param name="fechaInicial">Fecha inicial.</param>
+            <param name="fechaFinal">Fecha final.</param>
+            <returns>Valor booleano que indica la conformidad del proceso.</returns>
+        </member>
+        <member name="M:System.DateTimeExtends.Combine(System.DateTime,System.TimeSpan)">
+            <summary>
+            Función que combina el valor de la fecha con el Time proporcionado.
+            </summary>
+            <param name="fechaBase">Clase que se extendida con el valor de la fecha y hora.</param>
+            <param name="hora">Hora proporcionada que se combinará.</param>
+            <returns>Fecha y hora combinada.</returns>
+        </member>
+        <member name="M:System.DateTimeExtends.EsIgualPeriodo(System.DateTime,System.String)">
+            <summary>
+            Función que indica si el valor de la fecha el igual al periodo(año y mes) de la fecha proporcionada.
+            </summary>
+            <param name="fechaBase">Clase que se extendida con el valor de la fecha y hora.</param>
+            <param name="mesAnio">Cadena que representa el mes y el año a comparar.</param>
+            <returns>Valor booleano que indica la conformidad del proceso.</returns>
+        </member>
+        <member name="M:System.DateTimeExtends.SoloTiempo(System.DateTime)">
+            <summary>
+            Devuelve solo el tiempo.
+            </summary>
+            <param name="fechaBase">Clase que se extendida con el valor de la fecha y hora.</param>
+            <returns>Hora.</returns>
+        </member>
+        <member name="M:System.DateTimeExtends.Periodo(System.DateTime)">
+            <summary>
+            Obtiene el periodo del año
+            </summary>
+            <param name="fechaBase">Clase que se extendida con el valor de la fecha y hora.</param>
+            <returns>Periodo (año) de la fecha.</returns>
+        </member>
+    </members>
+</doc>

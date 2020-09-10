@@ -1,0 +1,339 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>PROMPERU | Prueba</title>
+    <meta http-equiv="Content-Type" content="text/html;" charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="CELSAT PERÚ" />
+    <meta name="author" content="CELSAT PERÚ" />    
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <style>
+        textarea, input {
+            width: 1100px;
+        }
+    </style>
+    <script>
+        function AsignarUrl() {
+            var urlServicio = $("#i").val();
+            $(":input.url").each(function () {
+                var control = $(this);
+                $(control).val(urlServicio + $(control).val());
+            });
+        };
+        function ajaxGet(sender) {
+            var url = $(sender).parent().find(":input.url").val();
+            $.ajax({
+                url: url,
+                method: 'GET',
+                dataType: 'json'
+            }).done(function (data) {
+                var t = JSON.stringify(data);
+                var tmpData = JSON.parse(t);
+                var formattedData = JSON.stringify(tmpData, null, '\t');
+                alert(formattedData)
+
+            }).fail(function (jqXhr, textStatus, errorThrown) {
+                debugger;
+                alert("Error");
+            })
+        };
+        function ajaxPost(sender) {
+            var url = $(sender).parent().find(":input.url").val();
+            var texto = $(sender).parent().find(":input.data").val();
+            texto = texto.replace(/\'/g, '\"');
+
+            $.ajax({
+                url: url,
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                dataType: 'json',
+                data: texto
+            }).done(function (data) {
+                var t = JSON.stringify(data);
+                var tmpData = JSON.parse(t);
+                var formattedData = JSON.stringify(tmpData, null, '\t');
+                alert(formattedData)
+
+            }).fail(function (jqXhr, textStatus, errorThrown) {
+                alert("Error");
+            })
+        };
+</script>
+
+</head>
+<body>
+
+    <h1>Parametrós</h1>
+    <fieldset>
+        <legend>Url Servicio</legend>
+        <div>
+            <input type="text" id="i" value="http://190.41.94.92:8085/RutasCortas_Test_Servicio/YTQP/RutasCortas.svc" />
+            <button onclick="AsignarUrl();">Asignar</button>
+        </div>
+    </fieldset>
+    <h1>01. Flujo Bienvenida</h1>
+    <fieldset>
+        <legend>01.01 Mostrar pantalla de 'Bienvenida', 'Funciones' e 'Inicio de Sesión'</legend>
+        <div>
+            <input type="text" class="url" value="/parametro/obtener/756/1050" />
+            <button onclick="ajaxGet(this);">Ejecutar</button>
+        </div>
+    </fieldset>
+    <h1>02. Flujo Registro con email</h1>
+    <fieldset>
+        <legend>02.01 Insertar por Registro Sin Token</legend>
+        <div>
+            <input type="text" class="url" value="/turista/insertarPorRegistro" />
+            <input type="text" class="data" value="{ 'Auditoria':{'Ip': '192.168.1.10','Turi_Id': 27},'Registro':{'Turi_EmailNotificacion': 'mariolozanomendivil09@gmail.com','Contrasenia': '123456','ContraseniaValidacion': '123456','Foto': '','TokenRegistrarseConYTQP': '','Turi_AceptaTerminos': 1,'Turi_AceptaPrivacidad': 1 }" />
+            <button onclick="ajaxPost(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>02.02 Insertar por Registro Con Token</legend>
+        <div>
+            <input type="text" class="url" value="/turista/insertarPorRegistro" />
+            <input type="text" class="data" value="{ 'Auditoria':{'Ip': '192.168.1.10','Turi_Id': 27},'Registro':{'Turi_EmailNotificacion': 'mariolozanomendivil09@gmail.com','Contrasenia': '123456','ContraseniaValidacion': '123456','Foto': '','TokenRegistrarseConYTQP': '708b3222-c264-4db0-9f66-a70c1c442bf5','Turi_AceptaTerminos': 1,'Turi_AceptaPrivacidad': 1 }" />
+            <button onclick="ajaxPost(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>02.03 Verificar código de registro enviado por e-mail</legend>
+        <div>
+            <input type="text" class="url" value="/turista/VerificaCodigoRegistro" />
+            <input type="text" class="data" value="{ 'Auditoria': { Ip': '192.168.10.1', 'Turi_Id': '66' }, 'Registro': { 'CodigoValidacion': 'AF91' } }" />
+            <button onclick="ajaxPost(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>02.04 Buscar Distritos para Autocomplete</legend>
+        <div>
+            <input type="text" class="url" value="/distritos/buscar?filtro=sur" />
+            <button onclick="ajaxGet(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>02.05 Actualizar datos del turista</legend>
+        <div>
+            <input type="text" class="url" value="/turista/actualizar" />
+            <input type="text" class="data" value="{ 'Auditoria': { 'Ip': '192.168.1.10', 'Turi_Id': 27 }, 'Registro': { 'Turi_Id': 27, 'Turi_EmailNotificacion': 'JUANPEREZ_25@GMAIL.COM', 'Nombres': 'JUAN', 'Apellidos': 'PEREZ', 'FechaNacimiento': '31/12/2000', 'Genero': 0, 'DNI': '12345678', 'Turi_UbigeoId': 15, 'Turi_FiltroOrigenId': 58 } }" />
+            <button onclick="ajaxPost(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>02.06 Olvide Contrasenia</legend>
+        <div>
+            <input type="text" class="url" value="/turista/obtenerRecuperoContrasenia/JUANPEREZ_25@GMAIL.COM" />
+            <button onclick="ajaxGet(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>02.07 Actualizar Contrasenia</legend>
+        <div>
+            <input type="text" class="url" value="/turista/actualizarContraseniaConToken" />
+            <input type="text" class="data" value="{ 'Auditoria': { 'Ip': '192.168.1.10' }, 'Registro': { 'Email': 'JUANPEREZ_25@GMAIL.COM', 'Codigo': '1234', 'ContraseniaNueva': '12345678', 'ContraseniaConfirmar': '12345678' } }" />
+            <button onclick="ajaxPost(this);">Ejecutar</button>
+        </div>
+    </fieldset>
+
+
+    <h1>03. Flujo Home</h1>
+    <fieldset>
+        <legend>03.01 Ver Pantalla Home</legend>
+        <div>
+            <input type="text" class="url" value="/home/ver/27" />
+            <button onclick="ajaxGet(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>03.02 Ver Alertas</legend>
+        <div>
+            <input type="text" class="url" value="/home/alertas/paginar/27/1/10" />
+            <button onclick="ajaxGet(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>03.02 Ver Todo</legend>
+        <div>
+            <input type="text" class="url" value="/home/rutas/verTodo/27" />
+            <button onclick="ajaxGet(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>03.03 Ver Mapa</legend>
+        <div>
+            <input type="text" class="url" value="/home/mapa/ver/27?latitud=''&longitud=''" />
+            <button onclick="ajaxGet(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>03.04 Búsqueda Simple</legend>
+        <div>
+            <input type="text" class="url" value="/home/rutas/buscarPorTexto/27/uan" />
+            <button onclick="ajaxGet(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>03.05 Ver Pantalla de Búsqueda Avanzada</legend>
+        <div>
+            <input type="text" class="url" value="/home/verBusquedaAvanzada/27" />
+            <button onclick="ajaxGet(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>03.06 Listar por Búsqueda Avanzada</legend>
+        <div>
+            <input type="text" class="url" value="/home/rutas/listarPorBusquedaAvanzada" />
+            <input type="text" class="data" value="{ 'Auditoria': { 'Turi_Id': '27', 'Ip': '192.168.10.1' }, 'Registro': { 'ExperienciaTipo_Ids': ['22', '27'], 'ActividadeTipo_Ids': ['44', '45'], 'DestinoTipo_Ids': ['63', '13'], 'OrigenTipo_Id': '58' } }" />
+            <button onclick="ajaxPost(this);">Ejecutar</button>
+        </div>
+
+        <br />
+        <legend>03.07 Ver Detalle de la Ruta</legend>
+        <div>
+            <input type="text" class="url" value="/home/ruta/miDestino/ver/27/1/true" />
+            <button onclick="ajaxGet(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>03.08 Ver Pestaña de Atractivos</legend>
+        <div>
+            <input type="text" class="url" value="/home/ruta/atractivos/ver/27/1" />
+            <button onclick="ajaxGet(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>03.09 Ver Detalle del Atractivo</legend>
+        <div>
+            <input type="text" class="url" value="/home/atractivo/ver/27/3" />
+            <button onclick="ajaxGet(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>03.10 Ver Valoraciones del Atractivo</legend>
+        <div>
+            <input type="text" class="url" value="/home/valoraciones/paginar/27/3/2/5" />
+            <button onclick="ajaxGet(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>03.11 Valorar Atractivo</legend>
+        <div>
+            <input type="text" class="url" value="/home/atractivo/valorar" />
+            <input type="text" class="data" value="{ 'Auditoria': { 'Ip': '192.168.1.10', 'Turi_Id': 27 }, 'Registro': { 'Aval_Valoracion': 5, 'Aval_Comentario': 'Comentario Atractivo Postman', 'Aval_AtractivoId': 1, 'ImagenCompartidaBase64': 'iVBORw0KGgoAAAANSUhEUgAAAHEAAABXCAYAAAAzi6r7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHISURBVHhe7dyxbcMwFABRDpY0QVbQGGqzgcbQABlAg2gPF+5dMKRoW7SNAKkC/cM94AOW7O5AiW6YssIzIkB6+3rPTuxJp9MpO7Ennc/n7MSedLlcshN73NgAGBHAiABGBDAigBEBjAhgRAAjAhgRwIgARgQwIoARAUrEJU/DkIfrjPN6/apYpvv9YRhz/5WOI81jH27N9Xpa6ucWt32uyvV+oQNJwziXdJ26+rZYLeLDytQhpf1x2U234pbpdn8qWXVEryvxF+s85r/+Vv8rvTwy1/Ua6ukduG1yXI1HVHanbTPTP07bK7FG7O+7Oz0q/ycCGBHAiABGBDAigBEBjAhgRAAjAhgRwIgARgTw4AXAuBIBjAhgRAAjAhgRwIgA6fvzIzuxx2PBAOOxYIDxnQhgRAAjAhgRwIgARgQwIoARAYwIYEQAIwIYEcCIAEYEMCLAPeJ2Ts39pAyPOomkRXw+o6Zee/BQGCVifyjfTb3nuTVRlIjtIL79UXobI0bxy0pUJNs7sW1qHjcz6+oyjKJtbKqHU4bLuLEJY4+osIwIYEQAIwIYEcCIAEYEMCKAEQGMCGBEACMCePACYFyJAEYEMGJ4Of8AS43cfjEWc8gAAAAASUVORK5CYII=' } }" />
+            <button onclick="ajaxPost(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>03.12 Ver Pestaña de Ofertas</legend>
+        <div>
+            <input type="text" class="url" value="/home/ruta/ofertas/ver/27/1" />
+            <button onclick="ajaxGet(this);">Ejecutar</button>
+        </div>
+    </fieldset>
+
+
+    <h1>04. Flujo Experiencias</h1>
+    <fieldset>
+        <legend>04.00 Agregar o Eliminar Rutas Programadas desde HOME</legend>
+        <div>
+            <input type="text" class="url" value="/home/ruta/agregarEliminarProgramada" />
+            <input type="text" class="data" value="{ 'Auditoria': { 'Ip': '192.168.10.10', 'Turi_Id': 27 }, 'Registro': { 'Ruta_Id': 2, 'Eliminar': 0 } }" />
+            <button onclick="ajaxPost(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>04.01 Ver Pantalla Experiencias</legend>
+        <div>
+            <input type="text" class="url" value="/experiencias/ver/27" />
+            <button onclick="ajaxGet(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>04.02 Insertar Viaje Programado</legend>
+        <div>
+            <input type="text" class="url" value="/experiencias/viajeProgramado/insertar" />
+            <input type="text" class="data" value="{ 'Auditoria': { 'Ip': '192.168.1.10', 'Turi_Id': 27 }, 'Registro': { 'Rpro_RutaId': 1 } }" />
+            <button onclick="ajaxPost(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>04.03 Eliminar Viaje Programado</legend>
+        <div>
+            <input type="text" class="url" value="/experiencias/viajeProgramado/eliminar" />
+            <input type="text" class="data" value="{ 'Auditoria': { 'Ip': '192.168.1.10', 'Turi_Id': 27 }, 'Registro': { 'Rpro_Id': 1 } }" />
+            <button onclick="ajaxPost(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>04.04 Listar rutas para agregar</legend>
+        <div>
+            <input type="text" class="url" value="/experiencias/viajeProgramado/listarRutasParaAgregar/27" />
+            <button onclick="ajaxGet(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>04.05 Ver pantalla programar viaje</legend>
+        <div>
+            <input type="text" class="url" value="/experiencias/viajeProgramado/ver/27/1" />
+            <button onclick="ajaxGet(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>04.06 Actualizar programación de viaje</legend>
+        <div>
+            <input type="text" class="url" value="/experiencias/viajeProgramado/actualizar" />
+            <input type="text" class="data" value="{ 'Auditoria': { 'Ip': '192.168.1.10', 'Turi_Id': 27 }, 'Registro': { 'Rpro_Id': 1, 'Rpro_FechaProgramada': '20/06/2019', 'Rpro_RecordatorioDiasAntes': 3 } }" />
+            <button onclick="ajaxPost(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>04.07 Ver Ruta Visitada</legend>
+        <div>
+            <input type="text" class="url" value="/experiencias/viajeProgramado/ver/27/1" />
+            <button onclick="ajaxGet(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>04.07 Ver Pantalla de experiencias compartidas</legend>
+        <div>
+            <input type="text" class="url" value="/experiencias/listarPorPaginacion/27/1/5" />
+            <button onclick="ajaxGet(this);">Ejecutar</button>
+        </div>
+    </fieldset>
+
+
+    <h1>05. Flujo Mi Perfil</h1>
+    <fieldset>
+        <legend>05.01 Ver Pantalla Mi Perfil</legend>
+        <div>
+            <input type="text" class="url" value="/miPerfil/ver/27" />
+            <button onclick="ajaxGet(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>05.02 Ver Pantalla Editor Perfil</legend>
+        <div>
+            <input type="text" class="url" value="/miPerfil/verEditor/27" />
+            <button onclick="ajaxGet(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>05.03 Actualizar Datos de Perfil</legend>
+        <div>
+            <input type="text" class="url" value="/miPerfil/actualizar" />
+            <input type="text" class="data" value="{ 'Auditoria': { 'Ip': '192.168.1.10', 'Turi_Id': 27 }, 'Registro': { 'Turi_EmailNotificacion': 'JUANPEREZ_25@GMAIL.COM', 'Nombres': 'JUAN', 'Apellidos': 'PEREZ', 'FechaNacimiento': '31/12/2000', 'Genero': 0, 'DNI': '46813435', 'Turi_UbigeoId': 15, 'Turi_FiltroOrigenId': 58 } }" />
+            <button onclick="ajaxPost(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>05.04 Cambiar Contrasenia</legend>
+        <div>
+            <input type="text" class="url" value="/miPerfil/cambiarContrasenia" />
+            <input type="text" class="data" value="{ 'Auditoria': { 'Ip': '192.168.1.10', 'Turi_Id': 27 }, 'Registro': { 'ContraseniaActual': '1234', 'ContraseniaNueva': '123456', 'ContraseniaConfirmar': '123456' } }" />
+            <button onclick="ajaxPost(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>05.05 Conoce el App</legend>
+        <div>
+            <input type="text" class="url" value="/miPerfil/verAcercaDe/27" />
+            <button onclick="ajaxGet(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>05.06 Ver Directorio</legend>
+        <div>
+            <input type="text" class="url" value="/miPerfil/verDirectorio/27" />
+            <button onclick="ajaxGet(this);">Ejecutar</button>
+        </div>
+        <br />
+        <legend>05.07 Obtener Términos y Condiciones</legend>
+        <div>
+            <input type="text" class="url" value="/parametro/obtener/756/1050" />
+            <button onclick="ajaxGet(this);">Ejecutar</button>
+        </div>
+    </fieldset>
+
+
+
+    <h1>06. Flujo Avatar</h1>
+    <fieldset>
+        <legend>06.01 Ver Pantalla Avatar</legend>
+        <div>
+            <input type="text" class="url" value="/avatar/ver/27" />
+            <button onclick="ajaxGet(this);">Ejecutar</button>
+        </div>
+    </fieldset>
+</body>
+</html>

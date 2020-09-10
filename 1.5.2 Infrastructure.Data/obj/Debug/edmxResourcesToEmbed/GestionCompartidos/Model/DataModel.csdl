@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GestionCompartidos" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DbContextGestionCompartidos" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Ubigeo" EntityType="GestionCompartidos.Ubigeo" />
+    <AssociationSet Name="FK_Ubigeo_Ubigeo" Association="GestionCompartidos.FK_Ubigeo_Ubigeo">
+      <End Role="Ubigeo" EntitySet="Ubigeo" />
+      <End Role="Ubigeo1" EntitySet="Ubigeo" />
+    </AssociationSet>
+    <EntitySet Name="Parametro" EntityType="GestionCompartidos.Parametro" />
+    <EntitySet Name="Grupo" EntityType="GestionCompartidos.Grupo" />
+    <EntitySet Name="Tipo" EntityType="GestionCompartidos.Tipo" />
+    <AssociationSet Name="FK_Tipo_Grupo" Association="GestionCompartidos.FK_Tipo_Grupo">
+      <End Role="Grupo" EntitySet="Grupo" />
+      <End Role="Tipo" EntitySet="Tipo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ubigeo_Tipo" Association="GestionCompartidos.FK_Ubigeo_Tipo">
+      <End Role="Tipo" EntitySet="Tipo" />
+      <End Role="Ubigeo" EntitySet="Ubigeo" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Ubigeo">
+    <Key>
+      <PropertyRef Name="Ubig_Id" />
+    </Key>
+    <Property Name="Ubig_Id" Type="Int32" Nullable="false" />
+    <Property Name="Ubig_Codigo" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="Ubig_CodigoProvincia" Type="String" Nullable="false" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="Ubig_CodigoDepartamento" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="Ubig_Nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Ubig_NombreDistrito" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Ubig_NombreProvincia" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Ubig_NombreDepartamento" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Ubig_TipoId" Type="Int16" Nullable="false" />
+    <Property Name="Ubig_IdPadre" Type="Int32" />
+    <Property Name="Ubig_Nombre2Niveles" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Ubig_Nombre3Niveles" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Ubig_UsuarioCreacion" Type="Int16" Nullable="false" />
+    <Property Name="Ubig_UsuarioEdicion" Type="Int16" />
+    <Property Name="Ubig_FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Ubig_FechaEdicion" Type="DateTime" Precision="3" />
+    <Property Name="Ubig_IpCreacion" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Ubig_IpEdicion" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Ubigeo1" Relationship="GestionCompartidos.FK_Ubigeo_Ubigeo" FromRole="Ubigeo" ToRole="Ubigeo1" />
+    <NavigationProperty Name="Ubigeo2" Relationship="GestionCompartidos.FK_Ubigeo_Ubigeo" FromRole="Ubigeo1" ToRole="Ubigeo" />
+    <NavigationProperty Name="Tipo" Relationship="GestionCompartidos.FK_Ubigeo_Tipo" FromRole="Ubigeo" ToRole="Tipo" />
+  </EntityType>
+  <Association Name="FK_Ubigeo_Ubigeo">
+    <End Type="GestionCompartidos.Ubigeo" Role="Ubigeo" Multiplicity="0..1" />
+    <End Type="GestionCompartidos.Ubigeo" Role="Ubigeo1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ubigeo">
+        <PropertyRef Name="Ubig_Id" />
+      </Principal>
+      <Dependent Role="Ubigeo1">
+        <PropertyRef Name="Ubig_IdPadre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Parametro">
+    <Key>
+      <PropertyRef Name="Para_Id" />
+    </Key>
+    <Property Name="Para_Id" Type="Int16" Nullable="false" />
+    <Property Name="Para_Nombre" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Para_ValorTexto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Para_ValorNumero" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Para_ValorBool" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Grupo">
+    <Key>
+      <PropertyRef Name="Grup_Id" />
+    </Key>
+    <Property Name="Grup_Id" Type="Byte" Nullable="false" />
+    <Property Name="Grup_Nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Grup_PadreId" Type="Byte" />
+    <Property Name="Grup_UsadoEn" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Grup_EsEditable" Type="Boolean" Nullable="false" />
+    <Property Name="Grup_EsIconografia" Type="Boolean" Nullable="false" />
+    <Property Name="Grup_IconografiaAncho" Type="Int16" />
+    <Property Name="Grup_IconografiaAlto" Type="Int16" />
+    <Property Name="Grup_IconografiaExtencion" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Tipo" Relationship="GestionCompartidos.FK_Tipo_Grupo" FromRole="Grupo" ToRole="Tipo" />
+  </EntityType>
+  <EntityType Name="Tipo">
+    <Key>
+      <PropertyRef Name="Tipo_Id" />
+    </Key>
+    <Property Name="Tipo_Id" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Tipo_GrupoId" Type="Byte" Nullable="false" />
+    <Property Name="Tipo_Nombre" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Tipo_Abreviatura" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Tipo_Descripcion" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Tipo_Etiqueta" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="Tipo_ColorEnApp" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Tipo_Activo" Type="Boolean" Nullable="false" />
+    <Property Name="Tipo_UsuarioCreacion" Type="Int16" Nullable="false" />
+    <Property Name="Tipo_UsuarioEdicion" Type="Int16" />
+    <Property Name="Tipo_FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Tipo_FechaEdicion" Type="DateTime" Precision="3" />
+    <Property Name="Tipo_IpCreacion" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Tipo_IpEdicion" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Grupos" Relationship="GestionCompartidos.FK_Tipo_Grupo" FromRole="Tipo" ToRole="Grupo" />
+    <NavigationProperty Name="Ubigeo" Relationship="GestionCompartidos.FK_Ubigeo_Tipo" FromRole="Tipo" ToRole="Ubigeo" />
+  </EntityType>
+  <Association Name="FK_Tipo_Grupo">
+    <End Type="GestionCompartidos.Grupo" Role="Grupo" Multiplicity="1" />
+    <End Type="GestionCompartidos.Tipo" Role="Tipo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grupo">
+        <PropertyRef Name="Grup_Id" />
+      </Principal>
+      <Dependent Role="Tipo">
+        <PropertyRef Name="Tipo_GrupoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ubigeo_Tipo">
+    <End Type="GestionCompartidos.Tipo" Role="Tipo" Multiplicity="1" />
+    <End Type="GestionCompartidos.Ubigeo" Role="Ubigeo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tipo">
+        <PropertyRef Name="Tipo_Id" />
+      </Principal>
+      <Dependent Role="Ubigeo">
+        <PropertyRef Name="Ubig_TipoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

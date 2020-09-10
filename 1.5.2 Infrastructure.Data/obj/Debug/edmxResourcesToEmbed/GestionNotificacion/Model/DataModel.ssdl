@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GestionNotificacion.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Destino">
+    <Key>
+      <PropertyRef Name="Dest_Id" />
+    </Key>
+    <Property Name="Dest_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Dest_TipoDestinoId" Type="smallint" Nullable="false" />
+    <Property Name="Dest_MensajeId" Type="int" Nullable="false" />
+    <Property Name="Dest_Email" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Error">
+    <Key>
+      <PropertyRef Name="Erro_Id" />
+    </Key>
+    <Property Name="Erro_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Erro_Procedimiento" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Erro_Mensaje" Type="varchar(max)" Nullable="false" />
+    <Property Name="Erro_Numero" Type="int" Nullable="false" />
+    <Property Name="Erro_Severidad" Type="int" Nullable="false" />
+    <Property Name="Erro_Estado" Type="int" Nullable="false" />
+    <Property Name="Erro_Linea" Type="int" />
+    <Property Name="Erro_Fecha" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Mensaje">
+    <Key>
+      <PropertyRef Name="Mens_Id" />
+    </Key>
+    <Property Name="Mens_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Mens_PrioridadId" Type="smallint" Nullable="false" />
+    <Property Name="Mens_Asunto" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="Mens_Cuerpo" Type="varchar(max)" Nullable="false" />
+    <Property Name="Mens_CorreoOrigen" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Mens_FechaRegistro" Type="datetime" Nullable="false" />
+    <Property Name="Mens_FechaInicioEnvio" Type="datetime" />
+    <Property Name="Mens_FechaFinEnvio" Type="datetime" />
+    <Property Name="Mens_Destinatarios" Type="varchar" MaxLength="5000" />
+    <Property Name="Mens_DestinatariosIds" Type="varchar" MaxLength="100" />
+    <Property Name="Mens_EsPremio" Type="bit" />
+    <Property Name="Mens_Enviado" Type="bit" Nullable="false" />
+    <Property Name="Mens_TieneError" Type="bit" />
+    <Property Name="Mens_Error" Type="varchar" MaxLength="400" Nullable="false" />
+    <Property Name="Mens_Manual" Type="bit" />
+    <Property Name="Mens_UsuarioCreacion" Type="smallint" />
+  </EntityType>
+  <EntityType Name="Notificacion">
+    <Key>
+      <PropertyRef Name="Noti_Id" />
+    </Key>
+    <Property Name="Noti_Id" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Noti_TipoId" Type="smallint" Nullable="false" />
+    <Property Name="Noti_DisparadorId" Type="smallint" />
+    <Property Name="Noti_Asunto" Type="varchar" MaxLength="250" />
+    <Property Name="Noti_Cuerpo" Type="varchar" MaxLength="5000" Nullable="false" />
+    <Property Name="Noti_UsuarioCreacion" Type="smallint" Nullable="false" />
+    <Property Name="Noti_FechaCreacion" Type="datetime" Nullable="false" />
+    <Property Name="Noti_UsuarioEdicion" Type="smallint" />
+    <Property Name="Noti_FechaEdicion" Type="datetime" />
+    <Property Name="Noti_IpCreacion" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Noti_IpEdicion" Type="varchar" MaxLength="15" />
+    <Property Name="Noti_Activo" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Push">
+    <Key>
+      <PropertyRef Name="Push_Id" />
+    </Key>
+    <Property Name="Push_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Push_Anio" Type="smallint" Nullable="false" />
+    <Property Name="Push_Mes" Type="tinyint" Nullable="false" />
+    <Property Name="Push_Automatico" Type="bit" Nullable="false" />
+    <Property Name="Push_DestinatarioId" Type="smallint" Nullable="false" />
+    <Property Name="Push_OrigenId" Type="smallint" Nullable="false" />
+    <Property Name="Push_TargetId" Type="int" Nullable="false" />
+    <Property Name="Push_TargetDescripcion" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Push_Asunto" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Push_Cuerpo" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="Push_CantidadUsuarios" Type="int" Nullable="false" />
+    <Property Name="Push_CantidadNotificaciones" Type="int" Nullable="false" />
+    <Property Name="Push_EnvioConErrores" Type="bit" Nullable="false" />
+    <Property Name="Push_Activo" Type="bit" Nullable="false" />
+    <Property Name="Push_FechaHoraProgramada" Type="datetime" Nullable="false" />
+    <Property Name="Push_FechaHoraInicioEnvio" Type="datetime" Nullable="false" />
+    <Property Name="Push_FechaHoraFinEnvio" Type="datetime" />
+    <Property Name="Push_UsuarioCreacion" Type="smallint" Nullable="false" />
+    <Property Name="Push_UsuarioEdicion" Type="smallint" />
+    <Property Name="Push_FechaCreacion" Type="datetime" Nullable="false" />
+    <Property Name="Push_FechaEdicion" Type="datetime" />
+    <Property Name="Push_IpCreacion" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Push_IpEdicion" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <Association Name="FK_Destino_Mensaje">
+    <End Role="Mensaje" Type="Self.Mensaje" Multiplicity="1" />
+    <End Role="Destino" Type="Self.Destino" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mensaje">
+        <PropertyRef Name="Mens_Id" />
+      </Principal>
+      <Dependent Role="Destino">
+        <PropertyRef Name="Dest_MensajeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="GestionNotificacionStoreContainer">
+    <EntitySet Name="Destino" EntityType="Self.Destino" Schema="MENSAJERO" store:Type="Tables" />
+    <EntitySet Name="Error" EntityType="Self.Error" Schema="MENSAJERO" store:Type="Tables" />
+    <EntitySet Name="Mensaje" EntityType="Self.Mensaje" Schema="MENSAJERO" store:Type="Tables" />
+    <EntitySet Name="Notificacion" EntityType="Self.Notificacion" Schema="NOTIFICACION" store:Type="Tables" />
+    <EntitySet Name="Push" EntityType="Self.Push" Schema="NOTIFICACION" store:Type="Tables" />
+    <AssociationSet Name="FK_Destino_Mensaje" Association="Self.FK_Destino_Mensaje">
+      <End Role="Mensaje" EntitySet="Mensaje" />
+      <End Role="Destino" EntitySet="Destino" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,370 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core</name>
+    </assembly>
+    <members>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.ConexionYTQP">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.ConexionYTQP.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="keyCadenaConexion"></param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.ConexionRutasCortas">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.ConexionRutasCortas.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="keyCadenaConexion"></param>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase.ObtenerConexion">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase.AbrirConexion">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase.IniciarTransaccion">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase.FinalizarTransaccion">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.ConexionBase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.ConexionBase._sqlConnection">
+            <summary>
+            Conexión a base de datos
+            </summary>
+        </member>
+        <member name="F:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.ConexionBase._transactionScope">
+            <summary>
+            Transacción de base de datos
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.ConexionBase.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="keyCadenaConexion"></param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.ConexionBase.ObtenerConexion">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.ConexionBase.AbrirConexion">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.ConexionBase.IniciarTransaccion">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.ConexionBase.FinalizarTransaccion">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.ConexionBase.Dispose">
+            <summary>
+            Implementa tareas definidas por la aplicación asociadas a la liberación o al restablecimiento de recursos no administrados.
+            </summary>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Mapeador">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Mapeador.MapearListaSimple``1(System.Data.IDataReader)">
+            <summary>
+            
+            </summary>
+            <typeparam name="TSimplex"></typeparam>
+            <param name="dataReader"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Mapeador.MapearListaComplex``1(System.Data.IDataReader)">
+            <summary>
+            
+            </summary>
+            <typeparam name="TComplex"></typeparam>
+            <param name="dataReader"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Mapeador.MapearObjeto``1(System.Data.IDataReader)">
+            <summary>
+            
+            </summary>
+            <typeparam name="TComplex"></typeparam>
+            <param name="dataReader"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Mapeador.MapearATipoSql``1(System.String)">
+            <summary>
+            
+            </summary>
+            <typeparam name="TComplex"></typeparam>
+            <param name="propiedadNombre"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Mapeador.ObtenerValorDePropiedad``1(``0,System.String)">
+            <summary>
+            
+            </summary>
+            <typeparam name="TComplex"></typeparam>
+            <param name="entidad"></param>
+            <param name="propiedadNombre"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Mapeador.EstablecerValorAPropiedad``1(``0,System.String,System.Object)">
+            <summary>
+            
+            </summary>
+            <typeparam name="TComplex"></typeparam>
+            <param name="entidad"></param>
+            <param name="propiedadNombre"></param>
+            <param name="valor"></param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Mapeador.ObtenerEquivalencia``1(System.Data.IDataReader)">
+            <summary>
+            
+            </summary>
+            <typeparam name="TComplex"></typeparam>
+            <param name="dataReader"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Mapeador.MapearFila``1(System.Data.IDataReader,PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.EquivalenciaDataReaderEntidad[])">
+            <summary>
+            
+            </summary>
+            <typeparam name="TComplex"></typeparam>
+            <param name="dataReader"></param>
+            <param name="equivalenciasDataReaderEntidad"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.EquivalenciaDataReaderEntidad">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.EquivalenciaDataReaderEntidad.#ctor(System.Byte,System.Reflection.PropertyInfo)">
+            <summary>
+            
+            </summary>
+            <param name="indiceEnDataReader"></param>
+            <param name="propertyInfo"></param>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.EquivalenciaDataReaderEntidad.IndiceEnDataReader">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.EquivalenciaDataReaderEntidad.IndiceEnEntidad">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.EquivalenciaDataReaderEntidad.PropertyInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.RepositoryBase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.RepositoryBase.mapeador">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.RepositoryBase._conexionBaseDatos">
+            <summary>
+            Conexión a base de datos
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.RepositoryBase.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            
+            </summary>
+            <param name="conexionBaseDatos"></param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.RepositoryBase.IniciarTransaccion">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.RepositoryBase.FinalizarTransaccion">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.RepositoryBase.Listar``1(PROMPERU.YTQPRutasCortas.Domain.Core.ParametroAccesosDatos)">
+            <summary>
+            
+            </summary>
+            <param name="parametroAccesosDatos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.RepositoryBase.ListarSimple``1(PROMPERU.YTQPRutasCortas.Domain.Core.ParametroAccesosDatos)">
+            <summary>
+            
+            </summary>
+            <typeparam name="TResultado"></typeparam>
+            <param name="parametroAccesosDatos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.RepositoryBase.Obtener``1(PROMPERU.YTQPRutasCortas.Domain.Core.ParametroAccesosDatos)">
+            <summary>
+            
+            </summary>
+            <typeparam name="TResultado"></typeparam>
+            <param name="parametroAccesosDatos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.RepositoryBase.CrearComando(PROMPERU.YTQPRutasCortas.Domain.Core.ParametroAccesosDatos)">
+            <summary>
+            
+            </summary>
+            <param name="parametroAccesosDatos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.RepositoryBase.CrearParametrosEntrada(System.Data.SqlClient.SqlCommand,PROMPERU.YTQPRutasCortas.Domain.Core.ParametroAccesosDatos)">
+            <summary>
+            
+            </summary>
+            <param name="comandoSql"></param>
+            <param name="parametroAccesosDatos"></param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.RepositoryBase.CrearParametrosSalida(System.Data.SqlClient.SqlCommand,PROMPERU.YTQPRutasCortas.Domain.Core.ParametroSalida[])">
+            <summary>
+            
+            </summary>
+            <param name="comandoSql"></param>
+            <param name="parametrosSalida"></param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.RepositoryBase.ObtenerValorParametrosSalida(System.Data.SqlClient.SqlCommand,PROMPERU.YTQPRutasCortas.Domain.Core.ParametroSalida[])">
+            <summary>
+            
+            </summary>
+            <param name="comandoSql"></param>
+            <param name="parametrosSalida"></param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.RepositoryBase.Dispose">
+            <summary>
+            Implementa tareas definidas por la aplicación asociadas a la liberación o al restablecimiento de recursos no administrados.
+            </summary>
+        </member>
+        <member name="T:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Repository`1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Repository`1.#ctor(PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Conexion.IConexionBase)">
+            <summary>
+            
+            </summary>
+            <param name="conexionBaseDatos"></param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Repository`1.Listar(PROMPERU.YTQPRutasCortas.Domain.Core.ParametroAccesosDatos)">
+            <summary>
+            
+            </summary>
+            <param name="parametroAccesosDatos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Repository`1.Obtener(PROMPERU.YTQPRutasCortas.Domain.Core.ParametroAccesosDatos)">
+            <summary>
+            
+            </summary>
+            <param name="parametroAccesosDatos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Repository`1.Paginar``1(PROMPERU.YTQPRutasCortas.Domain.Core.ParametroAccesosDatosTipado,``0,PROMPERU.YTQPRutasCortas.Application.Dto.Comun.CriteriosPaginacionDto)">
+            <summary>
+            
+            </summary>
+            <typeparam name="TResultado"></typeparam>
+            <param name="parametroAccesosDatos"></param>
+            <param name="filtro"></param>
+            <param name="criteriosPaginacion"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Repository`1.Ejecutar(PROMPERU.YTQPRutasCortas.Domain.Core.ParametroAccesosDatosTipado,`0)">
+            <summary>
+            
+            </summary>
+            <param name="parametroAccesosDatos"></param>
+            <param name="entidad"></param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Repository`1.Ejecutar(PROMPERU.YTQPRutasCortas.Domain.Core.ParametroAccesosDatos)">
+            <summary>
+            
+            </summary>
+            <param name="parametroAccesosDatos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Repository`1.CrearComando``1(PROMPERU.YTQPRutasCortas.Domain.Core.ParametroAccesosDatosTipado,``0,PROMPERU.YTQPRutasCortas.Application.Dto.Comun.CriteriosPaginacionDto)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="parametroAccesosDatos"></param>
+            <param name="entidad"></param>
+            <param name="criteriosPaginacion"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Repository`1.CrearParametrosEntrada``1(System.Data.SqlClient.SqlCommand,System.String[],``0)">
+            <summary>
+            
+            </summary>
+            <param name="comandoSql"></param>
+            <param name="parametrosEntrada"></param>
+            <param name="entidad"></param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Repository`1.CrearParametrosSalidaParaActualizarEntidad(System.Data.SqlClient.SqlCommand,System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="comandoSql"></param>
+            <param name="propiedadesCalculadas"></param>
+        </member>
+        <member name="M:PROMPERU.YTQPRutasCortas.Infrastructure.Data.Core.Repository`1.ActualizarEntidad(System.Data.SqlClient.SqlCommand,System.String[],`0)">
+            <summary>
+            
+            </summary>
+            <param name="comandoSql"></param>
+            <param name="propiedadesCalculadas"></param>
+            <param name="entidad"></param>
+        </member>
+    </members>
+</doc>

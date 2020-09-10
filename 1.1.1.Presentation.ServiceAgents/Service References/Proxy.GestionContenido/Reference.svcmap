@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c46b2e6a-f43a-49c5-b343-a6e7208cdd43" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="Olimpiadas.Application.Dto" />
+      <ReferencedAssembly AssemblyName="Olimpiadas.CrossCutting.Enumerations" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:56904/GestionContenidoService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="GestionContenidoService.xsd" MetadataType="Schema" ID="da07c747-6b31-407c-8c15-b8150e54cb51" SourceId="1" SourceUrl="http://localhost:56904/GestionContenidoService.svc?xsd=xsd0" />
+    <MetadataFile FileName="GestionContenidoService1.xsd" MetadataType="Schema" ID="f59c538c-5b39-4fd0-9ce1-411b1b67b8b0" SourceId="1" SourceUrl="http://localhost:56904/GestionContenidoService.svc?xsd=xsd2" />
+    <MetadataFile FileName="GestionContenidoService2.xsd" MetadataType="Schema" ID="a1572ccd-21f6-457f-9bdb-b522d2e00da8" SourceId="1" SourceUrl="http://localhost:56904/GestionContenidoService.svc?xsd=xsd1" />
+    <MetadataFile FileName="GestionContenidoService.wsdl" MetadataType="Wsdl" ID="17fe1f70-23e3-483e-aed3-eee2e29755f6" SourceId="1" SourceUrl="http://localhost:56904/GestionContenidoService.svc?wsdl" />
+    <MetadataFile FileName="GestionContenidoService3.xsd" MetadataType="Schema" ID="fdf2bad6-147f-4406-9562-5e408318d2a4" SourceId="1" SourceUrl="http://localhost:56904/GestionContenidoService.svc?xsd=xsd3" />
+    <MetadataFile FileName="GestionContenidoService1.wsdl" MetadataType="Wsdl" ID="95070ab9-9f7c-4a49-ac5a-9ba6d0fb66d2" SourceId="1" SourceUrl="http://localhost:56904/GestionContenidoService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="GestionContenidoService.disco" MetadataType="Disco" ID="87687181-d4d1-4b23-bfbf-d18720607b6d" SourceId="1" SourceUrl="http://localhost:56904/GestionContenidoService.svc?disco" />
+    <MetadataFile FileName="GestionContenidoService4.xsd" MetadataType="Schema" ID="57b92595-d51a-443d-b1a5-7c032a16aa30" SourceId="1" SourceUrl="http://localhost:56904/GestionContenidoService.svc?xsd=xsd5" />
+    <MetadataFile FileName="GestionContenidoService5.xsd" MetadataType="Schema" ID="6b3eafa9-d72b-48bc-9046-dda82c906d1d" SourceId="1" SourceUrl="http://localhost:56904/GestionContenidoService.svc?xsd=xsd4" />
+    <MetadataFile FileName="GestionContenidoService6.xsd" MetadataType="Schema" ID="d984987b-e1cd-43aa-bf1b-20e9ed704c72" SourceId="1" SourceUrl="http://localhost:56904/GestionContenidoService.svc?xsd=xsd6" />
+    <MetadataFile FileName="GestionContenidoService7.xsd" MetadataType="Schema" ID="182a5257-bd50-4bb0-9b9e-c9d5ded9b5a8" SourceId="1" SourceUrl="http://localhost:56904/GestionContenidoService.svc?xsd=xsd7" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

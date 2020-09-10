@@ -1,0 +1,41 @@
+[Datos Generales]
+Identificador="a87b0bf7-bb65-4382-9993-141a21fcb95b"
+Fecha y Hora="09/10/2020 01:03:40"
+Título="Error en el servicio ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+Process Information.Process ID="25012"
+Process Information.Process Name="iisexpress"
+Process Information.Account Name="LAPTOP-MARIO\Mario"
+Thread Information.Thread ID="20"
+Thread Information.Thread account name="LAPTOP-MARIO\Mario"
+Exception.Type="ArgumentOutOfRangeException"
+Exception.Message="PageSize
+Nombre del parámetro: El tamaño de la página solicitada debe ser mayor a cero."
+Exception.StackTrace="   en Olimpiadas.Application.Core.ValidationsHelper.ValidarCriteriosPaginacion(CriteriosPaginacionDto criteriosPaginacion) en D:\Archivos\Proyectos\Olimpiadas\1.3.1 Application.Core\ValidationsHelper.cs:línea 24
+   en Olimpiadas.Application.Core.AppServiceBase`1.ValidarParametrosPaginacion(PaginacionRequestDto`1 request) en D:\Archivos\Proyectos\Olimpiadas\1.3.1 Application.Core\AppServiceBase.cs:línea 71
+   en Olimpiadas.Application.Implementations.GestionContenido.ParticipanteAppService.Paginar(PaginacionRequestDto`1 request) en D:\Archivos\Proyectos\Olimpiadas\1.3.4 Application.Implementations\GestionContenido\ParticipanteAppService.cs:línea 85
+   en Olimpiadas.DistributedServices.Implementations.GestionContenido.GestionContenidoService.ParticipantePaginar(PaginacionRequestDto`1 request) en D:\Archivos\Proyectos\Olimpiadas\1.2.3 DistributedServices.Implementations\GestionContenido\GestionContenidoService.Participante.cs:línea 23
+   en SyncInvokeParticipantePaginar(Object , Object[] , Object[] )
+   en System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   en System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   en System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)"
+
+[Request]
+
+
+
+[Response]
+
+
+

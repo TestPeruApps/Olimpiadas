@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="PROMPERU.GestionSeguridadService" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://tempuri.org/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="GestionSeguridadService" targetNamespace="PROMPERU.GestionSeguridadService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://tempuri.org/" location="http://localhost:56904/GestionSeguridadService.svc?wsdl=wsdl0" />
+  <wsdl:types>
+    <xsd:schema targetNamespace="PROMPERU.GestionSeguridadService/Imports">
+      <xsd:import schemaLocation="http://localhost:56904/GestionSeguridadService.svc?xsd=xsd0" namespace="PROMPERU.GestionSeguridadService" />
+      <xsd:import schemaLocation="http://localhost:56904/GestionSeguridadService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Fault" />
+      <xsd:import schemaLocation="http://localhost:56904/GestionSeguridadService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:56904/GestionSeguridadService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionSeguridad.Usuarios" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IGestionSeguridadService_UsuarioListarMenu_InputMessage">
+    <wsdl:part name="parameters" element="tns:UsuarioListarMenu" />
+  </wsdl:message>
+  <wsdl:message name="IGestionSeguridadService_UsuarioListarMenu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UsuarioListarMenuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionSeguridadService_UsuarioListarMenu_ServiceErrorResponseDtoFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Fault" name="detail" element="q1:ServiceErrorResponseDto" />
+  </wsdl:message>
+  <wsdl:message name="IGestionSeguridadService_UsuarioValidarLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:UsuarioValidarLogin" />
+  </wsdl:message>
+  <wsdl:message name="IGestionSeguridadService_UsuarioValidarLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UsuarioValidarLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionSeguridadService_UsuarioValidarLogin_ServiceErrorResponseDtoFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Fault" name="detail" element="q2:ServiceErrorResponseDto" />
+  </wsdl:message>
+  <wsdl:message name="IGestionSeguridadService_Prueba_InputMessage">
+    <wsdl:part name="parameters" element="tns:Prueba" />
+  </wsdl:message>
+  <wsdl:message name="IGestionSeguridadService_Prueba_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PruebaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionSeguridadService_Prueba_ServiceErrorResponseDtoFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Fault" name="detail" element="q3:ServiceErrorResponseDto" />
+  </wsdl:message>
+  <wsdl:portType msc:usingSession="false" name="IGestionSeguridadService">
+    <wsdl:operation name="UsuarioListarMenu">
+      <wsdl:input wsaw:Action="PROMPERU.GestionSeguridadService/IGestionSeguridadService/UsuarioListarMenu" message="tns:IGestionSeguridadService_UsuarioListarMenu_InputMessage" />
+      <wsdl:output wsaw:Action="PROMPERU.GestionSeguridadService/IGestionSeguridadService/UsuarioListarMenuResponse" message="tns:IGestionSeguridadService_UsuarioListarMenu_OutputMessage" />
+      <wsdl:fault wsaw:Action="PROMPERU.GestionSeguridadService/IGestionSeguridadService/UsuarioListarMenuServiceErrorResponseDtoFault" name="ServiceErrorResponseDtoFault" message="tns:IGestionSeguridadService_UsuarioListarMenu_ServiceErrorResponseDtoFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UsuarioValidarLogin">
+      <wsdl:input wsaw:Action="PROMPERU.GestionSeguridadService/IGestionSeguridadService/UsuarioValidarLogin" message="tns:IGestionSeguridadService_UsuarioValidarLogin_InputMessage" />
+      <wsdl:output wsaw:Action="PROMPERU.GestionSeguridadService/IGestionSeguridadService/UsuarioValidarLoginResponse" message="tns:IGestionSeguridadService_UsuarioValidarLogin_OutputMessage" />
+      <wsdl:fault wsaw:Action="PROMPERU.GestionSeguridadService/IGestionSeguridadService/UsuarioValidarLoginServiceErrorResponseDtoFault" name="ServiceErrorResponseDtoFault" message="tns:IGestionSeguridadService_UsuarioValidarLogin_ServiceErrorResponseDtoFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Prueba">
+      <wsdl:input wsaw:Action="PROMPERU.GestionSeguridadService/IGestionSeguridadService/Prueba" message="tns:IGestionSeguridadService_Prueba_InputMessage" />
+      <wsdl:output wsaw:Action="PROMPERU.GestionSeguridadService/IGestionSeguridadService/PruebaResponse" message="tns:IGestionSeguridadService_Prueba_OutputMessage" />
+      <wsdl:fault wsaw:Action="PROMPERU.GestionSeguridadService/IGestionSeguridadService/PruebaServiceErrorResponseDtoFault" name="ServiceErrorResponseDtoFault" message="tns:IGestionSeguridadService_Prueba_ServiceErrorResponseDtoFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="GestionSeguridadService">
+    <wsdl:port name="BasicBindingGestionSeguridad" binding="i0:BasicBindingGestionSeguridad">
+      <soap:address location="http://localhost:56904/GestionSeguridadService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

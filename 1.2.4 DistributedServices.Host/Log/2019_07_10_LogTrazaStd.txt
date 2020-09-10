@@ -1,0 +1,162 @@
+[Datos Generales]
+Identificador="6de50596-1b58-4d0c-9855-c01dee7e4fde"
+Fecha y Hora="07/10/2019 22:56:44"
+Título="ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+
+[Request]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <h:AnioId xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0</h:AnioId>
+    <h:Fecha xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0001-01-01T00:00:00</h:Fecha>
+    <h:MesAnioId xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0</h:MesAnioId>
+    <h:MesId xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0</h:MesId>
+    <h:RangoFechaFinal xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0001-01-01T00:00:00</h:RangoFechaFinal>
+    <h:RangoFechaInicio xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0001-01-01T00:00:00</h:RangoFechaInicio>
+    <h:SemestreAnioId xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0</h:SemestreAnioId>
+    <h:SemestreId xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0</h:SemestreId>
+    <h:TipoRangoFecha xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">PorDia</h:TipoRangoFecha>
+    <h:TipoReporte xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">NoFormat</h:TipoReporte>
+    <h:TrimestreAnioId xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0</h:TrimestreAnioId>
+    <h:TrimestreId xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0</h:TrimestreId>
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:56904/ModuloReportesService.svc</To>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">PROMPERU.ModuloReportesService/IModuloReportesService/EstadoUso</Action>
+  </s:Header>
+  <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <RequestReporteDto xmlns="PROMPERU.ModuloReportesService" />
+  </s:Body>
+</s:Envelope>
+
+
+[Response]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <s:Fault>
+      <faultcode>s:ErrorNoManejado</faultcode>
+      <faultstring xml:lang="es-PE">Referencia a objeto no establecida como instancia de un objeto.</faultstring>
+      <detail>
+        <ServiceErrorResponseDto xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Fault">
+          <Code>0004</Code>
+          <Description>Referencia a objeto no establecida como instancia de un objeto.</Description>
+          <Message>Referencia a objeto no establecida como instancia de un objeto.</Message>
+          <SubCode>ErrorNoManejado</SubCode>
+          <Type>ErrorNoManejado</Type>
+        </ServiceErrorResponseDto>
+      </detail>
+    </s:Fault>
+  </s:Body>
+</s:Envelope>
+
+
+[Datos Generales]
+Identificador="6de50596-1b58-4d0c-9855-c01dee7e4fde"
+Fecha y Hora="07/10/2019 22:57:00"
+Título="ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+
+[Request]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <h:AnioId xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0</h:AnioId>
+    <h:Fecha xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0001-01-01T00:00:00</h:Fecha>
+    <h:MesAnioId xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0</h:MesAnioId>
+    <h:MesId xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0</h:MesId>
+    <h:RangoFechaFinal xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0001-01-01T00:00:00</h:RangoFechaFinal>
+    <h:RangoFechaInicio xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0001-01-01T00:00:00</h:RangoFechaInicio>
+    <h:SemestreAnioId xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0</h:SemestreAnioId>
+    <h:SemestreId xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0</h:SemestreId>
+    <h:TipoRangoFecha xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">PorDia</h:TipoRangoFecha>
+    <h:TipoReporte xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">NoFormat</h:TipoReporte>
+    <h:TrimestreAnioId xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0</h:TrimestreAnioId>
+    <h:TrimestreId xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0</h:TrimestreId>
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:56904/ModuloReportesService.svc</To>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">PROMPERU.ModuloReportesService/IModuloReportesService/EstadoUso</Action>
+  </s:Header>
+  <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <RequestReporteDto xmlns="PROMPERU.ModuloReportesService" />
+  </s:Body>
+</s:Envelope>
+
+
+[Response]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <s:Fault>
+      <faultcode>s:ErrorNoManejado</faultcode>
+      <faultstring xml:lang="es-PE">Referencia a objeto no establecida como instancia de un objeto.</faultstring>
+      <detail>
+        <ServiceErrorResponseDto xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Fault">
+          <Code>0004</Code>
+          <Description>Referencia a objeto no establecida como instancia de un objeto.</Description>
+          <Message>Referencia a objeto no establecida como instancia de un objeto.</Message>
+          <SubCode>ErrorNoManejado</SubCode>
+          <Type>ErrorNoManejado</Type>
+        </ServiceErrorResponseDto>
+      </detail>
+    </s:Fault>
+  </s:Body>
+</s:Envelope>
+
+
+[Datos Generales]
+Identificador="4f96f0fb-32b5-49a5-8590-069cf583932f"
+Fecha y Hora="07/10/2019 23:03:25"
+Título="ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+
+[Request]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <h:AnioId xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0</h:AnioId>
+    <h:Fecha xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0001-01-01T00:00:00</h:Fecha>
+    <h:MesAnioId xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0</h:MesAnioId>
+    <h:MesId xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0</h:MesId>
+    <h:RangoFechaFinal xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0001-01-01T00:00:00</h:RangoFechaFinal>
+    <h:RangoFechaInicio xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0001-01-01T00:00:00</h:RangoFechaInicio>
+    <h:SemestreAnioId xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0</h:SemestreAnioId>
+    <h:SemestreId xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0</h:SemestreId>
+    <h:TipoRangoFecha xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">PorDia</h:TipoRangoFecha>
+    <h:TipoReporte xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">NoFormat</h:TipoReporte>
+    <h:TrimestreAnioId xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0</h:TrimestreAnioId>
+    <h:TrimestreId xmlns:h="PROMPERU.ModuloReportesService" xmlns="PROMPERU.ModuloReportesService">0</h:TrimestreId>
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:56904/ModuloReportesService.svc</To>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">PROMPERU.ModuloReportesService/IModuloReportesService/EstadoUso</Action>
+  </s:Header>
+  <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <RequestReporteDto xmlns="PROMPERU.ModuloReportesService" />
+  </s:Body>
+</s:Envelope>
+
+
+[Response]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <s:Fault>
+      <faultcode>s:ErrorNoManejado</faultcode>
+      <faultstring xml:lang="es-PE">Referencia a objeto no establecida como instancia de un objeto.</faultstring>
+      <detail>
+        <ServiceErrorResponseDto xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Fault">
+          <Code>0004</Code>
+          <Description>Referencia a objeto no establecida como instancia de un objeto.</Description>
+          <Message>Referencia a objeto no establecida como instancia de un objeto.</Message>
+          <SubCode>ErrorNoManejado</SubCode>
+          <Type>ErrorNoManejado</Type>
+        </ServiceErrorResponseDto>
+      </detail>
+    </s:Fault>
+  </s:Body>
+</s:Envelope>
+
+

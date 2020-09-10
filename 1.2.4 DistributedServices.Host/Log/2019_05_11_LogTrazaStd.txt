@@ -1,0 +1,612 @@
+[Datos Generales]
+Identificador="3ac119cb-869c-43dd-a544-89cc4c2fcf72"
+Fecha y Hora="05/11/2019 20:49:29"
+Título="ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+
+[Request]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:56904/GestionRutasService.svc</To>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">PROMPERU.GestionRutasService/IGestionRutasService/AtractivoInsertar</Action>
+  </s:Header>
+  <s:Body>
+    <AtractivoInsertar xmlns="PROMPERU.GestionRutasService">
+      <request xmlns:a="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Comun" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:Auditoria>
+          <a:Ip>192.168.10.001</a:Ip>
+          <a:Usua_Id>1</a:Usua_Id>
+        </a:Auditoria>
+        <a:Registro xmlns:b="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Atractivos">
+          <b:Atra_ActividadIds>29/32/35</b:Atra_ActividadIds>
+          <b:Atra_ActividadNombres i:nil="true" />
+          <b:Atra_Activo>true</b:Atra_Activo>
+          <b:Atra_ClimaActualDescripcion i:nil="true" />
+          <b:Atra_ClimaActualId i:nil="true" />
+          <b:Atra_ClimaActualImagen i:nil="true" />
+          <b:Atra_ClimaDicMarId>18</b:Atra_ClimaDicMarId>
+          <b:Atra_ClimaJunSetId>19</b:Atra_ClimaJunSetId>
+          <b:Atra_ClimaMarJunId>18</b:Atra_ClimaMarJunId>
+          <b:Atra_ClimaSetDicId>19</b:Atra_ClimaSetDicId>
+          <b:Atra_Descripcion>cxczcz</b:Atra_Descripcion>
+          <b:Atra_Direccion>asdasd</b:Atra_Direccion>
+          <b:Atra_Distancia>ututut</b:Atra_Distancia>
+          <b:Atra_FechaCreacion>0001-01-01T00:00:00</b:Atra_FechaCreacion>
+          <b:Atra_FechaEdicion i:nil="true" />
+          <b:Atra_Id>0</b:Atra_Id>
+          <b:Atra_IpCreacion i:nil="true" />
+          <b:Atra_IpEdicion i:nil="true" />
+          <b:Atra_Latitud>22</b:Atra_Latitud>
+          <b:Atra_Longitud>22</b:Atra_Longitud>
+          <b:Atra_MostrarEnApp>false</b:Atra_MostrarEnApp>
+          <b:Atra_Nombre>eqweq</b:Atra_Nombre>
+          <b:Atra_OrdenVisualizacion>0</b:Atra_OrdenVisualizacion>
+          <b:Atra_PadreId i:nil="true" />
+          <b:Atra_RutaId>0</b:Atra_RutaId>
+          <b:Atra_ServicioIds>55</b:Atra_ServicioIds>
+          <b:Atra_ServicioNombres i:nil="true" />
+          <b:Atra_TemperaturaActual i:nil="true" />
+          <b:Atra_TemperaturaMaxima>22</b:Atra_TemperaturaMaxima>
+          <b:Atra_TemperaturaMinima>22</b:Atra_TemperaturaMinima>
+          <b:Atra_TextoAlCompartir i:nil="true" />
+          <b:Atra_TotalComentarios>0</b:Atra_TotalComentarios>
+          <b:Atra_UsuarioCreacion>0</b:Atra_UsuarioCreacion>
+          <b:Atra_UsuarioEdicion i:nil="true" />
+          <b:Atra_ValoracionPromedio i:nil="true" />
+          <b:OrigenId>0</b:OrigenId>
+        </a:Registro>
+      </request>
+    </AtractivoInsertar>
+  </s:Body>
+</s:Envelope>
+
+
+[Response]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <s:Fault>
+      <faultcode>s:ErrorBaseDatos</faultcode>
+      <faultstring xml:lang="es-PE">A ocurrido un error en la capa de Datos. (Servicio de Incidencias)</faultstring>
+      <detail>
+        <ServiceErrorResponseDto xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Fault">
+          <Code>0001</Code>
+          <Description>A ocurrido un error en la capa de Datos. (Servicio de Incidencias)</Description>
+          <Message>El parámetro formal "@Atra_Id" no se declaró como parámetro OUTPUT, pero es el parámetro real pasado en el resultado solicitado.</Message>
+          <SubCode>ErrorBaseDatos</SubCode>
+          <Type>ErrorBaseDatos</Type>
+        </ServiceErrorResponseDto>
+      </detail>
+    </s:Fault>
+  </s:Body>
+</s:Envelope>
+
+
+[Datos Generales]
+Identificador="26c3d0d3-9b40-42b9-a878-e1dcefbdf5b1"
+Fecha y Hora="05/11/2019 20:52:10"
+Título="ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+
+[Request]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:56904/GestionRutasService.svc</To>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">PROMPERU.GestionRutasService/IGestionRutasService/AtractivoInsertar</Action>
+  </s:Header>
+  <s:Body>
+    <AtractivoInsertar xmlns="PROMPERU.GestionRutasService">
+      <request xmlns:a="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Comun" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:Auditoria>
+          <a:Ip>192.168.10.001</a:Ip>
+          <a:Usua_Id>1</a:Usua_Id>
+        </a:Auditoria>
+        <a:Registro xmlns:b="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Atractivos">
+          <b:Atra_ActividadIds>29/32/35</b:Atra_ActividadIds>
+          <b:Atra_ActividadNombres i:nil="true" />
+          <b:Atra_Activo>true</b:Atra_Activo>
+          <b:Atra_ClimaActualDescripcion i:nil="true" />
+          <b:Atra_ClimaActualId i:nil="true" />
+          <b:Atra_ClimaActualImagen i:nil="true" />
+          <b:Atra_ClimaDicMarId>18</b:Atra_ClimaDicMarId>
+          <b:Atra_ClimaJunSetId>20</b:Atra_ClimaJunSetId>
+          <b:Atra_ClimaMarJunId>19</b:Atra_ClimaMarJunId>
+          <b:Atra_ClimaSetDicId>18</b:Atra_ClimaSetDicId>
+          <b:Atra_Descripcion>zxczxc</b:Atra_Descripcion>
+          <b:Atra_Direccion>sdasda</b:Atra_Direccion>
+          <b:Atra_Distancia>aewqeqweq</b:Atra_Distancia>
+          <b:Atra_FechaCreacion>0001-01-01T00:00:00</b:Atra_FechaCreacion>
+          <b:Atra_FechaEdicion i:nil="true" />
+          <b:Atra_Id>0</b:Atra_Id>
+          <b:Atra_IpCreacion i:nil="true" />
+          <b:Atra_IpEdicion i:nil="true" />
+          <b:Atra_Latitud>22</b:Atra_Latitud>
+          <b:Atra_Longitud>22</b:Atra_Longitud>
+          <b:Atra_MostrarEnApp>false</b:Atra_MostrarEnApp>
+          <b:Atra_Nombre>eqweq</b:Atra_Nombre>
+          <b:Atra_OrdenVisualizacion>0</b:Atra_OrdenVisualizacion>
+          <b:Atra_PadreId i:nil="true" />
+          <b:Atra_RutaId>0</b:Atra_RutaId>
+          <b:Atra_ServicioIds>55/53</b:Atra_ServicioIds>
+          <b:Atra_ServicioNombres i:nil="true" />
+          <b:Atra_TemperaturaActual i:nil="true" />
+          <b:Atra_TemperaturaMaxima>22</b:Atra_TemperaturaMaxima>
+          <b:Atra_TemperaturaMinima>22</b:Atra_TemperaturaMinima>
+          <b:Atra_TextoAlCompartir i:nil="true" />
+          <b:Atra_TotalComentarios>0</b:Atra_TotalComentarios>
+          <b:Atra_UsuarioCreacion>0</b:Atra_UsuarioCreacion>
+          <b:Atra_UsuarioEdicion i:nil="true" />
+          <b:Atra_ValoracionPromedio i:nil="true" />
+          <b:OrigenId>0</b:OrigenId>
+        </a:Registro>
+      </request>
+    </AtractivoInsertar>
+  </s:Body>
+</s:Envelope>
+
+
+[Response]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <s:Fault>
+      <faultcode>s:ErrorBaseDatos</faultcode>
+      <faultstring xml:lang="es-PE">A ocurrido un error en la capa de Datos. (Servicio de Incidencias)</faultstring>
+      <detail>
+        <ServiceErrorResponseDto xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Fault">
+          <Code>0001</Code>
+          <Description>A ocurrido un error en la capa de Datos. (Servicio de Incidencias)</Description>
+          <Message>No se puede insertar el valor NULL en la columna 'Atra_ClimaActualImagen', tabla 'BDYTQPRutasCortas_DEV.RUTAS.Atractivo'. La columna no admite valores NULL. Error de INSERT.
+Se terminó la instrucción.</Message>
+          <SubCode>ErrorBaseDatos</SubCode>
+          <Type>ErrorBaseDatos</Type>
+        </ServiceErrorResponseDto>
+      </detail>
+    </s:Fault>
+  </s:Body>
+</s:Envelope>
+
+
+[Datos Generales]
+Identificador="ae8a0f19-4e49-413b-8646-d9f7f501955e"
+Fecha y Hora="05/11/2019 21:31:55"
+Título="ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+
+[Request]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:56904/GestionRutasService.svc</To>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">PROMPERU.GestionRutasService/IGestionRutasService/AtractivoInsertar</Action>
+  </s:Header>
+  <s:Body>
+    <AtractivoInsertar xmlns="PROMPERU.GestionRutasService">
+      <request xmlns:a="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Comun" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:Auditoria>
+          <a:Ip>192.168.10.001</a:Ip>
+          <a:Usua_Id>1</a:Usua_Id>
+        </a:Auditoria>
+        <a:Registro xmlns:b="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Atractivos">
+          <b:Atra_ActividadIds>29/32/35</b:Atra_ActividadIds>
+          <b:Atra_ActividadNombres i:nil="true" />
+          <b:Atra_Activo>true</b:Atra_Activo>
+          <b:Atra_ClimaActualDescripcion i:nil="true" />
+          <b:Atra_ClimaActualId i:nil="true" />
+          <b:Atra_ClimaActualImagen i:nil="true" />
+          <b:Atra_ClimaDicMarId>18</b:Atra_ClimaDicMarId>
+          <b:Atra_ClimaJunSetId>19</b:Atra_ClimaJunSetId>
+          <b:Atra_ClimaMarJunId>19</b:Atra_ClimaMarJunId>
+          <b:Atra_ClimaSetDicId>21</b:Atra_ClimaSetDicId>
+          <b:Atra_Descripcion>zczcz</b:Atra_Descripcion>
+          <b:Atra_Direccion>asdasda</b:Atra_Direccion>
+          <b:Atra_Distancia>rtyryry</b:Atra_Distancia>
+          <b:Atra_FechaCreacion>0001-01-01T00:00:00</b:Atra_FechaCreacion>
+          <b:Atra_FechaEdicion i:nil="true" />
+          <b:Atra_Id>0</b:Atra_Id>
+          <b:Atra_IpCreacion i:nil="true" />
+          <b:Atra_IpEdicion i:nil="true" />
+          <b:Atra_Latitud>22</b:Atra_Latitud>
+          <b:Atra_Longitud>22</b:Atra_Longitud>
+          <b:Atra_MostrarEnApp>false</b:Atra_MostrarEnApp>
+          <b:Atra_Nombre>eqweqwe</b:Atra_Nombre>
+          <b:Atra_OrdenVisualizacion>0</b:Atra_OrdenVisualizacion>
+          <b:Atra_PadreId i:nil="true" />
+          <b:Atra_RutaId>0</b:Atra_RutaId>
+          <b:Atra_ServicioIds>55/53</b:Atra_ServicioIds>
+          <b:Atra_ServicioNombres i:nil="true" />
+          <b:Atra_TemperaturaActual i:nil="true" />
+          <b:Atra_TemperaturaMaxima>22</b:Atra_TemperaturaMaxima>
+          <b:Atra_TemperaturaMinima>22</b:Atra_TemperaturaMinima>
+          <b:Atra_TextoAlCompartir i:nil="true" />
+          <b:Atra_TotalComentarios>0</b:Atra_TotalComentarios>
+          <b:Atra_UsuarioCreacion>0</b:Atra_UsuarioCreacion>
+          <b:Atra_UsuarioEdicion i:nil="true" />
+          <b:Atra_ValoracionPromedio i:nil="true" />
+          <b:OrigenId>0</b:OrigenId>
+        </a:Registro>
+      </request>
+    </AtractivoInsertar>
+  </s:Body>
+</s:Envelope>
+
+
+[Response]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <s:Fault>
+      <faultcode>s:ErrorBaseDatos</faultcode>
+      <faultstring xml:lang="es-PE">A ocurrido un error en la capa de Datos. (Servicio de Incidencias)</faultstring>
+      <detail>
+        <ServiceErrorResponseDto xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Fault">
+          <Code>0001</Code>
+          <Description>A ocurrido un error en la capa de Datos. (Servicio de Incidencias)</Description>
+          <Message>No se puede insertar el valor NULL en la columna 'Atra_TextoAlCompartir', tabla 'BDYTQPRutasCortas_DEV.RUTAS.Atractivo'. La columna no admite valores NULL. Error de INSERT.
+Se terminó la instrucción.</Message>
+          <SubCode>ErrorBaseDatos</SubCode>
+          <Type>ErrorBaseDatos</Type>
+        </ServiceErrorResponseDto>
+      </detail>
+    </s:Fault>
+  </s:Body>
+</s:Envelope>
+
+
+[Datos Generales]
+Identificador="ae8a0f19-4e49-413b-8646-d9f7f501955e"
+Fecha y Hora="05/11/2019 21:33:15"
+Título="ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+
+[Request]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:56904/GestionRutasService.svc</To>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">PROMPERU.GestionRutasService/IGestionRutasService/AtractivoInsertar</Action>
+  </s:Header>
+  <s:Body>
+    <AtractivoInsertar xmlns="PROMPERU.GestionRutasService">
+      <request xmlns:a="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Comun" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:Auditoria>
+          <a:Ip>192.168.10.001</a:Ip>
+          <a:Usua_Id>1</a:Usua_Id>
+        </a:Auditoria>
+        <a:Registro xmlns:b="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Atractivos">
+          <b:Atra_ActividadIds>29/32/35</b:Atra_ActividadIds>
+          <b:Atra_ActividadNombres i:nil="true" />
+          <b:Atra_Activo>true</b:Atra_Activo>
+          <b:Atra_ClimaActualDescripcion i:nil="true" />
+          <b:Atra_ClimaActualId i:nil="true" />
+          <b:Atra_ClimaActualImagen i:nil="true" />
+          <b:Atra_ClimaDicMarId>18</b:Atra_ClimaDicMarId>
+          <b:Atra_ClimaJunSetId>18</b:Atra_ClimaJunSetId>
+          <b:Atra_ClimaMarJunId>18</b:Atra_ClimaMarJunId>
+          <b:Atra_ClimaSetDicId>20</b:Atra_ClimaSetDicId>
+          <b:Atra_Descripcion>asdad</b:Atra_Descripcion>
+          <b:Atra_Direccion>qeq</b:Atra_Direccion>
+          <b:Atra_Distancia>asdsa</b:Atra_Distancia>
+          <b:Atra_FechaCreacion>0001-01-01T00:00:00</b:Atra_FechaCreacion>
+          <b:Atra_FechaEdicion i:nil="true" />
+          <b:Atra_Id>0</b:Atra_Id>
+          <b:Atra_IpCreacion i:nil="true" />
+          <b:Atra_IpEdicion i:nil="true" />
+          <b:Atra_Latitud>22</b:Atra_Latitud>
+          <b:Atra_Longitud>22</b:Atra_Longitud>
+          <b:Atra_MostrarEnApp>false</b:Atra_MostrarEnApp>
+          <b:Atra_Nombre>qweq</b:Atra_Nombre>
+          <b:Atra_OrdenVisualizacion>0</b:Atra_OrdenVisualizacion>
+          <b:Atra_PadreId i:nil="true" />
+          <b:Atra_RutaId>0</b:Atra_RutaId>
+          <b:Atra_ServicioIds>55/53</b:Atra_ServicioIds>
+          <b:Atra_ServicioNombres i:nil="true" />
+          <b:Atra_TemperaturaActual i:nil="true" />
+          <b:Atra_TemperaturaMaxima>22</b:Atra_TemperaturaMaxima>
+          <b:Atra_TemperaturaMinima>22</b:Atra_TemperaturaMinima>
+          <b:Atra_TextoAlCompartir>xcvxcvxvx</b:Atra_TextoAlCompartir>
+          <b:Atra_TotalComentarios>0</b:Atra_TotalComentarios>
+          <b:Atra_UsuarioCreacion>0</b:Atra_UsuarioCreacion>
+          <b:Atra_UsuarioEdicion i:nil="true" />
+          <b:Atra_ValoracionPromedio i:nil="true" />
+          <b:OrigenId>0</b:OrigenId>
+        </a:Registro>
+      </request>
+    </AtractivoInsertar>
+  </s:Body>
+</s:Envelope>
+
+
+[Response]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <s:Fault>
+      <faultcode>s:ErrorBaseDatos</faultcode>
+      <faultstring xml:lang="es-PE">A ocurrido un error en la capa de Datos. (Servicio de Incidencias)</faultstring>
+      <detail>
+        <ServiceErrorResponseDto xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Fault">
+          <Code>0001</Code>
+          <Description>A ocurrido un error en la capa de Datos. (Servicio de Incidencias)</Description>
+          <Message>Instrucción INSERT en conflicto con la restricción FOREIGN KEY "FK_Atractivo_Ruta". El conflicto ha aparecido en la base de datos "BDYTQPRutasCortas_DEV", tabla "RUTAS.Ruta", column 'Ruta_Id'.
+Se terminó la instrucción.</Message>
+          <SubCode>ErrorBaseDatos</SubCode>
+          <Type>ErrorBaseDatos</Type>
+        </ServiceErrorResponseDto>
+      </detail>
+    </s:Fault>
+  </s:Body>
+</s:Envelope>
+
+
+[Datos Generales]
+Identificador="180d6523-eee1-4f0d-a92b-a45071b9d99b"
+Fecha y Hora="05/11/2019 21:59:21"
+Título="ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+
+[Request]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:56904/GestionRutasService.svc</To>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">PROMPERU.GestionRutasService/IGestionRutasService/AtractivoInsertar</Action>
+  </s:Header>
+  <s:Body>
+    <AtractivoInsertar xmlns="PROMPERU.GestionRutasService">
+      <request xmlns:a="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Comun" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:Auditoria>
+          <a:Ip>192.168.10.001</a:Ip>
+          <a:Usua_Id>1</a:Usua_Id>
+        </a:Auditoria>
+        <a:Registro xmlns:b="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Atractivos">
+          <b:Atra_ActividadIds>29/32/35</b:Atra_ActividadIds>
+          <b:Atra_ActividadNombres i:nil="true" />
+          <b:Atra_Activo>true</b:Atra_Activo>
+          <b:Atra_ClimaActualDescripcion i:nil="true" />
+          <b:Atra_ClimaActualId i:nil="true" />
+          <b:Atra_ClimaActualImagen i:nil="true" />
+          <b:Atra_ClimaDicMarId>18</b:Atra_ClimaDicMarId>
+          <b:Atra_ClimaJunSetId>18</b:Atra_ClimaJunSetId>
+          <b:Atra_ClimaMarJunId>19</b:Atra_ClimaMarJunId>
+          <b:Atra_ClimaSetDicId>20</b:Atra_ClimaSetDicId>
+          <b:Atra_Descripcion>zczxczx</b:Atra_Descripcion>
+          <b:Atra_Direccion>asdadsa</b:Atra_Direccion>
+          <b:Atra_Distancia>asda</b:Atra_Distancia>
+          <b:Atra_FechaCreacion>0001-01-01T00:00:00</b:Atra_FechaCreacion>
+          <b:Atra_FechaEdicion i:nil="true" />
+          <b:Atra_Id>0</b:Atra_Id>
+          <b:Atra_IpCreacion i:nil="true" />
+          <b:Atra_IpEdicion i:nil="true" />
+          <b:Atra_Latitud>22</b:Atra_Latitud>
+          <b:Atra_Longitud>22</b:Atra_Longitud>
+          <b:Atra_MostrarEnApp>false</b:Atra_MostrarEnApp>
+          <b:Atra_Nombre>qweqwew</b:Atra_Nombre>
+          <b:Atra_OrdenVisualizacion>0</b:Atra_OrdenVisualizacion>
+          <b:Atra_PadreId i:nil="true" />
+          <b:Atra_RutaId>19</b:Atra_RutaId>
+          <b:Atra_ServicioIds>55/53</b:Atra_ServicioIds>
+          <b:Atra_ServicioNombres i:nil="true" />
+          <b:Atra_TemperaturaActual i:nil="true" />
+          <b:Atra_TemperaturaMaxima>22</b:Atra_TemperaturaMaxima>
+          <b:Atra_TemperaturaMinima>22</b:Atra_TemperaturaMinima>
+          <b:Atra_TextoAlCompartir>adsdsad</b:Atra_TextoAlCompartir>
+          <b:Atra_TotalComentarios>0</b:Atra_TotalComentarios>
+          <b:Atra_UsuarioCreacion>0</b:Atra_UsuarioCreacion>
+          <b:Atra_UsuarioEdicion i:nil="true" />
+          <b:Atra_ValoracionPromedio i:nil="true" />
+          <b:OrigenId>0</b:OrigenId>
+        </a:Registro>
+      </request>
+    </AtractivoInsertar>
+  </s:Body>
+</s:Envelope>
+
+
+[Response]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <s:Fault>
+      <faultcode>s:ErrorBaseDatos</faultcode>
+      <faultstring xml:lang="es-PE">A ocurrido un error en la capa de Datos. (Servicio de Incidencias)</faultstring>
+      <detail>
+        <ServiceErrorResponseDto xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Fault">
+          <Code>0001</Code>
+          <Description>A ocurrido un error en la capa de Datos. (Servicio de Incidencias)</Description>
+          <Message>El procedimiento o la función 'USP_Atractivo_Actividad_INS_IdsConcatenados' esperaba el parámetro '@Rexp_ExperienciaIds', que no se ha especificado.</Message>
+          <SubCode>ErrorBaseDatos</SubCode>
+          <Type>ErrorBaseDatos</Type>
+        </ServiceErrorResponseDto>
+      </detail>
+    </s:Fault>
+  </s:Body>
+</s:Envelope>
+
+
+[Datos Generales]
+Identificador="180d6523-eee1-4f0d-a92b-a45071b9d99b"
+Fecha y Hora="05/11/2019 22:01:27"
+Título="ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+
+[Request]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:56904/GestionRutasService.svc</To>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">PROMPERU.GestionRutasService/IGestionRutasService/AtractivoInsertar</Action>
+  </s:Header>
+  <s:Body>
+    <AtractivoInsertar xmlns="PROMPERU.GestionRutasService">
+      <request xmlns:a="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Comun" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:Auditoria>
+          <a:Ip>192.168.10.001</a:Ip>
+          <a:Usua_Id>1</a:Usua_Id>
+        </a:Auditoria>
+        <a:Registro xmlns:b="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Atractivos">
+          <b:Atra_ActividadIds>29/32/35</b:Atra_ActividadIds>
+          <b:Atra_ActividadNombres i:nil="true" />
+          <b:Atra_Activo>true</b:Atra_Activo>
+          <b:Atra_ClimaActualDescripcion i:nil="true" />
+          <b:Atra_ClimaActualId i:nil="true" />
+          <b:Atra_ClimaActualImagen i:nil="true" />
+          <b:Atra_ClimaDicMarId>18</b:Atra_ClimaDicMarId>
+          <b:Atra_ClimaJunSetId>18</b:Atra_ClimaJunSetId>
+          <b:Atra_ClimaMarJunId>19</b:Atra_ClimaMarJunId>
+          <b:Atra_ClimaSetDicId>20</b:Atra_ClimaSetDicId>
+          <b:Atra_Descripcion>zczxczx</b:Atra_Descripcion>
+          <b:Atra_Direccion>asdadsa</b:Atra_Direccion>
+          <b:Atra_Distancia>asda</b:Atra_Distancia>
+          <b:Atra_FechaCreacion>0001-01-01T00:00:00</b:Atra_FechaCreacion>
+          <b:Atra_FechaEdicion i:nil="true" />
+          <b:Atra_Id>0</b:Atra_Id>
+          <b:Atra_IpCreacion i:nil="true" />
+          <b:Atra_IpEdicion i:nil="true" />
+          <b:Atra_Latitud>22</b:Atra_Latitud>
+          <b:Atra_Longitud>22</b:Atra_Longitud>
+          <b:Atra_MostrarEnApp>false</b:Atra_MostrarEnApp>
+          <b:Atra_Nombre>qweqwew</b:Atra_Nombre>
+          <b:Atra_OrdenVisualizacion>0</b:Atra_OrdenVisualizacion>
+          <b:Atra_PadreId i:nil="true" />
+          <b:Atra_RutaId>19</b:Atra_RutaId>
+          <b:Atra_ServicioIds>55/53</b:Atra_ServicioIds>
+          <b:Atra_ServicioNombres i:nil="true" />
+          <b:Atra_TemperaturaActual i:nil="true" />
+          <b:Atra_TemperaturaMaxima>22</b:Atra_TemperaturaMaxima>
+          <b:Atra_TemperaturaMinima>22</b:Atra_TemperaturaMinima>
+          <b:Atra_TextoAlCompartir>adsdsad</b:Atra_TextoAlCompartir>
+          <b:Atra_TotalComentarios>0</b:Atra_TotalComentarios>
+          <b:Atra_UsuarioCreacion>0</b:Atra_UsuarioCreacion>
+          <b:Atra_UsuarioEdicion i:nil="true" />
+          <b:Atra_ValoracionPromedio i:nil="true" />
+          <b:OrigenId>0</b:OrigenId>
+        </a:Registro>
+      </request>
+    </AtractivoInsertar>
+  </s:Body>
+</s:Envelope>
+
+
+[Response]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <s:Fault>
+      <faultcode>s:ErrorBaseDatos</faultcode>
+      <faultstring xml:lang="es-PE">A ocurrido un error en la capa de Datos. (Servicio de Incidencias)</faultstring>
+      <detail>
+        <ServiceErrorResponseDto xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Fault">
+          <Code>0001</Code>
+          <Description>A ocurrido un error en la capa de Datos. (Servicio de Incidencias)</Description>
+          <Message>Error de conversión al convertir el valor varchar '29/32/35' al tipo de datos smallint.</Message>
+          <SubCode>ErrorBaseDatos</SubCode>
+          <Type>ErrorBaseDatos</Type>
+        </ServiceErrorResponseDto>
+      </detail>
+    </s:Fault>
+  </s:Body>
+</s:Envelope>
+
+
+[Datos Generales]
+Identificador="0d2a1e6b-2a9f-4ba4-bbe2-2a3453f3cb2e"
+Fecha y Hora="05/11/2019 22:03:58"
+Título="ServicioIncidencia"
+Detalle=""
+Acciones=""
+Comentarios=""
+[Datos Adicionales]
+
+[Request]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:56904/GestionRutasService.svc</To>
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">PROMPERU.GestionRutasService/IGestionRutasService/AtractivoInsertar</Action>
+  </s:Header>
+  <s:Body>
+    <AtractivoInsertar xmlns="PROMPERU.GestionRutasService">
+      <request xmlns:a="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Comun" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:Auditoria>
+          <a:Ip>192.168.10.001</a:Ip>
+          <a:Usua_Id>1</a:Usua_Id>
+        </a:Auditoria>
+        <a:Registro xmlns:b="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.GestionRutas.Atractivos">
+          <b:Atra_ActividadIds>29/32/35</b:Atra_ActividadIds>
+          <b:Atra_ActividadNombres i:nil="true" />
+          <b:Atra_Activo>true</b:Atra_Activo>
+          <b:Atra_ClimaActualDescripcion i:nil="true" />
+          <b:Atra_ClimaActualId i:nil="true" />
+          <b:Atra_ClimaActualImagen i:nil="true" />
+          <b:Atra_ClimaDicMarId>18</b:Atra_ClimaDicMarId>
+          <b:Atra_ClimaJunSetId>20</b:Atra_ClimaJunSetId>
+          <b:Atra_ClimaMarJunId>19</b:Atra_ClimaMarJunId>
+          <b:Atra_ClimaSetDicId>19</b:Atra_ClimaSetDicId>
+          <b:Atra_Descripcion>qweqwe</b:Atra_Descripcion>
+          <b:Atra_Direccion>asdasd</b:Atra_Direccion>
+          <b:Atra_Distancia>tyuytu</b:Atra_Distancia>
+          <b:Atra_FechaCreacion>0001-01-01T00:00:00</b:Atra_FechaCreacion>
+          <b:Atra_FechaEdicion i:nil="true" />
+          <b:Atra_Id>0</b:Atra_Id>
+          <b:Atra_IpCreacion i:nil="true" />
+          <b:Atra_IpEdicion i:nil="true" />
+          <b:Atra_Latitud>22</b:Atra_Latitud>
+          <b:Atra_Longitud>22</b:Atra_Longitud>
+          <b:Atra_MostrarEnApp>false</b:Atra_MostrarEnApp>
+          <b:Atra_Nombre>zxcz</b:Atra_Nombre>
+          <b:Atra_OrdenVisualizacion>0</b:Atra_OrdenVisualizacion>
+          <b:Atra_PadreId i:nil="true" />
+          <b:Atra_RutaId>19</b:Atra_RutaId>
+          <b:Atra_ServicioIds>55/53</b:Atra_ServicioIds>
+          <b:Atra_ServicioNombres i:nil="true" />
+          <b:Atra_TemperaturaActual i:nil="true" />
+          <b:Atra_TemperaturaMaxima>22</b:Atra_TemperaturaMaxima>
+          <b:Atra_TemperaturaMinima>22</b:Atra_TemperaturaMinima>
+          <b:Atra_TextoAlCompartir>tutyut</b:Atra_TextoAlCompartir>
+          <b:Atra_TotalComentarios>0</b:Atra_TotalComentarios>
+          <b:Atra_UsuarioCreacion>0</b:Atra_UsuarioCreacion>
+          <b:Atra_UsuarioEdicion i:nil="true" />
+          <b:Atra_ValoracionPromedio i:nil="true" />
+          <b:OrigenId>0</b:OrigenId>
+        </a:Registro>
+      </request>
+    </AtractivoInsertar>
+  </s:Body>
+</s:Envelope>
+
+
+[Response]
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header />
+  <s:Body>
+    <s:Fault>
+      <faultcode>s:ErrorBaseDatos</faultcode>
+      <faultstring xml:lang="es-PE">A ocurrido un error en la capa de Datos. (Servicio de Incidencias)</faultstring>
+      <detail>
+        <ServiceErrorResponseDto xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PROMPERU.YTQPRutasCortas.Application.Dto.Fault">
+          <Code>0001</Code>
+          <Description>A ocurrido un error en la capa de Datos. (Servicio de Incidencias)</Description>
+          <Message>El nombre de objeto 'CONTENIDO.Atractivo_Actividad' no es válido.</Message>
+          <SubCode>ErrorBaseDatos</SubCode>
+          <Type>ErrorBaseDatos</Type>
+        </ServiceErrorResponseDto>
+      </detail>
+    </s:Fault>
+  </s:Body>
+</s:Envelope>
+
+

@@ -1,0 +1,14 @@
+D:\Celsat\RutasCortas\PROMPERU.YTQPRutasCortas\1.6.1 CrossCutting.Enumerations\bin\Debug\PROMPERU.YTQPRutasCortas.CrossCutting.Enumerations.xml
+D:\Celsat\RutasCortas\PROMPERU.YTQPRutasCortas\1.6.1 CrossCutting.Enumerations\bin\Debug\PROMPERU.YTQPRutasCortas.CrossCutting.Enumerations.dll
+D:\Celsat\RutasCortas\PROMPERU.YTQPRutasCortas\1.6.1 CrossCutting.Enumerations\bin\Debug\PROMPERU.YTQPRutasCortas.CrossCutting.Enumerations.pdb
+D:\Celsat\RutasCortas\PROMPERU.YTQPRutasCortas\1.6.1 CrossCutting.Enumerations\obj\Debug\1.6.1.CrossCutting.Enumerations.csproj.CoreCompileInputs.cache
+D:\Celsat\RutasCortas\PROMPERU.YTQPRutasCortas\1.6.1 CrossCutting.Enumerations\obj\Debug\PROMPERU.YTQPRutasCortas.CrossCutting.Enumerations.dll
+D:\Celsat\RutasCortas\PROMPERU.YTQPRutasCortas\1.6.1 CrossCutting.Enumerations\obj\Debug\PROMPERU.YTQPRutasCortas.CrossCutting.Enumerations.pdb
+D:\Celsat\RutasCortas\PROMPERU.YTQPRutasCortas\1.6.1 CrossCutting.Enumerations\obj\Debug\1.6.1.CrossCutting.Enumerations.csprojAssemblyReference.cache
+D:\Archivos\Proyectos\Olimpiadas\1.6.1 CrossCutting.Enumerations\bin\Debug\Olimpiadas.CrossCutting.Enumerations.xml
+D:\Archivos\Proyectos\Olimpiadas\1.6.1 CrossCutting.Enumerations\bin\Debug\Olimpiadas.CrossCutting.Enumerations.dll
+D:\Archivos\Proyectos\Olimpiadas\1.6.1 CrossCutting.Enumerations\bin\Debug\Olimpiadas.CrossCutting.Enumerations.pdb
+D:\Archivos\Proyectos\Olimpiadas\1.6.1 CrossCutting.Enumerations\obj\Debug\1.6.1.CrossCutting.Enumerations.csproj.CoreCompileInputs.cache
+D:\Archivos\Proyectos\Olimpiadas\1.6.1 CrossCutting.Enumerations\obj\Debug\Olimpiadas.CrossCutting.Enumerations.dll
+D:\Archivos\Proyectos\Olimpiadas\1.6.1 CrossCutting.Enumerations\obj\Debug\Olimpiadas.CrossCutting.Enumerations.pdb
+D:\Archivos\Proyectos\Olimpiadas\1.6.1 CrossCutting.Enumerations\obj\Debug\1.6.1.CrossCutting.Enumerations.csprojAssemblyReference.cache

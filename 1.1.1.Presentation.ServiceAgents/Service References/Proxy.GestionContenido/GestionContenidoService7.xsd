@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionContenido.Participante" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.GestionContenido.Participante" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:56904/GestionContenidoService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" />
+  <xs:complexType name="ParticipanteDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Activo" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IdDeporte" type="xs:int" />
+      <xs:element minOccurs="0" name="IdPais" type="xs:int" />
+      <xs:element minOccurs="0" name="IdParticipante" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="NombreDeporte" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombrePais" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreParticipante" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ParticipanteDto" nillable="true" type="tns:ParticipanteDto" />
+  <xs:complexType name="ParticipantePaginacionResponseDto">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" base="q1:BasePaginacionResponseDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Deportes" nillable="true" type="q1:ArrayOfItemDto" />
+          <xs:element minOccurs="0" name="Paises" nillable="true" type="q1:ArrayOfItemDto" />
+          <xs:element minOccurs="0" name="Participantes" nillable="true" type="tns:ArrayOfParticipanteDto" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ParticipantePaginacionResponseDto" nillable="true" type="tns:ParticipantePaginacionResponseDto" />
+  <xs:complexType name="ArrayOfParticipanteDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ParticipanteDto" nillable="true" type="tns:ParticipanteDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfParticipanteDto" nillable="true" type="tns:ArrayOfParticipanteDto" />
+  <xs:complexType name="ParticipanteEditorResponseDto">
+    <xs:sequence>
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" minOccurs="0" name="Deportes" nillable="true" type="q2:ArrayOfItemDto" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Olimpiadas.Application.Dto.Comun" minOccurs="0" name="Paises" nillable="true" type="q3:ArrayOfItemDto" />
+      <xs:element minOccurs="0" name="Participante" nillable="true" type="tns:ParticipanteDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ParticipanteEditorResponseDto" nillable="true" type="tns:ParticipanteEditorResponseDto" />
+</xs:schema>

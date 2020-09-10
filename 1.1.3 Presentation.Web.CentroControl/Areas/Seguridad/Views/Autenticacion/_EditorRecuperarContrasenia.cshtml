@@ -1,0 +1,18 @@
+﻿@model Olimpiadas.Web.CMS.Areas.Seguridad.ViewModels.Autenticacion.RecuperarContraseniaViewModel
+@{
+    var nonce = Context.Items["csp-nonce"].ToString();
+}
+<form id="recuperarContraseniaForm" action="/" class="form-horizontal" autocomplete="off">
+    @Html.AntiForgeryToken()
+    <div class="form-group">
+        <label asp-for="Usua_Email" class="col-sm-2 control-label">Email :</label>
+        <div class="col-sm-10">
+            <input asp-for="Usua_Email" maxlength="50" required="" class="form-control" />
+        </div>
+    </div>
+</form>
+<script  type="text/javascript" nonce=@nonce>    
+    $(document).ready(function () {
+        formLogin.editorRecuperarContrasenia.load();
+    });
+</script>

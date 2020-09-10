@@ -1,0 +1,1469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B3C49BD2-72AE-48DC-B018-C09D7417AF0B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Olimpiadas.DistributedServices.Host</RootNamespace>
+    <AssemblyName>Olimpiadas.DistributedServices.Host</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <UseGlobalApplicationHostFile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <PublishDatabases>false</PublishDatabases>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>bin\Olimpiadas.DistributedServices.Host.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\1.2.1 DistributedServices.Core\1.2.1.DistributedServices.Core.csproj">
+      <Project>{1af920e2-127d-426f-898b-db30277cea3f}</Project>
+      <Name>1.2.1.DistributedServices.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\1.2.2. DistributedServices.Interfaces\1.2.2.DistributedServices.Interfaces.csproj">
+      <Project>{41c1836b-6b40-45ca-a081-c10d725fbd3d}</Project>
+      <Name>1.2.2.DistributedServices.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\1.2.3 DistributedServices.Implementations\1.2.3.DistributedServices.Implementations.csproj">
+      <Project>{31e0690e-0f95-4533-8b67-e52aa46fc255}</Project>
+      <Name>1.2.3.DistributedServices.Implementations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\1.3.3 Application.Interfaces\1.3.3.Application.Interfaces.csproj">
+      <Project>{426f1d14-dffa-4715-8d27-18f2ad6ea0b5}</Project>
+      <Name>1.3.3.Application.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\1.3.4 Application.Implementations\1.3.4.Application.Implementations.csproj">
+      <Project>{f218ae66-ba25-41bf-9803-b6113840843c}</Project>
+      <Name>1.3.4.Application.Implementations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\1.4.3 Domain.PublicSiteModule\1.4.3.Domain.Modulos.csproj">
+      <Project>{41583196-20b8-4b34-b0c3-3d463dc8dbf6}</Project>
+      <Name>1.4.3.Domain.Modulos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\1.5.2 Infrastructure.Data\1.5.2.Infrastructure.Data.csproj">
+      <Project>{1eb364af-2da1-4114-8715-8ef56a40119f}</Project>
+      <Name>1.5.2.Infrastructure.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\1.6.1 CrossCutting.Enumerations\1.6.1.CrossCutting.Enumerations.csproj">
+      <Project>{930943d2-c164-45e5-a3e7-e96b488ad9e8}</Project>
+      <Name>1.6.1.CrossCutting.Enumerations</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GestionContenidoService.svc" />
+    <Content Include="img\app\alertas\1.jpg" />
+    <Content Include="img\app\alertas\grilla\1.jpg" />
+    <Content Include="img\app\alertas\grilla\10.jpg" />
+    <Content Include="img\app\alertas\grilla\11.jpg" />
+    <Content Include="img\app\alertas\grilla\12.jpg" />
+    <Content Include="img\app\alertas\grilla\13.jpg" />
+    <Content Include="img\app\alertas\grilla\14.jpg" />
+    <Content Include="img\app\alertas\grilla\15.jpg" />
+    <Content Include="img\app\alertas\grilla\16.jpg" />
+    <Content Include="img\app\alertas\grilla\17.jpg" />
+    <Content Include="img\app\alertas\grilla\18.jpg" />
+    <Content Include="img\app\alertas\grilla\19.jpg" />
+    <Content Include="img\app\alertas\grilla\2.jpg" />
+    <Content Include="img\app\alertas\grilla\20.jpg" />
+    <Content Include="img\app\alertas\grilla\21.jpg" />
+    <Content Include="img\app\alertas\grilla\22.jpg" />
+    <Content Include="img\app\alertas\grilla\23.jpg" />
+    <Content Include="img\app\alertas\grilla\24.jpg" />
+    <Content Include="img\app\alertas\grilla\25.jpg" />
+    <Content Include="img\app\alertas\grilla\26.jpg" />
+    <Content Include="img\app\alertas\grilla\27.jpg" />
+    <Content Include="img\app\alertas\grilla\28.jpg" />
+    <Content Include="img\app\alertas\grilla\29.jpg" />
+    <Content Include="img\app\alertas\grilla\3.jpg" />
+    <Content Include="img\app\alertas\grilla\30.jpg" />
+    <Content Include="img\app\alertas\grilla\31.jpg" />
+    <Content Include="img\app\alertas\grilla\32.jpg" />
+    <Content Include="img\app\alertas\grilla\33.jpg" />
+    <Content Include="img\app\alertas\grilla\34.jpg" />
+    <Content Include="img\app\alertas\grilla\35.jpg" />
+    <Content Include="img\app\alertas\grilla\36.jpg" />
+    <Content Include="img\app\alertas\grilla\37.jpg" />
+    <Content Include="img\app\alertas\grilla\38.jpg" />
+    <Content Include="img\app\alertas\grilla\39.jpg" />
+    <Content Include="img\app\alertas\grilla\4.jpg" />
+    <Content Include="img\app\alertas\grilla\40.jpg" />
+    <Content Include="img\app\alertas\grilla\41.jpg" />
+    <Content Include="img\app\alertas\grilla\42.jpg" />
+    <Content Include="img\app\alertas\grilla\43.jpg" />
+    <Content Include="img\app\alertas\grilla\44.jpg" />
+    <Content Include="img\app\alertas\grilla\45.jpg" />
+    <Content Include="img\app\alertas\grilla\46.jpg" />
+    <Content Include="img\app\alertas\grilla\47.jpg" />
+    <Content Include="img\app\alertas\grilla\48.jpg" />
+    <Content Include="img\app\alertas\grilla\49.jpg" />
+    <Content Include="img\app\alertas\grilla\5.jpg" />
+    <Content Include="img\app\alertas\grilla\50.jpg" />
+    <Content Include="img\app\alertas\grilla\51.jpg" />
+    <Content Include="img\app\alertas\grilla\52.jpg" />
+    <Content Include="img\app\alertas\grilla\53.jpg" />
+    <Content Include="img\app\alertas\grilla\54.jpg" />
+    <Content Include="img\app\alertas\grilla\55.jpg" />
+    <Content Include="img\app\alertas\grilla\56.jpg" />
+    <Content Include="img\app\alertas\grilla\57.jpg" />
+    <Content Include="img\app\alertas\grilla\58.jpg" />
+    <Content Include="img\app\alertas\grilla\59.jpg" />
+    <Content Include="img\app\alertas\grilla\6.jpg" />
+    <Content Include="img\app\alertas\grilla\60.jpg" />
+    <Content Include="img\app\alertas\grilla\61.jpg" />
+    <Content Include="img\app\alertas\grilla\62.jpg" />
+    <Content Include="img\app\alertas\grilla\63.jpg" />
+    <Content Include="img\app\alertas\grilla\64.jpg" />
+    <Content Include="img\app\alertas\grilla\65.jpg" />
+    <Content Include="img\app\alertas\grilla\66.jpg" />
+    <Content Include="img\app\alertas\grilla\67.jpg" />
+    <Content Include="img\app\alertas\grilla\68.jpg" />
+    <Content Include="img\app\alertas\grilla\69.jpg" />
+    <Content Include="img\app\alertas\grilla\7.jpg" />
+    <Content Include="img\app\alertas\grilla\70.jpg" />
+    <Content Include="img\app\alertas\grilla\71.jpg" />
+    <Content Include="img\app\alertas\grilla\72.jpg" />
+    <Content Include="img\app\alertas\grilla\73.jpg" />
+    <Content Include="img\app\alertas\grilla\74.jpg" />
+    <Content Include="img\app\alertas\grilla\75.jpg" />
+    <Content Include="img\app\alertas\grilla\76.jpg" />
+    <Content Include="img\app\alertas\grilla\77.jpg" />
+    <Content Include="img\app\alertas\grilla\78.jpg" />
+    <Content Include="img\app\alertas\grilla\79.jpg" />
+    <Content Include="img\app\alertas\grilla\8.jpg" />
+    <Content Include="img\app\alertas\grilla\80.jpg" />
+    <Content Include="img\app\alertas\grilla\81.jpg" />
+    <Content Include="img\app\alertas\grilla\82.jpg" />
+    <Content Include="img\app\alertas\grilla\83.jpg" />
+    <Content Include="img\app\alertas\grilla\84.jpg" />
+    <Content Include="img\app\alertas\grilla\85.jpg" />
+    <Content Include="img\app\alertas\grilla\86.jpg" />
+    <Content Include="img\app\alertas\grilla\87.jpg" />
+    <Content Include="img\app\alertas\grilla\88.jpg" />
+    <Content Include="img\app\alertas\grilla\89.jpg" />
+    <Content Include="img\app\alertas\grilla\9.jpg" />
+    <Content Include="img\app\alertas\grilla\90.jpg" />
+    <Content Include="img\app\alertas\grilla\91.jpg" />
+    <Content Include="img\app\alertas\grilla\inicial.jpg" />
+    <Content Include="img\app\atractivos\carrusel\1.jpg" />
+    <Content Include="img\app\atractivos\carrusel\10.jpg" />
+    <Content Include="img\app\atractivos\carrusel\100.jpg" />
+    <Content Include="img\app\atractivos\carrusel\101.jpg" />
+    <Content Include="img\app\atractivos\carrusel\102.jpg" />
+    <Content Include="img\app\atractivos\carrusel\103.jpg" />
+    <Content Include="img\app\atractivos\carrusel\104.jpg" />
+    <Content Include="img\app\atractivos\carrusel\105.jpg" />
+    <Content Include="img\app\atractivos\carrusel\106.jpg" />
+    <Content Include="img\app\atractivos\carrusel\107.jpg" />
+    <Content Include="img\app\atractivos\carrusel\108.jpg" />
+    <Content Include="img\app\atractivos\carrusel\109.jpg" />
+    <Content Include="img\app\atractivos\carrusel\11.jpg" />
+    <Content Include="img\app\atractivos\carrusel\110.jpg" />
+    <Content Include="img\app\atractivos\carrusel\111.jpg" />
+    <Content Include="img\app\atractivos\carrusel\112.jpg" />
+    <Content Include="img\app\atractivos\carrusel\113.jpg" />
+    <Content Include="img\app\atractivos\carrusel\114.jpg" />
+    <Content Include="img\app\atractivos\carrusel\115.jpg" />
+    <Content Include="img\app\atractivos\carrusel\116.jpg" />
+    <Content Include="img\app\atractivos\carrusel\117.jpg" />
+    <Content Include="img\app\atractivos\carrusel\118.jpg" />
+    <Content Include="img\app\atractivos\carrusel\119.jpg" />
+    <Content Include="img\app\atractivos\carrusel\12.jpg" />
+    <Content Include="img\app\atractivos\carrusel\120.jpg" />
+    <Content Include="img\app\atractivos\carrusel\121.jpg" />
+    <Content Include="img\app\atractivos\carrusel\122.jpg" />
+    <Content Include="img\app\atractivos\carrusel\123.jpg" />
+    <Content Include="img\app\atractivos\carrusel\124.jpg" />
+    <Content Include="img\app\atractivos\carrusel\125.jpg" />
+    <Content Include="img\app\atractivos\carrusel\126.jpg" />
+    <Content Include="img\app\atractivos\carrusel\127.jpg" />
+    <Content Include="img\app\atractivos\carrusel\128.jpg" />
+    <Content Include="img\app\atractivos\carrusel\129.jpg" />
+    <Content Include="img\app\atractivos\carrusel\13.jpg" />
+    <Content Include="img\app\atractivos\carrusel\130.jpg" />
+    <Content Include="img\app\atractivos\carrusel\131.jpg" />
+    <Content Include="img\app\atractivos\carrusel\132.jpg" />
+    <Content Include="img\app\atractivos\carrusel\133.jpg" />
+    <Content Include="img\app\atractivos\carrusel\134.jpg" />
+    <Content Include="img\app\atractivos\carrusel\135.jpg" />
+    <Content Include="img\app\atractivos\carrusel\14.jpg" />
+    <Content Include="img\app\atractivos\carrusel\16.jpg" />
+    <Content Include="img\app\atractivos\carrusel\17.jpg" />
+    <Content Include="img\app\atractivos\carrusel\18.jpg" />
+    <Content Include="img\app\atractivos\carrusel\184.jpg" />
+    <Content Include="img\app\atractivos\carrusel\185.jpg" />
+    <Content Include="img\app\atractivos\carrusel\19.jpg" />
+    <Content Include="img\app\atractivos\carrusel\2.jpg" />
+    <Content Include="img\app\atractivos\carrusel\20.jpg" />
+    <Content Include="img\app\atractivos\carrusel\21.jpg" />
+    <Content Include="img\app\atractivos\carrusel\22.jpg" />
+    <Content Include="img\app\atractivos\carrusel\23.jpg" />
+    <Content Include="img\app\atractivos\carrusel\24.jpg" />
+    <Content Include="img\app\atractivos\carrusel\25.jpg" />
+    <Content Include="img\app\atractivos\carrusel\26.jpg" />
+    <Content Include="img\app\atractivos\carrusel\27.jpg" />
+    <Content Include="img\app\atractivos\carrusel\28.jpg" />
+    <Content Include="img\app\atractivos\carrusel\3.jpg" />
+    <Content Include="img\app\atractivos\carrusel\30.jpg" />
+    <Content Include="img\app\atractivos\carrusel\31.jpg" />
+    <Content Include="img\app\atractivos\carrusel\32.jpg" />
+    <Content Include="img\app\atractivos\carrusel\33.jpg" />
+    <Content Include="img\app\atractivos\carrusel\34.jpg" />
+    <Content Include="img\app\atractivos\carrusel\35.jpg" />
+    <Content Include="img\app\atractivos\carrusel\36.jpg" />
+    <Content Include="img\app\atractivos\carrusel\37.jpg" />
+    <Content Include="img\app\atractivos\carrusel\38.jpg" />
+    <Content Include="img\app\atractivos\carrusel\39.jpg" />
+    <Content Include="img\app\atractivos\carrusel\4.jpg" />
+    <Content Include="img\app\atractivos\carrusel\40.jpg" />
+    <Content Include="img\app\atractivos\carrusel\42.jpg" />
+    <Content Include="img\app\atractivos\carrusel\43.jpg" />
+    <Content Include="img\app\atractivos\carrusel\44.jpg" />
+    <Content Include="img\app\atractivos\carrusel\45.jpg" />
+    <Content Include="img\app\atractivos\carrusel\46.jpg" />
+    <Content Include="img\app\atractivos\carrusel\47.jpg" />
+    <Content Include="img\app\atractivos\carrusel\48.jpg" />
+    <Content Include="img\app\atractivos\carrusel\49.jpg" />
+    <Content Include="img\app\atractivos\carrusel\5.jpg" />
+    <Content Include="img\app\atractivos\carrusel\50.jpg" />
+    <Content Include="img\app\atractivos\carrusel\51.jpg" />
+    <Content Include="img\app\atractivos\carrusel\52.jpg" />
+    <Content Include="img\app\atractivos\carrusel\53.jpg" />
+    <Content Include="img\app\atractivos\carrusel\54.jpg" />
+    <Content Include="img\app\atractivos\carrusel\55.jpg" />
+    <Content Include="img\app\atractivos\carrusel\56.jpg" />
+    <Content Include="img\app\atractivos\carrusel\57.jpg" />
+    <Content Include="img\app\atractivos\carrusel\58.jpg" />
+    <Content Include="img\app\atractivos\carrusel\59.jpg" />
+    <Content Include="img\app\atractivos\carrusel\60.jpg" />
+    <Content Include="img\app\atractivos\carrusel\61.jpg" />
+    <Content Include="img\app\atractivos\carrusel\62.jpg" />
+    <Content Include="img\app\atractivos\carrusel\63.jpg" />
+    <Content Include="img\app\atractivos\carrusel\64.jpg" />
+    <Content Include="img\app\atractivos\carrusel\65.jpg" />
+    <Content Include="img\app\atractivos\carrusel\66.jpg" />
+    <Content Include="img\app\atractivos\carrusel\67.jpg" />
+    <Content Include="img\app\atractivos\carrusel\68.jpg" />
+    <Content Include="img\app\atractivos\carrusel\69.jpg" />
+    <Content Include="img\app\atractivos\carrusel\7.jpg" />
+    <Content Include="img\app\atractivos\carrusel\70.jpg" />
+    <Content Include="img\app\atractivos\carrusel\71.jpg" />
+    <Content Include="img\app\atractivos\carrusel\72.jpg" />
+    <Content Include="img\app\atractivos\carrusel\73.jpg" />
+    <Content Include="img\app\atractivos\carrusel\74.jpg" />
+    <Content Include="img\app\atractivos\carrusel\75.jpg" />
+    <Content Include="img\app\atractivos\carrusel\76.jpg" />
+    <Content Include="img\app\atractivos\carrusel\77.jpg" />
+    <Content Include="img\app\atractivos\carrusel\78.jpg" />
+    <Content Include="img\app\atractivos\carrusel\79.jpg" />
+    <Content Include="img\app\atractivos\carrusel\8.jpg" />
+    <Content Include="img\app\atractivos\carrusel\80.jpg" />
+    <Content Include="img\app\atractivos\carrusel\81.jpg" />
+    <Content Include="img\app\atractivos\carrusel\82.jpg" />
+    <Content Include="img\app\atractivos\carrusel\83.jpg" />
+    <Content Include="img\app\atractivos\carrusel\84.jpg" />
+    <Content Include="img\app\atractivos\carrusel\85.jpg" />
+    <Content Include="img\app\atractivos\carrusel\86.jpg" />
+    <Content Include="img\app\atractivos\carrusel\87.jpg" />
+    <Content Include="img\app\atractivos\carrusel\88.jpg" />
+    <Content Include="img\app\atractivos\carrusel\89.jpg" />
+    <Content Include="img\app\atractivos\carrusel\9.jpg" />
+    <Content Include="img\app\atractivos\carrusel\90.jpg" />
+    <Content Include="img\app\atractivos\carrusel\91.jpg" />
+    <Content Include="img\app\atractivos\carrusel\92.jpg" />
+    <Content Include="img\app\atractivos\carrusel\93.jpg" />
+    <Content Include="img\app\atractivos\carrusel\94.jpg" />
+    <Content Include="img\app\atractivos\carrusel\95.jpg" />
+    <Content Include="img\app\atractivos\carrusel\96.jpg" />
+    <Content Include="img\app\atractivos\carrusel\97.jpg" />
+    <Content Include="img\app\atractivos\carrusel\98.jpg" />
+    <Content Include="img\app\atractivos\carrusel\99.jpg" />
+    <Content Include="img\app\atractivos\compartir\1.jpg" />
+    <Content Include="img\app\atractivos\compartir\10.jpg" />
+    <Content Include="img\app\atractivos\compartir\100.jpg" />
+    <Content Include="img\app\atractivos\compartir\101.jpg" />
+    <Content Include="img\app\atractivos\compartir\102.jpg" />
+    <Content Include="img\app\atractivos\compartir\103.jpg" />
+    <Content Include="img\app\atractivos\compartir\104.jpg" />
+    <Content Include="img\app\atractivos\compartir\105.jpg" />
+    <Content Include="img\app\atractivos\compartir\106.jpg" />
+    <Content Include="img\app\atractivos\compartir\107.jpg" />
+    <Content Include="img\app\atractivos\compartir\108.jpg" />
+    <Content Include="img\app\atractivos\compartir\109.jpg" />
+    <Content Include="img\app\atractivos\compartir\11.jpg" />
+    <Content Include="img\app\atractivos\compartir\110.jpg" />
+    <Content Include="img\app\atractivos\compartir\111.jpg" />
+    <Content Include="img\app\atractivos\compartir\112.jpg" />
+    <Content Include="img\app\atractivos\compartir\113.jpg" />
+    <Content Include="img\app\atractivos\compartir\114.jpg" />
+    <Content Include="img\app\atractivos\compartir\115.jpg" />
+    <Content Include="img\app\atractivos\compartir\116.jpg" />
+    <Content Include="img\app\atractivos\compartir\117.jpg" />
+    <Content Include="img\app\atractivos\compartir\118.jpg" />
+    <Content Include="img\app\atractivos\compartir\119.jpg" />
+    <Content Include="img\app\atractivos\compartir\12.jpg" />
+    <Content Include="img\app\atractivos\compartir\120.jpg" />
+    <Content Include="img\app\atractivos\compartir\121.jpg" />
+    <Content Include="img\app\atractivos\compartir\122.JPG" />
+    <Content Include="img\app\atractivos\compartir\123.jpg" />
+    <Content Include="img\app\atractivos\compartir\124.jpg" />
+    <Content Include="img\app\atractivos\compartir\125.jpg" />
+    <Content Include="img\app\atractivos\compartir\126.jpg" />
+    <Content Include="img\app\atractivos\compartir\127.jpg" />
+    <Content Include="img\app\atractivos\compartir\128.jpg" />
+    <Content Include="img\app\atractivos\compartir\129.jpg" />
+    <Content Include="img\app\atractivos\compartir\13.jpg" />
+    <Content Include="img\app\atractivos\compartir\130.JPG" />
+    <Content Include="img\app\atractivos\compartir\131.jpg" />
+    <Content Include="img\app\atractivos\compartir\132.jpg" />
+    <Content Include="img\app\atractivos\compartir\133.jpg" />
+    <Content Include="img\app\atractivos\compartir\134.jpg" />
+    <Content Include="img\app\atractivos\compartir\135.jpg" />
+    <Content Include="img\app\atractivos\compartir\14.jpg" />
+    <Content Include="img\app\atractivos\compartir\16.jpg" />
+    <Content Include="img\app\atractivos\compartir\17.jpg" />
+    <Content Include="img\app\atractivos\compartir\18.jpg" />
+    <Content Include="img\app\atractivos\compartir\184.jpg" />
+    <Content Include="img\app\atractivos\compartir\185.jpg" />
+    <Content Include="img\app\atractivos\compartir\19.jpg" />
+    <Content Include="img\app\atractivos\compartir\2.jpg" />
+    <Content Include="img\app\atractivos\compartir\20.jpg" />
+    <Content Include="img\app\atractivos\compartir\21.jpg" />
+    <Content Include="img\app\atractivos\compartir\22.jpg" />
+    <Content Include="img\app\atractivos\compartir\23.jpg" />
+    <Content Include="img\app\atractivos\compartir\24.jpg" />
+    <Content Include="img\app\atractivos\compartir\25.jpg" />
+    <Content Include="img\app\atractivos\compartir\26.jpg" />
+    <Content Include="img\app\atractivos\compartir\27.jpg" />
+    <Content Include="img\app\atractivos\compartir\28.jpg" />
+    <Content Include="img\app\atractivos\compartir\3.jpg" />
+    <Content Include="img\app\atractivos\compartir\30.jpg" />
+    <Content Include="img\app\atractivos\compartir\31.jpg" />
+    <Content Include="img\app\atractivos\compartir\32.jpg" />
+    <Content Include="img\app\atractivos\compartir\33.jpg" />
+    <Content Include="img\app\atractivos\compartir\34.jpg" />
+    <Content Include="img\app\atractivos\compartir\35.jpg" />
+    <Content Include="img\app\atractivos\compartir\36.jpg" />
+    <Content Include="img\app\atractivos\compartir\37.jpg" />
+    <Content Include="img\app\atractivos\compartir\38.jpg" />
+    <Content Include="img\app\atractivos\compartir\39.jpg" />
+    <Content Include="img\app\atractivos\compartir\4.jpg" />
+    <Content Include="img\app\atractivos\compartir\40.jpg" />
+    <Content Include="img\app\atractivos\compartir\42.jpg" />
+    <Content Include="img\app\atractivos\compartir\43.jpg" />
+    <Content Include="img\app\atractivos\compartir\44.jpg" />
+    <Content Include="img\app\atractivos\compartir\45.jpg" />
+    <Content Include="img\app\atractivos\compartir\46.jpg" />
+    <Content Include="img\app\atractivos\compartir\47.jpg" />
+    <Content Include="img\app\atractivos\compartir\48.jpg" />
+    <Content Include="img\app\atractivos\compartir\49.JPG" />
+    <Content Include="img\app\atractivos\compartir\5.jpg" />
+    <Content Include="img\app\atractivos\compartir\50.jpg" />
+    <Content Include="img\app\atractivos\compartir\51.jpg" />
+    <Content Include="img\app\atractivos\compartir\52.jpg" />
+    <Content Include="img\app\atractivos\compartir\53.jpg" />
+    <Content Include="img\app\atractivos\compartir\54.jpg" />
+    <Content Include="img\app\atractivos\compartir\55.JPG" />
+    <Content Include="img\app\atractivos\compartir\56.jpg" />
+    <Content Include="img\app\atractivos\compartir\57.jpg" />
+    <Content Include="img\app\atractivos\compartir\58.jpg" />
+    <Content Include="img\app\atractivos\compartir\59.JPG" />
+    <Content Include="img\app\atractivos\compartir\60.jpg" />
+    <Content Include="img\app\atractivos\compartir\61.jpg" />
+    <Content Include="img\app\atractivos\compartir\62.jpg" />
+    <Content Include="img\app\atractivos\compartir\63.jpg" />
+    <Content Include="img\app\atractivos\compartir\64.jpg" />
+    <Content Include="img\app\atractivos\compartir\65.jpg" />
+    <Content Include="img\app\atractivos\compartir\66.jpg" />
+    <Content Include="img\app\atractivos\compartir\67.jpg" />
+    <Content Include="img\app\atractivos\compartir\68.jpg" />
+    <Content Include="img\app\atractivos\compartir\69.jpg" />
+    <Content Include="img\app\atractivos\compartir\7.jpg" />
+    <Content Include="img\app\atractivos\compartir\70.jpg" />
+    <Content Include="img\app\atractivos\compartir\71.jpg" />
+    <Content Include="img\app\atractivos\compartir\72.jpg" />
+    <Content Include="img\app\atractivos\compartir\73.jpg" />
+    <Content Include="img\app\atractivos\compartir\74.jpg" />
+    <Content Include="img\app\atractivos\compartir\75.jpg" />
+    <Content Include="img\app\atractivos\compartir\76.jpg" />
+    <Content Include="img\app\atractivos\compartir\77.jpg" />
+    <Content Include="img\app\atractivos\compartir\78.jpg" />
+    <Content Include="img\app\atractivos\compartir\79.jpg" />
+    <Content Include="img\app\atractivos\compartir\8.jpg" />
+    <Content Include="img\app\atractivos\compartir\80.jpg" />
+    <Content Include="img\app\atractivos\compartir\81.jpg" />
+    <Content Include="img\app\atractivos\compartir\82.jpg" />
+    <Content Include="img\app\atractivos\compartir\83.jpg" />
+    <Content Include="img\app\atractivos\compartir\84.jpg" />
+    <Content Include="img\app\atractivos\compartir\85.jpg" />
+    <Content Include="img\app\atractivos\compartir\86.jpg" />
+    <Content Include="img\app\atractivos\compartir\87.jpg" />
+    <Content Include="img\app\atractivos\compartir\88.jpg" />
+    <Content Include="img\app\atractivos\compartir\89.jpg" />
+    <Content Include="img\app\atractivos\compartir\9.jpg" />
+    <Content Include="img\app\atractivos\compartir\90.jpg" />
+    <Content Include="img\app\atractivos\compartir\91.jpg" />
+    <Content Include="img\app\atractivos\compartir\92.jpg" />
+    <Content Include="img\app\atractivos\compartir\93.jpg" />
+    <Content Include="img\app\atractivos\compartir\94.jpg" />
+    <Content Include="img\app\atractivos\compartir\95.jpg" />
+    <Content Include="img\app\atractivos\compartir\96.jpg" />
+    <Content Include="img\app\atractivos\compartir\97.jpg" />
+    <Content Include="img\app\atractivos\compartir\98.jpg" />
+    <Content Include="img\app\atractivos\compartir\99.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\1.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\10.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\100.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\101.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\102.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\103.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\104.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\105.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\106.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\107.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\108.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\109.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\11.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\110.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\111.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\112.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\113.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\114.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\115.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\116.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\117.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\118.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\119.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\12.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\120.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\121.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\122.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\123.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\124.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\125.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\126.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\127.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\128.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\129.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\13.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\130.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\131.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\132.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\133.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\134.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\135.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\14.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\16.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\17.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\18.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\184.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\185.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\19.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\2.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\20.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\21.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\22.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\23.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\24.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\25.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\26.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\27.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\28.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\3.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\30.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\31.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\32.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\33.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\34.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\35.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\36.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\37.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\38.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\39.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\4.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\40.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\42.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\43.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\44.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\45.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\46.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\47.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\48.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\49.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\5.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\50.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\51.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\52.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\53.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\54.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\55.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\56.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\57.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\58.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\59.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\60.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\61.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\62.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\63.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\64.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\65.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\66.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\67.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\68.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\69.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\7.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\70.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\71.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\72.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\73.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\74.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\75.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\76.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\77.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\78.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\79.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\8.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\80.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\81.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\82.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\83.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\84.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\85.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\86.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\87.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\88.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\89.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\9.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\90.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\91.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\92.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\93.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\94.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\95.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\96.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\97.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\98.jpg" />
+    <Content Include="img\app\atractivos\detalleRuta\99.jpg" />
+    <Content Include="img\app\atractivos\detalle\1.jpg" />
+    <Content Include="img\app\atractivos\detalle\10.jpg" />
+    <Content Include="img\app\atractivos\detalle\100.jpg" />
+    <Content Include="img\app\atractivos\detalle\101.jpg" />
+    <Content Include="img\app\atractivos\detalle\102.jpg" />
+    <Content Include="img\app\atractivos\detalle\103.jpg" />
+    <Content Include="img\app\atractivos\detalle\104.jpg" />
+    <Content Include="img\app\atractivos\detalle\105.jpg" />
+    <Content Include="img\app\atractivos\detalle\106.jpg" />
+    <Content Include="img\app\atractivos\detalle\107.jpg" />
+    <Content Include="img\app\atractivos\detalle\108.jpg" />
+    <Content Include="img\app\atractivos\detalle\109.jpg" />
+    <Content Include="img\app\atractivos\detalle\11.jpg" />
+    <Content Include="img\app\atractivos\detalle\110.jpg" />
+    <Content Include="img\app\atractivos\detalle\111.jpg" />
+    <Content Include="img\app\atractivos\detalle\112.jpg" />
+    <Content Include="img\app\atractivos\detalle\113.jpg" />
+    <Content Include="img\app\atractivos\detalle\114.jpg" />
+    <Content Include="img\app\atractivos\detalle\115.jpg" />
+    <Content Include="img\app\atractivos\detalle\116.jpg" />
+    <Content Include="img\app\atractivos\detalle\117.jpg" />
+    <Content Include="img\app\atractivos\detalle\118.jpg" />
+    <Content Include="img\app\atractivos\detalle\119.jpg" />
+    <Content Include="img\app\atractivos\detalle\12.jpg" />
+    <Content Include="img\app\atractivos\detalle\120.jpg" />
+    <Content Include="img\app\atractivos\detalle\121.jpg" />
+    <Content Include="img\app\atractivos\detalle\122.jpg" />
+    <Content Include="img\app\atractivos\detalle\123.jpg" />
+    <Content Include="img\app\atractivos\detalle\124.jpg" />
+    <Content Include="img\app\atractivos\detalle\125.jpg" />
+    <Content Include="img\app\atractivos\detalle\126.jpg" />
+    <Content Include="img\app\atractivos\detalle\127.jpg" />
+    <Content Include="img\app\atractivos\detalle\128.jpg" />
+    <Content Include="img\app\atractivos\detalle\129.jpg" />
+    <Content Include="img\app\atractivos\detalle\13.jpg" />
+    <Content Include="img\app\atractivos\detalle\130.jpg" />
+    <Content Include="img\app\atractivos\detalle\131.jpg" />
+    <Content Include="img\app\atractivos\detalle\132.jpg" />
+    <Content Include="img\app\atractivos\detalle\133.jpg" />
+    <Content Include="img\app\atractivos\detalle\134.jpg" />
+    <Content Include="img\app\atractivos\detalle\135.jpg" />
+    <Content Include="img\app\atractivos\detalle\14.jpg" />
+    <Content Include="img\app\atractivos\detalle\16.jpg" />
+    <Content Include="img\app\atractivos\detalle\17.jpg" />
+    <Content Include="img\app\atractivos\detalle\18.jpg" />
+    <Content Include="img\app\atractivos\detalle\184.jpg" />
+    <Content Include="img\app\atractivos\detalle\185.jpg" />
+    <Content Include="img\app\atractivos\detalle\19.jpg" />
+    <Content Include="img\app\atractivos\detalle\2.jpg" />
+    <Content Include="img\app\atractivos\detalle\20.jpg" />
+    <Content Include="img\app\atractivos\detalle\21.jpg" />
+    <Content Include="img\app\atractivos\detalle\22.jpg" />
+    <Content Include="img\app\atractivos\detalle\23.jpg" />
+    <Content Include="img\app\atractivos\detalle\24.jpg" />
+    <Content Include="img\app\atractivos\detalle\25.jpg" />
+    <Content Include="img\app\atractivos\detalle\26.jpg" />
+    <Content Include="img\app\atractivos\detalle\27.jpg" />
+    <Content Include="img\app\atractivos\detalle\28.jpg" />
+    <Content Include="img\app\atractivos\detalle\3.jpg" />
+    <Content Include="img\app\atractivos\detalle\30.jpg" />
+    <Content Include="img\app\atractivos\detalle\31.jpg" />
+    <Content Include="img\app\atractivos\detalle\32.jpg" />
+    <Content Include="img\app\atractivos\detalle\33.jpg" />
+    <Content Include="img\app\atractivos\detalle\34.jpg" />
+    <Content Include="img\app\atractivos\detalle\35.jpg" />
+    <Content Include="img\app\atractivos\detalle\36.jpg" />
+    <Content Include="img\app\atractivos\detalle\37.jpg" />
+    <Content Include="img\app\atractivos\detalle\38.jpg" />
+    <Content Include="img\app\atractivos\detalle\39.jpg" />
+    <Content Include="img\app\atractivos\detalle\4.jpg" />
+    <Content Include="img\app\atractivos\detalle\40.jpg" />
+    <Content Include="img\app\atractivos\detalle\42.jpg" />
+    <Content Include="img\app\atractivos\detalle\43.jpg" />
+    <Content Include="img\app\atractivos\detalle\44.jpg" />
+    <Content Include="img\app\atractivos\detalle\45.jpg" />
+    <Content Include="img\app\atractivos\detalle\46.jpg" />
+    <Content Include="img\app\atractivos\detalle\47.jpg" />
+    <Content Include="img\app\atractivos\detalle\48.jpg" />
+    <Content Include="img\app\atractivos\detalle\49.jpg" />
+    <Content Include="img\app\atractivos\detalle\5.jpg" />
+    <Content Include="img\app\atractivos\detalle\50.jpg" />
+    <Content Include="img\app\atractivos\detalle\51.jpg" />
+    <Content Include="img\app\atractivos\detalle\52.jpg" />
+    <Content Include="img\app\atractivos\detalle\53.jpg" />
+    <Content Include="img\app\atractivos\detalle\54.jpg" />
+    <Content Include="img\app\atractivos\detalle\55.jpg" />
+    <Content Include="img\app\atractivos\detalle\56.jpg" />
+    <Content Include="img\app\atractivos\detalle\57.jpg" />
+    <Content Include="img\app\atractivos\detalle\58.jpg" />
+    <Content Include="img\app\atractivos\detalle\59.jpg" />
+    <Content Include="img\app\atractivos\detalle\60.jpg" />
+    <Content Include="img\app\atractivos\detalle\61.jpg" />
+    <Content Include="img\app\atractivos\detalle\62.jpg" />
+    <Content Include="img\app\atractivos\detalle\63.jpg" />
+    <Content Include="img\app\atractivos\detalle\64.jpg" />
+    <Content Include="img\app\atractivos\detalle\65.jpg" />
+    <Content Include="img\app\atractivos\detalle\66.jpg" />
+    <Content Include="img\app\atractivos\detalle\67.jpg" />
+    <Content Include="img\app\atractivos\detalle\68.jpg" />
+    <Content Include="img\app\atractivos\detalle\69.jpg" />
+    <Content Include="img\app\atractivos\detalle\7.jpg" />
+    <Content Include="img\app\atractivos\detalle\70.jpg" />
+    <Content Include="img\app\atractivos\detalle\71.jpg" />
+    <Content Include="img\app\atractivos\detalle\72.jpg" />
+    <Content Include="img\app\atractivos\detalle\73.jpg" />
+    <Content Include="img\app\atractivos\detalle\74.jpg" />
+    <Content Include="img\app\atractivos\detalle\75.jpg" />
+    <Content Include="img\app\atractivos\detalle\76.jpg" />
+    <Content Include="img\app\atractivos\detalle\77.jpg" />
+    <Content Include="img\app\atractivos\detalle\78.jpg" />
+    <Content Include="img\app\atractivos\detalle\79.jpg" />
+    <Content Include="img\app\atractivos\detalle\8.jpg" />
+    <Content Include="img\app\atractivos\detalle\80.jpg" />
+    <Content Include="img\app\atractivos\detalle\81.jpg" />
+    <Content Include="img\app\atractivos\detalle\82.jpg" />
+    <Content Include="img\app\atractivos\detalle\83.jpg" />
+    <Content Include="img\app\atractivos\detalle\84.jpg" />
+    <Content Include="img\app\atractivos\detalle\85.jpg" />
+    <Content Include="img\app\atractivos\detalle\86.jpg" />
+    <Content Include="img\app\atractivos\detalle\87.jpg" />
+    <Content Include="img\app\atractivos\detalle\88.jpg" />
+    <Content Include="img\app\atractivos\detalle\89.jpg" />
+    <Content Include="img\app\atractivos\detalle\9.jpg" />
+    <Content Include="img\app\atractivos\detalle\90.jpg" />
+    <Content Include="img\app\atractivos\detalle\91.jpg" />
+    <Content Include="img\app\atractivos\detalle\92.jpg" />
+    <Content Include="img\app\atractivos\detalle\93.jpg" />
+    <Content Include="img\app\atractivos\detalle\94.jpg" />
+    <Content Include="img\app\atractivos\detalle\95.jpg" />
+    <Content Include="img\app\atractivos\detalle\96.jpg" />
+    <Content Include="img\app\atractivos\detalle\97.jpg" />
+    <Content Include="img\app\atractivos\detalle\98.jpg" />
+    <Content Include="img\app\atractivos\detalle\99.jpg" />
+    <Content Include="img\app\atractivos\grilla\1.jpg" />
+    <Content Include="img\app\atractivos\grilla\10.jpg" />
+    <Content Include="img\app\atractivos\grilla\100.jpg" />
+    <Content Include="img\app\atractivos\grilla\101.jpg" />
+    <Content Include="img\app\atractivos\grilla\102.jpg" />
+    <Content Include="img\app\atractivos\grilla\103.jpg" />
+    <Content Include="img\app\atractivos\grilla\104.jpg" />
+    <Content Include="img\app\atractivos\grilla\105.jpg" />
+    <Content Include="img\app\atractivos\grilla\106.jpg" />
+    <Content Include="img\app\atractivos\grilla\107.jpg" />
+    <Content Include="img\app\atractivos\grilla\108.jpg" />
+    <Content Include="img\app\atractivos\grilla\109.jpg" />
+    <Content Include="img\app\atractivos\grilla\11.jpg" />
+    <Content Include="img\app\atractivos\grilla\110.jpg" />
+    <Content Include="img\app\atractivos\grilla\111.jpg" />
+    <Content Include="img\app\atractivos\grilla\112.jpg" />
+    <Content Include="img\app\atractivos\grilla\113.jpg" />
+    <Content Include="img\app\atractivos\grilla\114.jpg" />
+    <Content Include="img\app\atractivos\grilla\115.jpg" />
+    <Content Include="img\app\atractivos\grilla\116.jpg" />
+    <Content Include="img\app\atractivos\grilla\117.jpg" />
+    <Content Include="img\app\atractivos\grilla\118.jpg" />
+    <Content Include="img\app\atractivos\grilla\119.jpg" />
+    <Content Include="img\app\atractivos\grilla\12.jpg" />
+    <Content Include="img\app\atractivos\grilla\120.jpg" />
+    <Content Include="img\app\atractivos\grilla\121.jpg" />
+    <Content Include="img\app\atractivos\grilla\122.jpg" />
+    <Content Include="img\app\atractivos\grilla\123.jpg" />
+    <Content Include="img\app\atractivos\grilla\124.jpg" />
+    <Content Include="img\app\atractivos\grilla\125.jpg" />
+    <Content Include="img\app\atractivos\grilla\126.jpg" />
+    <Content Include="img\app\atractivos\grilla\127.jpg" />
+    <Content Include="img\app\atractivos\grilla\128.jpg" />
+    <Content Include="img\app\atractivos\grilla\129.jpg" />
+    <Content Include="img\app\atractivos\grilla\13.jpg" />
+    <Content Include="img\app\atractivos\grilla\130.jpg" />
+    <Content Include="img\app\atractivos\grilla\131.jpg" />
+    <Content Include="img\app\atractivos\grilla\132.jpg" />
+    <Content Include="img\app\atractivos\grilla\133.jpg" />
+    <Content Include="img\app\atractivos\grilla\134.jpg" />
+    <Content Include="img\app\atractivos\grilla\135.jpg" />
+    <Content Include="img\app\atractivos\grilla\14.jpg" />
+    <Content Include="img\app\atractivos\grilla\15.jpg" />
+    <Content Include="img\app\atractivos\grilla\16.jpg" />
+    <Content Include="img\app\atractivos\grilla\17.jpg" />
+    <Content Include="img\app\atractivos\grilla\18.jpg" />
+    <Content Include="img\app\atractivos\grilla\184.jpg" />
+    <Content Include="img\app\atractivos\grilla\185.jpg" />
+    <Content Include="img\app\atractivos\grilla\19.jpg" />
+    <Content Include="img\app\atractivos\grilla\2.jpg" />
+    <Content Include="img\app\atractivos\grilla\20.jpg" />
+    <Content Include="img\app\atractivos\grilla\21.jpg" />
+    <Content Include="img\app\atractivos\grilla\22.jpg" />
+    <Content Include="img\app\atractivos\grilla\23.jpg" />
+    <Content Include="img\app\atractivos\grilla\24.jpg" />
+    <Content Include="img\app\atractivos\grilla\25.jpg" />
+    <Content Include="img\app\atractivos\grilla\26.jpg" />
+    <Content Include="img\app\atractivos\grilla\27.jpg" />
+    <Content Include="img\app\atractivos\grilla\28.jpg" />
+    <Content Include="img\app\atractivos\grilla\3.jpg" />
+    <Content Include="img\app\atractivos\grilla\30.jpg" />
+    <Content Include="img\app\atractivos\grilla\31.jpg" />
+    <Content Include="img\app\atractivos\grilla\32.jpg" />
+    <Content Include="img\app\atractivos\grilla\33.jpg" />
+    <Content Include="img\app\atractivos\grilla\34.jpg" />
+    <Content Include="img\app\atractivos\grilla\35.jpg" />
+    <Content Include="img\app\atractivos\grilla\36.jpg" />
+    <Content Include="img\app\atractivos\grilla\37.jpg" />
+    <Content Include="img\app\atractivos\grilla\38.jpg" />
+    <Content Include="img\app\atractivos\grilla\39.jpg" />
+    <Content Include="img\app\atractivos\grilla\4.jpg" />
+    <Content Include="img\app\atractivos\grilla\40.jpg" />
+    <Content Include="img\app\atractivos\grilla\42.jpg" />
+    <Content Include="img\app\atractivos\grilla\43.jpg" />
+    <Content Include="img\app\atractivos\grilla\44.jpg" />
+    <Content Include="img\app\atractivos\grilla\45.jpg" />
+    <Content Include="img\app\atractivos\grilla\46.jpg" />
+    <Content Include="img\app\atractivos\grilla\47.jpg" />
+    <Content Include="img\app\atractivos\grilla\48.jpg" />
+    <Content Include="img\app\atractivos\grilla\49.jpg" />
+    <Content Include="img\app\atractivos\grilla\5.jpg" />
+    <Content Include="img\app\atractivos\grilla\50.jpg" />
+    <Content Include="img\app\atractivos\grilla\51.jpg" />
+    <Content Include="img\app\atractivos\grilla\52.jpg" />
+    <Content Include="img\app\atractivos\grilla\53.jpg" />
+    <Content Include="img\app\atractivos\grilla\54.jpg" />
+    <Content Include="img\app\atractivos\grilla\55.jpg" />
+    <Content Include="img\app\atractivos\grilla\56.jpg" />
+    <Content Include="img\app\atractivos\grilla\57.jpg" />
+    <Content Include="img\app\atractivos\grilla\58.jpg" />
+    <Content Include="img\app\atractivos\grilla\59.jpg" />
+    <Content Include="img\app\atractivos\grilla\60.jpg" />
+    <Content Include="img\app\atractivos\grilla\61.jpg" />
+    <Content Include="img\app\atractivos\grilla\62.jpg" />
+    <Content Include="img\app\atractivos\grilla\63.jpg" />
+    <Content Include="img\app\atractivos\grilla\64.jpg" />
+    <Content Include="img\app\atractivos\grilla\65.jpg" />
+    <Content Include="img\app\atractivos\grilla\66.jpg" />
+    <Content Include="img\app\atractivos\grilla\67.jpg" />
+    <Content Include="img\app\atractivos\grilla\68.jpg" />
+    <Content Include="img\app\atractivos\grilla\69.jpg" />
+    <Content Include="img\app\atractivos\grilla\7.jpg" />
+    <Content Include="img\app\atractivos\grilla\70.jpg" />
+    <Content Include="img\app\atractivos\grilla\71.jpg" />
+    <Content Include="img\app\atractivos\grilla\72.jpg" />
+    <Content Include="img\app\atractivos\grilla\73.jpg" />
+    <Content Include="img\app\atractivos\grilla\74.jpg" />
+    <Content Include="img\app\atractivos\grilla\75.jpg" />
+    <Content Include="img\app\atractivos\grilla\76.jpg" />
+    <Content Include="img\app\atractivos\grilla\77.jpg" />
+    <Content Include="img\app\atractivos\grilla\78.jpg" />
+    <Content Include="img\app\atractivos\grilla\79.jpg" />
+    <Content Include="img\app\atractivos\grilla\8.jpg" />
+    <Content Include="img\app\atractivos\grilla\80.jpg" />
+    <Content Include="img\app\atractivos\grilla\81.jpg" />
+    <Content Include="img\app\atractivos\grilla\82.jpg" />
+    <Content Include="img\app\atractivos\grilla\83.jpg" />
+    <Content Include="img\app\atractivos\grilla\84.jpg" />
+    <Content Include="img\app\atractivos\grilla\85.jpg" />
+    <Content Include="img\app\atractivos\grilla\86.jpg" />
+    <Content Include="img\app\atractivos\grilla\87.jpg" />
+    <Content Include="img\app\atractivos\grilla\88.jpg" />
+    <Content Include="img\app\atractivos\grilla\89.jpg" />
+    <Content Include="img\app\atractivos\grilla\9.jpg" />
+    <Content Include="img\app\atractivos\grilla\90.jpg" />
+    <Content Include="img\app\atractivos\grilla\91.jpg" />
+    <Content Include="img\app\atractivos\grilla\92.jpg" />
+    <Content Include="img\app\atractivos\grilla\93.jpg" />
+    <Content Include="img\app\atractivos\grilla\94.jpg" />
+    <Content Include="img\app\atractivos\grilla\95.jpg" />
+    <Content Include="img\app\atractivos\grilla\96.jpg" />
+    <Content Include="img\app\atractivos\grilla\97.jpg" />
+    <Content Include="img\app\atractivos\grilla\98.jpg" />
+    <Content Include="img\app\atractivos\grilla\99.jpg" />
+    <Content Include="img\app\atractivos\grilla\cargarImagen.jpg" />
+    <Content Include="img\app\atractivos\mapa\1.jpg" />
+    <Content Include="img\app\atractivos\mapa\10.jpg" />
+    <Content Include="img\app\atractivos\mapa\100.jpg" />
+    <Content Include="img\app\atractivos\mapa\101.jpg" />
+    <Content Include="img\app\atractivos\mapa\102.jpg" />
+    <Content Include="img\app\atractivos\mapa\103.jpg" />
+    <Content Include="img\app\atractivos\mapa\104.jpg" />
+    <Content Include="img\app\atractivos\mapa\105.jpg" />
+    <Content Include="img\app\atractivos\mapa\106.jpg" />
+    <Content Include="img\app\atractivos\mapa\107.jpg" />
+    <Content Include="img\app\atractivos\mapa\108.jpg" />
+    <Content Include="img\app\atractivos\mapa\109.jpg" />
+    <Content Include="img\app\atractivos\mapa\11.jpg" />
+    <Content Include="img\app\atractivos\mapa\110.jpg" />
+    <Content Include="img\app\atractivos\mapa\111.jpg" />
+    <Content Include="img\app\atractivos\mapa\112.jpg" />
+    <Content Include="img\app\atractivos\mapa\113.jpg" />
+    <Content Include="img\app\atractivos\mapa\114.jpg" />
+    <Content Include="img\app\atractivos\mapa\115.jpg" />
+    <Content Include="img\app\atractivos\mapa\116.jpg" />
+    <Content Include="img\app\atractivos\mapa\117.jpg" />
+    <Content Include="img\app\atractivos\mapa\118.jpg" />
+    <Content Include="img\app\atractivos\mapa\119.jpg" />
+    <Content Include="img\app\atractivos\mapa\12.jpg" />
+    <Content Include="img\app\atractivos\mapa\120.jpg" />
+    <Content Include="img\app\atractivos\mapa\121.jpg" />
+    <Content Include="img\app\atractivos\mapa\122.jpg" />
+    <Content Include="img\app\atractivos\mapa\123.JPG" />
+    <Content Include="img\app\atractivos\mapa\124.jpg" />
+    <Content Include="img\app\atractivos\mapa\125.jpg" />
+    <Content Include="img\app\atractivos\mapa\126.jpg" />
+    <Content Include="img\app\atractivos\mapa\127.jpg" />
+    <Content Include="img\app\atractivos\mapa\128.jpg" />
+    <Content Include="img\app\atractivos\mapa\129.jpg" />
+    <Content Include="img\app\atractivos\mapa\13.jpg" />
+    <Content Include="img\app\atractivos\mapa\130.jpg" />
+    <Content Include="img\app\atractivos\mapa\131.jpg" />
+    <Content Include="img\app\atractivos\mapa\132.jpg" />
+    <Content Include="img\app\atractivos\mapa\133.JPG" />
+    <Content Include="img\app\atractivos\mapa\134.jpg" />
+    <Content Include="img\app\atractivos\mapa\135.jpg" />
+    <Content Include="img\app\atractivos\mapa\14.jpg" />
+    <Content Include="img\app\atractivos\mapa\16.jpg" />
+    <Content Include="img\app\atractivos\mapa\17.jpg" />
+    <Content Include="img\app\atractivos\mapa\184.jpg" />
+    <Content Include="img\app\atractivos\mapa\185.jpg" />
+    <Content Include="img\app\atractivos\mapa\2.jpg" />
+    <Content Include="img\app\atractivos\mapa\20.jpg" />
+    <Content Include="img\app\atractivos\mapa\21.jpg" />
+    <Content Include="img\app\atractivos\mapa\22.jpg" />
+    <Content Include="img\app\atractivos\mapa\23.jpg" />
+    <Content Include="img\app\atractivos\mapa\24.jpg" />
+    <Content Include="img\app\atractivos\mapa\25.jpg" />
+    <Content Include="img\app\atractivos\mapa\26.jpg" />
+    <Content Include="img\app\atractivos\mapa\27.jpg" />
+    <Content Include="img\app\atractivos\mapa\28.jpg" />
+    <Content Include="img\app\atractivos\mapa\3.jpg" />
+    <Content Include="img\app\atractivos\mapa\30.jpg" />
+    <Content Include="img\app\atractivos\mapa\31.jpg" />
+    <Content Include="img\app\atractivos\mapa\33.jpg" />
+    <Content Include="img\app\atractivos\mapa\34.jpg" />
+    <Content Include="img\app\atractivos\mapa\35.jpg" />
+    <Content Include="img\app\atractivos\mapa\36.jpg" />
+    <Content Include="img\app\atractivos\mapa\37.jpg" />
+    <Content Include="img\app\atractivos\mapa\38.jpg" />
+    <Content Include="img\app\atractivos\mapa\39.jpg" />
+    <Content Include="img\app\atractivos\mapa\4.jpg" />
+    <Content Include="img\app\atractivos\mapa\40.jpg" />
+    <Content Include="img\app\atractivos\mapa\42.jpg" />
+    <Content Include="img\app\atractivos\mapa\43.jpg" />
+    <Content Include="img\app\atractivos\mapa\44.jpg" />
+    <Content Include="img\app\atractivos\mapa\45.jpg" />
+    <Content Include="img\app\atractivos\mapa\46.jpg" />
+    <Content Include="img\app\atractivos\mapa\47.jpg" />
+    <Content Include="img\app\atractivos\mapa\48.jpg" />
+    <Content Include="img\app\atractivos\mapa\49.jpg" />
+    <Content Include="img\app\atractivos\mapa\5.jpg" />
+    <Content Include="img\app\atractivos\mapa\50.jpg" />
+    <Content Include="img\app\atractivos\mapa\51.JPG" />
+    <Content Include="img\app\atractivos\mapa\52.jpg" />
+    <Content Include="img\app\atractivos\mapa\53.jpg" />
+    <Content Include="img\app\atractivos\mapa\54.jpg" />
+    <Content Include="img\app\atractivos\mapa\55.jpg" />
+    <Content Include="img\app\atractivos\mapa\56.jpg" />
+    <Content Include="img\app\atractivos\mapa\57.jpg" />
+    <Content Include="img\app\atractivos\mapa\58.jpg" />
+    <Content Include="img\app\atractivos\mapa\59.JPG" />
+    <Content Include="img\app\atractivos\mapa\60.jpg" />
+    <Content Include="img\app\atractivos\mapa\61.jpg" />
+    <Content Include="img\app\atractivos\mapa\62.jpg" />
+    <Content Include="img\app\atractivos\mapa\63.jpg" />
+    <Content Include="img\app\atractivos\mapa\64.jpg" />
+    <Content Include="img\app\atractivos\mapa\65.jpg" />
+    <Content Include="img\app\atractivos\mapa\66.jpg" />
+    <Content Include="img\app\atractivos\mapa\67.jpg" />
+    <Content Include="img\app\atractivos\mapa\68.jpg" />
+    <Content Include="img\app\atractivos\mapa\69.jpg" />
+    <Content Include="img\app\atractivos\mapa\7.jpg" />
+    <Content Include="img\app\atractivos\mapa\70.jpg" />
+    <Content Include="img\app\atractivos\mapa\71.jpg" />
+    <Content Include="img\app\atractivos\mapa\72.jpg" />
+    <Content Include="img\app\atractivos\mapa\73.jpg" />
+    <Content Include="img\app\atractivos\mapa\74.jpg" />
+    <Content Include="img\app\atractivos\mapa\75.jpg" />
+    <Content Include="img\app\atractivos\mapa\76.jpg" />
+    <Content Include="img\app\atractivos\mapa\77.jpg" />
+    <Content Include="img\app\atractivos\mapa\78.jpg" />
+    <Content Include="img\app\atractivos\mapa\79.JPG" />
+    <Content Include="img\app\atractivos\mapa\8.jpg" />
+    <Content Include="img\app\atractivos\mapa\80.jpg" />
+    <Content Include="img\app\atractivos\mapa\81.jpg" />
+    <Content Include="img\app\atractivos\mapa\82.jpg" />
+    <Content Include="img\app\atractivos\mapa\83.jpg" />
+    <Content Include="img\app\atractivos\mapa\84.jpg" />
+    <Content Include="img\app\atractivos\mapa\85.jpg" />
+    <Content Include="img\app\atractivos\mapa\86.jpg" />
+    <Content Include="img\app\atractivos\mapa\87.jpg" />
+    <Content Include="img\app\atractivos\mapa\88.jpg" />
+    <Content Include="img\app\atractivos\mapa\89.jpg" />
+    <Content Include="img\app\atractivos\mapa\90.jpg" />
+    <Content Include="img\app\atractivos\mapa\91.jpg" />
+    <Content Include="img\app\atractivos\mapa\92.jpg" />
+    <Content Include="img\app\atractivos\mapa\93.jpg" />
+    <Content Include="img\app\atractivos\mapa\94.jpg" />
+    <Content Include="img\app\atractivos\mapa\95.jpg" />
+    <Content Include="img\app\atractivos\mapa\96.jpg" />
+    <Content Include="img\app\atractivos\mapa\97.jpg" />
+    <Content Include="img\app\atractivos\mapa\98.jpg" />
+    <Content Include="img\app\atractivos\mapa\99.jpg" />
+    <Content Include="img\app\avatares\1.png" />
+    <Content Include="img\app\avatares\2.png" />
+    <Content Include="img\app\avatares\3.png" />
+    <Content Include="img\app\avatares\7.png" />
+    <Content Include="img\app\beneficios\grilla\inicial.jpg" />
+    <Content Include="img\app\campanias\1.jpg" />
+    <Content Include="img\app\campanias\grilla\1.jpg" />
+    <Content Include="img\app\campanias\grilla\inicial.jpg" />
+    <Content Include="img\app\iconos\0.png" />
+    <Content Include="img\app\iconos\132_12.png" />
+    <Content Include="img\app\iconos\132_13.png" />
+    <Content Include="img\app\iconos\132_14.png" />
+    <Content Include="img\app\iconos\132_63.png" />
+    <Content Include="img\app\iconos\133_12.png" />
+    <Content Include="img\app\iconos\133_13.png" />
+    <Content Include="img\app\iconos\133_14.png" />
+    <Content Include="img\app\iconos\133_63.png" />
+    <Content Include="img\app\iconos\16_12.png" />
+    <Content Include="img\app\iconos\16_13.png" />
+    <Content Include="img\app\iconos\16_14.png" />
+    <Content Include="img\app\iconos\16_15.png" />
+    <Content Include="img\app\iconos\16_63.png" />
+    <Content Include="img\app\iconos\17_12.png" />
+    <Content Include="img\app\iconos\17_13.png" />
+    <Content Include="img\app\iconos\17_14.png" />
+    <Content Include="img\app\iconos\17_63.png" />
+    <Content Include="img\app\iconos\18_12.png" />
+    <Content Include="img\app\iconos\18_122.png" />
+    <Content Include="img\app\iconos\18_13.png" />
+    <Content Include="img\app\iconos\18_14.png" />
+    <Content Include="img\app\iconos\18_63.png" />
+    <Content Include="img\app\iconos\19_12.png" />
+    <Content Include="img\app\iconos\19_13.png" />
+    <Content Include="img\app\iconos\19_14.png" />
+    <Content Include="img\app\iconos\19_63.png" />
+    <Content Include="img\app\iconos\20_12.png" />
+    <Content Include="img\app\iconos\20_13.png" />
+    <Content Include="img\app\iconos\20_14.png" />
+    <Content Include="img\app\iconos\20_63.png" />
+    <Content Include="img\app\iconos\21_12.png" />
+    <Content Include="img\app\iconos\21_13.png" />
+    <Content Include="img\app\iconos\21_14.png" />
+    <Content Include="img\app\iconos\21_63.png" />
+    <Content Include="img\app\iconos\22.png" />
+    <Content Include="img\app\iconos\22_13.png" />
+    <Content Include="img\app\iconos\22_14.png" />
+    <Content Include="img\app\iconos\22_15.png" />
+    <Content Include="img\app\iconos\22_63.png" />
+    <Content Include="img\app\iconos\23.png" />
+    <Content Include="img\app\iconos\23_13.png" />
+    <Content Include="img\app\iconos\23_14.png" />
+    <Content Include="img\app\iconos\23_15.png" />
+    <Content Include="img\app\iconos\23_63.png" />
+    <Content Include="img\app\iconos\24.png" />
+    <Content Include="img\app\iconos\24_13.png" />
+    <Content Include="img\app\iconos\24_15.png" />
+    <Content Include="img\app\iconos\25.png" />
+    <Content Include="img\app\iconos\25_12.png" />
+    <Content Include="img\app\iconos\25_13.png" />
+    <Content Include="img\app\iconos\25_14.png" />
+    <Content Include="img\app\iconos\25_15.png" />
+    <Content Include="img\app\iconos\25_63.png" />
+    <Content Include="img\app\iconos\26.png" />
+    <Content Include="img\app\iconos\26_12.png" />
+    <Content Include="img\app\iconos\26_13.png" />
+    <Content Include="img\app\iconos\26_14.png" />
+    <Content Include="img\app\iconos\26_15.png" />
+    <Content Include="img\app\iconos\26_63.png" />
+    <Content Include="img\app\iconos\27.png" />
+    <Content Include="img\app\iconos\27_12.png" />
+    <Content Include="img\app\iconos\27_13.png" />
+    <Content Include="img\app\iconos\27_14.png" />
+    <Content Include="img\app\iconos\27_15.png" />
+    <Content Include="img\app\iconos\27_63.png" />
+    <Content Include="img\app\iconos\28.png" />
+    <Content Include="img\app\iconos\28_12.png" />
+    <Content Include="img\app\iconos\28_13.png" />
+    <Content Include="img\app\iconos\28_14.png" />
+    <Content Include="img\app\iconos\28_15.png" />
+    <Content Include="img\app\iconos\28_63.png" />
+    <Content Include="img\app\iconos\29_12.png" />
+    <Content Include="img\app\iconos\29_13.png" />
+    <Content Include="img\app\iconos\29_14.png" />
+    <Content Include="img\app\iconos\29_63.png" />
+    <Content Include="img\app\iconos\30_12.png" />
+    <Content Include="img\app\iconos\30_13.png" />
+    <Content Include="img\app\iconos\30_14.png" />
+    <Content Include="img\app\iconos\30_63.png" />
+    <Content Include="img\app\iconos\31_12.png" />
+    <Content Include="img\app\iconos\31_13.png" />
+    <Content Include="img\app\iconos\31_14.png" />
+    <Content Include="img\app\iconos\31_63.png" />
+    <Content Include="img\app\iconos\32_12.png" />
+    <Content Include="img\app\iconos\32_122.png" />
+    <Content Include="img\app\iconos\32_13.png" />
+    <Content Include="img\app\iconos\32_14.png" />
+    <Content Include="img\app\iconos\32_63.png" />
+    <Content Include="img\app\iconos\33_12.png" />
+    <Content Include="img\app\iconos\33_13.png" />
+    <Content Include="img\app\iconos\33_14.png" />
+    <Content Include="img\app\iconos\33_63.png" />
+    <Content Include="img\app\iconos\34_12.png" />
+    <Content Include="img\app\iconos\34_13.png" />
+    <Content Include="img\app\iconos\34_14.png" />
+    <Content Include="img\app\iconos\34_63.png" />
+    <Content Include="img\app\iconos\35_12.png" />
+    <Content Include="img\app\iconos\35_13.png" />
+    <Content Include="img\app\iconos\35_14.png" />
+    <Content Include="img\app\iconos\35_63.png" />
+    <Content Include="img\app\iconos\36_12.png" />
+    <Content Include="img\app\iconos\36_13.png" />
+    <Content Include="img\app\iconos\36_14.png" />
+    <Content Include="img\app\iconos\36_63.png" />
+    <Content Include="img\app\iconos\37_12.png" />
+    <Content Include="img\app\iconos\37_13.png" />
+    <Content Include="img\app\iconos\37_14.png" />
+    <Content Include="img\app\iconos\37_63.png" />
+    <Content Include="img\app\iconos\38_12.png" />
+    <Content Include="img\app\iconos\38_13.png" />
+    <Content Include="img\app\iconos\38_14.png" />
+    <Content Include="img\app\iconos\38_63.png" />
+    <Content Include="img\app\iconos\39_12.png" />
+    <Content Include="img\app\iconos\39_13.png" />
+    <Content Include="img\app\iconos\39_14.png" />
+    <Content Include="img\app\iconos\39_63.png" />
+    <Content Include="img\app\iconos\40_12.png" />
+    <Content Include="img\app\iconos\40_13.png" />
+    <Content Include="img\app\iconos\40_14.png" />
+    <Content Include="img\app\iconos\40_63.png" />
+    <Content Include="img\app\iconos\41_12.png" />
+    <Content Include="img\app\iconos\41_13.png" />
+    <Content Include="img\app\iconos\41_14.png" />
+    <Content Include="img\app\iconos\41_63.png" />
+    <Content Include="img\app\iconos\42_12.png" />
+    <Content Include="img\app\iconos\42_13.png" />
+    <Content Include="img\app\iconos\42_14.png" />
+    <Content Include="img\app\iconos\42_63.png" />
+    <Content Include="img\app\iconos\43_12.png" />
+    <Content Include="img\app\iconos\43_13.png" />
+    <Content Include="img\app\iconos\43_14.png" />
+    <Content Include="img\app\iconos\43_63.png" />
+    <Content Include="img\app\iconos\44_12.png" />
+    <Content Include="img\app\iconos\44_13.png" />
+    <Content Include="img\app\iconos\44_14.png" />
+    <Content Include="img\app\iconos\44_63.png" />
+    <Content Include="img\app\iconos\45_12.png" />
+    <Content Include="img\app\iconos\45_13.png" />
+    <Content Include="img\app\iconos\45_14.png" />
+    <Content Include="img\app\iconos\45_63.png" />
+    <Content Include="img\app\iconos\46_12.png" />
+    <Content Include="img\app\iconos\46_13.png" />
+    <Content Include="img\app\iconos\46_14.png" />
+    <Content Include="img\app\iconos\46_63.png" />
+    <Content Include="img\app\iconos\47_12.png" />
+    <Content Include="img\app\iconos\47_13.png" />
+    <Content Include="img\app\iconos\47_14.png" />
+    <Content Include="img\app\iconos\47_63.png" />
+    <Content Include="img\app\iconos\48_12.png" />
+    <Content Include="img\app\iconos\48_13.png" />
+    <Content Include="img\app\iconos\48_14.png" />
+    <Content Include="img\app\iconos\48_63.png" />
+    <Content Include="img\app\iconos\49_12.png" />
+    <Content Include="img\app\iconos\49_13.png" />
+    <Content Include="img\app\iconos\49_14.png" />
+    <Content Include="img\app\iconos\49_63.png" />
+    <Content Include="img\app\iconos\50_12.png" />
+    <Content Include="img\app\iconos\50_13.png" />
+    <Content Include="img\app\iconos\50_14.png" />
+    <Content Include="img\app\iconos\50_63.png" />
+    <Content Include="img\app\iconos\51_12.png" />
+    <Content Include="img\app\iconos\51_13.png" />
+    <Content Include="img\app\iconos\51_14.png" />
+    <Content Include="img\app\iconos\51_63.png" />
+    <Content Include="img\app\iconos\52_12.png" />
+    <Content Include="img\app\iconos\52_13.png" />
+    <Content Include="img\app\iconos\52_14.png" />
+    <Content Include="img\app\iconos\52_15.png" />
+    <Content Include="img\app\iconos\52_63.png" />
+    <Content Include="img\app\iconos\53_12.png" />
+    <Content Include="img\app\iconos\53_13.png" />
+    <Content Include="img\app\iconos\53_14.png" />
+    <Content Include="img\app\iconos\53_15.png" />
+    <Content Include="img\app\iconos\53_63.png" />
+    <Content Include="img\app\iconos\54_12.png" />
+    <Content Include="img\app\iconos\54_13.png" />
+    <Content Include="img\app\iconos\54_14.png" />
+    <Content Include="img\app\iconos\54_15.png" />
+    <Content Include="img\app\iconos\54_63.png" />
+    <Content Include="img\app\iconos\55_12.png" />
+    <Content Include="img\app\iconos\55_13.png" />
+    <Content Include="img\app\iconos\55_14.png" />
+    <Content Include="img\app\iconos\55_15.png" />
+    <Content Include="img\app\iconos\55_63.png" />
+    <Content Include="img\app\iconos\62_111.png" />
+    <Content Include="img\app\iconos\62_12.png" />
+    <Content Include="img\app\iconos\62_13.png" />
+    <Content Include="img\app\iconos\62_14.png" />
+    <Content Include="img\app\iconos\62_63.png" />
+    <Content Include="img\app\iconos\71_12.png" />
+    <Content Include="img\app\iconos\71_13.png" />
+    <Content Include="img\app\iconos\71_14.png" />
+    <Content Include="img\app\iconos\71_63.png" />
+    <Content Include="img\app\iconos\72_12.png" />
+    <Content Include="img\app\iconos\72_13.png" />
+    <Content Include="img\app\iconos\72_14.png" />
+    <Content Include="img\app\iconos\72_15.png" />
+    <Content Include="img\app\iconos\72_63.png" />
+    <Content Include="img\app\iconos\grilla\22_15.1.png" />
+    <Content Include="img\app\iconos\grilla\22_15.2.png" />
+    <Content Include="img\app\iconos\grilla\22_15.png" />
+    <Content Include="img\app\iconos\grilla\24_15.1.png" />
+    <Content Include="img\app\iconos\grilla\24_15.png" />
+    <Content Include="img\app\iconos\grilla\29_13.png" />
+    <Content Include="img\app\iconos\grilla\30_12.png" />
+    <Content Include="img\app\iconos\grilla\31_14.png" />
+    <Content Include="img\app\iconos\grilla\32_12.png" />
+    <Content Include="img\app\iconos\grilla\32_13.png" />
+    <Content Include="img\app\iconos\grilla\32_14.png" />
+    <Content Include="img\app\iconos\grilla\34_12.png" />
+    <Content Include="img\app\iconos\grilla\34_13.png" />
+    <Content Include="img\app\iconos\grilla\34_14.png" />
+    <Content Include="img\app\iconos\grilla\35_13.png" />
+    <Content Include="img\app\iconos\grilla\35_14.png" />
+    <Content Include="img\app\iconos\sur-A23.png" />
+    <Content Include="img\app\latitud\1.jpg" />
+    <Content Include="img\app\latitud\10.jpg" />
+    <Content Include="img\app\latitud\11.jpg" />
+    <Content Include="img\app\latitud\12.jpg" />
+    <Content Include="img\app\latitud\13.jpg" />
+    <Content Include="img\app\latitud\14.jpg" />
+    <Content Include="img\app\latitud\15.jpg" />
+    <Content Include="img\app\latitud\16.jpg" />
+    <Content Include="img\app\latitud\18.jpg" />
+    <Content Include="img\app\latitud\19.jpg" />
+    <Content Include="img\app\latitud\2.jpg" />
+    <Content Include="img\app\latitud\20.jpg" />
+    <Content Include="img\app\latitud\21.jpg" />
+    <Content Include="img\app\latitud\22.jpg" />
+    <Content Include="img\app\latitud\23.jpg" />
+    <Content Include="img\app\latitud\24.jpg" />
+    <Content Include="img\app\latitud\3.jpg" />
+    <Content Include="img\app\latitud\4.jpg" />
+    <Content Include="img\app\latitud\5.jpg" />
+    <Content Include="img\app\latitud\6.jpg" />
+    <Content Include="img\app\latitud\7.jpg" />
+    <Content Include="img\app\latitud\8.jpg" />
+    <Content Include="img\app\latitud\9.jpg" />
+    <Content Include="img\app\parametros\bienvenida.jpg" />
+    <Content Include="img\app\parametros\empezar.jpg" />
+    <Content Include="img\app\parametros\funcion1.jpg" />
+    <Content Include="img\app\parametros\funcion2.jpg" />
+    <Content Include="img\app\parametros\funcion3.jpg" />
+    <Content Include="img\app\parametros\iniciar-sesion.jpg" />
+    <Content Include="img\app\parametros\logo.png" />
+    <Content Include="img\app\premios\0.jpg" />
+    <Content Include="img\app\premios\1.jpg" />
+    <Content Include="img\app\premios\2.jpg" />
+    <Content Include="img\app\premios\3.jpg" />
+    <Content Include="img\app\premios\4.jpg" />
+    <Content Include="img\app\premios\grilla\0.jpg" />
+    <Content Include="img\app\premios\grilla\1.jpg" />
+    <Content Include="img\app\premios\grilla\2.jpg" />
+    <Content Include="img\app\premios\grilla\3.jpg" />
+    <Content Include="img\app\premios\grilla\4.jpg" />
+    <Content Include="img\app\premios\grilla\inicial.jpg" />
+    <Content Include="img\app\rutas\busqueda\1.jpg" />
+    <Content Include="img\app\rutas\busqueda\10.jpg" />
+    <Content Include="img\app\rutas\busqueda\11.jpg" />
+    <Content Include="img\app\rutas\busqueda\12.jpg" />
+    <Content Include="img\app\rutas\busqueda\13.jpg" />
+    <Content Include="img\app\rutas\busqueda\14.jpg" />
+    <Content Include="img\app\rutas\busqueda\15.jpg" />
+    <Content Include="img\app\rutas\busqueda\2.jpg" />
+    <Content Include="img\app\rutas\busqueda\3.jpg" />
+    <Content Include="img\app\rutas\busqueda\4.jpg" />
+    <Content Include="img\app\rutas\busqueda\5.jpg" />
+    <Content Include="img\app\rutas\busqueda\6.jpg" />
+    <Content Include="img\app\rutas\busqueda\7.jpg" />
+    <Content Include="img\app\rutas\busqueda\8.jpg" />
+    <Content Include="img\app\rutas\busqueda\9.jpg" />
+    <Content Include="img\app\rutas\cargarImagen.jpg" />
+    <Content Include="img\app\rutas\carrusel\1.jpg" />
+    <Content Include="img\app\rutas\carrusel\10.jpg" />
+    <Content Include="img\app\rutas\carrusel\11.jpg" />
+    <Content Include="img\app\rutas\carrusel\12.jpg" />
+    <Content Include="img\app\rutas\carrusel\13.jpg" />
+    <Content Include="img\app\rutas\carrusel\14.jpg" />
+    <Content Include="img\app\rutas\carrusel\15.jpg" />
+    <Content Include="img\app\rutas\carrusel\2.jpg" />
+    <Content Include="img\app\rutas\carrusel\3.jpg" />
+    <Content Include="img\app\rutas\carrusel\4.jpg" />
+    <Content Include="img\app\rutas\carrusel\5.jpg" />
+    <Content Include="img\app\rutas\carrusel\6.jpg" />
+    <Content Include="img\app\rutas\carrusel\7.jpg" />
+    <Content Include="img\app\rutas\carrusel\8.jpg" />
+    <Content Include="img\app\rutas\carrusel\9.jpg" />
+    <Content Include="img\app\rutas\compartir\1.jpg" />
+    <Content Include="img\app\rutas\compartir\10.jpg" />
+    <Content Include="img\app\rutas\compartir\11.jpg" />
+    <Content Include="img\app\rutas\compartir\12.jpg" />
+    <Content Include="img\app\rutas\compartir\13.jpg" />
+    <Content Include="img\app\rutas\compartir\14.jpg" />
+    <Content Include="img\app\rutas\compartir\15.jpg" />
+    <Content Include="img\app\rutas\compartir\2.jpg" />
+    <Content Include="img\app\rutas\compartir\3.jpg" />
+    <Content Include="img\app\rutas\compartir\4.jpg" />
+    <Content Include="img\app\rutas\compartir\5.jpg" />
+    <Content Include="img\app\rutas\compartir\6.jpg" />
+    <Content Include="img\app\rutas\compartir\7.jpg" />
+    <Content Include="img\app\rutas\compartir\8.jpg" />
+    <Content Include="img\app\rutas\compartir\9.jpg" />
+    <Content Include="img\app\rutas\detalle\1.jpg" />
+    <Content Include="img\app\rutas\detalle\10.jpg" />
+    <Content Include="img\app\rutas\detalle\11.jpg" />
+    <Content Include="img\app\rutas\detalle\12.jpg" />
+    <Content Include="img\app\rutas\detalle\13.jpg" />
+    <Content Include="img\app\rutas\detalle\14.jpg" />
+    <Content Include="img\app\rutas\detalle\15.jpg" />
+    <Content Include="img\app\rutas\detalle\2.jpg" />
+    <Content Include="img\app\rutas\detalle\3.jpg" />
+    <Content Include="img\app\rutas\detalle\4.jpg" />
+    <Content Include="img\app\rutas\detalle\5.jpg" />
+    <Content Include="img\app\rutas\detalle\6.jpg" />
+    <Content Include="img\app\rutas\detalle\7.jpg" />
+    <Content Include="img\app\rutas\detalle\8.jpg" />
+    <Content Include="img\app\rutas\detalle\9.jpg" />
+    <Content Include="img\app\rutas\experiencia\1.jpg" />
+    <Content Include="img\app\rutas\experiencia\10.jpg" />
+    <Content Include="img\app\rutas\experiencia\11.jpg" />
+    <Content Include="img\app\rutas\experiencia\12.jpg" />
+    <Content Include="img\app\rutas\experiencia\13.jpg" />
+    <Content Include="img\app\rutas\experiencia\14.jpg" />
+    <Content Include="img\app\rutas\experiencia\15.jpg" />
+    <Content Include="img\app\rutas\experiencia\2.jpg" />
+    <Content Include="img\app\rutas\experiencia\3.jpg" />
+    <Content Include="img\app\rutas\experiencia\4.jpg" />
+    <Content Include="img\app\rutas\experiencia\5.jpg" />
+    <Content Include="img\app\rutas\experiencia\6.jpg" />
+    <Content Include="img\app\rutas\experiencia\7.jpg" />
+    <Content Include="img\app\rutas\experiencia\8.jpg" />
+    <Content Include="img\app\rutas\experiencia\9.jpg" />
+    <Content Include="img\app\rutas\grilla\1.jpg" />
+    <Content Include="img\app\rutas\grilla\10.jpg" />
+    <Content Include="img\app\rutas\grilla\11.jpg" />
+    <Content Include="img\app\rutas\grilla\12.jpg" />
+    <Content Include="img\app\rutas\grilla\13.jpg" />
+    <Content Include="img\app\rutas\grilla\14.jpg" />
+    <Content Include="img\app\rutas\grilla\15.jpg" />
+    <Content Include="img\app\rutas\grilla\2.jpg" />
+    <Content Include="img\app\rutas\grilla\3.jpg" />
+    <Content Include="img\app\rutas\grilla\4.jpg" />
+    <Content Include="img\app\rutas\grilla\5.jpg" />
+    <Content Include="img\app\rutas\grilla\6.jpg" />
+    <Content Include="img\app\rutas\grilla\7.jpg" />
+    <Content Include="img\app\rutas\grilla\8.jpg" />
+    <Content Include="img\app\rutas\grilla\9.jpg" />
+    <Content Include="img\app\rutas\grilla\cargarImagen.jpg" />
+    <Content Include="img\app\rutas\sombra.png" />
+    <Content Include="img\app\turistas\inicial.jpg" />
+    <Content Include="img\app\valoracion\grilla\inicial.jpg" />
+    <Content Include="Prueba.html" />
+    <Content Include="img\email\logo.jpg" />
+    <Content Include="GestionSeguridadService.svc" />
+    <Content Include="Log\Log.txt" />
+    <Content Include="unity.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="packages.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile2.pubxml" />
+    <None Include="Properties\PublishProfiles\RutasCortasService - Web Deploy.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>bin\Olimpiadas.DistributedServices.Host.xml</DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>39189</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56904/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,509 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GestionContenido" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DbContextGestionContenido" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Comisario" EntityType="GestionContenido.Comisario" />
+    <EntitySet Name="ComplejoDeportivo" EntityType="GestionContenido.ComplejoDeportivo" />
+    <EntitySet Name="Equipamiento" EntityType="GestionContenido.Equipamiento" />
+    <EntitySet Name="Evento" EntityType="GestionContenido.Evento" />
+    <EntitySet Name="Grupo" EntityType="GestionContenido.Grupo" />
+    <EntitySet Name="Localizacion" EntityType="GestionContenido.Localizacion" />
+    <EntitySet Name="MaterialEvento" EntityType="GestionContenido.MaterialEvento" />
+    <EntitySet Name="MaterialMantenimiento" EntityType="GestionContenido.MaterialMantenimiento" />
+    <EntitySet Name="Participante" EntityType="GestionContenido.Participante" />
+    <EntitySet Name="Personal" EntityType="GestionContenido.Personal" />
+    <EntitySet Name="Registro" EntityType="GestionContenido.Registro" />
+    <EntitySet Name="Sede" EntityType="GestionContenido.Sede" />
+    <EntitySet Name="Tipo" EntityType="GestionContenido.Tipo" />
+    <AssociationSet Name="FK_Comisario_Evento" Association="GestionContenido.FK_Comisario_Evento">
+      <End Role="Evento" EntitySet="Evento" />
+      <End Role="Comisario" EntitySet="Comisario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comisario_Personal" Association="GestionContenido.FK_Comisario_Personal">
+      <End Role="Personal" EntitySet="Personal" />
+      <End Role="Comisario" EntitySet="Comisario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comisario_Tipo" Association="GestionContenido.FK_Comisario_Tipo">
+      <End Role="Tipo" EntitySet="Tipo" />
+      <End Role="Comisario" EntitySet="Comisario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ComplejoDeportivo_Participante" Association="GestionContenido.FK_ComplejoDeportivo_Participante">
+      <End Role="Participante" EntitySet="Participante" />
+      <End Role="ComplejoDeportivo" EntitySet="ComplejoDeportivo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ComplejoDeportivo_Sede" Association="GestionContenido.FK_ComplejoDeportivo_Sede">
+      <End Role="Sede" EntitySet="Sede" />
+      <End Role="ComplejoDeportivo" EntitySet="ComplejoDeportivo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ComplejoDeportivo_Tipo" Association="GestionContenido.FK_ComplejoDeportivo_Tipo">
+      <End Role="Tipo" EntitySet="Tipo" />
+      <End Role="ComplejoDeportivo" EntitySet="ComplejoDeportivo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Localizacion_ComplejoDeportivo" Association="GestionContenido.FK_Localizacion_ComplejoDeportivo">
+      <End Role="ComplejoDeportivo" EntitySet="ComplejoDeportivo" />
+      <End Role="Localizacion" EntitySet="Localizacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MaterialMantenimiento_ComplejoDeportivo" Association="GestionContenido.FK_MaterialMantenimiento_ComplejoDeportivo">
+      <End Role="ComplejoDeportivo" EntitySet="ComplejoDeportivo" />
+      <End Role="MaterialMantenimiento" EntitySet="MaterialMantenimiento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MaterialEvento_Equipamiento" Association="GestionContenido.FK_MaterialEvento_Equipamiento">
+      <End Role="Equipamiento" EntitySet="Equipamiento" />
+      <End Role="MaterialEvento" EntitySet="MaterialEvento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MaterialMantenimiento_Equipamiento" Association="GestionContenido.FK_MaterialMantenimiento_Equipamiento">
+      <End Role="Equipamiento" EntitySet="Equipamiento" />
+      <End Role="MaterialMantenimiento" EntitySet="MaterialMantenimiento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Evento_Localizacion" Association="GestionContenido.FK_Evento_Localizacion">
+      <End Role="Localizacion" EntitySet="Localizacion" />
+      <End Role="Evento" EntitySet="Evento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Evento_Tipo" Association="GestionContenido.FK_Evento_Tipo">
+      <End Role="Tipo" EntitySet="Tipo" />
+      <End Role="Evento" EntitySet="Evento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Evento_Tipo1" Association="GestionContenido.FK_Evento_Tipo1">
+      <End Role="Tipo" EntitySet="Tipo" />
+      <End Role="Evento" EntitySet="Evento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MaterialEvento_Evento" Association="GestionContenido.FK_MaterialEvento_Evento">
+      <End Role="Evento" EntitySet="Evento" />
+      <End Role="MaterialEvento" EntitySet="MaterialEvento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Registro_Evento" Association="GestionContenido.FK_Registro_Evento">
+      <End Role="Evento" EntitySet="Evento" />
+      <End Role="Registro" EntitySet="Registro" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tipo_Grupo" Association="GestionContenido.FK_Tipo_Grupo">
+      <End Role="Grupo" EntitySet="Grupo" />
+      <End Role="Tipo" EntitySet="Tipo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Participante_Tipo" Association="GestionContenido.FK_Participante_Tipo">
+      <End Role="Tipo" EntitySet="Tipo" />
+      <End Role="Participante" EntitySet="Participante" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Participante_Tipo1" Association="GestionContenido.FK_Participante_Tipo1">
+      <End Role="Tipo" EntitySet="Tipo" />
+      <End Role="Participante" EntitySet="Participante" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Registro_Participante" Association="GestionContenido.FK_Registro_Participante">
+      <End Role="Participante" EntitySet="Participante" />
+      <End Role="Registro" EntitySet="Registro" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Comisario">
+    <Key>
+      <PropertyRef Name="IdComisario" />
+    </Key>
+    <Property Name="IdComisario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdEvento" Type="Int32" Nullable="false" />
+    <Property Name="IdPersonal" Type="Int32" Nullable="false" />
+    <Property Name="IdTipoComisario" Type="Int32" Nullable="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Evento" Relationship="GestionContenido.FK_Comisario_Evento" FromRole="Comisario" ToRole="Evento" />
+    <NavigationProperty Name="Personal" Relationship="GestionContenido.FK_Comisario_Personal" FromRole="Comisario" ToRole="Personal" />
+    <NavigationProperty Name="Tipo" Relationship="GestionContenido.FK_Comisario_Tipo" FromRole="Comisario" ToRole="Tipo" />
+  </EntityType>
+  <EntityType Name="ComplejoDeportivo">
+    <Key>
+      <PropertyRef Name="IdComplejo" />
+    </Key>
+    <Property Name="IdComplejo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdSede" Type="Int32" Nullable="false" />
+    <Property Name="NombreComplejo" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="IdTipoComplejo" Type="Int32" Nullable="false" />
+    <Property Name="Direccion" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="IdJefeComplejo" Type="Int32" Nullable="false" />
+    <Property Name="TotalAreaOcupada" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Presupuesto" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Participante" Relationship="GestionContenido.FK_ComplejoDeportivo_Participante" FromRole="ComplejoDeportivo" ToRole="Participante" />
+    <NavigationProperty Name="Sede" Relationship="GestionContenido.FK_ComplejoDeportivo_Sede" FromRole="ComplejoDeportivo" ToRole="Sede" />
+    <NavigationProperty Name="Tipo" Relationship="GestionContenido.FK_ComplejoDeportivo_Tipo" FromRole="ComplejoDeportivo" ToRole="Tipo" />
+    <NavigationProperty Name="Localizacion" Relationship="GestionContenido.FK_Localizacion_ComplejoDeportivo" FromRole="ComplejoDeportivo" ToRole="Localizacion" />
+    <NavigationProperty Name="MaterialMantenimiento" Relationship="GestionContenido.FK_MaterialMantenimiento_ComplejoDeportivo" FromRole="ComplejoDeportivo" ToRole="MaterialMantenimiento" />
+  </EntityType>
+  <EntityType Name="Equipamiento">
+    <Key>
+      <PropertyRef Name="IdEquipamiento" />
+    </Key>
+    <Property Name="IdEquipamiento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreEquipamiento" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="MaterialEvento" Relationship="GestionContenido.FK_MaterialEvento_Equipamiento" FromRole="Equipamiento" ToRole="MaterialEvento" />
+    <NavigationProperty Name="MaterialMantenimiento" Relationship="GestionContenido.FK_MaterialMantenimiento_Equipamiento" FromRole="Equipamiento" ToRole="MaterialMantenimiento" />
+  </EntityType>
+  <EntityType Name="Evento">
+    <Key>
+      <PropertyRef Name="IdEvento" />
+    </Key>
+    <Property Name="IdEvento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdDeporte" Type="Int32" Nullable="false" />
+    <Property Name="IdLocalizacion" Type="Int32" Nullable="false" />
+    <Property Name="FechaEvento" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="HoraInicioEvento" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="TieneDuracionEvento" Type="Boolean" Nullable="false" />
+    <Property Name="DuracionMinutosEvento" Type="Int32" />
+    <Property Name="HoraFinEvento" Type="Time" Precision="7" />
+    <Property Name="CantidadParticipantesEvento" Type="Int32" Nullable="false" />
+    <Property Name="CantidadComisariosEvento" Type="Int32" Nullable="false" />
+    <Property Name="IdEstadoEvento" Type="Int32" Nullable="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Comisario" Relationship="GestionContenido.FK_Comisario_Evento" FromRole="Evento" ToRole="Comisario" />
+    <NavigationProperty Name="Localizacion" Relationship="GestionContenido.FK_Evento_Localizacion" FromRole="Evento" ToRole="Localizacion" />
+    <NavigationProperty Name="Tipo" Relationship="GestionContenido.FK_Evento_Tipo" FromRole="Evento" ToRole="Tipo" />
+    <NavigationProperty Name="Tipo1" Relationship="GestionContenido.FK_Evento_Tipo1" FromRole="Evento" ToRole="Tipo" />
+    <NavigationProperty Name="MaterialEvento" Relationship="GestionContenido.FK_MaterialEvento_Evento" FromRole="Evento" ToRole="MaterialEvento" />
+    <NavigationProperty Name="Registro" Relationship="GestionContenido.FK_Registro_Evento" FromRole="Evento" ToRole="Registro" />
+  </EntityType>
+  <EntityType Name="Grupo">
+    <Key>
+      <PropertyRef Name="IdGrupo" />
+    </Key>
+    <Property Name="IdGrupo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreGrupo" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Tipo" Relationship="GestionContenido.FK_Tipo_Grupo" FromRole="Grupo" ToRole="Tipo" />
+  </EntityType>
+  <EntityType Name="Localizacion">
+    <Key>
+      <PropertyRef Name="IdLocalizacion" />
+    </Key>
+    <Property Name="IdLocalizacion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdComplejo" Type="Int32" Nullable="false" />
+    <Property Name="NombreLocalizacion" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="ComplejoDeportivo" Relationship="GestionContenido.FK_Localizacion_ComplejoDeportivo" FromRole="Localizacion" ToRole="ComplejoDeportivo" />
+    <NavigationProperty Name="Evento" Relationship="GestionContenido.FK_Evento_Localizacion" FromRole="Localizacion" ToRole="Evento" />
+  </EntityType>
+  <EntityType Name="MaterialEvento">
+    <Key>
+      <PropertyRef Name="IdMaterial" />
+    </Key>
+    <Property Name="IdMaterial" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdEvento" Type="Int32" Nullable="false" />
+    <Property Name="IdEquipamiento" Type="Int32" Nullable="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Equipamiento" Relationship="GestionContenido.FK_MaterialEvento_Equipamiento" FromRole="MaterialEvento" ToRole="Equipamiento" />
+    <NavigationProperty Name="Evento" Relationship="GestionContenido.FK_MaterialEvento_Evento" FromRole="MaterialEvento" ToRole="Evento" />
+  </EntityType>
+  <EntityType Name="MaterialMantenimiento">
+    <Key>
+      <PropertyRef Name="IdMaterial" />
+    </Key>
+    <Property Name="IdMaterial" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdComplejo" Type="Int32" Nullable="false" />
+    <Property Name="IdEquipamiento" Type="Int32" Nullable="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="ComplejoDeportivo" Relationship="GestionContenido.FK_MaterialMantenimiento_ComplejoDeportivo" FromRole="MaterialMantenimiento" ToRole="ComplejoDeportivo" />
+    <NavigationProperty Name="Equipamiento" Relationship="GestionContenido.FK_MaterialMantenimiento_Equipamiento" FromRole="MaterialMantenimiento" ToRole="Equipamiento" />
+  </EntityType>
+  <EntityType Name="Participante">
+    <Key>
+      <PropertyRef Name="IdParticipante" />
+    </Key>
+    <Property Name="IdParticipante" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreParticipante" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="IdPais" Type="Int32" Nullable="false" />
+    <Property Name="IdDeporte" Type="Int32" Nullable="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="ComplejoDeportivo" Relationship="GestionContenido.FK_ComplejoDeportivo_Participante" FromRole="Participante" ToRole="ComplejoDeportivo" />
+    <NavigationProperty Name="Tipo" Relationship="GestionContenido.FK_Participante_Tipo" FromRole="Participante" ToRole="Tipo" />
+    <NavigationProperty Name="Tipo1" Relationship="GestionContenido.FK_Participante_Tipo1" FromRole="Participante" ToRole="Tipo" />
+    <NavigationProperty Name="Registro" Relationship="GestionContenido.FK_Registro_Participante" FromRole="Participante" ToRole="Registro" />
+  </EntityType>
+  <EntityType Name="Personal">
+    <Key>
+      <PropertyRef Name="IdPersonal" />
+    </Key>
+    <Property Name="IdPersonal" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombrePersonal" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="DniPersonal" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Comisario" Relationship="GestionContenido.FK_Comisario_Personal" FromRole="Personal" ToRole="Comisario" />
+  </EntityType>
+  <EntityType Name="Registro">
+    <Key>
+      <PropertyRef Name="IdRegistro" />
+    </Key>
+    <Property Name="IdRegistro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdEvento" Type="Int32" Nullable="false" />
+    <Property Name="IdParticipante" Type="Int32" Nullable="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Evento" Relationship="GestionContenido.FK_Registro_Evento" FromRole="Registro" ToRole="Evento" />
+    <NavigationProperty Name="Participante" Relationship="GestionContenido.FK_Registro_Participante" FromRole="Registro" ToRole="Participante" />
+  </EntityType>
+  <EntityType Name="Sede">
+    <Key>
+      <PropertyRef Name="IdSede" />
+    </Key>
+    <Property Name="IdSede" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreSede" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="CantidadComplejosSede" Type="Int32" Nullable="false" />
+    <Property Name="PresupuestoTotalSede" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="ComplejoDeportivo" Relationship="GestionContenido.FK_ComplejoDeportivo_Sede" FromRole="Sede" ToRole="ComplejoDeportivo" />
+  </EntityType>
+  <EntityType Name="Tipo">
+    <Key>
+      <PropertyRef Name="IdTipo" />
+    </Key>
+    <Property Name="IdTipo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdGrupo" Type="Int32" Nullable="false" />
+    <Property Name="NombreTipo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Comisario" Relationship="GestionContenido.FK_Comisario_Tipo" FromRole="Tipo" ToRole="Comisario" />
+    <NavigationProperty Name="ComplejoDeportivo" Relationship="GestionContenido.FK_ComplejoDeportivo_Tipo" FromRole="Tipo" ToRole="ComplejoDeportivo" />
+    <NavigationProperty Name="Evento" Relationship="GestionContenido.FK_Evento_Tipo" FromRole="Tipo" ToRole="Evento" />
+    <NavigationProperty Name="Evento1" Relationship="GestionContenido.FK_Evento_Tipo1" FromRole="Tipo" ToRole="Evento" />
+    <NavigationProperty Name="Grupo" Relationship="GestionContenido.FK_Tipo_Grupo" FromRole="Tipo" ToRole="Grupo" />
+    <NavigationProperty Name="Participante" Relationship="GestionContenido.FK_Participante_Tipo" FromRole="Tipo" ToRole="Participante" />
+    <NavigationProperty Name="Participante1" Relationship="GestionContenido.FK_Participante_Tipo1" FromRole="Tipo" ToRole="Participante" />
+  </EntityType>
+  <Association Name="FK_Comisario_Evento">
+    <End Type="GestionContenido.Evento" Role="Evento" Multiplicity="1" />
+    <End Type="GestionContenido.Comisario" Role="Comisario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Evento">
+        <PropertyRef Name="IdEvento" />
+      </Principal>
+      <Dependent Role="Comisario">
+        <PropertyRef Name="IdEvento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comisario_Personal">
+    <End Type="GestionContenido.Personal" Role="Personal" Multiplicity="1" />
+    <End Type="GestionContenido.Comisario" Role="Comisario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personal">
+        <PropertyRef Name="IdPersonal" />
+      </Principal>
+      <Dependent Role="Comisario">
+        <PropertyRef Name="IdPersonal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comisario_Tipo">
+    <End Type="GestionContenido.Tipo" Role="Tipo" Multiplicity="1" />
+    <End Type="GestionContenido.Comisario" Role="Comisario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tipo">
+        <PropertyRef Name="IdTipo" />
+      </Principal>
+      <Dependent Role="Comisario">
+        <PropertyRef Name="IdTipoComisario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ComplejoDeportivo_Participante">
+    <End Type="GestionContenido.Participante" Role="Participante" Multiplicity="1" />
+    <End Type="GestionContenido.ComplejoDeportivo" Role="ComplejoDeportivo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Participante">
+        <PropertyRef Name="IdParticipante" />
+      </Principal>
+      <Dependent Role="ComplejoDeportivo">
+        <PropertyRef Name="IdJefeComplejo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ComplejoDeportivo_Sede">
+    <End Type="GestionContenido.Sede" Role="Sede" Multiplicity="1" />
+    <End Type="GestionContenido.ComplejoDeportivo" Role="ComplejoDeportivo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sede">
+        <PropertyRef Name="IdSede" />
+      </Principal>
+      <Dependent Role="ComplejoDeportivo">
+        <PropertyRef Name="IdSede" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ComplejoDeportivo_Tipo">
+    <End Type="GestionContenido.Tipo" Role="Tipo" Multiplicity="1" />
+    <End Type="GestionContenido.ComplejoDeportivo" Role="ComplejoDeportivo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tipo">
+        <PropertyRef Name="IdTipo" />
+      </Principal>
+      <Dependent Role="ComplejoDeportivo">
+        <PropertyRef Name="IdTipoComplejo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Localizacion_ComplejoDeportivo">
+    <End Type="GestionContenido.ComplejoDeportivo" Role="ComplejoDeportivo" Multiplicity="1" />
+    <End Type="GestionContenido.Localizacion" Role="Localizacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ComplejoDeportivo">
+        <PropertyRef Name="IdComplejo" />
+      </Principal>
+      <Dependent Role="Localizacion">
+        <PropertyRef Name="IdComplejo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MaterialMantenimiento_ComplejoDeportivo">
+    <End Type="GestionContenido.ComplejoDeportivo" Role="ComplejoDeportivo" Multiplicity="1" />
+    <End Type="GestionContenido.MaterialMantenimiento" Role="MaterialMantenimiento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ComplejoDeportivo">
+        <PropertyRef Name="IdComplejo" />
+      </Principal>
+      <Dependent Role="MaterialMantenimiento">
+        <PropertyRef Name="IdComplejo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MaterialEvento_Equipamiento">
+    <End Type="GestionContenido.Equipamiento" Role="Equipamiento" Multiplicity="1" />
+    <End Type="GestionContenido.MaterialEvento" Role="MaterialEvento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Equipamiento">
+        <PropertyRef Name="IdEquipamiento" />
+      </Principal>
+      <Dependent Role="MaterialEvento">
+        <PropertyRef Name="IdEquipamiento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MaterialMantenimiento_Equipamiento">
+    <End Type="GestionContenido.Equipamiento" Role="Equipamiento" Multiplicity="1" />
+    <End Type="GestionContenido.MaterialMantenimiento" Role="MaterialMantenimiento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Equipamiento">
+        <PropertyRef Name="IdEquipamiento" />
+      </Principal>
+      <Dependent Role="MaterialMantenimiento">
+        <PropertyRef Name="IdEquipamiento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Evento_Localizacion">
+    <End Type="GestionContenido.Localizacion" Role="Localizacion" Multiplicity="1" />
+    <End Type="GestionContenido.Evento" Role="Evento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Localizacion">
+        <PropertyRef Name="IdLocalizacion" />
+      </Principal>
+      <Dependent Role="Evento">
+        <PropertyRef Name="IdLocalizacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Evento_Tipo">
+    <End Type="GestionContenido.Tipo" Role="Tipo" Multiplicity="1" />
+    <End Type="GestionContenido.Evento" Role="Evento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tipo">
+        <PropertyRef Name="IdTipo" />
+      </Principal>
+      <Dependent Role="Evento">
+        <PropertyRef Name="IdDeporte" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Evento_Tipo1">
+    <End Type="GestionContenido.Tipo" Role="Tipo" Multiplicity="1" />
+    <End Type="GestionContenido.Evento" Role="Evento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tipo">
+        <PropertyRef Name="IdTipo" />
+      </Principal>
+      <Dependent Role="Evento">
+        <PropertyRef Name="IdEstadoEvento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MaterialEvento_Evento">
+    <End Type="GestionContenido.Evento" Role="Evento" Multiplicity="1" />
+    <End Type="GestionContenido.MaterialEvento" Role="MaterialEvento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Evento">
+        <PropertyRef Name="IdEvento" />
+      </Principal>
+      <Dependent Role="MaterialEvento">
+        <PropertyRef Name="IdEvento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Registro_Evento">
+    <End Type="GestionContenido.Evento" Role="Evento" Multiplicity="1" />
+    <End Type="GestionContenido.Registro" Role="Registro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Evento">
+        <PropertyRef Name="IdEvento" />
+      </Principal>
+      <Dependent Role="Registro">
+        <PropertyRef Name="IdEvento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tipo_Grupo">
+    <End Type="GestionContenido.Grupo" Role="Grupo" Multiplicity="1" />
+    <End Type="GestionContenido.Tipo" Role="Tipo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grupo">
+        <PropertyRef Name="IdGrupo" />
+      </Principal>
+      <Dependent Role="Tipo">
+        <PropertyRef Name="IdGrupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Participante_Tipo">
+    <End Type="GestionContenido.Tipo" Role="Tipo" Multiplicity="1" />
+    <End Type="GestionContenido.Participante" Role="Participante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tipo">
+        <PropertyRef Name="IdTipo" />
+      </Principal>
+      <Dependent Role="Participante">
+        <PropertyRef Name="IdPais" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Participante_Tipo1">
+    <End Type="GestionContenido.Tipo" Role="Tipo" Multiplicity="1" />
+    <End Type="GestionContenido.Participante" Role="Participante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tipo">
+        <PropertyRef Name="IdTipo" />
+      </Principal>
+      <Dependent Role="Participante">
+        <PropertyRef Name="IdDeporte" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Registro_Participante">
+    <End Type="GestionContenido.Participante" Role="Participante" Multiplicity="1" />
+    <End Type="GestionContenido.Registro" Role="Registro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Participante">
+        <PropertyRef Name="IdParticipante" />
+      </Principal>
+      <Dependent Role="Registro">
+        <PropertyRef Name="IdParticipante" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

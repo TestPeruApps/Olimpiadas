@@ -1,0 +1,597 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Olimpiadas.Application.Dto</name>
+    </assembly>
+    <members>
+        <member name="T:Olimpiadas.Application.Dto.Comun.BasePaginacionResponseDto">
+            <summary>
+            Clase con datos para mostrar el resultado de la paginación.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.BasePaginacionResponseDto.EstadosSiNo">
+            <summary>
+            Lista de estados booleanos.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.BasePaginacionResponseDto.TotalItems">
+            <summary>
+            Total de items sobre el cual se realiza la paginación.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.BasePaginacionResponseDto.Opciones">
+            <summary>
+            Lista de permisos del usuario en el formulario.
+            </summary>
+        </member>
+        <member name="T:Olimpiadas.Application.Dto.Comun.ImagenDto">
+            <summary>
+            Clase con los datos de una imagen
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.ImagenDto.Nombre">
+            <summary>
+            Nombre de la imagen
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.ImagenDto.NombreArchivo">
+            <summary>
+            Nombre del archivo
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.ImagenDto.ExtensionArchivo">
+            <summary>
+            Extensión del archivo
+            </summary>
+        </member>
+        <member name="T:Olimpiadas.Application.Dto.Comun.PaginacionResponseDto">
+            <summary>
+            Clase con datos para mostrar el resultado de la paginación.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.PaginacionResponseDto.EstadosSiNo">
+            <summary>
+            Lista de estados booleanos.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.PaginacionResponseDto.IconografiaImagenUrl">
+            <summary>
+            Url de la iconografía para mostrar en la grilla
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.PaginacionResponseDto.TotalItems">
+            <summary>
+            Total de items sobre el cual se realiza la paginación.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.PaginacionResponseDto.Opciones">
+            <summary>
+            Lista de permisos del usuario en el formulario.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.PaginacionResponseDto.Anios">
+            <summary>
+            Lista de años
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.PaginacionResponseDto.Meses">
+            <summary>
+            Lista de meses
+            </summary>
+        </member>
+        <member name="T:Olimpiadas.Application.Dto.Comun.ItemDto">
+            <summary>
+            Clase con la clave y su valor.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.ItemDto.IdTipo">
+            <summary>
+            Clave del objeto.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.ItemDto.NombreTipo">
+            <summary>
+            Valor asociado a la clave especificada.
+            </summary>
+        </member>
+        <member name="T:Olimpiadas.Application.Dto.Comun.AutocompleteDto">
+            <summary>
+            Clase con datos para llenar un autocomplete
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.AutocompleteDto.Id">
+            <summary>
+            Id.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.AutocompleteDto.UniqueId">
+            <summary>
+            Guid.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.AutocompleteDto.Nombre">
+            <summary>
+            Nombre
+            </summary>
+        </member>
+        <member name="T:Olimpiadas.Application.Dto.Comun.RequestDto`1">
+            <summary>
+            Clase con datos usados como request.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.RequestDto`1.Auditoria">
+            <summary>
+            Objeto de auditoría
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.RequestDto`1.Registro">
+            <summary>
+            Registro con atos del request
+            </summary>
+        </member>
+        <member name="T:Olimpiadas.Application.Dto.Comun.AuditoriaDto">
+            <summary>
+            Clase con datos usados para la auditoría del request.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.AuditoriaDto.Ip">
+            <summary>
+            Ip. del equipo
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.AuditoriaDto.IdUsuario">
+            <summary>
+            Id. del usuario
+            </summary>
+        </member>
+        <member name="T:Olimpiadas.Application.Dto.Comun.ResponseDto`1">
+            <summary>
+            Clase con datos usados como response para métodos REST.
+            </summary>
+        </member>
+        <member name="M:Olimpiadas.Application.Dto.Comun.ResponseDto`1.#ctor">
+            <summary>
+            Constructor de la clase
+            </summary>
+        </member>
+        <member name="M:Olimpiadas.Application.Dto.Comun.ResponseDto`1.#ctor(`0)">
+            <summary>
+            Constructor de la clase
+            </summary>
+            <param name="data">Datos del response</param>
+        </member>
+        <member name="M:Olimpiadas.Application.Dto.Comun.ResponseDto`1.#ctor(`0,System.String)">
+            <summary>
+            Constructor de la clase
+            </summary>
+            <param name="data">Datos del response</param>
+            <param name="mensaje">Mesaje a devolver</param>
+        </member>
+        <member name="M:Olimpiadas.Application.Dto.Comun.ResponseDto`1.#ctor(System.Exception)">
+            <summary>
+            Constructor de la clase
+            </summary>
+            <param name="exception">Excepción capturada</param>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.ResponseDto`1.Data">
+            <summary>
+            Datos del Tipo.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.ResponseDto`1.Response">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Olimpiadas.Application.Dto.Comun.DataDto">
+            <summary>
+            Clase con metadatos del response
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.DataDto.Code">
+            <summary>
+            Indica el resultado del proceso
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.DataDto.Message">
+            <summary>
+            Mensaje devuelto por el response
+            </summary>
+        </member>
+        <member name="T:Olimpiadas.Application.Dto.Comun.VoidDto">
+            <summary>
+            Clase del response para devolver un void
+            </summary>
+        </member>
+        <member name="T:Olimpiadas.Application.Dto.Comun.CriteriosPaginacionDto">
+            <summary>
+            Datos para realizar la paginación.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.CriteriosPaginacionDto.NumeroPagina">
+            <summary>
+            Índice de la página.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.CriteriosPaginacionDto.TamanioPagina">
+            <summary>
+            Número de items por página.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.CriteriosPaginacionDto.SortBy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.CriteriosPaginacionDto.ColumnaOrdenacion">
+            <summary>
+            Propiedad por la cual se realizar la ordenación.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.CriteriosPaginacionDto.OrdenacionDireccion">
+            <summary>
+            Dirección de la ordenación. (ASC o descendente)
+            </summary>
+        </member>
+        <member name="T:Olimpiadas.Application.Dto.Comun.PaginacionRequestDto`1">
+            <summary>
+            Clase con los datos que se usarán en la paginación.
+            </summary>
+        </member>
+        <member name="M:Olimpiadas.Application.Dto.Comun.PaginacionRequestDto`1.#ctor">
+            <summary>
+            Constructor por defecto de la clase
+            </summary>
+        </member>
+        <member name="M:Olimpiadas.Application.Dto.Comun.PaginacionRequestDto`1.#ctor(`0,System.String,System.Int32,System.Int32,Olimpiadas.CrossCutting.Enumerations.EnumDireccionPaginacion)">
+            <summary>
+            
+            </summary>
+            <param name="filtro"></param>
+            <param name="columnaOrdenacion"></param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <param name="direccion"></param>
+        </member>
+        <member name="M:Olimpiadas.Application.Dto.Comun.PaginacionRequestDto`1.#ctor(`0,System.Int32,System.Int32,Olimpiadas.CrossCutting.Enumerations.EnumDireccionPaginacion,System.Int16)">
+            <summary>
+            
+            </summary>
+            <param name="filtro"></param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <param name="direccion"></param>
+            <param name="usua_Id"></param>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.PaginacionRequestDto`1.Filtro">
+            <summary>
+            Datos con los filtros a usar en la paginación.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.PaginacionRequestDto`1.CriteriosPaginacion">
+            <summary>
+            Criterios de paginación.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Comun.PaginacionRequestDto`1.Usua_Id">
+            <summary>
+            Id del usuario que realiza la solicitud.
+            </summary>
+        </member>
+        <member name="T:Olimpiadas.Application.Dto.Fault.ServiceErrorResponseDto">
+            <summary>
+            Clase con datos del error.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Fault.ServiceErrorResponseDto.Code">
+            <summary>
+            Código del error.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Fault.ServiceErrorResponseDto.Description">
+            <summary>
+            Descripción del error.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Fault.ServiceErrorResponseDto.Message">
+            <summary>
+            Mensaje del error.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Fault.ServiceErrorResponseDto.Type">
+            <summary>
+            Tipo del error.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.Fault.ServiceErrorResponseDto.SubCode">
+            <summary>
+            Sub código del error.
+            </summary>
+        </member>
+        <member name="T:Olimpiadas.Application.Dto.Fault.ServiceErrorResponseTypeDto">
+            <summary>
+            Enumeración con los tipos de errores.
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.Application.Dto.Fault.ServiceErrorResponseTypeDto.ErrorNoManejado">
+            <summary>
+            Error no manejado.
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.Application.Dto.Fault.ServiceErrorResponseTypeDto.ErrorBaseDatos">
+            <summary>
+            Error de base de datos.
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.Application.Dto.Fault.ServiceErrorResponseTypeDto.ErrorComunicacionSoap">
+            <summary>
+            Error de comunicación SOAP.
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.Application.Dto.Fault.ServiceErrorResponseTypeDto.ErrorTiempoConexion">
+            <summary>
+            Error de timeout.
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.Application.Dto.Fault.ServiceErrorResponseTypeDto.AccesoDenegado">
+            <summary>
+            Error de permisos por acceso denegado.
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.Application.Dto.Fault.ServiceErrorResponseTypeDto.ErrorNegocio">
+            <summary>
+            Error de lógica del negocio.
+            </summary>
+        </member>
+        <member name="F:Olimpiadas.Application.Dto.Fault.ServiceErrorResponseTypeDto.NoImplementado">
+            <summary>
+            No implemnetado.
+            </summary>
+        </member>
+        <member name="T:Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteDto">
+            <summary>
+            Dto con datos del participante
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteDto.IdParticipante">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteDto.NombreParticipante">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteDto.IdPais">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteDto.IdDeporte">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteDto.Activo">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteDto.NombrePais">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteDto.NombreDeporte">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="T:Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteEditorResponseDto">
+            <summary>
+            Clase con datos para mostrar el editor de Participantes.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteEditorResponseDto.Participante">
+            <summary>
+            Datos del participante que se edita.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteEditorResponseDto.Paises">
+            <summary>
+            Listado de países
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipanteEditorResponseDto.Deportes">
+            <summary>
+            Listado de deportes
+            </summary>
+        </member>
+        <member name="T:Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipantePaginacionResponseDto">
+            <summary>
+            Clase con datos para mostrar el resultado de la paginación de Participantes.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipantePaginacionResponseDto.Participantes">
+            <summary>
+            Lista resultante de la paginación.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipantePaginacionResponseDto.Paises">
+            <summary>
+            Lista de países.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionContenido.Participante.ParticipantePaginacionResponseDto.Deportes">
+            <summary>
+            Lista de deportes.
+            </summary>
+        </member>
+        <member name="T:Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalEditorResponseDto">
+            <summary>
+            Clase con datos para mostrar el editor de Personal.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalEditorResponseDto.Personal">
+            <summary>
+            Datos del participante que se edita.
+            </summary>
+        </member>
+        <member name="T:Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalPaginacionResponseDto">
+            <summary>
+            Clase con datos para mostrar el resultado de la paginación de Participantes.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalPaginacionResponseDto.Personal">
+            <summary>
+            Lista resultante de la paginación.
+            </summary>
+        </member>
+        <member name="T:Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalDto">
+            <summary>
+            Dto con datos del personal
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalDto.IdPersonal">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalDto.NombrePersonal">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalDto.DniPersonal">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalDto.Activo">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalDto.FechaCreacion">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionContenido.Personal.PersonalDto.FechaModificacion">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="T:Olimpiadas.Application.Dto.GestionSeguridad.Usuarios.EjecutorDto">
+            <summary>
+            Dto con datos del usuario para la sesión
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionSeguridad.Usuarios.EjecutorDto.Usua_Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionSeguridad.Usuarios.EjecutorDto.Usua_Email">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionSeguridad.Usuarios.EjecutorDto.Usua_Nombres">
+            <summary>
+            Nombre del usuario.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionSeguridad.Usuarios.EjecutorDto.Usua_TipoAutenticacionId">
+            <summary>
+            Tipo de autenticación del usuario.
+            </summary>
+        </member>
+        <member name="T:Olimpiadas.Application.Dto.GestionSeguridad.Usuarios.ObtenerPermisosResponseDto">
+            <summary>
+            Clase con datos para mostrar el editor de Usuarios.
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionSeguridad.Usuarios.ObtenerPermisosResponseDto.Usuario">
+            <summary>
+            Datos del Usuario que se edita.
+            </summary>
+        </member>
+        <member name="T:Olimpiadas.Application.Dto.GestionSeguridad.Usuarios.ValidarLoginRequestDto">
+            <summary>
+            Dto con los datos para el login
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionSeguridad.Usuarios.ValidarLoginRequestDto.Login">
+            <summary>
+            Login
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionSeguridad.Usuarios.ValidarLoginRequestDto.Contrasenia">
+            <summary>
+            Contraseña
+            </summary>
+        </member>
+        <member name="T:Olimpiadas.Application.Dto.GestionSeguridad.Usuarios.ValidarLoginResponseDto">
+            <summary>
+            Clase con los datos del response de la validación del login
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionSeguridad.Usuarios.ValidarLoginResponseDto.Usuario">
+            <summary>
+            Usuario
+            </summary>
+        </member>
+        <member name="T:Olimpiadas.Application.Dto.GestionSeguridad.Usuarios.UsuarioDto">
+            <summary>
+            Dto con datos del usuario
+            </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionSeguridad.Usuarios.UsuarioDto.IdUsuario">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionSeguridad.Usuarios.UsuarioDto.LoginUsuario">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionSeguridad.Usuarios.UsuarioDto.Contrasenia">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionSeguridad.Usuarios.UsuarioDto.NombreUsuario">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionSeguridad.Usuarios.UsuarioDto.ApellidoUsuario">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionSeguridad.Usuarios.UsuarioDto.EmailUsuario">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionSeguridad.Usuarios.UsuarioDto.Activo">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionSeguridad.Usuarios.UsuarioDto.FechaCreacion">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Olimpiadas.Application.Dto.GestionSeguridad.Usuarios.UsuarioDto.FechaModificacion">
+             <summary>
+            
+             </summary>
+        </member>
+    </members>
+</doc>

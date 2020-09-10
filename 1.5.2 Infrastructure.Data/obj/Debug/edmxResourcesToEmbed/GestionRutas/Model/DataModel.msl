@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GestionRutasStoreContainer" CdmEntityContainer="DbContextGestionRutas">
+    <EntitySetMapping Name="Atractivo_Actividad">
+      <EntityTypeMapping TypeName="GestionRutas.Atractivo_Actividad">
+        <MappingFragment StoreEntitySet="Atractivo_Actividad">
+          <ScalarProperty Name="Aact_AtractivoId" ColumnName="Aact_AtractivoId" />
+          <ScalarProperty Name="Aact_ActividadId" ColumnName="Aact_ActividadId" />
+          <ScalarProperty Name="Aact_Asignado" ColumnName="Aact_Asignado" />
+          <ScalarProperty Name="Aact_UsuarioCreacion" ColumnName="Aact_UsuarioCreacion" />
+          <ScalarProperty Name="Aact_UsuarioEdicion" ColumnName="Aact_UsuarioEdicion" />
+          <ScalarProperty Name="Aact_FechaCreacion" ColumnName="Aact_FechaCreacion" />
+          <ScalarProperty Name="Aact_FechaEdicion" ColumnName="Aact_FechaEdicion" />
+          <ScalarProperty Name="Aact_IpCreacion" ColumnName="Aact_IpCreacion" />
+          <ScalarProperty Name="Aact_IpEdicion" ColumnName="Aact_IpEdicion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Atractivo_Servicio">
+      <EntityTypeMapping TypeName="GestionRutas.Atractivo_Servicio">
+        <MappingFragment StoreEntitySet="Atractivo_Servicio">
+          <ScalarProperty Name="Aser_AtractivoId" ColumnName="Aser_AtractivoId" />
+          <ScalarProperty Name="Aser_ServicioId" ColumnName="Aser_ServicioId" />
+          <ScalarProperty Name="Aser_Asignado" ColumnName="Aser_Asignado" />
+          <ScalarProperty Name="Aser_UsuarioCreacion" ColumnName="Aser_UsuarioCreacion" />
+          <ScalarProperty Name="Aser_UsuarioEdicion" ColumnName="Aser_UsuarioEdicion" />
+          <ScalarProperty Name="Aser_FechaCreacion" ColumnName="Aser_FechaCreacion" />
+          <ScalarProperty Name="Aser_FechaEdicion" ColumnName="Aser_FechaEdicion" />
+          <ScalarProperty Name="Aser_IpCreacion" ColumnName="Aser_IpCreacion" />
+          <ScalarProperty Name="Aser_IpEdicion" ColumnName="Aser_IpEdicion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ruta_Experiencia">
+      <EntityTypeMapping TypeName="GestionRutas.Ruta_Experiencia">
+        <MappingFragment StoreEntitySet="Ruta_Experiencia">
+          <ScalarProperty Name="Rexp_RutaId" ColumnName="Rexp_RutaId" />
+          <ScalarProperty Name="Rexp_ExperienciaId" ColumnName="Rexp_ExperienciaId" />
+          <ScalarProperty Name="Rexp_Asignado" ColumnName="Rexp_Asignado" />
+          <ScalarProperty Name="Rexp_UsuarioCreacion" ColumnName="Rexp_UsuarioCreacion" />
+          <ScalarProperty Name="Rexp_UsuarioEdicion" ColumnName="Rexp_UsuarioEdicion" />
+          <ScalarProperty Name="Rexp_FechaCreacion" ColumnName="Rexp_FechaCreacion" />
+          <ScalarProperty Name="Rexp_FechaEdicion" ColumnName="Rexp_FechaEdicion" />
+          <ScalarProperty Name="Rexp_IpCreacion" ColumnName="Rexp_IpCreacion" />
+          <ScalarProperty Name="Rexp_IpEdicion" ColumnName="Rexp_IpEdicion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RutaRecomendacion">
+      <EntityTypeMapping TypeName="GestionRutas.RutaRecomendacion">
+        <MappingFragment StoreEntitySet="RutaRecomendacion">
+          <ScalarProperty Name="Rrec_IpEdicion" ColumnName="Rrec_IpEdicion" />
+          <ScalarProperty Name="Rrec_IpCreacion" ColumnName="Rrec_IpCreacion" />
+          <ScalarProperty Name="Rrec_FechaEdicion" ColumnName="Rrec_FechaEdicion" />
+          <ScalarProperty Name="Rrec_FechaCreacion" ColumnName="Rrec_FechaCreacion" />
+          <ScalarProperty Name="Rrec_UsuarioEdicion" ColumnName="Rrec_UsuarioEdicion" />
+          <ScalarProperty Name="Rrec_UsuarioCreacion" ColumnName="Rrec_UsuarioCreacion" />
+          <ScalarProperty Name="Rrec_Activo" ColumnName="Rrec_Activo" />
+          <ScalarProperty Name="Rrec_OrdenVisualizacion" ColumnName="Rrec_OrdenVisualizacion" />
+          <ScalarProperty Name="Rrec_Descripcion" ColumnName="Rrec_Descripcion" />
+          <ScalarProperty Name="Rrec_RutaId" ColumnName="Rrec_RutaId" />
+          <ScalarProperty Name="Rrec_Id" ColumnName="Rrec_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ruta">
+      <EntityTypeMapping TypeName="GestionRutas.Ruta">
+        <MappingFragment StoreEntitySet="Ruta">
+          <ScalarProperty Name="Ruta_EnYTQP" ColumnName="Ruta_EnYTQP" />
+          <ScalarProperty Name="Ruta_NotificacionEnviada" ColumnName="Ruta_NotificacionEnviada" />
+          <ScalarProperty Name="Ruta_NombreImagen" ColumnName="Ruta_NombreImagen" />
+          <ScalarProperty Name="Ruta_Version" ColumnName="Ruta_Version" />
+          <ScalarProperty Name="Ruta_IpEdicion" ColumnName="Ruta_IpEdicion" />
+          <ScalarProperty Name="Ruta_IpCreacion" ColumnName="Ruta_IpCreacion" />
+          <ScalarProperty Name="Ruta_FechaEdicion" ColumnName="Ruta_FechaEdicion" />
+          <ScalarProperty Name="Ruta_FechaCreacion" ColumnName="Ruta_FechaCreacion" />
+          <ScalarProperty Name="Ruta_UsuarioEdicion" ColumnName="Ruta_UsuarioEdicion" />
+          <ScalarProperty Name="Ruta_UsuarioCreacion" ColumnName="Ruta_UsuarioCreacion" />
+          <ScalarProperty Name="Ruta_Activo" ColumnName="Ruta_Activo" />
+          <ScalarProperty Name="Ruta_OrdenVisualizacion" ColumnName="Ruta_OrdenVisualizacion" />
+          <ScalarProperty Name="Ruta_TextoAlCompartir" ColumnName="Ruta_TextoAlCompartir" />
+          <ScalarProperty Name="Ruta_ActividadesIds" ColumnName="Ruta_ActividadesIds" />
+          <ScalarProperty Name="Ruta_ExperienciaNombres" ColumnName="Ruta_ExperienciaNombres" />
+          <ScalarProperty Name="Ruta_ExperienciaIds" ColumnName="Ruta_ExperienciaIds" />
+          <ScalarProperty Name="Ruta_TotalComentarios" ColumnName="Ruta_TotalComentarios" />
+          <ScalarProperty Name="Ruta_ValoracionPromedio" ColumnName="Ruta_ValoracionPromedio" />
+          <ScalarProperty Name="Ruta_DiasEstadiaMinima" ColumnName="Ruta_DiasEstadiaMinima" />
+          <ScalarProperty Name="Ruta_ComoIrEnAuto" ColumnName="Ruta_ComoIrEnAuto" />
+          <ScalarProperty Name="Ruta_ComoIrEnBus" ColumnName="Ruta_ComoIrEnBus" />
+          <ScalarProperty Name="Ruta_EnLaRuta" ColumnName="Ruta_EnLaRuta" />
+          <ScalarProperty Name="Ruta_ClimaActualDescripcion" ColumnName="Ruta_ClimaActualDescripcion" />
+          <ScalarProperty Name="Ruta_ClimaActualImagen" ColumnName="Ruta_ClimaActualImagen" />
+          <ScalarProperty Name="Ruta_ClimaActualId" ColumnName="Ruta_ClimaActualId" />
+          <ScalarProperty Name="Ruta_TemperaturaActual" ColumnName="Ruta_TemperaturaActual" />
+          <ScalarProperty Name="Ruta_TemperaturaMinima" ColumnName="Ruta_TemperaturaMinima" />
+          <ScalarProperty Name="Ruta_TemperaturaMaxima" ColumnName="Ruta_TemperaturaMaxima" />
+          <ScalarProperty Name="Ruta_ClimaSetDicId" ColumnName="Ruta_ClimaSetDicId" />
+          <ScalarProperty Name="Ruta_ClimaJunSetId" ColumnName="Ruta_ClimaJunSetId" />
+          <ScalarProperty Name="Ruta_ClimaMarJunId" ColumnName="Ruta_ClimaMarJunId" />
+          <ScalarProperty Name="Ruta_ClimaDicMarId" ColumnName="Ruta_ClimaDicMarId" />
+          <ScalarProperty Name="Ruta_Longitud" ColumnName="Ruta_Longitud" />
+          <ScalarProperty Name="Ruta_Latitud" ColumnName="Ruta_Latitud" />
+          <ScalarProperty Name="Ruta_QueVisitar" ColumnName="Ruta_QueVisitar" />
+          <ScalarProperty Name="Ruta_Nombre" ColumnName="Ruta_Nombre" />
+          <ScalarProperty Name="Ruta_DestinoId" ColumnName="Ruta_DestinoId" />
+          <ScalarProperty Name="Ruta_OrigenId" ColumnName="Ruta_OrigenId" />
+          <ScalarProperty Name="Ruta_Id" ColumnName="Ruta_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RutaCoordenada">
+      <EntityTypeMapping TypeName="GestionRutas.RutaCoordenada">
+        <MappingFragment StoreEntitySet="RutaCoordenada">
+          <ScalarProperty Name="Coor_RutaId" ColumnName="Coor_RutaId" />
+          <ScalarProperty Name="Coor_IpEdicion" ColumnName="Coor_IpEdicion" />
+          <ScalarProperty Name="Coor_IpCreacion" ColumnName="Coor_IpCreacion" />
+          <ScalarProperty Name="Coor_FechaEdicion" ColumnName="Coor_FechaEdicion" />
+          <ScalarProperty Name="Coor_FechaCreacion" ColumnName="Coor_FechaCreacion" />
+          <ScalarProperty Name="Coor_UsuarioEdicion" ColumnName="Coor_UsuarioEdicion" />
+          <ScalarProperty Name="Coor_UsuarioCreacion" ColumnName="Coor_UsuarioCreacion" />
+          <ScalarProperty Name="Coor_Activo" ColumnName="Coor_Activo" />
+          <ScalarProperty Name="Coor_LongitudInferior" ColumnName="Coor_LongitudInferior" />
+          <ScalarProperty Name="Coor_LatitudInferior" ColumnName="Coor_LatitudInferior" />
+          <ScalarProperty Name="Coor_LongitudSuperior" ColumnName="Coor_LongitudSuperior" />
+          <ScalarProperty Name="Coor_LatitudSuperior" ColumnName="Coor_LatitudSuperior" />
+          <ScalarProperty Name="Coor_Id" ColumnName="Coor_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Atractivo">
+      <EntityTypeMapping TypeName="GestionRutas.Atractivo">
+        <MappingFragment StoreEntitySet="Atractivo">
+          <ScalarProperty Name="Atra_FechaActualizacionClima" ColumnName="Atra_FechaActualizacionClima" />
+          <ScalarProperty Name="Atra_NotificacionEnviada" ColumnName="Atra_NotificacionEnviada" />
+          <ScalarProperty Name="Atra_Version" ColumnName="Atra_Version" />
+          <ScalarProperty Name="Atra_NombreImagen" ColumnName="Atra_NombreImagen" />
+          <ScalarProperty Name="Atra_IpEdicion" ColumnName="Atra_IpEdicion" />
+          <ScalarProperty Name="Atra_IpCreacion" ColumnName="Atra_IpCreacion" />
+          <ScalarProperty Name="Atra_FechaEdicion" ColumnName="Atra_FechaEdicion" />
+          <ScalarProperty Name="Atra_FechaCreacion" ColumnName="Atra_FechaCreacion" />
+          <ScalarProperty Name="Atra_UsuarioEdicion" ColumnName="Atra_UsuarioEdicion" />
+          <ScalarProperty Name="Atra_UsuarioCreacion" ColumnName="Atra_UsuarioCreacion" />
+          <ScalarProperty Name="Atra_MostrarEnApp" ColumnName="Atra_MostrarEnApp" />
+          <ScalarProperty Name="Atra_Activo" ColumnName="Atra_Activo" />
+          <ScalarProperty Name="Atra_OrdenVisualizacion" ColumnName="Atra_OrdenVisualizacion" />
+          <ScalarProperty Name="Atra_TextoAlCompartir" ColumnName="Atra_TextoAlCompartir" />
+          <ScalarProperty Name="Atra_TotalComentarios" ColumnName="Atra_TotalComentarios" />
+          <ScalarProperty Name="Atra_ValoracionPromedio" ColumnName="Atra_ValoracionPromedio" />
+          <ScalarProperty Name="Atra_ClimaActualDescripcion" ColumnName="Atra_ClimaActualDescripcion" />
+          <ScalarProperty Name="Atra_ClimaActualImagen" ColumnName="Atra_ClimaActualImagen" />
+          <ScalarProperty Name="Atra_ClimaActualId" ColumnName="Atra_ClimaActualId" />
+          <ScalarProperty Name="Atra_TemperaturaActual" ColumnName="Atra_TemperaturaActual" />
+          <ScalarProperty Name="Atra_ServicioNombres" ColumnName="Atra_ServicioNombres" />
+          <ScalarProperty Name="Atra_ServicioIds" ColumnName="Atra_ServicioIds" />
+          <ScalarProperty Name="Atra_ActividadNombres" ColumnName="Atra_ActividadNombres" />
+          <ScalarProperty Name="Atra_ActividadIds" ColumnName="Atra_ActividadIds" />
+          <ScalarProperty Name="Atra_ClimaSetDicId" ColumnName="Atra_ClimaSetDicId" />
+          <ScalarProperty Name="Atra_ClimaJunSetId" ColumnName="Atra_ClimaJunSetId" />
+          <ScalarProperty Name="Atra_ClimaMarJunId" ColumnName="Atra_ClimaMarJunId" />
+          <ScalarProperty Name="Atra_ClimaDicMarId" ColumnName="Atra_ClimaDicMarId" />
+          <ScalarProperty Name="Atra_TemperaturaMinima" ColumnName="Atra_TemperaturaMinima" />
+          <ScalarProperty Name="Atra_TemperaturaMaxima" ColumnName="Atra_TemperaturaMaxima" />
+          <ScalarProperty Name="Atra_Longitud" ColumnName="Atra_Longitud" />
+          <ScalarProperty Name="Atra_Latitud" ColumnName="Atra_Latitud" />
+          <ScalarProperty Name="Atra_Distancia" ColumnName="Atra_Distancia" />
+          <ScalarProperty Name="Atra_Direccion" ColumnName="Atra_Direccion" />
+          <ScalarProperty Name="Atra_Descripcion" ColumnName="Atra_Descripcion" />
+          <ScalarProperty Name="Atra_Nombre" ColumnName="Atra_Nombre" />
+          <ScalarProperty Name="Atra_PadreId" ColumnName="Atra_PadreId" />
+          <ScalarProperty Name="Atra_RutaId" ColumnName="Atra_RutaId" />
+          <ScalarProperty Name="Atra_Id" ColumnName="Atra_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
